@@ -5,6 +5,10 @@ With contributions by James Grenning and Simon Brown
 
 **Language**: English
 
+**Start date**: May 21st, 2020.
+
+**End date (estimated)**: Jun 21st, 2020.
+
 ---
 
 ## 1. What is Design and Architecture?
@@ -19,7 +23,7 @@ With contributions by James Grenning and Simon Brown
 > Making messes is always slower than staying clean.
 > The only way to go fast, is to go well.
 
-## 2. A Tale of Two Values
+## 2. A Tale of Two Values.
 
 * Every software provides two different values to the stakeholders: _behavior_ and _structure_.
 * Developers help stakeholders develop a functional specification, or requirements document.
@@ -63,3 +67,34 @@ With contributions by James Grenning and Simon Brown
 * None of them adds new capabilities. Each imposes some kind of extra discipline that is negative in its intent.
 * The three paradigms together remove `goto` statements, function pointers, and assignments.
 
+## 4. Structured Programming.
+
+### Proof
+
+* A program of any complexity contains too many details for a human brain to manage without help.
+* Dijkstra's solution was to apply the mathematical discipline of proof.
+* Dijkstra realized that he would have to demonstrate the technique for writing basic proofs of simple alhorithms.
+* Dijkstra discovered that certain uses of `goto` statements prevent modules from being decomposed recursively into smaller and smaller units, thereby preventing use of the _divide-and-conquer_ approach necessary for reasonable proofs.
+* Dijstra realized that there "good" uses of `goto` corresponded to simple selection and interaction control structures.
+* Böhm and Jacopini, proved that all programs can be constructed from just three structures: sequence, selection and interaction.
+* The very control structures that made a module provable were the same minimum set of control structure from which all programs can be built. **Thus, structured programming was born**.
+* Most modern languages do not have a `goto` statement.
+* Our languages don't give us the option to use undisciplined direct transfer of control.
+
+### Functional Decomposition
+
+* Structured programming allows modules to be recursively decomposed into provable units.
+
+### No Formal Proofs
+
+* Few of today's programmers believe that formal proofs are an appropriate way to produce high-quality software.
+
+## 5. Object-Oriented Programming.
+
+## 6. Functional Programming.
+
+## 7. SRP: The Single Responsility Principle.
+
+## 8. OCP: The Open-Closed Principle.
+
+## 9. LSP: The Liskov Substitution Principle.
