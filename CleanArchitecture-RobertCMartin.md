@@ -89,9 +89,82 @@ With contributions by James Grenning and Simon Brown
 
 * Few of today's programmers believe that formal proofs are an appropriate way to produce high-quality software.
 
+### Science to the Rescue
+
+* Science does not work by proving statemets tru, but rather by _proving statements false_.
+
+### Tests
+
+* Testing shows the presence, not the absence, of bugs.
+* All the tests can do, after sufficient testing effort, is allow us to deem a program to be correct enough for our purposes.
+* Such proofs of incorrectness can be applied only to _provable_ programs.
+* Structured programming forces us to recursively decompose a program into a set of small provable functions.
+
+> If such tests fail to prove incorrectness, then we deem the functions to be correct enough for our purposes.
+
 ## 5. Object-Oriented Programming.
 
+* When Dahl and Nygaard moved the function call stack frame to the heap and invented OO.
+* OO makes software easier to understand because it has a closer relationship to the real world.
+* Nature of OO: _encapsulation_, _inheritance_ and _polimorphism_.
+
+### Encapsulation?
+
+* Provide easy and effective encapsulation of data and functions.
+* We see this concept in action as the private data members and the public member functions of a class.
+* The C++ compiler, for technical reasons (it needs to know the size of the instances of each class), needed the member variables of a class to be declared in the header file of that class.
+* Many OO languages have little or no enforced encapsulation.
+* OO certainly does depend on the idea that programmers are well-behaved enough to not circumbent encapsulated data.
+
+### Inheritance?
+
+* Inheritance is simply the redeclaration of a group of variables and functions within an enclosing scope.
+
+### Polymorphism?
+
+* The bottom line is that polymorphism is an application of pointers to functions. Programmers have been using pointers to functions to achieve polymorphic behavior since Von Neumann architectures were first implemented in the late 1940s.
+* OO languages may not have given us polymorphism, but they have made it mush safer and much more convenient.
+
+#### The Power of Polymorphism
+
+* The IO devices have become plugins to the `copy` program.
+* Our programs should be _device_ independent.
+* We discovered that we really wanted tose programs to do the same job, but use a different device.
+* OO allows the plugin architecture to be used anywhere, for anything.
+
+#### Dependency Inversion
+
+* Any source code dependency, no matter where it is, can be inverted.
+* Any of those source code dependencies can be turned around by inserting an interface between them.
+* Software architects working in systems written in OO languages have _absolute control_ over the direction of all source code dependencies in the system.
+
+> Independent Deployability: If the source code in a component changes, only that component needs to be redeployed.
+> OO is the ability, through the use of polymorphism, to gain absolute control over every source code dependency in the system.
+
 ## 6. Functional Programming.
+
+* The Java program uses a _mutable_ variable - a variable that changes state during the execution of the program. That variable is `i`-the loop control variable. No such mutable variable exists in the Clojure program. **In the Clojure program, variables like `x` are initialized, but they are never modified**.
+* Variables in functional languages do not vary.
+
+### Immutability and Architecture.
+
+* All race conditions, deadlock conditions, and concurrent update problems are due to mutable variables. You cannot have a race condition or a concurrent update problem if no variable is ever updated.
+* Is immutability practicable? Yes, immutability can be practicable, if certain compromises are made.
+
+### Segregation of Mutability
+
+* The immutable components perform their tasks in a purely functional way, without using any mutable variables.
+* Since mutating state exposes those components to all the problems of concurrency, it is common practice to use some kind of _transactional memory_ to protect the mutable variables from concurrect update and race conditions.
+* The point is that well-structured applications will be segregated into those components that do not mutate variables and those that do.
+* Push as much processing as possible into the immutable components.
+
+### Event Sourcing
+
+* The more memory we have, and the faster our machines are, the less we need mutable state.
+* To make this scheme work forever, we would need infinite storage and infinite processing power.
+* Event sourcing is a strategy wherein we store the transactions, but not the state.
+* More importantly, nothing ever gets deleted or updated from such a data store. As a consequence, our applications are not CRUD; they are just CR. Also, because neither updates nor deletions occur in the data store, there cannot be any concurrent update issues.
+* If we have enough storage and enough processor power, we can make our applications entirely immutable -and, therefore, _entirely functional_.
 
 ## 7. SRP: The Single Responsility Principle.
 
