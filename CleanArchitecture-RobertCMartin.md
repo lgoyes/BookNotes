@@ -168,6 +168,17 @@ With contributions by James Grenning and Simon Brown
 
 ## 7. SRP: The Single Responsility Principle.
 
+* A _function_ should do one, and only one, thing. We use that principle when we are refactoring large funcitons into smaller functions; we use it at the lowest levels. But it is not one of the SOLID principles -it is not the SRP.
+* Historycally, the SRP has been described as follows:
+> A module should have one, and only one, reason to change.
+
+* However, the SRP principle actually is:
+> A module should be responsible to one, and only one, actor.
+
+* To understand this principle, we can look at the symptoms of violating it.
+
+### Symptom 1: Accidental Duplication.
+
 ## 8. OCP: The Open-Closed Principle.
 
 ## 9. LSP: The Liskov Substitution Principle.
