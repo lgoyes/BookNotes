@@ -179,6 +179,47 @@ With contributions by James Grenning and Simon Brown
 
 ### Symptom 1: Accidental Duplication.
 
+* A developer is tasked to make the change, and sees the convenient `regularHours()` function called by the `calculatePay()` method. Unfortunately, that developer does not notice that the functioni is also called by the `reportHours()` function.
+
+> SRP: Separate the code that differt actors depend on.
+
+### Symptom 2: Merges.
+
+* Two different developers, possible from two different teams, check out the `Employee` class and begin to make changes. Unfortunately their changes collide. The result is a merge.
+* In our example, the merge puts both the CTO and the COO at risk. It's not inconceivable that the CFO could be affected as well.
+* There are many other symptoms that we could investigate, but they all involve multiple people changing the same source file for different reasons.
+
+### Solutions
+
+* There are different solutions. Each moves the functions into different classes.
+1. Separate the data from the functions. Each class holds only the source code necessary for its particular function. The classes are not allowed to know about each other. Thus, any accidental duplication is avoided.
+2. A common solution to the several classes dilemma is to use the _Facade_ pattern.
+3. One can prefer to keep the most important business rules closer to the data. This can be done by keeping the most important method in the original `Employee` class, and then using that class as a Facade for the lesser functions.
+
 ## 8. OCP: The Open-Closed Principle.
 
+> A software artifact should be open for extension but closed for modification.
+
+* A good software architecture would reduce the amount of changed code to the barest minimum. Ideally, zero.
+* Separaing the things that change for different reasons, and then organizing the dependencies between those things properly.
+* All the dependencies are _source code_ dependencies. An arrow pointing from class A to class B means that the source code of class A mentions the name of class B, but class B mentions nothing about A.
+* Each boundary is crossed in _one direction only_. This means that all component relationships are unidirectional.
+* These arrows point toward the components that we want to protect from change.
+* If component A should be protected from changes in component B, then component B should depend on component A.
+* Why should the Interactor hold such a privileged prosition? Because it contains the business rules.
+* The interactor deals with the central concerns.
+* Notice how this creates a hierarchy of protection based on the notion of "level".
+* Architects separate functionality based on how, why, and when it changes, and then organize that separated functionality into a hierarchy of components.
+
+### Information Hiding
+
+* The (...) interface serves a different purpose. It is there to protect the `Controller` from knowing too much about the internals of the _Interactor_. If that interface were not there, then the `Controller` would have transitive dependencies on the `Entities`.
+* Transitive dependencies are a violation of the general principle that software entities should not depend on things they don't directly use.
+
+### Conclusion
+
+* Arranging those components into a dependency hierarchy that protects higher-level components from changes in lower-level components.
+
 ## 9. LSP: The Liskov Substitution Principle.
+
+> What is wanted here is something like the following substitution property: If for each object `o1` of type `S` there is an object `o2` of type `T` such that for all programs `P` defined in terms of `T`, the behavior of `P` is unchanged when `o1` is substituted for `o2`, then `S` is a subtype of `T`.
