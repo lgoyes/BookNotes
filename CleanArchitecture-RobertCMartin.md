@@ -335,6 +335,6 @@ With contributions by James Grenning and Simon Brown
 
 ### Conclusion
 
-*These dynamically linked files, which can be plugged together at runtime, are the software components of our architectures.
+* These dynamically linked files, which can be plugged together at runtime, are the software components of our architectures.
 
 ## 13. Component Cohesion.
