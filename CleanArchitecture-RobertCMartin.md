@@ -223,3 +223,55 @@ With contributions by James Grenning and Simon Brown
 ## 9. LSP: The Liskov Substitution Principle.
 
 > What is wanted here is something like the following substitution property: If for each object `o1` of type `S` there is an object `o2` of type `T` such that for all programs `P` defined in terms of `T`, the behavior of `P` is unchanged when `o1` is substituted for `o2`, then `S` is a subtype of `T`.
+
+### Guiding the Use of Inheritance
+
+* Application does not depend, in any way, on which of the two subtypes it uses. Both of the subtypes are subtitutable for the `License` Type.
+
+### The Square/Rectangle Problem
+
+* Since the behavior of the `User` depend on the types it uses, those types are not substitutable.
+
+### LSP and Architecture
+
+* over the years, the LSP has morphed into a broader principle of software design that pertains to interfaces and implementations.
+* The LSP is applicable because there are users who depend on well-defined interfaces (Java-stype interface, Ruby classes, or REST interface), and on the substitutability of the implementations of those interfaces.
+
+### Exampmle LSP Violation
+
+* Our architect would have to insulate the system from bugs like this by creating some kind of dispatch command creation module that was driven by a configuration database keyed by the dispatch URI.
+* Our architect has had to add a significant and complex mechanism to deal with the fact that the interfaces of the restful services are not all substitutable.
+
+### Conclusion
+
+* The LSP can, and should, be extended to the level of architecture. A simple violation of substitutability, can cause a system's architecture to be polluted with a significant amount of extra mechanisms.
+
+## 10. ISP: The Interface Segregation Principle
+
+* Let's assume that `User` uses only `op1`, `User2` uses only `op2`, and `User3` uses only `op3`.
+* The source code of `User1` will inadvertently depend on `op2` and `op3`, even though it doesn't call them.
+* By segregating the operations into interfaces, then the source code of `User1` will depend on `U1Ops`, and `op1`, but will not depend on `OPS`. Thus a change to `OPS` that `User1` does not care about will not cause `User1` to be recompiled and redeployed.
+
+### ISP and Language
+
+* In dynamically typed languages like Ruby and Python, such declarations don't exist in source code. Instead, they are inferred at runtime. Thus there are no source code dependencies to force recompilation and redeployment.
+* Dynamically typed languages create systems that are more flexible and less tighly coupled that statically typed languages.
+
+### ISP and Architecture
+
+* It is harmful to depend on modules that contain more than you need.
+* Even worse, a failure of one of the features within D may cause failures in F and S.
+
+### Conclusion
+
+> Depending on something that carries baggage that you don't need can cause you troubles that you didn't expect.
+
+## 11. DIP: The Dependency Inversion Principle
+
+* The most flexible systems are those in which source code dependencies refer only to abstractions, not to concretions.
+* `use`, `import`, and `include` statements should refer only to source modules containing interfaces, abstract classes, or some other kind of abstract declaration.
+> Nothing concrete should be depended on.
+
+
+## 12. Components
+
