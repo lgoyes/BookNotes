@@ -271,7 +271,70 @@ With contributions by James Grenning and Simon Brown
 * The most flexible systems are those in which source code dependencies refer only to abstractions, not to concretions.
 * `use`, `import`, and `include` statements should refer only to source modules containing interfaces, abstract classes, or some other kind of abstract declaration.
 > Nothing concrete should be depended on.
+* For dynamically typed languages, a concrete module is any module in which the functions being called are implemented.
+* `String` class is very stable. Changes to that class are very rare and tighly controlled. Programmers and architects do not have to worry about frequent and capricious changes to `String`.
+* We tolerate those concrete dependencies because we know we can rely on them not to change.
+* It is the _volatile_ concrete elements of our system that we want to avoid depending on. Those are the modules that we are actively developing, and that are undergoing frequent change.
 
+### Stage Sbstractions
+
+* Interfaces are less volatile than implementations.
+* Stable software architectures are those that avoid depending on volatile concretions, and that favor the use of stable abstract interfaces.
+* **Don't refer to volatile contrete classes.** Refer to abstract interfaces instead.
+* **Don't derive from volatile concrete classes.**
+* **Don't override concrete functions.** Concrete functions often require source code dependencies. When you override those functions, you do not eliminate those dependencies -indeed, you _inherit_ them.
+> To manage those dependencies, you should make the function abstract and create multiple implementations.
+* **Never mention the name of anything concrete and volatile.**
+
+### Factories
+
+* The creation of volatile concrete objects requires special handling.
+* In most object-orientes languages, such as Java, we would use an Abstract Factory to manage this undesirable dependency.
+* All source code dependencies cross that curved line pointing in the same direction, toward the abstract side.
+> The abstract component contains all the high-level business rules of the application. The concrete component contains all the implementation details that those business rules manipulate.
+* The source code dependencies are inverted against the flow of control -which is why we refer to this principle as Dependency Inversion.
+
+### Concrete Components
+
+* DIP violations cannot be entirely removed, but they can be gathered into a small number of concrete components and kept separate from the rest of the system.
+* Most systems will contain at least one such concrete component.
+
+### Conclusion
+
+* The way the dependencies cross that curved line in one direction, and toward more abstract entities, will become a new rule that we will call the _Dependency Rule_.
 
 ## 12. Components
 
+* Components are the units of deployment.
+* In Java, they are jar files.
+* In all languages, they are the granule of deployment.
+* Regardless of how they are eventually deployed, well-designed components always retain the ability to be independently deployable and, therefore, independetly developable.
+
+### A Brief History of Components
+
+* In those days, programs were not relocatable.
+* Programmers included the source code of the library functions with their application code, and compiled them all as a single program. Librearies were kept in source, not in binary.
+* To shorten the cpile times, programmers separated the source code of the function library from the applications.
+
+#### Relocatability
+
+* The compiler was changed to output binary code that could be relocated in memory by a smart loader.
+* Usually this just meant adding the starting address to any memory reference addresses in the brinary. Now the programmer could tell the loader where to load the function library and where to load the application.
+> If a program called a library function, the compiler would emit that name as an _external reference_. If a program defined a library function, the compiler would emit that name as an _external definition_. Then the loader could _link_ the external references to the external definitions once it had determined where it had loaded those definitions.
+> And the linking loader was born.
+
+#### Linkers
+
+* The linking loaders had to read dozens, if not hundreds, of binary libraries to resolve the external references.
+* THe output of the linker was a linked relocatable that a relocating loader could load very quickly. This allowed programmers to prepare an executable using the slow linker.
+* Compiling each individual module was relatively fast, but compiling all the modules took a bit of time.
+* Loading time remained fast, but compile-link times were the bottleneck.
+> Programs will grow to fill all available compile and link time.
+* For small jobs, the idea of a linking loader became feasible again.
+* COmpiters and devices had gotten so fast that we could, once again, do the linking at load time. We could link together soveral `.jar` files, or several shared libraries in a matter of seconds, and execute the resulting program. And so, the component plugin architecture was born.
+
+### Conclusion
+
+*These dynamically linked files, which can be plugged together at runtime, are the software components of our architectures.
+
+## 13. Component Cohesion.
