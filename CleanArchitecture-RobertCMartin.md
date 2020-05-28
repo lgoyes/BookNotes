@@ -338,3 +338,94 @@ With contributions by James Grenning and Simon Brown
 * These dynamically linked files, which can be plugged together at runtime, are the software components of our architectures.
 
 ## 13. Component Cohesion.
+
+* Which classes belong in which components?
+  * REP: The Reuse/Release Equivalence Principle
+  * CCP: The Common Closure Principle
+  * CRP: The Common Reuse Principle
+
+### The Reuse/Release Equivalence Principle
+
+* We are now living in the age of software reuse -a fulfillment of one of the oldest promises of the object-oriented model.
+* People who want to reuse software components cannot, and will not, do so unless those components are tracked through a release process and are given release numbers.
+* Without release numbers, there would be no way to ensure that all the reused components are compatible with each other.
+* Which changes those new releases will bring.
+* The release process must produce the appropriate notifications and release documentation so that users can make informed decisions about when and whether to integrate the new release.
+* Classes and modules that are formed into a component must belong to a cohesive group.
+* There must be some overarching theme or purpose that those modules all share.
+> Classes and modules that are grouped together into a component should be releasable together.
+
+### Common Closure Principle
+
+* CCP Says that a component should not have multiple reasons to change.
+> If the code in an application must change, you would rather that all the changes occur in one component, rather than being distributed across many components.
+* The CCP prompt us to gather together in one place all the classes that are likely to change for the same reasons.
+* We design our classes such that they are closed to the most common kinds of changes that we expect or have experienced.
+
+### The Common Reuse Principle
+
+* It states that classes and modules that tend to be reused together belong in the same component.
+* Classes are seldom reused in isolation. More typically, reusable classes collaborate with other classes that are part of the reusable abstraction. The CRP states that these classes belong together in the same component. In such a component we would expect to see classes that have lots of dependencies on each other.
+* Perhaps the using component uses only one class within the used component -but that still doesn-t weaken the dependency.
+* Every time the used component is changed, the using component will likely need corresponding changes.
+* When we depend on a component, we want to make sure we depend on every class in that component.
+* CRP tells us more about which classes shouldn't be together. The CRP says that classes that are not tighly bound to each other should not be in the same component.
+
+#### Relation to ISP
+
+> Don't depend on things you don't need
+
+### The Tension Diagram for Component Cogesion
+
+* An architect who focuses on just the REP and CRP will find that too many components are impacted when simple changes are made. In contrast, an architect who focuses too strongly on the CCP and REP will cause too many unneeded releases to be generated.
+* A good architect finds a position in that tension triangle that meets the current concerns of the development team, but is also aware that those concerns will change over time.
+* Early in the development of a project, the CCP is much more important than the REP, because develop/ability is more important than reuse.
+
+### Conclusion
+
+* The composition of the components will likely jitter and evolve with time as the focus of the project changes from develop-ability to reusability.
+
+## 14. Component Coupling
+
+### The Acyclic Dependencies Principle
+
+* The "morning after syndrome" occurs in development environments where many developers are modifying the same source files.
+* It is not uncommon for weeks to go by without the team being able to build a stable version of the project.
+* Everyone keeps on changing and changing their code trying to make it work with the last changes that someone else made.
+
+#### The Weekly Build
+
+* All the developers ignore each other for the first four days of the weeek. They all work on private copies of the code, and don't worry about integrating their work on a collective basis. THen, on Friday, they integrate all their changes and build the system.
+* The integration time continues to grow with project size.
+
+#### Eliminating Dependency Cycles
+
+* The solution to this problem is to partition the development environment into releasable component.
+* The components become units of work that can be the responsibility of a single developer, or a team of develops. When developers get a component working, they release it for use by the other developers.
+* As new release of a component are made available, other teams can decide whether they will immediately adopt the new release. If they decide not to, they simply continue using the old release. Once they decide that they are ready, they begin to use the new release.
+* Each team can decide for itself when to adapt its own components to new releases of the components.
+* If there are cycles in the dependecy structure, then the "morning after syndrome" cannot be avoided.
+* Notice that this structure is a directed graph. The components are the nodes, and the dependency relationships are the directed edges.
+* This structure has no cycles. It is a directed acyclic graph (DAG).
+* WHen the developers working on the `Presenters` component would like to run a test of that componen, they just need to build their version of `Presenters` with the versions of `Interactors` and `Entities` components that they are currently using.
+
+#### THe Effect of a Cycle in the Component Dependency Graph
+
+* They will be stepping all over one ahother because they must all use exactly the same release of one another's component.
+* You may have wondered why you have to include so many different libraries, and so much of everybody else's stuff, just to run a simple unit test of one of your classes.
+* Unit testing and releasing become very difficul and error prone.
+
+#### Breaking the Cycle
+
+It is always possible to break a cycle of components and reinstate the dependency graph as a DAG.
+
+1. Apply the Dependency Inversion Principle (DIP). We could create an interface that has the methods that `User` needs. We could then put that interface into `Entities` and inherit it into `Authorizer`.
+2. Create a new component that both `Entities` and `Authorizer` depend on.
+
+#### The Jitters
+
+* As the application grows, the component dependency structure jitters and grows.
+* When cycles occur, they must be broken somehow. Sometimes this will mean creating new components, making the dependency structure grow.
+
+### Top-Down Design
+
