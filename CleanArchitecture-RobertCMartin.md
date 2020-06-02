@@ -472,28 +472,93 @@ It is always possible to break a cycle of components and reinstate the dependenc
 
 * If all the componets in a system were maximally stable, the system would be unchangeable.
 * This violates the SDP because the _I_ metric for `Stable` is much smaller that the _I_ metric for `Flexible`. As a result, `Flexible` will no longer be easy to change. A change to `Flexible` will force us to deal with `Stable` and all its dependents.
-* We can fix this by employing the DIP. We create an interface class called `US` and put it in a component named `UServer`.
+* We can fix this by employing the DIP. We create an interface class called `US` and put it in a component named `UServer`. We make sure that this interface declares all the methods that `U` needs to use. We then make `C` implement this interface.
 
 #### Abstract Components
 
+* These abstract components are very stable and, therefore, are ideal targets for less stable components to depend on.
+
 ### The Stable Abstractions Principle
+
+> A component should be as abstract as it is stable.
 
 #### Where do We Put The High-Level Policy?
 
+* Some software in the system should not change very often. This software represents high-livel architecture and policy decisions.
+* The software that encapsulates the high-level policies of the system should be placed into stable components (_I=0_).
+* Unstable components (_I=1_) should contain only the software that is volatile.
+* If the high-level policies are placed into stable components, then the source code that represents those policies will be difficult to change. This could make the overall architecture inflexible.
+
 #### Introducing the Stable Abstractions Principle
+
+The Stable Abstractions Principle (SAP) sets up a relationship between stability and abstractness.
+* A stable component should also be abstract so that its stability does not prevent it from being extended.
+* An unstable component should be concrete since its instability allows the concrete code within it to be easily changed.
+* If a component is to be stable, it should consist of interfaces and abstract classes so that it can be extended.
+* The SDP says that dependencies should run in the direction of stability, and the SAP says that stability implies abstraction.
+> Dependencies run in the direction of abstraction.
 
 #### Measuring Abstraction
 
+* The _A_ metric is a measure of the abstracness of a component. Its value is simply the ratio of interfaces and abstract classes in a component to the total number of classes in the component.
+  * _Nc:_ The number of classes in the component.
+  * _Na:_ The number of abstract classes and interfaces in the component.
+  * _A:_ Abstractness. _A = Na / Nc_.
+
+A value of 0 implies that the component has no abstract classes at all. A value of 1 implies that the component contains nothing but abstract classes.
+
 #### The Main Sequence
+
+* We create a graph with A on the vertical axis and I on the horizontal axis.
+* We will find the components that are maximally stable and abstract at the upper left at (0,1).
+* The components that are maximally unstable and cocrete are at the lower right at (1,0).
+* Not all components fall into one of these two positions, because components often have degrees of abstraction and stability.
+* For example: It is very common for one abstract class to derive from another abstract class.
+* Since we cannot enforce a rule that all components sit at either (0,1) or (1,0), we must assume that there is a locus of points on the _A/I_ graph that defines reasonable positions for components.
 
 #### The Zone of Pain
 
+* Consider a component in the area of (0, 0). This is a highly stable and concrete component.
+* It cannot be extended because it is not abstract, and it is very difficult to change because of its stability.
+* Some software entities do, in fact, fall within the Zone of Pain. An example would be a database schema. Database schemas are notoriously volatile, extremely concrete, and highly depended on.
+* Another example of software that sits near the area of (0, 0) is a concrete utility library. Although such a library has an _I_ metric of 1, it may actually be nonvolatile. Consider the `String` component, for example. Even though all the classes within it are concrete, it is so commonly used that changing it would create chaos. Therefore `String` is nonvolatile.
+* Nonvolatile components are harmless in the (0, 0) zone since they are not likely to be changed.
+* It is only volatile software components that are problematic in the Zone of Pain.
+
 #### The Zone of Uselessness
+
+* Consider a component near (1, 1). This location is undesirable because it is maximally abstract, yet has no dependents. Such components are useless.
+* They are often leftover abstract classes that no one ever implemented.
 
 #### Avoiding the Zones of Exclusion
 
+* It seems clear that our most volatile components should be kept as far from both zones of exclusion as possible.
+* Good architects strive to position the majority of their components at those endpoints.
+* Some small fraction of the components in a large system are neither perfectly abstract nor perfectly stable. Those components have the best characteristics if they are on, or close, to the Main Sequence.
+
 #### Distance from the Main Sequence
 
+* _D:_ Distance. _D = |A+I-1|_. THe range of this metric is [0, 1]. A value of 0 indicates that the component is directly on the Main Sequence. A value of 1 indicates that the component is as far as possible from the Main Sequence.
+* Any component that has a _D_ value that is not near zero can be reexamined and restructured.
+* They are either very abstact with few dependents or very concrete with many dependents.
+* THe plot shows a control threshold at _D = 0.1_. The R2.1 point has exceeded this control limit, so it would be worth our while to find out why this component is so far from the main sequence.
+
+## 15. What is Architecture?
+
+### Development
+
+### Deployment
+
+### Operation
+
+### Maintenance
+
+### Keeping Options Open
+
+### Device Independence
+
+### Junk Mail
+
+### Physical Addressing
+
 ### Conclusion
-
-
