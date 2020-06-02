@@ -429,3 +429,71 @@ It is always possible to break a cycle of components and reinstate the dependenc
 
 ### Top-Down Design
 
+* Inescapable conclusion: The component structure cannot be designed from the top down.
+* It is not one of the first things about the system that is designed, but rather evolves as the system grows and changes.
+* We have come to expect that large-grained decompositions, like components, will also be high-level _functional_ decompositions.
+* We believe that the components ought to somehow represent the functions of the system. Yet this does not seem to be an attribute of component dependency diagrams.
+* Component dependency diagrams have very little to do with describing the function of the application. Instead, they are a map to the _buildability_ and _maintainability_ of the application.
+* We want to keep changes as localized as possible, so we start paying attention to the SRP and CCP and collocate classes that are likely to change together.
+* We don't want components that change frequently and for capricious reasons to affect components that otherwise ought to be stable.
+* The component dependency graph is created and molded by architects to protect stable high-value components from volatile components.
+* If we tried to design the component dependency structure before we designed any classes, we would likely fail rather badly. We would not know much about common closure, we would be unaware of any reusable elements, and we would almost certainly create components that produced dependency cycles.
+
+### The Stable Dependencies Principle
+
+> Depend in the direction of stability
+
+* By conforming to the COmmon Closure Principle (CCP), we create components that are sensitive to certain kinds of changes but immune to others.
+* A module that you have dsigned to be easy to changed can be made difficult to change by someone else who simply hangs a depdency on it.
+* By conforming to the Stable Dependencies Principle (SDP), we ensure that modules that are intended to be easy to change are not depended on by modules that are harder to change.
+
+#### Stability
+
+* Stability is related to the amount of work required to make a change.
+* The standing penny is not stable because it requires very little work to topple it.
+* A able is very stable because it takes considerable amount of effort to turn it over.
+* A component with lots of incoming dependencies is very stable because it requires a great deal of work to reconcile any changes with all the dependent components.
+* Three component depend on `X`, so it has three good reasons not to change. We say that `X` is _responsible_ to those three components.
+* `X` depends on nothing, so it has no external influence to make it change. We say it is _independent_.
+* No ther components depend on `Y`, so we say that it is irresponsible. `Y` also has three components that it depends on, so changes may come from three external sources. We say that `Y` is dependent.
+
+#### Stability Matrics
+
+* _Fan-in:_ Incoming dependencies. Number of classes outside this component that depend on classes within the component.
+* _Fan-out:_ Outgoing dependencies. Number of classes inside this component that depend on classes outside the component.
+* _I: Instability: I= Fan-out / (Fan-in + Fan-out)._ _I=0_ indicates a maximally stable component. _I=1_ indicates a maximally unstable component.
+* THe _I_ metric is easiest to calculate when you have organized your source code such that there is one class in each source file.
+* Its lack of dependents gives the component no reason not to change, and the components that it depends on may give it ample reason to change.
+* It is as stable as it can get. Its dependencies make it hard to change the component, and its has no dependencies that might force it to change.
+
+> The SDP says that the _I_ metric of a component should be larger that the _I_ metrics of the componets that it depends on.
+
+#### Not All Components Should be Stable
+
+* If all the componets in a system were maximally stable, the system would be unchangeable.
+* This violates the SDP because the _I_ metric for `Stable` is much smaller that the _I_ metric for `Flexible`. As a result, `Flexible` will no longer be easy to change. A change to `Flexible` will force us to deal with `Stable` and all its dependents.
+* We can fix this by employing the DIP. We create an interface class called `US` and put it in a component named `UServer`.
+
+#### Abstract Components
+
+### The Stable Abstractions Principle
+
+#### Where do We Put The High-Level Policy?
+
+#### Introducing the Stable Abstractions Principle
+
+#### Measuring Abstraction
+
+#### The Main Sequence
+
+#### The Zone of Pain
+
+#### The Zone of Uselessness
+
+#### Avoiding the Zones of Exclusion
+
+#### Distance from the Main Sequence
+
+### Conclusion
+
+
