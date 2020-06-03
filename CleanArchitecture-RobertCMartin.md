@@ -545,20 +545,74 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 15. What is Architecture?
 
+* Software architects are the best programmers, and they continue to take programming tasks, while they also guide the rest of the team toward a design that maximizes productivity.
+* The architecture of a software system is the shape given to that system by those who build it.
+* The form of that shape is in the division of that system into components, the arrangement of those components, and the ways in which those components communicate with each other.
+* THe purpose of that shape is to facilitate the development, deployment, operation and maintenance of the software system contained within it.
+> The strategy behind that facilitation is to leave as many options open as possible, for as long as possible.
+* This is not to say that architecture plays no role in supporting the proper behavior of the system.
+* But the role is passive and cosmetic, not active or essential.
+* Good architecture makes the system easy to understand, easy to develop, easy to maintain, and easy to deploy.
+
 ### Development
+
+* A software system that is hard to develop is not likely to have a long and healthy lifetime.
+* A small team of five devlopers can quite effectively work together to develop a monolithic system without well-defined components or interfaces.
+* A system being developed by five different teams, each of which includes seven developers, cannot make progress unless the system is divided into well-defined components with reliably stable interfaces.
 
 ### Deployment
 
+* To be effective, a software system must be deployable.
+* The higher the cost of deployment, the less useful the system is.
+* A goal of a software architecture, then, should be to make a system that can be easily deployed with a single action.
+* Deployment strategy is seldom considered during initial development.
+* For example, in the early development of a system, the developers may decide to use a "micro-service architecture".
+* This approach is easy to develop since the component boundaries are very firm and the interfaces relatively stable.
+* Configuring the connections between them, and the timing of their initiation, may also turn out to be a huge source of errors.
+
 ### Operation
+
+* Software systems that have inefficient architectures can often be made to work effectively simply by adding more storage and more servers.
+* The fact that hardware is cheap and people are expensive means that architectures that impede operation are not as costly as architectures that impede development, deployment, and maintenance.
+* The architecture of a system makes the operation of the system readily apparent to the developers.
+* Architecture should reveal operation.
 
 ### Maintenance
 
+* THe never-ending parade of new features and the inevitable trail of defects and corrections consume vast amounts of human resources.
+* THe primary cost of maintenance is in _spelunking_ and risk. Spelunking is the cost of digging through the existing software, trying to determine the best place and the best strategy to add a new feature or to repair a defect.
+* While making such changes, the likelihood of creating inadvertent defects is always there, adding to the cost of risk.
+
 ### Keeping Options Open
+
+* Software has two types of value: the value of its behavior and the value of its structure.
+* The way you keep software soft is to leave as many options open as possible, for as long as possible.
+* All software systems can be decomposed into two major elements: policy and details.
+* The policy element embodies all the business rules and procedures.
+* The details are those things that are necessary to enable humans, other systems, and programmers to communicate with the policy, but that do not impact the behavior of the policy at all.
+* The goal of the architect is to create a shape for the system that recognizes policy as the most essential element of the system while making the details _irrelevant_ to that policy.
+* If you can develop the high-level policy without commiting to the details that surround it, you can delay and defer decisions about those details for a long time.
+* THe longer you wait to make those decisions, _the more information you have with which to make them properly_.
+* This also leaves you the option to try different experiments.
+* The longer you leave options open, the more experiments you can run, the more things you can try, and the more information you will have when you reach the point at which those decisions can no longer be deferred.
+* A good architect pretends that the decision as not been made, and shapes the system such that those decisions can still be deferred or changed for as long as possible.
+> A good architect maximizes the number of decisions not made.
 
 ### Device Independence
 
+* The operating systems of the day abstracted the IO devices into software functions that handled unit records that looked like cards.
+* The programs would invoke operating system services that dealt with abstract unit-record devices.
+* Operators could tell the operating systems whether those abstract services should be connected to card readers, magnetic tape, or any other unit-record device.
+
 ### Junk Mail
+
+* Our program had a shape. That shape disconnected policy from detail. The policy was the formatting of the name and address records. The detail was the device. We deferred the decision about which device we would use.
 
 ### Physical Addressing
 
+* We change the high-level policy of the system to be agnostic about the physical structure of the disk. That allowed us to decouple that decision about disk drive structure from the application.
+
 ### Conclusion
+
+* Good architects carefully separate details from policy, and then decouple the policy from the details so thoroughly that the policy has no knowledge of the details and does not depend on the details in any way.
+* good architects design the policy so that decisions about the details can be delayed and deferred for as long as possible.
