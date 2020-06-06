@@ -27,7 +27,25 @@ With contributions by James Grenning and Simon Brown
 14. [Component Coupling](#14-component-coupling)
 15. [What is Architecture?](#15-what-is-architecture)
 16. [Independence](#16-independence)
-17. [Boundaries: Drawing Lines](#17-boundaries-drawing-lines)
+17. Boundaries: Drawing Lines
+18. Boundary Anatomy
+19. Policy and Level
+20. Business Rules
+21. Screaming Architecture
+22. The Clean Architecture
+23. Presenters and Humble Objects
+24. Partial Boundaries
+25. Layers and BOundaries
+26. The Main Components
+27. Services: Great and Small
+28. THe Test Boundary
+29. Clean Embedded Architecture.
+30. The Database is a Detail
+31. The Web is a Detail
+32. Frameworks are Details
+33. Case Study: Video Sales
+34. The Missing Chapter
+
 
 ---
 
