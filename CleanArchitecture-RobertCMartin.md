@@ -9,6 +9,10 @@ With contributions by James Grenning and Simon Brown
 
 **End date (estimated)**: Jun 21st, 2020.
 
+# Index:
+
+1. [What is Design and Architecture?](#what-is-design-and-architecture?)
+
 ---
 
 ## 1. What is Design and Architecture?
