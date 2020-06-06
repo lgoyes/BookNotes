@@ -1,6 +1,6 @@
 # Book notes
 
-In this repo, I will take some notes of the book I've read.
+In this repo, I will take some notes of the books I've read.
 
 ## 2019:
 
