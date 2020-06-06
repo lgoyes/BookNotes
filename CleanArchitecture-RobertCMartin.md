@@ -9,7 +9,7 @@ With contributions by James Grenning and Simon Brown
 
 **End date (estimated)**: Jun 21st, 2020.
 
-# Index:
+## Index:
 
 1. [What is Design and Architecture?](#1-what-is-design-and-architecture)
 2. [A Tale of Two Values.](#2-a-tale-of-two-values)
