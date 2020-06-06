@@ -12,6 +12,22 @@ With contributions by James Grenning and Simon Brown
 # Index:
 
 1. [What is Design and Architecture?](#1-what-is-design-and-architecture)
+2. [A Tale of Two Values.](#2-a-tale-of-two-values)
+3. [Paradigm Overview.](#3-paradigm-overview)
+4. [Structured Programming](#4-structured-programming)
+5. [Object-Oriented Programming](#5-object-oriented-programming)
+6. [Functional Programming](#6-functional-programming)
+7. [SRP: The Single Responsility Principle.](#7-srp-the-single-responsility-principle)
+8. [OCP: The Open-Closed Principle](#8-ocp-the-open-closed-principle)
+9. [LSP: The Liskov Substitution Principle](#9-lsp-the-liskov-substitution-principle)
+10. [ISP: The Interface Segregation Principle](#10-isp-the-interface-segregation-principle)
+11. [DIP: The Dependency Inversion Principle](#11-dip-the-dependency-inversion-principle)
+12. [Components](#12-components)
+13. [Component Cohesion](#13-component-cohesion)
+14. [Component Coupling](#14-component-coupling)
+15. [What is Architecture?](#15-what-is-architecture)
+16. [Independence](#16-independence)
+17. [Boundaries: Drawing Lines](#17-boundaries-drawing-lines)
 
 ---
 
