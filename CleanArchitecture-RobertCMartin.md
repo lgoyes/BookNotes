@@ -616,3 +616,127 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 * Good architects carefully separate details from policy, and then decouple the policy from the details so thoroughly that the policy has no knowledge of the details and does not depend on the details in any way.
 * good architects design the policy so that decisions about the details can be delayed and deferred for as long as possible.
+
+## 16. Independence
+
+* A good architecture must support:
+  * The use cases and operation of the system.
+  * THe maintenance of the system.
+  * The development of the system.
+  * The deployment of the system.
+
+### Use Cases
+
+* THe architecture of the system must support the intent of the system.
+* This is the first concern of the architect, and the first priority of the architecture.
+* Architecture does not wield much influence over the behavior of the system.
+* The most important thing a good architecture can do to support behavior is to clarify and expose that behavior so that the intent of the system is visible at the architectural level.
+* A shopping cart application with a good achitecture will _look_ like a shopping cart application.
+* Developers will not have to hunt for behaviors, because those behaviors will be first-class elements visible at the top level of the system.
+* Those elements will be classes or functions or modules that have prominent positions within the architecture.
+
+### Operation
+
+* Architecture plays a more substantial, and less cosmetic, role in supporting the operation of the system.
+* If the system must handle 100.000 customers per second, the architecture must support that kind of throughput and response time for each use case that demands it.
+* THis decision is one of the options that a good architectd leaves open.
+* An architeture that maintains the proper isolation of this components, and does not assume the means of communication between those components, will be much easier to transition through the spectrum of threads, processes, and services as the operational needs of the system change over time.
+
+### Development
+
+* Arhictecture plays a significant role in supporting the development environment.
+> Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.
+* A system that must be developed by an organization with many teams and many concerns, must have an architecture that facilitates independent actions by those teams, so that the teams do not interfere with each other during development.
+
+### Deployment
+
+* THe architecture also plays a huge role in determining the ease with which the system is deployed.
+* A good architecture does not rely on dozens of little configuration scripts and property file tweaks.
+* A good architecture helps the system to be immediately deployable after build.
+* This is achieved through the proper partitioning and isolation of the components of the system, including those master components that tie the whole system together and ensure that each component is properly started, integrated and supervised.
+
+### Leaving Options Open
+
+* A good architecture makes the system easy to change, in all the ways that it must change, by leaving options open.
+
+### Decoupling Layers
+
+* The architect wants the structure of the system to support all the necessary use cases, but does not know what all those use cases are. However, the architect DOES know the basic intent of the system.
+* Separate those things that change for different reasons, and to collect those things that change for the same reasons.
+* User interfaces change for reasons that have nothing to do with business rules.
+* A good architect will want to separate the UI portions of a use case from the business rule portions in such a way that they can be changed independently of each other, while keeping those use cases visible and clear.
+* THe validation of input fields is a business rule that is closely tied to the application itself.
+* The calculation of interest on an account and the counting of inventory are business rules that are more closely associated with the domain.
+* They should be separated so that they can be independetly changed.
+* The database, the query language, and even the schema are technical details that have nothing to do with the business rules or the UI.
+* The architecture should separate them from the rest of the system so that they can be independetly changed.
+* Some decoupled horizontal layers are: The UI, application-specific business rules, application-independent business rules, and the database.
+
+### Decoupling Use Cases
+
+* The use case for adding an order to an order entry system almost certainly will change at a different rate, and for different reasons, tham the use case that deletes an order from the system.
+* Each use case uses some UI, some application-specific business rules, some application-independent business rules, and some database functionality.
+* If you decouple the elements of the system that change for different reasons, then you can continue to add new use cases without interfering with old ones.
+* If you also group the UI and database in support of those use cases, so that each use case uses a different aspect of the UI and database, then adding new use cases will be unlikely to affect older ones.
+
+### Decoupling Mode
+
+* If different aspects of the use cases are separated, then those that must run at a high throughput are likely already separated from those that must run at a low throughput.
+* If the UI and the database have been separated from the business rules, then they can run in different servers.
+* To run in separate servers, the separated components cannot depend on being together in the same address space of a processor.
+* An architecture based on services is often called a service-oriented architecture.
+* I'm not going to tell you that SoA is the best possible architecture, or that microservices are the wave of the future.
+* Sometimes we have to separate our components all the way to the service level.
+* A good architecture leaves options open. _The decoupling mode is one of those options_.
+
+### Independent Develop-Ability
+
+* When components are strongly decoupled, the interference between teams is mitigated.
+* So long as the layers and use cases are decoupled, the architecture of the system will support the organization of the teams.
+
+### Independent Deployability
+
+* The decoupling of the use cases and layers also affords a high degree of flexibility in deployment.
+
+### Duplication
+
+* When code is truly duplicated, we are honor-bound as professionals to reduce and eliminate it.
+* There is true duplication, in which every change to one instance necessitates the same change to every duplicate of that instance.
+* If two appartently duplicated sections of code evolve along different paths, then _they are not true duplicates_. They are a false or accidental dupplication.
+* When you are vertically separating use cases from one another, you will run into this issue, and your temptation will be to couple the use cases because they have similar screen structures, or similar algorithms, or similar database queries and/or schemas. Be careful. Resist the temptation to commit the sin of knee-jerk elimination of duplication. Make sure the duplication is real.
+* When you are separating layers horizontally, you might notice that the data structure of a particular database record is very similar to the data structure of a particular screen view. You may be tempted to simply pass the database record up to the UI, rather than to create a view model that looks the same and copy the elements across. Be careful: This duplication is almost certainly accidental.
+
+### Decoupling Modes (Again)
+
+* **Source level.** Changes to one module do not force changes or recompilation of others. The components all execute in the same address space, and communicate with each other using simple function calls.
+* **Deployment level.** We can control the dependencies between deployable units such as jar files, DLLs, or shared libraries so that changes to the source code in one module do not force others to be rebuild and redeployed. Decoupled components are partitioned into independently deployable units such as jar files, Gem files, or DLLs.
+* **Service level.** We can reduce the dependencies down to the level of data structures, and communicate solely through network packets such that every execution unit is entirely independent of souce and binary changes to others.
+
+* It's hard to know which mode is best during the early phases of a project.
+* As the project matures, the optimal mode may change.
+* While the system runs on a single server, the source-level decoupling might be sufficient. Later, however, it might require dcoupling into deployable units, or even services.
+> Dealing with service boundaries where none are needed is waste of effort, memory and cyles. Specially effort.
+* Push the decoupling to the point where a service _could_ be formed; but then, leave the components in the same address space as long as possible.
+* As the development, deployment and operational issues increase, I carefully choose which deployable units to turn into services, and gradually shift the system in that direction.
+* A good architecture will allow a system to be born as a monolith, but then to grow into a set of independtly deployable units, and then all the way to independent services and/or micro-services.
+
+### Conclusion
+
+* The decoupling mode of a system is one of those things that is likely to change with time, and a good architect foresees and _appropriately_ facilitates those changes.
+
+## 17. Boundaries: Drawing Lines
+
+### A Couple of Sad Stories
+
+### FitNesse
+
+### Which LInes Do You Draw, and When Do You Draw Them?
+
+### What About Input and Output?
+
+### Plugin Architecture
+
+### The plugin Argument
+
+### Conclusion
+
