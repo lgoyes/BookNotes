@@ -11,7 +11,7 @@ With contributions by James Grenning and Simon Brown
 
 # Index:
 
-1. [What is Design and Architecture?](#what-is-design-and-architecture?)
+1. [What is Design and Architecture?](#what-is-design-and-architecture)
 
 ---
 
