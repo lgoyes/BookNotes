@@ -836,3 +836,30 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 ### Local Processes
 ### Services
 ### Conclusion
+
+## 19. Policy and Level
+
+### Level
+### Conclusion
+
+## 20. Business Rules
+
+### Entities
+### Use Cases
+### Request and Response Models
+### Conclusion
+
+## 21. Screaming Architecture
+
+### The Theme of and Architecture
+### The Purpose of and Architecture
+### But What About the Web?
+### Frameworks Are Tools, Not Ways of Life
+### Testable Architectures
+### Conclusion
+
+## 22. The Clean Architecture
+
+### The Dependency Rule
+### A Typical Scenario
+### Conclusion
