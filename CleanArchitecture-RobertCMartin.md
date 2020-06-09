@@ -27,7 +27,7 @@ With contributions by James Grenning and Simon Brown
 14. [Component Coupling](#14-component-coupling)
 15. [What is Architecture?](#15-what-is-architecture)
 16. [Independence](#16-independence)
-17. Boundaries: Drawing Lines
+17. [Boundaries: Drawing Lines](#17-boundaries-drawing-lines)
 18. Boundary Anatomy
 19. Policy and Level
 20. Business Rules
@@ -764,17 +764,75 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 17. Boundaries: Drawing Lines
 
+* Boundaries separate software elements from one another, and restrict those on one side from knowing about those on the other.
+* Those that are drawn early are drawn or the purposes of deferring decisions for as long as possible, and of keeping those decisions from polluting the core business logic.
+* A good system architecture is one in which decisionslike these are rendered ancillary and deferrable.
+* A good system architecture allows those decisions to be made at the latest possible moment, without significant impact.
+
 ### A Couple of Sad Stories
+
+* The tragedy is that the architects, by making a premature decision, multiplied the development effort enormously.
+* There's nothing intrinsically wrong with a software system that is structured around services. The error at `W` was the premature adoption and enforcement of a suite of tools that promised SoA - that is, the premature adoption of a massive suite of domain object services.
 
 ### FitNesse
 
+* We purposely delayed that decision by employing a design that made the decision irrelevant. That design was simply to put an interface between all data accesses and the data repository itself.
+* We didn't implement those methods at first: we simply stubbed them out while we worked on features that didn't involve fetching and saving the data.
+* Three months later, we reached the conclusion that the flat file solution was good enough; we decided to abandon the idea of MySQL altogether. We deferred that decision into nonexistence and never looked vack.
+* He came back _a day later_ with the whole system working in MySQL. He simply wrote a `MySqlWikiPage` derivative and got it working.
+* Warly in the development of `FitNesse`, we drew a _boundary_ line between business rules and databases. That line prevented the business rules from knowing anything at all about the database, other than the simple data access methods.
+* It also meant that all our tests ran fast, because there was no database to slow them down.
+* In short, drawing the boundary lines helped us delay and defer decisions, and it ultimately saved us an enormous amount of time and headaches. And that's what a good architecture should do.
+
 ### Which LInes Do You Draw, and When Do You Draw Them?
+
+* You draw lines between things that matter and things that don't. The GUI doesn't matter to the business rules, so there should be a line between them.
+* THe database doesn't matter to the GUI, so there should be a line between them.
+* THe database doesn't batter to the business rules, so there should be a line between them.
+* The database is a tooll that the business rules can use _indirectly_.
+* THe business rules don't need to know about the schema, or the query language, or any of the other details about the database.
+* All the business rules need to know is that there is a set of functions that can be used to fetch or save data.
+* THis allow us to put the database behind an interface.
+* The boundary is drawn across the inheritance relationship.
+* Note the two arrows leaving the `DatabaseAccess` class. Those two arrows point away from the `DatabaseAccess` class. That means that none of these classes knows that the `DatabaseAccess` class exists.
+* The `BusinessRules` do not know about the `Database`. This implies that the `DatabaseInterface` classes live in the `BusinessRules` component, while the `DatabaseAccess` classes live in the `Database` component.
+* `Database` does not matter to the `BusinessRules`, but the `Database` cannot exits without the `BusinessRules`.
+* The `Database` component contains the code that translated the calls made by the `BusinessRules` into the query language of the database.
+* The `BusinessRules` could use _any_ kind of database. The `Database` component could be replaced with many different implementations -the `BusinessRules` don't care.
 
 ### What About Input and Output?
 
+* The _IO_ is irrelevant.
+* We often think about the behavior of the system in terms of the behavior of the IO.
+* Your experience is dominated by the interface: the screen, the mouse, the buttons, and the sounds.
+* More importantly, that model (some data strctures and functions) does not need the interface.
+* The _GUI_ could be replaced with any other kind of interface -and the `BusinessRules` would not care.
+
 ### Plugin Architecture
+
+* These two decisions about the database and the GUI create a kind of pattern for the addition of other components.
+* The history of software development technology is the story of how to conveniently create plugins to establish a scalable and maintainable system architecture.
+* The core business rules are kept separate from, and independent of, those components that are either optional or that can be implemented in many different forms.
+* Because the user interface in this design is considered to be a plugin, we have made it possible to plug in many different kinds of user interfaces.
+* THe same is true of the database. Since we have chosen to treat it as a plugin we can replace it with any of the vaious SQL database, or a NOSQL database.
+* These replacements might not be trivial. Even so, by starting with the presuption of a plugin structure, we have at very least made such a change practical.
 
 ### The plugin Argument
 
+* That's a deeply asymmetric relationship, and it is one that we desire to have in our own systems. We want certain modules to be immune to others.
+* We don't want changes in one part of the system to cause other unrelated parts of the system to break.
+* Arranging our systems into a plugin architecture creates firewalls across which changes cannot propagate.
+
 ### Conclusion
 
+* Dependency arrows are arranged to point from lower-level details to higher-level abstractions.
+
+## 18. Boundary Anatomy
+
+### Boundary Crossing
+### The Deade Monolith
+### Deployment Components
+### Threads
+### Local Processes
+### Services
+### Conclusion
