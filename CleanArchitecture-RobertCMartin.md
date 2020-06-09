@@ -863,3 +863,29 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 ### The Dependency Rule
 ### A Typical Scenario
 ### Conclusion
+
+## 23. Presenters and Humble Objects
+
+### The Humble Object Pattern
+### Presenters and Views
+### Testing and Architecture
+### Databse Gateways
+### Data Mappers
+### Service Listeners
+### Conclusion
+
+## 24. Partial Boundaries
+
+### Skip the Last Step
+### One-Dimensional BOundaries
+### Facades
+### Conclusion
+
+## 25. Layers and Boundaries
+
+### Hunt the Wumpus
+### Clean Architecture?
+### Crossing the Streams
+### Splitting the Streams
+### Conclusion
+
