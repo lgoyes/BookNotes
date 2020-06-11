@@ -28,8 +28,8 @@ With contributions by James Grenning and Simon Brown
 15. [What is Architecture?](#15-what-is-architecture)
 16. [Independence](#16-independence)
 17. [Boundaries: Drawing Lines](#17-boundaries-drawing-lines)
-18. Boundary Anatomy
-19. Policy and Level
+18. [Boundary Anatomy](#18-boundary-anatomy)
+19. [Policy and Level](#19-policy-and-level)
 20. Business Rules
 21. Screaming Architecture
 22. The Clean Architecture
@@ -899,8 +899,6 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 * We want source code dependencies to be decoupled from data flow and _coupled to level_.
 * Keeping these policies separate, with all source code dependencies pointing in the direction of the higher-level policies, reduces the impact of change.
 * Trivial but urgent changes at the lowest levels of the system have little or no impact on the higher, more important, levels.
-
-### Conclusion
 
 ## 20. Business Rules
 
