@@ -829,17 +829,77 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 18. Boundary Anatomy
 
+* The architecture of a system is defined by a set of software components and the boundaries that separate them.
+
 ### Boundary Crossing
-### The Deade Monolith
+
+* A boundary crossing is nothing more than a function on one side of the boundary calling a function on the other side and passing along some data.
+* When one source code module changes, other source code module may have to be changed or recompiled, and then, redeployed.
+
+### The Deaded Monolith
+
+* The simplest and most common of the architectural boundaries has no strict physical representation. It is simply a disciplined segregation of functions and data within a single processor and a single address space.
+* From a deployment point of view, this amounts to nothing more than a single executable file -the so-called monolith.
+* THe fact that the boundaries are not visible during the deployment of a monolith does not mean that they are not present and meaningful.
+* Even when statically linked into a single executable, the ability to independently develop and marshal the various components for final assembly is immensely valuable.
+* Such architectures almost always depend on some kind of dynamic polymorphism to manage their internal dependencies.
+* The simplest possible boundary crossing is a function call from a low-level client to a higher-level service.
+* When a high-level client needs to invoke a lower-level service, dynamic polymorphism is used to invert the dependency against the flow of control.
+* All dependencies cross the boundary from right to left _toward the higher-level component_.
+* The definition of the data structure is on the calling side of the boundary.
+* This kind of disciplined partitioning can greatly aid the job of developing, testing, and deploying the project.
+* High-level components remain independent of lower-level details.
+* Since the deployment of monoliths usually requires compilation and static linking, components in these systems are typically delivered as source code.
+
 ### Deployment Components
+
+* The simplest physical reprsentation of an architectural boundary is a dynamically linked library like a .Net DLL, a Java jar file, a Ruby Gem, or a UNIX shared library. Deployment does not involve compilation.
+* Instead, the components are delivered in binary, or some equivalent deployable form.
+* This is the deployment-level decoupling mode. The act of deployment is simply the gathering of these deployable units together in some convenient form.
+* As with monoliths, communications across deployment component boundaries are just function calls and, therefore, are very inexpensive.
+
 ### Threads
+
+* Threads are not architectural boundaries or units of deployment, but rather a way to organize the schedule and order of execution.
+
 ### Local Processes
+
+* Local processes run in the same processor, or in the same set of processors withing a multicore, but run in separate address spaces.
+* Most ofthen, local processes communicate with each other using sockets, or some other kind of operating system communications facility such as mailboxes or message queues.
+* The segregation strategy between local processes is the same as for monoliths and binary components. Source code dependencies point in the same direction across the boundary, and always toward the higher-level component.
+* Communication across local process boundaries involve operating system calls, data marshaling and decoding, and interprocess context switches, which are moderately expensive.
+
 ### Services
+
+* The strongest boundary is a service.
+* Services do not depend on their physical location.
+* The services assume that all communications take place over the network.
+* Communications across service boundaries are very slow compared to function calls.
+* Care must be taken to avoid chatting where possible.
+* Communications at this level must deal with high levels of latency.
+
 ### Conclusion
+
+* This means that the boundaries in a system will often be a mixture of local chatty boundaries and boundaries that are more concerned with latency.
 
 ## 19. Policy and Level
 
+* A computer program is a detailed description of the policy by which inputs are transformed into outputs.
+* That policy can be broken down into many different smaller statements of policy. Some of those statements will describe how particular business rules are to be calculated. Other will describe how certain reports are to be formatted. Still others will describe how input data are to be validated.
+* Part of the art of developing a software architecture is carefully separating those policies from one another, and regrouping them based on the ways that they change.
+* The art of architecture often involves forming the regrouped components into a directed acyclic graph. THe nodes of the graph are the components that contain policies at the same level.
+* Those dependencies are source code, compile-time dependencies.
+* Low-level components are designed so that they depend on high-level components.
+
 ### Level
+
+* The farther a policy is from both the inputs and the outputs of the system, the higher its level.
+* The policies that manage input and output are the lowest-level policies in the system.
+* The data flows and the source code dependencies do not always point in the same direction.
+* We want source code dependencies to be decoupled from data flow and _coupled to level_.
+* Keeping these policies separate, with all source code dependencies pointing in the direction of the higher-level policies, reduces the impact of change.
+* Trivial but urgent changes at the lowest levels of the system have little or no impact on the higher, more important, levels.
+
 ### Conclusion
 
 ## 20. Business Rules
