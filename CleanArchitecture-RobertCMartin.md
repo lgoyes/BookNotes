@@ -30,8 +30,8 @@ With contributions by James Grenning and Simon Brown
 17. [Boundaries: Drawing Lines](#17-boundaries-drawing-lines)
 18. [Boundary Anatomy](#18-boundary-anatomy)
 19. [Policy and Level](#19-policy-and-level)
-20. Business Rules
-21. Screaming Architecture
+20. [Business Rules](#20-business-rules)
+21. [Screaming Architecture](#21-screaming-architecture)
 22. The Clean Architecture
 23. Presenters and Humble Objects
 24. Partial Boundaries
@@ -902,19 +902,83 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 20. Business Rules
 
+* What business rules actually are: It turns out there are several different kinds.
+* Business rules are rules or procedures that make or save the business money.
+* THe fact that a bank charges _N%_ interest for a loan is a business rule that makes the bank money. It doesn't matter if a computer program calculates the interest, or if a clerk with an abacus calculates the interest.
+* We shall call these rules _Critial Business Rules_, because they are critical to the business itself, and would exist even if there were no system to automate them.
+* Critial Business Rules usually require some data to work with.
+* We shall call this data _Critial Business Data_. This is the data that would exist even if the system were not automated.
+
 ### Entities
+
+* An Entity is an object withing our computer system that embodies a small set of critical business rules operating on Critical Business Data.
+* The Entity object either contains the Critical Business Data or has very easy access to that data.
+* This class stands alone as a representative of the business.
+* It could serve the business in any system, irrespective of how that system was presented, or how the data was stored, or how the computers in that system were arranged. The Entity is pure business and _nothing_ else.
+
 ### Use Cases
+
+* Some business rules make or save money for the business by defining and constraining the way that an _automated_ sytem operates.
+* The bank may decide that it does not want the loan officers to offer loan payment estimates until they have first gathered, and validated, contact information and ensured that the candidate's credit score is 500 or higher.
+* A use case is a description of the way that an automated system is used.
+* It specifies the input to be provided by the user, the output to be returned to the user, and the processing steps involved in producing that output. A use case describes _application-specific_ business rules as opposed to the Critical Business Rules within the Entities.
+* Use cases contain the rules that specify how and when the Critical Business Rules within the Entities are invoked.
+* Use cases control the dance of the Entities.
+* The use case does not describe the user interface other than to informally specify the data coming in from that in from that interface, and the data going back out through that interface. From the use case, it is impossible to tell whether the application is delivered on the web, or on a thick client, or on a console, or is a pure service.
+* Use cases do not describe how the system appears to the user.
+* Use cases describe the application-specific rules that govern the interaction between the users and the Entities.
+* How the data gets in and out of the system is irrelevant to the use cases.
+* Entities have no knowledge of the use cases that control them.
+* High-level concepts, such as Entities, know nothing of lower-level concepts, such as use cases.
+* Use cases are specific to a single application and, therefore, are closer to the inputs and outputs of that system.
+* Entities are generalizations that can be used in many different applications, so they are farther from the inputs and outputs of the system.
+
 ### Request and Response Models
+
+* The use case class accepts simple request data structures for its input, and returns simple response data structures as its output. THese data structures are not dependent on anything.
+* If the request and response models are not independent, then the use cases that depend on them will be indirectly bound to whatever dependencies the models carry with them.
+* You might be tempted to have these data structures contain references to Entity objects. Avoid this temptation!
+
 ### Conclusion
+
+* Ideally, the code that represents the business rules should be the heart of the system, with lesser concerns being plugged in to them.
 
 ## 21. Screaming Architecture
 
+* When you look at the top-level directory stucture, and the source files in the highest-level package, do they screal "Health Care System", or "Accounting System", or "Inventory Management System"? Or do they scream "Rails", or "Sprint/Hibernate" or "ASP"?
+
 ### The Theme of and Architecture
+
+* Just as the plans for a house or a library scream about the use cases of those buildings, so should the architecture of a software application scream about the use cases of the application.
+* Architectures are not (or should not be) about frameworks. Architecrures should not be supplied by frameworks. Frameworks are tools to be used, not architectures to be conformed to.
+
 ### The Purpose of and Architecture
+
+* Good architectures are centereed on use cases so that architects can safely describe the structures that support those use cases without committing to frameworks, tools and environments.
+* Consider the plans for a house. The first concern of the architect is to make sure that the house is usable - Not to ensure that the house is made of bricks.
+* A good architecture emphasizes the use cases and decouples them from peripheral concerns.
+
 ### But What About the Web?
+
+* The web is a delivery mechanism -an IO device- and your application architecture should treat it as such.
+* The fact that your application is delivered over the web is a detail and should not dominate your system structrue.
+
 ### Frameworks Are Tools, Not Ways of Life
+
+* Look at each framework with a jaded eye. View it skeptically. Tes, it might help, but at what cost?
+* Think about how you can preserve the use-case emphasis of your architecture. Develop a strategy that prevents the framework from taking over that architecture.
+
 ### Testable Architectures
+
+* If your system architecture is all about the use cases, and if you have kept your frameworks at arm's length, then you should be able to unit-test all those use cases without any of the frameworks in place.
+* You shouldn't need the web server running to run your tests. You shouldn't need the database connected to run your tests.
+* Your Entity objects should be plain old objects that have no dependencies on frameworks or databases or other complications.
+* Your use case objects should coordinate your Entity objects.
+* All of them together should be testable in situ.
+
 ### Conclusion
+
+* Your architecture should tell readers about the system, not about the frameworks you used in your system.
 
 ## 22. The Clean Architecture
 
@@ -947,3 +1011,76 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 ### Splitting the Streams
 ### Conclusion
 
+## 26. The Main Component
+
+### THe Ultimate Detail
+### Conclusion
+
+## 27. Services: Great and Small
+
+### Service Architecture?
+### Service Benefits?
+### The Kitty Problem
+### Objects to the Rescue
+### Component-Based Services
+### Cross-Cutting Concerns
+### Conclusion
+
+## 28. The Test Boundary
+
+### Tests as System Components
+### Design for Testability
+### The Testing API
+### Conclusion
+
+## 29. Clean Embedded Architecture
+
+### App-titude Test
+### The Target-Hardware Bottleneck
+### Conclusion
+
+## 30. The Database Is a Detail
+
+### Relational Databses
+### Why Are Database System So Prevalent?
+### Whay If There Were No Disk?
+### Details
+### But What about Performance?
+### Anecdote
+### Conclusion
+
+## 31. The Web Is A Detail
+
+### The Endless Pendulum
+### The Upshot
+### Conclusion
+
+## 32. Frameworks Are Details
+
+### Framework Authors
+### Asymmetric Marriage
+### The Risks
+### The Solution
+### I Now Pronounce You...
+### Conclusion
+
+## 33. Case Study: Video Sales
+
+### The Product
+### Use Case Analysis
+### Component Architecture
+### Dependency Management
+### Conclusion
+
+## 34. The missing CHapter
+
+### Package by Layer
+### Package by Feature
+### Ports and Adapters
+### Package by Component
+### The Devil Is in the Implementation Details
+### Organization versus Encapsulation
+### Other Decoupling Modes
+### Conclusion: The Missing Advice
+
+## Afterword
