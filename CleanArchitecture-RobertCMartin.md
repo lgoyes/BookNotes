@@ -33,18 +33,18 @@ With contributions by James Grenning and Simon Brown
 20. [Business Rules](#20-business-rules)
 21. [Screaming Architecture](#21-screaming-architecture)
 22. [The Clean Architecture](#22-the-clean-architecture)
-23. Presenters and Humble Objects
-24. Partial Boundaries
-25. Layers and BOundaries
-26. The Main Components
-27. Services: Great and Small
-28. THe Test Boundary
-29. Clean Embedded Architecture.
-30. The Database is a Detail
-31. The Web is a Detail
-32. Frameworks are Details
-33. Case Study: Video Sales
-34. The Missing Chapter
+23. [Presenters and Humble Objects](#23-presenters-and-humble-objects)
+24. [Partial Boundaries](#24-partial-boundaries)
+25. [Layers and Boundaries](#25-layers-and-boundaries)
+26. [The Main Components](#26-the-main-components)
+27. [Services: Great and Small](#27-services-great-and-small)
+28. [The Test Boundary](#28-the-test-boundary)
+29. [Clean Embedded Architecture](#29-clean-embedded-architecture)
+30. [The Database is a Detail](#30-the-database-is-a-detail)
+31. [The Web is a Detail](#31-the-web-is-a-detail)
+32. [Frameworks are Details](#32-frameworks-are-details)
+33. [Case Study: Video Sales](#33-case-study-video-sales)
+34. [The Missing Chapter](#34-the-missing-chapter)
 
 
 ---
