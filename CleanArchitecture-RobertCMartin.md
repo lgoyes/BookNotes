@@ -32,7 +32,7 @@ With contributions by James Grenning and Simon Brown
 19. [Policy and Level](#19-policy-and-level)
 20. [Business Rules](#20-business-rules)
 21. [Screaming Architecture](#21-screaming-architecture)
-22. The Clean Architecture
+22. [The Clean Architecture](#22-the-clean-architecture)
 23. Presenters and Humble Objects
 24. Partial Boundaries
 25. Layers and BOundaries
@@ -982,9 +982,79 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 22. The Clean Architecture
 
+* There are several architectures, such as "Hexagonal Architecture", "DCI" and "BCE" that have the same objective, which is the separation of concerns.
+* THey all achieve this separation by dividing the software into layers.
+* Each of these architectures produces systems that have the following characteristics:
+  * Independent of frameworks: This allows you to use such frameworks as tooks, rather than forcing you to cram your system into their limited constraints.
+  * Testable: The business rules can be tested without any external element.
+  * Independent of the UI: A web UI could be replaced with a console UI, for example, without changing the business rules.
+  * Independent of the database.
+  * Independent of any external agency: Your business rules don't know anything at all about the interfaces to the outside world.
+
 ### The Dependency Rule
+
+* In general, the further in you go, the higher level the software becomes. The outer circles are mechanisms. The inner circles are policies.
+* Source code dependencies must point only inward, toward higher-level policies.
+* Nothing in an inner circle can know anything at all about something in an outer circle.
+* The name of something declared in an outer circle must not be mentioned by the code in an inner circle.
+* We don't want anything in an outer circle to impact the inner circles.
+
+#### Entities
+
+* Entities encapsulate enterprise-wide Critial Business Rules. An entity can be an object with methods, or it can be a set of data structures and functions.
+* They encapsulate the most general and high-level rules.
+* They are the least likely to change when something external changes.
+
+#### Use Cases
+
+* The software in the use cases layer contains _application-specific_ business rules.
+* It encapsulates and implements all of the use cases of the system.
+* These use cases orchestrate the flow of data to and from the entities, and direct those entities to use their Critical Business Rules to achieve the goals of the use case.
+* We do expect that changes to the operation of the application will affect the use cases and, therefore, the software in this layer.
+* If the details of a use case change, then some code in this layer will certainly be affected.
+
+#### Interface Adapters
+
+* The software in the interface adapters layer is a set of adapters that convert data from the format most convenient for the use cases and entites, to the format most convenient for some external agency such as the database or the web.
+* The presenters, views and controllers all belon in the interface adapters layer.
+* Data is converted, in this layer, from the form most convenient for entities and use cases, to the form most convenient for whatever persistence framework in being used.
+* Also in this layer is any other adapter necessary to convert data from some external form, such as an external service, to the internal form used by the use cases and entities.
+
+#### Frameworks and Drivers
+
+* Generally you don't write much code in this layer, other than glue code that communicates to the next circle inward.
+* We keep these things on the outside where they can do little harm.
+* The Dependency Rule always applies. Souce code dependencies always point inward. As you move inward, the level of abstraction and policy increases.
+
+#### Crossing Boundaries
+
+* It show the controllers and presenters communicating with the use cases in the next layer.
+* Note the flow of control: It begins in the controller, moves through the use case, and then winds up executing in the presenter.
+* Note also the source code dependencies: Each points inward toward the use cases.
+* Suppose the use case needs to call the presenter. This call must not be direct because that would violate the Dependency Rule: No name in an outer circle can be mentioned by an inner circle.
+* So we have the use case call an interface in the inner circle, and have the presenter in the outer circle implement it.
+* We take advantage of dynamic prolymorphism to create source code dependencies that oppose the flow of control, so that we can conform to the Dependency Rule, no matter which direction the flow of control travels.
+
+#### Which Data Crosses the Boundaries
+
+* Typically the data that crosses the boundaries consists of simple data structures.
+* The important thing is that isolated, simple data structures are passed across the boundaries. We don't want to cheat and pass Entity objects or database rows.
+* Many database frameworks return a convenient data format in response to a query. We might call this a "row structure". We don't want to pass that row structure inward across a boundary.
+
 ### A Typical Scenario
+
+* The `Controller` packages the data into a plain old Java object and passes this object through the `InputBoundary` to the `UseCaseInteractor`.
+* The `UseCaseInteractor` interprets that data and uses it to control the dance of the `Entities`.
+* It also uses the `DataAccessInterface` to bring the data used by those `Entities` into memory from the `Database`.
+* `UseCaseInteractor` gathers data from the `Entities` and constructs the `OutputData` as another plain old Java object. The `OutputData` is then passed through the `OutputBoundary` interface to the `Presenter`.
+* The job of the `Presenter` is to repackage the `OutputData` into viewable form as the `ViewModel`, which is yet another plain old Java object.
+* Whereas the `OutputData` may contain `Date` objects, the `Presenter` will load the `ViewMOdel` with corresponding `Strings` already formatted properly for the user.
+* `Button` and `MenuItem` names are placed in the `ViewModel`, as are flags that tell the `View` whether those `Buttons` and `MenuItems` should be gray.
+* This leaves the `View` with almost nothing to do other than to move the data from the `ViewMOdel` into the `HTML` page.
+
 ### Conclusion
+
+* By separating the software into layers and conforming to the Dependency Rule, you will create a system that is intrinsically testable, with all the benefits that implies.
 
 ## 23. Presenters and Humble Objects
 
