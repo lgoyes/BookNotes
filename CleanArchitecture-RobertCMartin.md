@@ -1058,26 +1058,93 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 
 ## 23. Presenters and Humble Objects
 
+* Presenters are a form of the _Humble Object_ pattern, which helps us identify and protect architectural boundaries.
+
 ### The Humble Object Pattern
+
+* The _Humble Object_ pattern is a design pattern that was identified as a way to help unit testers to separate behaviors that are hard to test from behaviors that are easy to test.
+* Split the behaviors into two modules or classes. One of those modules is humble; it contains all the hard-to-test behaviors stripped down to their barest essence. The other module contains all the testable behaviors that were stripped out of the humble object.
+* Using the _Humble Object_ pattern, we can separate these two kinds of behaviors into two different classes called the Presenter and the View.
+
 ### Presenters and Views
+
+* The View is the humble object that is hard to test. The code in this object is kept as simple as possible.
+* The Presenter is the testable object. Its job is to accept data from the application and format it for presentation so that the View can simply move it to the screen.
+* If the application wants a date displayed in a field, it will hand the Presenter a `Date` object. The Presenter will then format that data into an appropriate string and place it in a simple data structure called the `View Model`, where the View can find it.
+* Every button on the screen will have a name. That name will be a string in the View Model, placed there by the presenter. If those buttons should be grayed out, the Presenter will set an appropriate boolean flag in the View model.
+* Every menu item name is a string in the View model, loaded by the Presenter.
+* Anything and everything that appears on the screen, and that the application has some kind of control over, is represented in the View Model as a string, or a boolean, or an enum. Thus, the View is humble.
+
 ### Testing and Architecture
+
+* The separation of the behaviors into testable and non-testable parts often defines an architectural boundary.
+
 ### Databse Gateways
+
+* Between the use case interactors and the database are the database gateways. These gateways are polymorphic interfaces that contain methods for every create, read, update or delete operation that can be performed by the application of the database.
+* Recall that we do not allow SQL in the use cases layer; instead, we use gateway interfaces that have appropriate methods. Those gateways are implemented by classes in the database layer. That implementation is the humble object.
+* The interactors are not humble because they encapsulate application-specific business rules. Although they are not humble, those interactors are _testable_, because the gateways can be replaced with appropriate stubs and test-doubles.
+
 ### Data Mappers
+
+* There is no such thing as an object relational mapper (ORM). The reason is simple: Objects are not data structures.
+* The users of an object cannot see the data, since it is all prive.
+* A data structure, in contrast, is a set of public data variables that have no implied behavior.
+* ORMs would be better named "data mappers", because they load data into data structures from relational database tables.
+* Where should such ORM systems reside? In the database layer.
+* ORMs form another kind of _Humble Object_ boundary between the gateway interfaces and the database.
+
 ### Service Listeners
+
+* The application will load data into simple data structures and then pass those structures across the boundary to modules that properly format the data and send it to external services.
+* The service listeners will receive data from the service interface and format it into a simple data structure that can be used by the application.
+
 ### Conclusion
+
+* At each architectural boundary, we are likely to find the _Humble Object_ pattern lurking somewhere nearby.
+* The boundary will frequently divide something that is hard to test from something that is easy to test.
 
 ## 24. Partial Boundaries
 
+* Full-fledged architectural boundaries are expensive. They require reciprocal polymorphic `Boundary` interfaces, `Input` and `Output` data structures, and all of the dependency management necessary to isolate the two sides into independently compilable and deployable components.
+* A good architect might judge that the expense of such a boundary is too high.
+* This kind of anicipatory design is often frowned upon by many in the Agile community as a violation of YAGNI: "You Aren't Going to Need it". Architects, however, sometimes look at the problem and think, "Yeah, but I might". In that case, they may implement a partial boundary.
+
 ### Skip the Last Step
+
+* One way to construct a partial boundary is to do all the work necessary to create independently compilable and deployable components, and then simply keep them together in the same component.
+* Obviosly, this kind of partial boundary requires the same amount of code and preparatory design work as a full boundary.
+* Over time, as it became clear that there would never be a need for a separate web component, the separation between the web component and the wiki component began to weaken.
+* Dependencies started to cross the line in the wron direction.
+
 ### One-Dimensional BOundaries
+
+* A simpler stucture that serves to hold the place for later extension to a full-fledged boundary, exemplifies the traditional _Strategy_ pattern. A `ServiceBoundary` interface is used by clients and implemented by `ServiceImpl` classes.
+* Without reciprocal interfaces, nothing prevents this kind of backchannel other than the diligence and discipline of the developers and architects.
+
 ### Facades
+
+* An even simpler boundary is the _Facade_ pattern. In this case, even the dependency inverseion is sacrificed.
+* The boundary is simply defined by the _Facade_ class, which lists all the services as methods, and deploys the service calls to classes that the client is not supposed to access.
+* Note, however, that the _Client_ has a trasitive dependency on all those service classes.
+
 ### Conclusion
+
+* Each of these approaches has its own set of costs and benefits. Each is appropriate, in certain contests, as a placeholder for an eventual full-fledged boundary.
+* Each can also be degraded if that boundary never materializes.
 
 ## 25. Layers and Boundaries
 
 ### Hunt the Wumpus
+
 ### Clean Architecture?
+
+* It should be clear that we could easily apply the clean architecture approach in this context, with all the use cases, boundaries, entities, and corresponding data structures But, have we really found all the significant architectural boundaries?
+
 ### Crossing the Streams
+
+* So, as systems become more complex, the component structure may split into many such streams.
+
 ### Splitting the Streams
 ### Conclusion
 
