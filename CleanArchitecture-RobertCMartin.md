@@ -7,7 +7,7 @@ With contributions by James Grenning and Simon Brown
 
 **Start date**: May 21st, 2020.
 
-**End date (estimated)**: Jun 21st, 2020.
+**End date (estimated)**: Jun 30th, 2020.
 
 ## Index:
 
@@ -1146,19 +1146,83 @@ A value of 0 implies that the component has no abstract classes at all. A value 
 * So, as systems become more complex, the component structure may split into many such streams.
 
 ### Splitting the Streams
+
+* At this point you may be thinking that all the streams eventually meet at the top in a single component. The reality, of course, is much more complex.
+* `MoveManagement` is handled locally within the player's computer, but `PlayerManagement` is handled by a server. `PlayerManagement` offers a micro-service API to all the connected `MoveManagement` components.
+* A full-fledged architectural boundary exists between `MoveManagement` and `PlayerManagement` in this case.
+
 ### Conclusion
+
+* This example is intended to show that architectural boundaries exist everywhere. We, as architectus, must be careful to recognize when they are needed.
+* We also have to be aware that such boundaries, when fully implemented, are expensive.
+* When such boundaries are ignored, they are very expensive to add in later -even in the presence of comprehensive test-suites and refactoring discipline.
+* Some very smart people have told us, that we should not anticipate the need for abstraction (You aren't going to need it).
+* Over-engineering is often much worse thatn under-engineering.
+* WHen you discover that you truly do need an architectural boundary where none exists, the costs and risks can be very high to add such a boundary.
+* O software Architect, you must see the future. You must guess -intelligently.
+* You pay attention as the system evolves. You note where boundaries may be required, and then carefully watch for the first inkling of friction because those boundaries don't exist.
+* Your goal is to implement the boundaries right at the inflection point where the cost of implementing becomes less than the cost of ignoring.
 
 ## 26. The Main Component
 
-### THe Ultimate Detail
+* In every system, there is at least one component that creates, coordinates, and oversees the others. I call this component `Main`.
+
+### The Ultimate Detail
+
+* It is the initial entry point of the system. Nothing, other than the operating system, depends on it.
+* Its job is to create all the Factories, Strategies, and other global facilities and then hand control over to the high-level abstract portions of the system.
+* It is in this `Main` component that dependencies should be injected by a Dependency Injection framework.
+* Once they are injected into `Main`, `Main` should distribute those dependencies normally, without using the framework.
+* This of `Main` as the dirtiest of all the dirty components.
+* Notice also that `main` creates the input stream and contains the main loop of the game, interpreting the simple input commands, but then defers all processing to other, higher-level components.
+* The point is that `Main` is a dirty low-level module in the outermost circle of the clean architecture. It loads everything up for the high level system, and then hands control over to it.
+
 ### Conclusion
+
+* Think of `Main` as a plugin to the application -a plugin that sets up the initial conditions and configurations, gathers all the outside resources, and then hands control over the high-level policy of the applications. Since it is a plugin, it is possible to have many `Main` components, one for each configuration of your application.
+* When you think about `Main` as a plugin component, sitting behind an architectural boundary, the problem of configuration becomes a lot easier to solve.
 
 ## 27. Services: Great and Small
 
+* Service-oriented "architectures" and micro-service "architectures" have become very popular of late. The reasons for their current popularity include the following:
+1. Services seem to be strongly ddecoupled from each other.
+2. Services appear to support independence of development and deployment. 
+
 ### Service Architecture?
+
+* The architecture of a system is defined by boundaries that separate high-level policy from low-level detail and follow the Dependency Rule. Services that simply separate application behaviors are little more that expensive funciton calls, and are not necessarily architecturally significant.
+* This is not to say that all services _should_ be architecturally significant. There are often benefits to creating services that separate functionality across processes and platforms
+* It's just that services, in and of themselvs, do not define an architecture.
+* Services are, after all, just function calls across process and/or platform boundaries. Some of those services are architecturally significat, and some aren't.
+
 ### Service Benefits?
+
+#### The Decoupling Fallacy
+
+Yes, services are decoupled at the level of individual variables. However, they can still be coupled by shared resources withing a processor, or on the network. What's more, they are strongly coupled by the data they share.
+* For example, if a new field is added to a data record that is passed between services. Those services are strongly coupled to the data record and therefore, indirectdly coupled to each other.
+* Service interfaces are no more formal, no more rigorous, and no better defined than functions interfaces.
+
+#### The Fallacy of Independent Development and Deployment
+
+* It is believed that large enterprise systems can be created from dozens, hundreds, or even thousands of independently developable and deployable services.
+* History has shown that large enterprise systems can be built from monoliths and component-based systems as well as service-based systems.
+* Services cannot always be independently developed, deployed and operated. To the extend that they are coupled by data or behavior, the development, deployement and operation must be coordinated.
+
 ### The Kitty Problem
+
+* This system knows about many taxi providers in a given city, and allows customers to order rides.
+* We wanted our system to be scalable, so we chose to build it out of lots of little micro-services.
+* How many of those services will have to change to implement this feature? All of them.
+* The services are all coupled, and cannot be independently develop, deployed and maintained.
+* This is the problem with cross-cutting concerns. Every software system must face this problem, whether service oriented or not. Functional decompositions, are very vulnerable to new features that cut across all those functional behaviors.
+
 ### Objects to the Rescue
+
+Careful consideration of the SOLID design principles would have prompted us to create a set of classes that could be polymorphically extended to handle new features.
+* These two components override the abstract base classes in the original components usuing a pattern such as _TEmplate Method_ or _Strategy_.
+* Note also that the classes that implement those features are created by factories under the control of the UI.
+
 ### Component-Based Services
 ### Cross-Cutting Concerns
 ### Conclusion
