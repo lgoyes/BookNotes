@@ -1220,23 +1220,88 @@ Yes, services are decoupled at the level of individual variables. However, they 
 ### Objects to the Rescue
 
 Careful consideration of the SOLID design principles would have prompted us to create a set of classes that could be polymorphically extended to handle new features.
+* Much of the logic in the original services is preserved withing the base classes of the object model.
 * These two components override the abstract base classes in the original components usuing a pattern such as _TEmplate Method_ or _Strategy_.
 * Note also that the classes that implement those features are created by factories under the control of the UI.
 
 ### Component-Based Services
+
+* Services do not need to be little monoliths. Services can, instead, be designed using the SOLID principles, and given a component structure so that new components can be added to them without changing the existing components withing the service.
+* Deploying a new feature then becomes not a matter of redeploying the services, but rather a matter of simply _adding_ the new jar files to the load paths of those services.
+* Adding new features conforms to the Open-Closed Principle.
+* The services still exist as before, but each has its own internal component design, allowing new features to be added as new derivative classes.
+
 ### Cross-Cutting Concerns
+
+* Architectural boundaries do not fall _between_ services. Rather, those boundaries run _through_ the services, dividing them into components.
+* Services must be designed with internal component architectures that follow the Dependency Rule.
+* Those services do not define the architectural boundaries of the system; instead, the components withing the services do.
+
 ### Conclusion
+
+* As useful as services are to the scalability and develop-ability of a system, they are not, in and of themselves, architecturally significant elements.
+* The architecture of a system is defined by the boundaries drawn within that system, and by the dependencies that cross those boundaries. That architecture is not defined by the physical mechanisms by which elements communicate and execute.
 
 ## 28. The Test Boundary
 
+* _The tests are part of the system_, and they participate in the architecture just like every other part of the system does.
+
 ### Tests as System Components
+
+* From an architectural point of view, all tests are the same.
+* Tests, by their very nature, follow the Dependency Rule; they are very detailed and concrete; and they always depend inward toward the code being tested. In fact, you can think of the tests as the outermost circle in the architecture.
+* Tests are also independently deployable. In fact, most of the time they are deployed in test systems, rather than in production systems.
+* Tests are the most isolated system component. They are not necessary for system operation. No user depends on them. Their role is to support development, not operation.
+
 ### Design for Testability
+
+* Tests that are not wel integrated into the design of the system tends to be fragile, and they make the system rigid and difficult to change.
+* Tests that are strongly coupled to the system must change along with the system. Even the most trivial change to a system component can cause many coupled tests to break or require changes.
+* Changes to common system components can cause hundreds, or even thousands, of tests to break. This is known as the _Fragile Test Problem_.
+* Fragile tests often have the perverse effect of making the system rigid. When developers realize that simple changes to the system can cause massive tests failures, they may resist making those changes.
+* The solution is to design for testability. The first rule of software design is always the same: _Don't depend on volatile things_. GUIs are volatile. Test suites that operate the system through the GUI m_must be fragile_. Therefore design the system, and the tests, so that business rules can be tested without using the GUI.
+
 ### The Testing API
+
+* The way to accomplish this goal is to create a specific API that the tests can use to verify all the business rules.
+* This API should have supperpowers that allow the tests to avoid security constraints, bypass expensive resources, and force the system into particular testable states.
+* This API will be a superset of the suite of _interactors_ and _interface adapters_ that are used by the user interface.
+
+#### Structural Coupling
+
+* Imagine a test suite that has a test class for every production class, and a set of test methods for every production method. Such a test suite is deeply coupled to the structure of the application.
+* When one of those production methods or classes changes, a large number of tests must change as well. Consequently, the tests are fragile, and they make the production code rigid.
+* The role of the testing API is to hide the structure of the application from the tests.
+* This separation of eveolution is necessary because as time passes, the tests tend to become increasingly more concrete and specific. In contrast, the production code tends to become increasingly more abstract and general.
+
+#### Security
+
+The superpowers of the testing API could be dangerous if they were deployed in production systems. If this is a concern, then the testing API and the dangerous parts of its implementation, should be kept in a separate, independently deployable component.
+
 ### Conclusion
+
+* Tests that are not designed as part of the system tend to be fragile and difficult to maintain.
 
 ## 29. Clean Embedded Architecture
 
+* Although software does not wear out, firmware and hardware become obsolete, thereby requiring software modifications.
+* _Software_ is this thing that can have a long useful life, but _firmware_ will become obsolete as hardware evolves.
+* _Although software does not wear out, it can be destroyed from within by unmanaged dependencies on firmware and hardware_.
+* Firmware does not mean code lives in ROM. It's not firmware because of where it is stored; rather, it is firmware because of what it depends on and how hard it is to change as hardware evolves. Hardware does evolve, so we should structure or embedded code with that reality in mind.
+* You non-embedded developers essentially write firmware whenever you bury SQL in your code or when you spread platform depdencies throughout your code. Android app developers write firmware when they don't separate their business logic from the Android API.
+* The existing implementation had no separation between TDM (Time-Division Multiplexing) and the business logic of making calls. The whole product was hardware/technology dependent from top to bottom and could not be untangled. The whole product had essentially become firmware.
+* Unsurprisingly, there is a message processor/dispatcher. The message processor knows the format of messages, is able to parse them, and can then dispatch the message to the code that can handle the request.
+* None of this is surprising, except that the message processor/dispatcher resides in the same file as code that interacts with a UART hardware. THe message processor is polluted with UART details. The message processor could have been software with a potentially long useful life, but instead it is firmware.
+
 ### App-titude Test
+
+* Most of the emphasis is on getting the embedded code to work, and not so much emphasis is placed on structuring it for a long useful life.
+* Kent Beck describes three activities in building software:
+  1. "First make it work". _You are out of business if it doesn't work_
+  2. "Then make it right". _Refactor the code so that you and others can understand it and evolve it as needs change or are better understood._
+  3. "Then make it fast". _Refactor the code for "needed" performance._
+* Most non-embedded apps are build just to work, with little regard to making the code right for a long useful life.
+
 ### The Target-Hardware Bottleneck
 ### Conclusion
 
