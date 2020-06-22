@@ -1301,9 +1301,68 @@ The superpowers of the testing API could be dangerous if they were deployed in p
   2. "Then make it right". _Refactor the code so that you and others can understand it and evolve it as needs change or are better understood._
   3. "Then make it fast". _Refactor the code for "needed" performance._
 * Most non-embedded apps are build just to work, with little regard to making the code right for a long useful life.
+* Getting an app to work is what I call the _App-titude test_ for a programmer.
+* There is much more to programming than just getting an app to work.
+* This application works: The engineer passed the App-titude test. But the application can't be said to have a clean embedded architecture.
 
 ### The Target-Hardware Bottleneck
+
+* There are many special concerns that embedded developers have to deal with that non-embedded developers do not -for example, limited memory space, real-time constraints and deadlines, limited IO, unconventional user interfaces, and sensors and connections to the real world.
+* When embedded conde is structured without appltying clean architecture principles and practices, you will often face the scenario in which you can test your code only on the target. If the target is the only place where testing is possible, the target-hardware bottleneck will show you down.
+
+#### A Clean Embedded Arhcitecture Is A Testable Embedded Architecture
+
+##### Layers
+
+* There is nothing that keeps hardware knowledge from polluting all the code. If you are not careful about where you put things and what one module is allowed to know about another module, the code will be very hard to change.
+* Software and firmware intermingling is an anti-pattern. Code exhibiting this anti-pattern will resist changes.
+* If you have not created externally instrumented tests, expect to get bored with manual tests- and then you can expect new bug reports.
+
+##### The Hardware Is a Detail
+
+* The name of the boundary between the software and the firmware is the hardware abstraction layer (HAL).
+* The HAL exists for the software that sits on top of it, and its API should be tailored to that software's needs.
+* The software should not be concerned that the name/value pairs are stored in flash memory, a spinning disk, the cloud, or core memory.
+* What is the LED indicating? Suppose that it indicadted low battery power. At some level, the firmware could provide `Led_TurnOn(5)`, while the HAL provides `Indicate_LowBattery()`. You can see the HAL expressing services needed by the application.
+
+#### Don't Reveal Hardware Details To The User Of The HAL
+
+##### The Processor Is a Detail
+
+* Sometimes vendor-supplied C compilers provide what look like global variables to give access directly to processor registers, IO ports, clock timers, IO bits, interrpt controller, and other processor functions.
+* It is helpful to get access to these things easily, but realize that any of your code that uses these helpful facilities is no longer C. It won't compile for another processor, or maybe even with a different compiler for the same processor.
+* You will have to limit which files are allowed to know about the C extensions.
+* If that is not bad enough, one day you'll want to port your application to another processor, and you will have made that task much more difficult by not choosing portability and by not limiting what files know about ACME.
+* Certainly, all of the _software_ should be processor independent, but not all the _firmware_ can be.
+* It's likely your product uses this micro controller so that you can use its integrated peripherals.
+* THe uppercase variables actually access micro-controller built-in peripherals. If you want to control interrupts and output characters, you must use these peripherals. Yes, this is convenient - but it-s not C.
+* A clean embedded architecture would use these device access registers directly in very few places and confine them totally to the _firmware_. Anything that knows about these registers becomes _firmware_ and is consequently bout to the silicon.
+* If you use a micro-controller like this, your firmware could isolate these low-level functions with some form of a _processor abstraction layer_ (PAL). Firmware above the PAL could be tested off-target, making it a little less firm.
+
+#### The Operating System Is a Detail
+
+* In bare-metal embedded systems, a HAL may be all you need to keeps your code from getting to addicted to the operating environment.
+* You have to treat the operating system as a detail and protect against OS dependencies.
+* WHat if your needs change and your RTOS does not have the capabilities that you now require? You'll have to change lots of code. These won't just be simple syntactical changes due to the new OS's API, but will likely have to adapt semantically to the new OS's different capabilities and primities.
+* A clean embedded architecture isolates software from the operating system through an _operating system abstraction layer_ (OSAL). In some cases, implementing this layer might be as simple as changing the name of a function. In other cases, it might involve wrapping several functions together.
+* Which would you rather do: modify a bunch of complex existing code, or write new code to a defined interface and behavior? This is not a trick question. I choose the latter.
+* THe layer becomes the place where much of the duplicatio naround using an OS is isolated.
+
+#### Programming to Interfaces and Substitutability
+
+* THe idea of a layered architecture is build on the idea of programming to interfaces. When one module interacts with another though an interface, you can substitute one service provider for another.
+* Limit the visibility of the implementation details. Expect the implementation details to change. The fewerplaces where code knows the details, the fewer places where code will have to be tracked down and modified.
+
+#### DRY Conditional Compilation Directives
+
+* There is a tendency to use conditional compilation to turn on and off segments of code. I recall one especially problematic case where the statement `#ifdef BOARD_V2` was mentioned several thousand times in a telecom application. 
+* If I see `#ifdef BOARD_V2` once, it's not really a problem. _Six thousand times_ is an extreme problem.
+* Conditional compilation indentifying the target-hardware's type is often repeated in embedded systems.
+* THe hardware type would become a detail hidden under the Hardware Abstraction Layer (HAL). If the HAL provides a set of interfaces, instead of using conditional compilation, we could use the linker or some form of runtime binding to connect the software to the hardware.
+
 ### Conclusion
+
+* Letting all code become firmware is not good for your product's long-term health. Being able to test only in the target hardware is not good for your product's long-term health.
 
 ## 30. The Database Is a Detail
 
