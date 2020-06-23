@@ -1366,19 +1366,68 @@ The superpowers of the testing API could be dangerous if they were deployed in p
 
 ## 30. The Database Is a Detail
 
+* From an architectural point of view, the database is a non-entity -it is a detail that does not rise to the level of an architectural element.
+* THe structure you give to the data within your application is highly significat to the architecture of your system. But the database is not the data model.
+* THe database is a utility that provides access to the data.
+
 ### Relational Databses
+
+* THe relational model is elegant, disciplined, and robust.
+* While relational tables may be convenient for certain forms of data access, there is nothing architecturally significat about arranging datda into rows within tables.
+* Knowledge of the tabular structure of the data should be restricted to the lowest-level utility functions in the outer circles of the architecture.
+* Many data access frameworks allow database rows and tables to be passed around the system as objects. Allowing this is an architectural error.
+
 ### Why Are Database System So Prevalent?
+
+* To mitigate the time delay imposed by disks, you need indexes, caches, and optimized query schemes; and you need some kind of regular means of representing the data so that these indexes, caches, and query schemes know what they are working with.
+* You need a data access and management system. These systems have split into two distinct kinds: file systems and relational database management systems (RDBMS).
+* File systems are document based. They provide a natural and convenient way to store whole documents. They work well when you need to save and retrieve a set of documents by name, but they don't offer a lot of help when you're searching the content of those documents.
+* Database systems are content base. They provide a natural and convenient way to find records based on their content. They are rather poor at storing and retrieving opaque documents.
+* Both of these systems organize the data on disk so that it can be stored and retrieved in as efficient a way as possible, given their particular access needs.
+
 ### Whay If There Were No Disk?
+
+* When all the disks are gone, and all your data is stored in RAM, how will you organize the data?
+* You'll organize it into linked lists, trees, hash tables, stacks, queues, or any of the other myriad data structures, and you'll access it using pointers or references.
+
 ### Details
+
+* It's just a mechanism we use to move the data back and forth between the surface of the disk and RAM.
+* From an architectdural viewpoint, we should not care about the form that the data takes while it is on the surface of a rotating magnetic disk.
+
 ### But What about Performance?
+
+* Isn't performance an architectural concern? Of course it is -but when it comes to data storage, it's a concern that can be entirely encapsulated and separated from the business rules.
+
 ### Anecdote
+
+* We had no need of a relational database because our data had few content-based relationships. It was better kept in trees and linked lists in those random access files. In short, we kept the data in a form that was most convenient to load into RAM where it could be manipulated.
+* The reason I was wrong was because our customers expected us to have a relational database. They didn't know what they would do with it. They didn't have any realistic way of using the relational data in our system. But it didn't matter: Our customers fully expected an RDBMS. It had become a check box item that all the software purchasers had on their list.
+* Where did that need come from? It originated from the highly effective marketing campaigns employed by the database vendors at the time.
+
 ### Conclusion
+
+* The organizational structure of data, the data model, is architecturally significat. The technologies and systems that move data on and off a rotating magnetic surface are not.
 
 ## 31. The Web Is A Detail
 
+* These oscillations move back and forth between putting all the computer power in central servers and putting all computer power out at the terminals.
+
 ### The Endless Pendulum
+
+* We go back and forth between centralizing it and distributing it.
+* Those oscillations are just short-term issues that we want to push away from the central core of our business rules.
+* What should you have done before this point to protect your application from that marketing genius?
+* You should have decoupled your business rules from your UI.
+* I do hope the architects at A, and the architects of the apps, keep their UI and business rules isolated from each other, because there are always marketing geniuses out there just waiting to punce on the next little bit of coupling you create.
+
 ### The Upshot
-### Conclusion
+
+* The GUI is a detail. The web is a GUI. So the web is a detail.
+* THe WEB is an IO device. In the 1960s, we learned the value of writing applications that were device independent. The motivation for that independence has not changed. The web is not an exception to that rule.
+* The interaction between the application and the GUI is "chatty" in ways that are quite specific to the kind of GUI you have. The dance between a browser and a web application is different from the dance between a desktop GUI and its application. Trying to abstract out that dance, the way devices are abstracted out of UNIX, seems unlikely to be possible.
+* The business logic can be thought of as a suite of use cases, each of which performs some funcdtions on behalf of a user. Each use case can be described based on the input data, the processing performed, and the output data.
+* The complete input data and the resultant output data can be placed into data structures and used as the input values and output values for a process that executes the use case. With this approach, we can consider each use case to be operating the IO device of the UI in a device-independent manner.
 
 ## 32. Frameworks Are Details
 
