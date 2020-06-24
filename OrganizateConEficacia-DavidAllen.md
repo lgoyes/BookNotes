@@ -14,8 +14,8 @@
 2. [Controla tu vida: las cinco fases para dominar el flujo de trabajo]()
 3. [Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos]()
 4. [Puesta en marcha: establece el tiempo, el espacio y las herramientas]()
-5. [Capturando: acorralando tus <<asuntos>>]()
-6. [Clarificando: llevando las <<entradas>> a cero]()
+5. [Capturando: acorralando tus _asuntos_]()
+6. [Clarificando: llevando las _entradas_ a cero]()
 7. [Organizando: creando los recipientes adecuandos]()
 8. [Reflexionando: manteniendo la funcionalidad del sistema]()
 9. [Actuando: tomando las mejores decisiones de acción]()
@@ -43,11 +43,11 @@
 
 
 
-## 5. Capturando: acorralando tus <<asuntos>>
+## 5. Capturando: acorralando tus _asuntos_
 
 
 
-## 6. Clarificando: llevando las <<entradas>> a cero
+## 6. Clarificando: llevando las _entradas_ a cero
 
 
 
