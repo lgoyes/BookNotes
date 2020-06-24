@@ -7,7 +7,7 @@ With contributions by James Grenning and Simon Brown
 
 **Start date**: May 21st, 2020.
 
-**End date (estimated)**: Jun 30th, 2020.
+**End date**: Jun 24th, 2020.
 
 ## Index:
 
