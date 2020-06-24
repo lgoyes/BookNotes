@@ -1431,30 +1431,139 @@ The superpowers of the testing API could be dangerous if they were deployed in p
 
 ## 32. Frameworks Are Details
 
+* However, frameworks are not architectures - though some try to be.
+
 ### Framework Authors
+
+* Your problems will likely overlap with those other problems quite a bit. If this were not the case, frameworks would not be so popular. To the extent that such overlap exists, frameworks can be very useful indeed.
+
 ### Asymmetric Marriage
+
+* You must make a huge commitment to the framework, but the framework author makes no commitment to you whatsoever.
+* Wrapping your architecture around that framework. The author recommends that you derive from the fraemwork's base classes, and import the framework's facilities into your business objects. The author urges you to _couple_ your application to the framework as tighly as possible.
+* For the framework author, coupling to his or her own framework is not a risk. The author _wants_ to couple to that framework, because the author has absolute control over that framework.
+* Nothing feels more validating to a framework author than a bunch of users willing to inextricably derive from the author's base classes.
+* In affect, the author is asking you to marry the framework -to make a huge, long-term commitment to that framework.
+
 ### The Risks
+
+* What are the risks?
+  * The architecture of the framework is often not very clean. Frameworks tend to violate the Dependency Rule. THey ask you to inherit their code into your business objects -your Entities!
+  * The framework may help you with some early features of your application. However, as your product matures, it may outgrow the facilities of the framework.
+  * You may be suck upgrading to new versions that don't help you. You may even find old features, which you made use of, disappearing or changing in ways that are difficult for you to keep up with.
+  * A new and better framework may come along that you wish you could switch to.
+
 ### The Solution
+
+* Don't marry the framework!
+* You can _use_ the framework -just don't couple to it.
+* Treat the framework as a detail that belongs in one of the outer circles of the architecture. Don't let it into the inner circles.
+* Don't let frameworks into your core code. Instead, integrate them into components that plug in to your core code, following the Dependency Rule.
+* For example, maybe you like Spring. Spring is a good dependency injection framework. Maybe you use Spring to auto-wire your dependencies. That's fine, but you should not sprinkle `@autowired` annotations all throughout your business objects. Your business objects should not know about Sprint.
+
 ### I Now Pronounce You...
+
+* There are some frameworks that you simply must marry.
+* That's normal - but it should still be a _decision_.
+
 ### Conclusion
+
+* Keep the framework behind an architectural boundary, if at all possible, for as long as possible. Perhaps you can find a way to get the milk without buying the cow.
 
 ## 33. Case Study: Video Sales
 
 ### The Product
+
+* Individuals typically act as both the viewers and the purcharsers. Business, in contrast, often have people who buy the videos that other people will watch.
+
 ### Use Case Analysis
+
+* * THe four main actors are evident. According to the Single Responsibility Principle, these four actors will be the four primary sources of change for the system. Every time some new feature is added, or some existing feature is changed, that step will be taken to serve one of these actors.
+* We want to partition the system such that a change to one actor does not affect any of the other actors.
+* They are _abstrat_ use cases. An abstract use case is one that sets a general policy that another use case will flesh out.
+* It was not strictly necessary for me to create that abstraction. I could have left the abstract use case out of the diagram without compromising any of the features of the overall product.
+* These two use cases are so _similar_ that I thought it wise to recognize the similarity and find a way to unify it early in the analysis.
+
 ### Component Architecture
+
+* You can also see that I've broken each of those categories up by their corresponding actors.
+* Each of the components in Figure 33.2 represents a potential `.jar` file or `.dll` file.
+* I assume that those views and presenters will be coded into abstract classes within those components, and that the inheriting components will contain view and presenter classes that will inherit from those abstract classes.
+* Would I really break the system up into all these components, and deliver them as `.jar` or `.dll` files? Yes and no. I would certainly break the compile and build environment up this way, so that I _could_ build independent deliverables like that.
+* Given the partitioning in Figure 33.2, it would be easy to combine them into five `.jar` files -one for views, presenters, interactors, controllers, and utilities, respectively. I could then independently deploy the components that are most likely to change independently of each other.
+* Another possible grouping would be to put the views and presenters together into the same `.jar` file, and put the interactors, controllers, and utilities in their own `.jar` file.
+* Keeping these options open will allow us to adapt the way we deploy the system based on how the system changes over time.
+
 ### Dependency Management
+
+* The flow of control in Figure 33.2 proceeds from right to left. Input occurs at the controllers, and that input is processed into a result by the interactors. The presenters then format the results, and the views display those presentations.
+* All dependencies cross the boundary lines in one direction, and they always point toward the components containing the higher-level policy.
+* The using relationships (open arrows) point _with_ the flow of control, and that the _inheritance_ relationships (closed arrows) point _against_ the flow of control.
+
 ### Conclusion
 
-## 34. The missing CHapter
+* The architecture diagram includes two dimensions of separation. The first is the separation of actors based on the Single Responsibility Principle; the second is the Dependency RUle. The goal of both is to separate components that change for different reasons, and at different rates. The different reasons correspond to the actors; the different rates correspond to the different levels of policy.
+* Once you have structured the code this way, you can mix and match how you want to actually deploy the system. You can group the components into deployable deliverables in any way that makes sense, and easily change that grouping when conditions change.
+
+## 34. The missing Chapter
 
 ### Package by Layer
+
+* The first, and perhaps simplest, design approach is the traditional horizontal layered architecture, where we separate our code based on what it does from a technical perspective. This is often called "package by later".
+* In this typical layered architecture, we have one layer for the web code, one layer for our "business logic", and one layer for persistence.
+* In a "strict layered architecture" layers should depend only on the next adjacent lower layer.
+* In "Presentation Domain Data Layaring", Martin Fowler says that adopting such a layered architecture is a good way to get started. He's not alone. Many of the books, tutorials, training courses, and sample code you'll find will also point you down the path of creating a layered architecture. It's a very quick way to get something up and running without a huge amount of complexity. The problem, as Martin points out, is that once your software grows in scale and complexity, you will quickly find that having three large buckets of code isn't sufficient, and you will need to think about modularizing further.
+* Another problem is that, a layered architecture doesn't scream anything about the business domain.
+
 ### Package by Feature
+
+* Another option for organizing your code is to adopt a "package by feature" style. This is a vertical slicing, based on related features, domain concepts, or aggregate roots.
+* With this approach, we have the same interfaces and classes as before, but they are all placed into a single Java package rather that being split among three packages.
+* But the top-level organization of the code now screams something about the business domain.
+* We can now see that this code base has something to do with orders rather than the web, services, and repositories.
+* I often see software development teams realize that they have problems with horizontal layering and switch to vertical layering instead. In my opinion, both are suboptimal.
+
 ### Ports and Adapters
+
+* Business/domain-focused code is independent and separate from the technical implementation details such as frameworks and databases. To summarize, you often see such code bases being composed of an "inside" (domain) and an "outside" (infrastructure).
+* The "inside" region contains all the domain concepts, whereas the "outside" region contains the interactions with the outside world.
+* The `com.mycomany.myapp.domain` package here is the "inside", and the other packages are the "outside". Notice how the dependencies flow toward the "inside".
+
 ### Package by Component
+
+* The purpose of a layered architecture is to separate code that has the same sort of functions.
+* The dependency arrows still point downward, but the `OrdersController` is now additionally bypassing the `OrdersService` for some use cases. This organization is often called a _relaxed layered architecture_, as layers are allowed to skip around their adjacent neighbor(s). In some situations, this is the intended outcome -if you're trying to follow the CQRS pattern.
+* Many teams I've met simply say, "We enforce this principle through good discipline and code reviews, because we trust our developers". This confidence is great to hear, but we all know what happens when budgets and deadlines start looming ever closer.
+* THis brings us to the "package by component" option. It's a hybrid approach to everything we've seen so far, with the goal of bundling all the responsibilities related to a single coarse-grained component into a single Java package.
+* My definition of a component is slightly different: "A grouping of related functionality behind a nice clean interface, which resides inside an execution environment like an application".
+* Each of which contains one or more component, which in turn are implemented by one or more classes. Whether each component resides in a separate jar file is an orthogonal concern.
+
 ### The Devil Is in the Implementation Details
+
+* Sometimes I see on a regular basis is an overly liberal use of the `public` access modifier in languages such as Java. It's almost as if we, as developers, instinctively use the `public` keyworkd without thinking.
+* Marking all of your types as `public` means you're not taking advantage of the facilities that your programming language provides with regard to encapsulation.
+* There's literally nothing preventing somebody from writing some code to instantiate a concrete implementation class directly, violating the intended architecture style.
+
 ### Organization versus Encapsulation
+
+* If you make all types in your Java application `public`, the packages are simply an organization mechanism, rather than being used for encapsulation.
+* If we look back at the example UML diagrams, the Java packages become an irrelevant detail if all of the types are marked as `public`. In essence, all four architectural approaches presented earlier in this chapter are exactly the same when we overuse this designation.
+* You could argue that when you make all of the types `public`, what you really have are just four ways to describe a traditional horizontally layered architecture.
+* In the "package by layer" approach, the `OrdersService` and `OrdersRepository` interfaces need to be `public`, because they have inbound depdencies from classes outside of their defining package. In contrast, the implementation classes can be made more restrictive.
+* The `OrdersController` provices the sole entry point into the package, so everything else can be made package protected.
+* In the "package by component" approach, the `OrdersComponent` interface has an inbound depdency from the controller, but everything else can be made package protected.
+* Just to be absolutely clear, what I've described here related to a monolithic application, where all the code resides in a single source code tree.
+* I would certainly encourage you to lean on the compiler to enforce your architectural principles, rather than relying on self-discipline and post-compilation tooling.
+
 ### Other Decoupling Modes
+
+* Another option is to decouple your dependencies at the source code level, by splitting code across _different source code trees_. If we take the ports and adapters example, we could have three source code tress:
+  * The source code for the business and domain (i.e., everything that is independent of technology and framework choices).
+  * The source code for the web: `OrdersController`.
+  * The source code for the data parsistence: `JdbOrdersRepository`
+* From an implementation perspective, you can do this by configuring separate modules or projects in your build tool (e.g. Maven, Gradle, MSBuild). Ideally you would repeat this pattern, having a separate source code tree for each and every component in your application.
+
 ### Conclusion: The Missing Advice
 
-## Afterword
+* The whole point of this chapter is to highlight that your best design intentions can be destroyed in a flash if you don't consider the intricacies of the implementation strategy.
+* Leave options open where applicable, but be pragmatic, and take into consideration the size of your team, their skill level, and the complexity of the solution in conjunction with your time and budgetary constraints.
