@@ -11,8 +11,8 @@
 ## Index:
 
 0. Previo
-  1. [Introducción a la edición revisada](#introducción-a-la-edición-revisada)
-  2. [Bienvenido a _Organízate con eficacia_](#bienvenido-a-organízate-con-eficacia)
+    1. [Introducción a la edición revisada](#introducción-a-la-edición-revisada)
+    2. [Bienvenido a _Organízate con eficacia_](#bienvenido-a-organízate-con-eficacia)
 1. [Un nuevo método para una nueva realidad](#1-un-nuevo-método-para-una-nueva-realidad)
 2. [Controla tu vida: las cinco fases para dominar el flujo de trabajo](#2-controla-tu-vida-las-cinco-fases-para-dominar-el-flujo-de-trabajo)
 3. [Poniendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos](#3-poniendo-en-marcha-los-proyectos-con-creatividad-las-cinco-fases-de-la-planificación-de-proyectos)
