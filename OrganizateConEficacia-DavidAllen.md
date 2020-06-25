@@ -10,24 +10,25 @@
 
 ## Index:
 
-0. 1. [Introducción a la edición revisada]()
-0. 2. [Bienvenido a _Organízate con eficacia_]()
-1. [Un nuevo método para una nueva realidad]()
-2. [Controla tu vida: las cinco fases para dominar el flujo de trabajo]()
-3. [Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos]()
-4. [Puesta en marcha: establece el tiempo, el espacio y las herramientas]()
-5. [Capturando: acorralando tus _asuntos_]()
-6. [Clarificando: llevando las _entradas_ a cero]()
-7. [Organizando: creando los recipientes adecuandos]()
-8. [Reflexionando: manteniendo la funcionalidad del sistema]()
-9. [Actuando: tomando las mejores decisiones de acción]()
-10. [Controlar los proyectos]()
-11. [El poder del hábito de capturar]()
-12. [El poder de la decisión sobre la acción siguiente]()
-13. [El poder de enfocarse en los resultados]()
-14. [GTD y la ciencia cognitiva]()
-15. [El camino hacia el dominio de GTD]()
-16. [Conclusión]()
+0. Previo
+  1. [Introducción a la edición revisada](#introducción-a-la-edición-revisada)
+  2. [Bienvenido a _Organízate con eficacia_](#bienvenido-a-organízate-con-eficacia)
+1. [Un nuevo método para una nueva realidad](#1-un-nuevo-método-para-una-nueva-realidad)
+2. [Controla tu vida: las cinco fases para dominar el flujo de trabajo](#2-controla-tu-vida-las-cinco-fases-para-dominar-el-flujo-de-trabajo)
+3. [Poniendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos](#3-poniendo-en-marcha-los-proyectos-con-creatividad-las-cinco-fases-de-la-planificación-de-proyectos)
+4. [Puesta en marcha: establece el tiempo, el espacio y las herramientas](#4-puesta-en-marcha-establece-el-tiempo-el-espacio-y-las-herramientas)
+5. [Capturando: acorralando tus _asuntos_](#5-capturando-acorralando-tus-asuntos)
+6. [Clarificando: llevando las _entradas_ a cero](#6-clarificando-llevando-las-entradas-a-cero)
+7. [Organizando: creando los recipientes adecuados](#7-organizando-creando-los-recipientes-adecuados)
+8. [Reflexionando: manteniendo la funcionalidad del sistema](#8-reflexionando-manteniendo-la-funcionalidad-del-sistema)
+9. [Actuando: tomando las mejores decisiones de acción](#9-actuando-tomando-las-mejores-decisiones-de-acción)
+10. [Controlar los proyectos](#10-controlar-los-proyectos)
+11. [El poder del hábito de capturar](#11-el-poder-del-hábito-de-capturar)
+12. [El poder de la decisión sobre la acción siguiente](#12-el-poder-de-la-decisión-sobre-la-acción-siguiente)
+13. [El poder de enfocarse en los resultados](#13-el-poder-de-enfocarse-en-los-resultados)
+14. [GTD y la ciencia cognitiva](#14-gtd-y-la-ciencia-cognitiva)
+15. [El camino hacia el dominio de GTD](#15-el-camino-hacia-el-dominio-de-gtd)
+16. [Conclusión](#16-conclusión)
 
 ## Introducción a la edición revisada.
 
