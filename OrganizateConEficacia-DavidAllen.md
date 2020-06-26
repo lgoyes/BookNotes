@@ -78,6 +78,63 @@
 
 ## 1. Un nuevo método para una nueva realidad
 
+* PUede darse la circunstancia de que una persona tenga una cantidad abrumadora de cosas que hacer y que, aun así, funcione de manera productiva con la cabeza despejada y la sensación óptima de controlar tranquilamente lo que está haciendo.
+* Comprometido adecuadamente con el momento.
+* Lo que estás haciendo es exactamente lo que deberías estar haciendo, teniendo en cuenta el espectro completo de tus compromisos e intereses. Estás totalmente disponible. Estás conectado.
+* Si eres como la mayoría de las personas, tienes que aplicar estas capacidad de una forma más oportuna, completa y sistemática para poder estar encima de todo, en lugar de tener la sensación de estar enterrado.
+* Los pequeños cambios que se requieren -cambios en cómo clarificas y organizas todas las cosas que merecen tu atención- podrían representar una alteración significativa en tu forma de enfocar algunos aspectos clave de las actividades cotidianas.
+* Los métodos que expongo aquí se basan todos en tres objetivos clave:
+    1. capturar _todas_ las cosas que quizás haya que hacer o te sean útiles
+    2. instarte a tomar decisiones por adelantado sobre todas las "entradas" que permitas introducir en tu vida, de modo que siempre tengas un inventario viable de "acciones siguientes" que puedas aplicar o reorganizar en el momento;
+    3. organizar y coordinar todo ese contenido, mediante la aceptación de los múltiples niveles de compromiso que tendrás que poner en juego contigo mismo y con los demás en todo momento.
+
+### EL PROBLEMA: NUEVAS EXIGENCIAS, RECURSOS INSUFICIENTES
+
+* En este nuevo milenio ha surgido una paradoja: las personas tienen una calidad de vida mejor, pero al mismo tiempo están aumentando sus niveles de estrés al aceptar encargarse de más cosas de las que les permiten sus recursos.
+* La multitud de opciones y oportunidades conlleva la presión de la elección y la toma de decisiones y la búsqueda de la fórmula para mejorar la situación de algún modo tiene sumidas en la perplejidad y la frustración a la mayoría de las personas.
+
+#### El trabajo ya no tiene unos límites definidos
+
+* Solo en la segunda mitad del siglo XX, lo que en el mundo industrializado constituía el "trabajo", pasó de ser una actividad de cadena de producción y distribución, al trabajo del "conocimiento".
+* Antiguamente, el trabajo estaba claro como el agua. Hoy día, por el contrario, la mayoría de nuestros proyectos carecen de límites.
+* ¿Cuánta información disponible podría ser de interés para ejectuar "mejor" esos proyecto? La respuesta es: una cantidad infinita, de fácil acceso, al menos potencialmente, a través de Internet.
+* La ausencia de márgenes puede generar _más_ trabajo para todos.
+* Las tecnologías de la comunicación en constante renovación han agrandado exponencialmente la ausencia de límites claros para nuestros compromisos y vidas.
+* No solo es más ambiguo e indefinido el trabajo y sus límites cognitivos, también el tiempo y el espacio en el que podemos dedicarnos a él, junto con la permanente explosión de información potencialmente trascendental y accesible que podría aumentar el valor de nuestras vidas.
+
+#### Nuestros empleos (y vidas) no paran de cambiar.
+
+* Por vago y difuso en sus límites que pudiera ser el trabajo, si tuviste la suerte de ceñirte a un cometido descrito con precisión el tiempo suficiente, es probable que consiguieras resolver lo que tenías que hacer. 
+* Y si pudieras mantener un mayor control de tu vida en general, quizás fueras capaz de crear un ritmo y sistema para controlarla que te permitiera cierta estabilidad y relajación.
+* Actualmente, las organizaciones viven en un estado de metamorfosis. Necesariamente, todo esto revoluciona las estructuras, formas, funciones y responsabilidades.
+* Hoy día, el profesional corriente es más que nunca un agente libre que cambia de profesión como sus padres cambiaban de empleo en otra época.
+* La relativa velocidad de los cambios en nuestras culturas, modos de vida y tecnologías están generando que los individuos sientan una creciente necesidad de controlar más sus situaciones personales exclusivas, y con más frecuencia.
+* Ya son pocas las cosas que parecen claras durante mucho tiempo, en relación con qué hay que hacer en la oficina. Tampoco está claro qué y cuánta información entrante puede ser relevante para hacerlo bien.
+* Resulta que no se nos ha equipado adecuadamente para tratar con esta descomunal cantidad de compromisos internos y externos.
+* Cuando el ritmo de los cambios en la vida y el trabajo era mucho menor, en cuanto las personas pasaban el inevitable mal trago de lidiar con lo nuevo, podían tirarse con el piloto aumático puesto durante periodos de tiempo muy prolongados.
+* Mientras has estado leyendo esto, tus devaneos mentales han dirigido tu atención hacia otras cosas que pasan en tu vida, o te has sentido impulsado a consultar el correo electrónico en busca de nuevas entradas potencialmente importantes, estarás experimentando una manifestación de este síndrome de no perder el tren.
+
+#### Los viejos modelos y hábitos son insuficientes
+
+* La capacidad para concentrarse, demanda nuevas formas de pensar y trabajar.
+* Las estrategias tradicionales de la gestión del tiempo y la organiación personal eran útiles en su tiempo; proporcionaban unos puntos de referencia útiles a una mano de obra que empezaba a salir de un modelo de producción industrial en cadena, para acceder a una nueva clase de trabajo que conllevaba la elección sobre lo que se quería hacer y un margen de discrecionalidad sobre cuándo hacerlo.
+* Cuando el propio tiempo se convirtió en un elemento del trabajo, los calendarios personales se convirtieron en una herramienta laboral clave.
+* Si tenías la libertad de decidir qué hacer, también tenías la responsabilidad de tomar buenas decisiones, teniendo en cuenta tus prioridades.
+* Un calendario, aunque importante, solo puede gestionar de manera realmente efectiva una pequeña parte de aquello que tienes que tener en cuenta para sentir que controlas tu mundo. Y las listas de tareas diarias y la codificación simplificada de las prioridades se han revelado inadecuadas para hacer frente al volumen y la naturaleza variable del volumen de trabajo de las personas normales.
+* Son pocas las personas que pueden esperar codificarlo todo basándose en su prioridad, o que pueden mantener una lista predeterminada de tareas sin que la primera llamada telefónica, mensaje instantáneo o interrupción de su jefe o cónyuge la _deshaga_ por completo.
+
+#### El panorama general frente a la cruda realidad
+
+* Aclarar los objetivos y valores principales, para que el pensamiento avance y proporcione orden.
+* En la práctica el bienintencionado ejercicio de pensar en los valores con demasiada frecuencia no logra los resultados deseados.
+* En el nivel de los ocmpromisos diarios y de una hora para otra se dan demasiadas distracciones para permitir la atención debida a los niveles más elevados.
+* Los sistemas organizativos personales ineficaces provocan una enorme resistencia inconsciente a emprender proyectos y objetivos aún mayores.
+* Cuando los niveles y valores más elevados están realmente claros, eleva la barrera de nuestras normas, haciendo que reparemos en muchas otras cosas que hay que cambiar.
+* Centrarse en los resultados y valores primordiales _es_ un ejercicio crucial, de eso no hay duda. Hacerlo proporciona los criterior necesarios para tomar las a veces difíciles decisiones sobre qué dejar de hacer, además de a qué deberíamos prestar nuestra máxima atención entre el exceso de alternativas que tenemos.
+* Aumentar la calidad de nuestro pensamiento y compromisos no disminuye la cantidad de cosas potencialmente relevantes e importantes que hay que gestionar.
+* Dicho sistema debe integrar los resultados de considerar el panorama general así como el más insignificante de los detalles disponibles; ha de gestionar los múltiples niveles de prioridades; tiene que mantener el control sobre los cientos de nuevas entradas diarias; ha de ahorrar mucho más tiempo, y esfuerzo que los necesarios para mantenerlos y debe facilitar que se hagan las cosas.
+
+### LA PROMESA: EL "ESTADO DE ATENCION" DEL EXPERTO EN ARTES MARCIALES
 
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
