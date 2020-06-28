@@ -136,6 +136,56 @@
 
 ### LA PROMESA: EL "ESTADO DE ATENCION" DEL EXPERTO EN ARTES MARCIALES
 
+* Existe una manera de controlarlo todo, seguir relajado y hacer cosas importantes con un mínimo esfuerzo en todo el espectro de tu vida y tu trabajo. Una manera por la que puedes experimentar lo que los expertos en artes marciales llaman una "mente como el agua", dentor del complejo mundo con el que estás comprometido.
+* Nuestra labor consiste simplemente en colaborar con el casco (del barco), en dejar de refrenarlo con nuestra brega de golpes para ir más deprisa.
+
+#### El símil de "la mente como el agua"
+
+* El agua es lo que es, y hace lo que hace. PUede aplastar, pero no ser aplastada. Puede estar quieta, pero no es impaciente. Se la puede obligar a cambiar su curso, pero no se frustra.
+* La fuerza de un golpe de karate es consecuencia de la velocidad, no del músculo; es como el "estallido" concentrado en el extremo del látigo.
+* Pero un músculo tenso es lento. Así que en los niveles superiores de entrenamiento de las artes marciales se enseñan y exigen el equilibrio y la relajación como todo lo demás. La clave está en despejar la mente para estar receptivo y reaccionar de manera adecuada.
+* Todo lo que provoque que reacciones exagerada o insuficientemente puede controlarte, y a menudo eso es lo que ocurre.
+
+#### ¿Puedes engancharte a tu "estado productivo" cuando es necesario?
+
+* Piensa en la última vez que te sentiste muy prolífico. Es probable que tuvieras la sesación de tener el control, de no estar estresado y sí muy concentrado en lo que estabas haciendo; de que el tiempo tendía a esfumarse y que estabas haciendo progresos manifiestos en la obtención de un resultado positivo.
+* Una de las dificultades para gran parte de nosotros quizás sea la ausencia de un punto de referencia para saber cuándo nos salimos del esteado productivo.
+
+### EL PRINCIPIO: OCUPARSE CON EFICACIA DE LOS COMPROMISOS INTERNOS
+
+* La mayor parte del estrés que padecen proviene de la gestión inadecuada de los compromisos que crean o aceptan.
+* Incluso los que no están conscientemente "estresados", invariablemente experimentarán más relajación cuando aprenden a controlar con más eficacia los "ciclos abiertos" de sus vidas.
+* "Ciclos abiertos" se definen como aquello que capta tu atención y que, en la forma en que está, no pertenece al lugar que ocupa.
+* Para ocuparte eficazmente de todo esto, primero debes identificar y recopilar todas aquellas cosas que "llaman a tu puerta" de una u otra forma, aclarar qué significan exactamente para ti y acto seguido, tomar una decisión sobre cómo hacerlas avanzar.
+* No son conscientes del precio que pagan por desatender este método.
+
+#### Las exigencias básicas para manejar los compromisos
+
+* Manejar los compromisos exigirá la ejecución de algunas actividades:
+    1. Si los llevas en la mente, esta no esetá despejada. Todo lo que consideres de alguna forma inconcluso, debes recogerlo en un sistema fiable, externo a tu mente.
+    2. Tienes que aclarar con precisión cuál es tu compromiso y decidir qué tienes que hacer, en ese caso, para avanzar hacia su cumplimiento.
+    3. Una vez hayas decidido todas las acciones que debes tomar, has de conservar los recordatorios de estas en un sistema que revises habitualmente.
+
+#### Un ejercicio importante para poner a prueba este modelo
+
+* Mi sugerencia es que pongas por escrito el proyecto o situación que más ocupa tu mente en este instante. ¿Qué es lo que más te incordia, distrae o interesa, o consume de alguna otra forma una buena parte de tu atención consciente?
+* Ahora describe en una sola oeración cuál es el resultado satisfactorio que pretendes darle a esta situación o problema. ¿Qué es lo que necesitarías que sucediera para que marques este proyecto como hecho?
+* Ahora escribe la acción física inmediata necesaria para hacer avanzar la situación. Si no tuvieras otra cosa que hacer en tu vida que ponerle fin a esto, ¿qué acción visible adoptarías ahora mismo?
+* Lo que hac sucedido seguramente es que lograste una definición más exacta del resultado deseado y de la siguiente acción necesaria.
+* Y lo que ha cambiado es el elemento más importante para alcanzar la claridad, la concentración y la tranquilidad de conciencia: La forma de involucrarte con tu mundo.
+* ¿Qué lo ha originado? Pensar. No mucho; solo lo suficiente para consolidar tu compromiso sobre una presión discreta o una oportunidad y los recursos necesarios para ocuparse de ella.
+
+#### El trabajo real de trabajo del conocimiento
+
+* TIenes que pensar en tus cosas más de lo que te das cuenta, pero no tanto como temes que podrías hacerlo.
+* ¿Cuáles son los resultados esperados de este trabajo? Es la pregunta clave que hay que hacerse para hacer rentables a los trabajadores del conocimiento.
+* Nunca se nos enseña que tenemos que pensar sobre nuestro trabajo antes de que podamos hacerlo.
+* Pensar con detenimiento la definición de los resultados deseados y las acciones siguientes ncesarias es algo que pocas personas sienten que tengan que hacer. Pero en realidad, es el medio más eficaz del que disponemos para convertir los deseos en realidad.
+
+#### La razón de que las cosas estén en tu mente.
+
+* 
+
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
 
