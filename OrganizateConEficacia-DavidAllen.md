@@ -184,7 +184,22 @@
 
 #### La razón de que las cosas estén en tu mente.
 
-* 
+* La raón de que haya algo en tu mente es que quieres que sea diferente a cómo es en la actualidad y, sin embargo:
+    1. No has clarificado exactamente cuál es el resultado que pretendes,
+    2. No has decidido cuál es la siguiente acción física y/o
+    3. No has colocado recordatorios del resultado y la acción requerida en un sistema en el que confíes.
+* Esta acción es la razón de que lo tengas en la cabeza. Hasta que no hayas aclarado esos pensamientos y tomado esas decisiones, y hayas almacenado la información resultante en un sistema que sepas con plena certeza que consultarás y en el que pensarás cuando lo necesites, tu cerebro no puede abandonar el trabajo.
+* Esta 9La mente) sabe si has llegado o no a las conclusiones a las que tienes que llegar y si has puesto las soluciones resultantes y los recordatorios de las acciones en un lugar que tengas la seguridad de que resurgirá adecuadamente en tu mente consciente.
+
+#### TU mente no tiene una mente propia.
+
+* No dejas de pensar en algo sobre lo que no puedes hacer ningún avance es un pérdida de tiempo y energía. Y solo contribuye a angustiarte por lo que deberias estar haciendo y no haces.
+* Seguramente has entregado gran parte de tus "asuntos", una buena cantidad de tus ciclos abiertos, a un organismo de tu comité interno que es incapaz de ocuparse con eficacia de esas cosas de la menera en que están: tu mente.
+
+#### La transformación de los asuntos.
+
+* Un Asunto es todo lo que has permitido entrar en tu mundo físico o psicológico y que no encaja en el lugar que ocupa, aunque todavía no has decidio qué significa exactamente para ti, ni el resultado deseado, así como tampoco la acción siguiente al respecto.
+* La raz´øn de que la mayoría de los sistemas organizativos no haya funcionado para la mayoría de las personas es que estas todavía no han transformado todos los "asuntos" que están tratando de organizar. Mientras sigan siendo asuntos, no son controlables.
 
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
