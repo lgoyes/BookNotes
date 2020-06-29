@@ -199,8 +199,45 @@
 #### La transformación de los asuntos.
 
 * Un Asunto es todo lo que has permitido entrar en tu mundo físico o psicológico y que no encaja en el lugar que ocupa, aunque todavía no has decidio qué significa exactamente para ti, ni el resultado deseado, así como tampoco la acción siguiente al respecto.
-* La raz´øn de que la mayoría de los sistemas organizativos no haya funcionado para la mayoría de las personas es que estas todavía no han transformado todos los "asuntos" que están tratando de organizar. Mientras sigan siendo asuntos, no son controlables.
+* La razón de que la mayoría de los sistemas organizativos no haya funcionado para la mayoría de las personas es que estas todavía no han transformado todos los "asuntos" que están tratando de organizar. Mientras sigan siendo asuntos, no son controlables.
+* Casi todas las listas de trabajos pendientes que he visto a lo largo de los años no eran más que simples relaciones de asuntos, no inventarios del verdadero trabajo resultante que había que hacer. No eran más que recordatorios parciales de un montón de cosas sin resolver que seguían sin tradurcirse en resultados y acciones.
+* Aquello que por su naturaleza domina o capta nuestra atención suele aparecer como asuntos. Pero una vez que los asuntos entran en nuestras vidas y trabajo, tenemos el compromiso intrínseco de definir y aclarar su significado.
+* Si las personas quieren que sus esfuerzos organizativos tengan éxito, lo que tienen que hcer es juntar todo aquello que ha de ser pensado y luego _ejecutar_ lo pensado.
 
+### EL PROCESO: GESTIONAR LA ACCION
+
+* Aunque antes que puedas lograr algo de todo esto (poder llegar a pensar con más eficacia), tendrás que adquirir el hábito de no conservar nada en tu mente. Y la manera de hacerlo, no es administrando el tiempo, la información o las prioridades. Por el contrario, la clave para administrar tus cosas es gestionar tus acciones.
+
+#### Adminitrar la acción es el principal desafío
+
+* Lo que hagas con tu tiempo y con la información y lo que hagas con tu cuerpo y la atención que presetes a tus prioridades son las alternativas reales a las que debes destinar tus limitados recursos. La cuestión de fondo estriba en cómo tomar las decisiones correctas acerca de lo que se debe hacer en un momento dado.
+* Administrar las acciones que no has identificado o sobre las que no has decidido nada todavía entraña una enorme dificultad.
+* La falta de tiempo no es su principal problema: el verdadero problema es la falta de claridad y definición de la verdadera naturaleza del proyecto y de cuáles son las acciones necesarias que llevar a cabo a continuación.
+* Hacer las cosas requiere dos elementos básicos: definir (1) qué significa "hecho" (resultado) y (2) en qué consiste "hacerlo" (acción).
+
+#### El valor del enfoque de abajo arriba
+
+* Estarás mejor equipado para llevar a la práctica tu pensamiento centrado en las cuestiones más elevadas, cuando tus herramientas para manejar las acciones resultantes para su ejecución formen parte de tu estilo operativo.
+
+#### Gestión vertical y horizontal de las acciones.
+
+* El control horizontal mantiene la coherencia de todas las actividades en las que estás involucrado transversalmente.
+* Necesitas un buen sistema que pueda rastrear la myor cantidad posible de ellas, suministrarte la información necesaria al respecto por encargo y permitirte desplazar tu atención de una cosa a la siguiente con rapidez y comodidad.
+* El control vertical, por el contario, gestiona el pensamiento, el desarrollo y la coordinación de los asuntos y proyectos individuales.
+* Esto es la "planificación del proyecto" en sentido amplio. Este se centra en un único cometido, situación o persona y da cuerpo a las ideas, detalles, prioridades y secuencia de acontecimientos que puedan ser necesarias para que te ocupes de ello, al menos por el momento.
+* El objetivo para la gestión horizontal y la vertical es el mismo: eliminar ocsas de tu mente y hacerlas. La adecuada gestión de las acciones te hace sentir a gusto y al mando a medida que avanzas por el amplio espectro del trabajo y la vida, mientras que el adecuado enfoque del proyecto te aclara las cosas y te pone sobre la pista todo lo necesario para ejecutarlo.
+
+#### El cambio principal: quitarte todo de la cabeza
+
+* La gran diferencia entre lo que yo hago y lo que hacen los demás es que yo recopilo y organizo el cien por cien de mis "cosas" en y con las herramientas objetivas en la mano, no en la mente.
+* Seguro has llegado a un punto en un proyecto, en que solo tuviste que sentarte y hacer una lista. Después te sentiste más concentrado y con más control de la situación. Lo que cambió fue tu _manera de relacionarte con tu mundo._
+* Si conviertes esa clase de externalización y revisión en una característica de tu estilo actual de vida y trabajo, y la manteienes en todas las áreas de tu vida, estarás practicando la clase de gestión de mente como el agua que estoy describiendo.
+* No quiero perder el tiempo pensando en las cosas más de una vez; hacerlo es un uso inefica de la energía creativa y fuente de frustración y estrés.
+* Tu mente consciente, al igual que la pantalla de un ordenador, es un instrumento para centrarse en la información, no un lugar para almacenarla.
+* Uno únicamente puede pensar en dos o tres cosas a la vez. Pero los temas incompletos siguen estando almacenados en el espacio de la memoria a corto plazo, que, como la RAM, tiene una capacidad limitada; ahí solo puedes guardar una cantidad limitada de cosas para que esa parte de tu cerebro siga funcionando a un nivel elevado.
+* Los estudios han demostrado que nuestros procesos mentales se ven obstaculizados por la carga impuesta a nuestra mente de seguirle el rastro a las cosas que nos hemos comprometido a terminar, sin haber establecido un plan o sistema fiable para manejarlas.
+* Un problema considerable es que tu mente no para de recordarte las cosas cuando no puedes hacer nada al respecto, ya que para ella no existe el pasado ni el futuro. Esto significa que en cuanto te dices que quizá tuvieras que hacer algo, y lo almacenas solo en tu cabeza, habrá una parte de ti que pensará _permanentemente_ que deberías estar haciendo eso. Todo lo que en algún momento te hayas dicho que deberías hacer, la mente piensa que deberías estar haciendolo _ahora mismo_.
+* El único momento en que la mayoría se dará cuenta de la gran tensi´øn que han estado soportando será cuando se liberen de ella y comprueben lo distintos que se sienten.
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
 
