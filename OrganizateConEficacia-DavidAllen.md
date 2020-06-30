@@ -240,8 +240,54 @@
 * El único momento en que la mayoría se dará cuenta de la gran tensi´øn que han estado soportando será cuando se liberen de ella y comprueben lo distintos que se sienten.
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
+* No se trata simplemente de "organizarse" o "establecer prioridades"; son cosas buenas, pero suceden como resultado de aplicar esos cinco pasos, no por sí solas.
+    1. _Capturamos_ aquello que nos llama la atención;
+    2. _Clarificamos_ lo que significa cada cosa y lo que tenemos que hacer con ellas;
+    3. _Organizamos_ los resultados, que nos plantean las opciones sobre las que
+    4. _Reflexionamos_ y entre ellas decidimos para 
+    5. _Actuar_
+* Todo esto constituye la gestión de los aspectos horizontales de nuestras vidas.
+* Para empezar, indentificas todas las cosas que están fuera de su sitio en su estado actual (capturar); a continuación, decides qué cosas conservar y cuáles tirar (clarificar); acto seguido, pones las cosas donde tienen que estar: de nuevo en el frigorífico, en la basura o en el fregadero (organizar); luego consultas tu libro de recetas y compruebas los ingredientes y utensilios que tienes (reflexionar); y, por último, comienzas poniendo mantequilla en la olla para que se derrita (actuar).
+* La ubicuidad del acceso a la información y la rapidez del cambio que está sucediendo mientras lees esto aumentan sistemáticamente la complejidad de tu vida y tu trabajo.
+* Debido a que el volumen de los contenidos relevantes no disminuye ni las entradas se ralentizan, si evitas controlar el arte marcial del dominio del flujo de trabajo tendrás que atenerte a las consecuencias.
+* En general, las personas muestran importantes puntos débiles en sus procesos de (1) _captura_; la mayor parte de sus compromisos para hacer algo siguen estando en sus cabezas.
+* Muchos han recopilado montones de cosas, aunque no han (2) _clarificado_ con exactitud lo que representan ni decidido qué medidas tomar, en su caso, en relación con ellas. Hay listas esparcidas por doquier; todas abandonadas, sin llevar a la práctica y sin más efecto que el de anestesiar la mente. Por sí solas, tales listas suelen provocar más estrés que el que alivian.
+* Otras personas toman buenas decisiones sobre los asuntos en el momento, pero desaprovechan el valor que tienen porque no (3) _organizan_ los resultados con eficacia. 
+* Aún hay algunas más que poseen buenos sistemas, pero no (4) _reflexionan_ sobre los contenidos con la suficiente coherencia para que sean funcionales. Muchas personas no consultan con antelación sus agendas con la debida periodicidad para estar al corriente de los eventos y plazos inminentes y, en consecuencia, se convierten en víctimas del frenesí de último momento.
+* * Si alguno de los eslabones anteriores es endeble, lo más probable es que lo que escojamos para (5) _actuar_ en un momento dado no sea la mejor elección.
+* La mayor parte de las decisiones sobre las acciones y el enfoque están impulsadas por las entradas más recientes y estridentes, y están basadas en la esperanza, no en la confianza.
+* Una de las principales razones para que muchas personas no hayan tenido mucho éxito a la hora de organizarse, se debe simplemente a que han intentado hacer los cinco pasos a la vez.
 
+### CAPTURAR
 
+* Para que tu mente se libere de la ínfima tarea de intentar guardarlo todo, tienes que saber que ya has capturado realmente todo lo que pudiera representar algo que tengas que hacer, o al menos sobre lo que debas decidir.
+
+#### Reunir el cien por cien de los "incompletos"
+
+* Tienes que recoger y juntar marcadores de posición, o representaciones de ello, de todos los asuntos de tu mundo que consideres imcompletos.
+* Muchas de las cosas que tienes que hacer se están reuniendo _para_ ti, mientras lees esto. Pero al mismo tiempo, tú has estado capturando cosas en tu entorno y en tu cabeza que, están permanentemente fuera de sitio.
+* En cuando vinculas un "debería", un "tendría" o un "convendría" a un asunto, este se convierte en incompleto. Por ejemplo, las decisiones pendientes sobre si vas a hacer algo o no ya son incompletas en sí, y en estas se incluyen todos los "voy a..." por los cuales has decidido hacer algo, aunque todavía no te has puesto en marcha.
+* Y, sin duda, incluyen todos los temas pendientes y en curso, ademeas de aquellas cosas sobre las que ya has hecho todo lo que vas a hacer en tu vida, salvo reconocer que ya has terminado con ellas.
+* Para gestionar este inventario de ciclos abiertos de manera adecuada, tienes que capturarlo en "contenedores" que guarden los temas en suspenso hasta que tengas un rato para decidir qué son y qué vas a hacer con ellos llegado el caso.
+* Una vez hecho esto, debes vaciar esos contenedores con regularidad, a fin de garantizar que sigan siendo unas herramientas de captura viables.
+
+#### Las herramientas de captura
+
+* Las descritas a continuación sirven todas como versiones de una bandeja de entrada que captura las entradas generadas por uno mismo.
+    1. La **bandeja de entrada física**, normal de plástico, madera, piel o alambre, lleva siendo la herramienta más frecuente para recoger los materiales físicos y en soporte papel que necesitan algún tipo de procesamiento.
+    2. Los cuadernos u **hojas sueltas**, van de maravilla para recopilar las ideas ocasionales, las entradas, las cosas pendientes, etcétera.
+    3. Los ordenadores, tabletas, teléfonos inteligentes y toda classe de artilugios tecnológicos móviles que aparecen a diario se pueden utilizar para **capturar notas que se procesarán más tarde**.
+    4. Si estás conectado al resto del mundo a través de **correo electronico**, existe un espacio para almacenar los mensajes y archivos entrantes, donde se pueden almacenar hasta que sean vistos, leídos y procesados.
+    5. La evoluación del mundo digital ha hecho posible una integración automática creciente entre todos estos diferentes canales.
+
+#### Los factores que determinan el éxito en la captura
+
+* La mayoría de las personas poseen una colección de dispositivos de algún tipo, aunque por lo general esetos están más o menos descontorlados o en un alto grado de infrautilización.
+    1. Cada ciclo abierto debe estar en tu sistema de captura y fuera de tu cabeza.
+    2. Debes tener el menor número de recipientes de captura que te sea posible.
+    3. Debes vaciarlos de manera regular.
+
+#### Sácatelo todo de la cabeza
 
 ## 3. Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos
 
