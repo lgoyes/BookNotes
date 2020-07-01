@@ -289,6 +289,80 @@
 
 #### Sácatelo todo de la cabeza
 
+* Si sigues intentando hacer el seguimiento de demasiadas cosas en tu espacio mental, es probable que no te sientas motivado a utilizar y vaciar íntegramente tus bandejas de entrada.
+* Esta colección de herramientas debería formar parte de tu estilo de vida. Tenlas cerca para que, con independencia de dónde estés, puedas recoger una idea potencialmente valiosa.
+
+#### Ten el menor número de lugares de captura
+
+* Deberías tener tantas bandejas de entrada como necesites, pero las menos posibles para arreglártelas.
+* Hay que juntar y procesar las notas escritas y no dejar que reposen en montones, cuadernos y cajones.
+* Aplicar las herramientas y procedimientos estándares para capturar las ideas y las entradas irá adquiriendo progresivamente más importancia a medida que tu vida y tu trabajo se vayan complicando. 
+* Seguramente advertirás que tus mejores ideas sobre el trabajo no las tendrás _en_ el trabajo.
+
+#### Vacía las herramientas de captura con regularidad
+
+* Si no vacías y procesas los "asuntos" que has recopilado, tus herramientas no están sirviendo para otra función que la de almacenar material amorfo.
+* Vaciar los contenidos no significa que tengas que terminar lo que está allí; tan solo implica que hay que decidir con más concreción su naturaleza y lo que debería hacerse con ello, y si aún está sin terminar, organizarlo dentro de tu sistema.
+* No vaciar la bandeja de entrada es como tener unos cubos de basura y unos buzones de correo que no se vacían y de los que nadie se ocupa.
+* Al menos saben que, en _alguna parte_, allí dentro hay un recordatorio de algo que siguen teniendo que hacer. Por desgracia, esa red de seguridad se pierde cuando los montones se descontrolan o la lista de los correos electrónicos es demasiado extensa para que se vea en una pantalla.
+
+### CLARIFICAR
+
+* Las acciones e información que necesitaba que le recordaran estaban ahora identificadas y confiadas a un sistema concreto.
+* ¿Qué es lo que necesitas preguntarte (y contestarte) en relación con cada correo electrónico, mensaje de texto, correo de voz, informe, página de notas de reuniones o ideas propias que se cruza en tu camino?
+* Uno no puede organizar lo que entra; lo único que puede hacer es capturarlo y procesarlo. En vez de eso, organiza las acciones que tendrás que tomar basándote en las decisiones que hayas tomado acerca de lo que se tiene que hacer.
+
+#### ¿Qué es eso?
+
+* Hemos hablado de los asuntos. Y hemos hablado de las herramientas de captura. Pero no hemos abordado la cuestión de qué son los asuntos y qué hacer al respecto.
+
+#### ¿Es accionable (requiere acción)?
+
+* **No requiere acción**
+    1. Es basura, ya no es necesario. **Necesitas una papelera**
+    2. No requiere acción ahora, pero tal vez sea necesario hacer algo después (incubar). **Necesitas un calendario**
+    3. Es información que puede ser útil para algo más adelante (referencia). **Necesitas un sistema de archivo**
+* **Accionable**: Asuntos sobre los que es necesario hacer algo. SObre cada elemento que requiere una acción hay que determinar dos aspectos.
+    1. ¿A qué "proyecto" o resultado te has comprometido?
+    2. ¿Cuál es la siguiente acción requerida?
+* Si se trata de un proyecto, tienes que capturar ese resultado en una lista denominada "proyectos". Una revisión semanal de la lista te refrescará este tema como algo que sigue sin resolver, de manera que siga reciente y vivo en tu sistema de gestión hasta que se complete o elimine.
+* **¿Cuál es la acción siguiente?** La "acción siguiente" es la siguiente actividad física y visible en la que hay que comprometerse, a fin de hacer avanzar la realidad actual de esa cosa hacia su finalización.
+* Estas son actividades reales que tienen que producirse. Los recordatorios de estas se convertirán en la principal molienda para el molino de tu sistema de gestión de productividad personal.
+* **Hacerlo, delegarlo o diferirlo** En cuanto hayas decidido la acción siguiente, tienes tres opciones:
+    1. _Hacerla_. Si realizar una acci´øn supusiera menos de dos minutos, debería _hacerse_ en cuanto se deina.
+    2. _Delegarla_. Si la acción durará más de dos minutos, pregúntate: "Soy la persona adecuada para hacer esto?" Si la respuesta es no, _delégala_ en la instancia correcta.
+    3. _Diferirla_. Si la acción se prolongará más de dos minutos, y eres la persona adecuada para hacerla, tendrás que diferir su ejecución a un momento posterior y seguirle la pista en una o más listas de "acciones siguientes".
+
+### ORGANIZAR
+
+* Para los elementos que no requieren una acción, las categorías posibles son _basura_, _incubación_, _referencia_.
+* Para gestionar las cosas que sí requieren acción, necesitarás una lista de _proyectos_, _archivos para planes y materiales de proyectos_, un _calendario_, una _lista de recordatorios de acciones siguientes_ y una _lista de recordatorios de las cosas en espera_.
+* La lista de proeyctos en curso podría guardarse en una subdivisión dentro de la función de Tareas de una aplicación informática.
+* Los recordatorios en incubación (tales como "llamar a mi contable después del 1 de marzo para concertar una reunión") se pueden almacenar en un calendario digital.
+
+#### Proyectos
+
+* Defino "proyecto" como cualquier resultado deseado que se pueda conseguir antes de un año y que exija una acci´øn de más de un paso.
+* Algunas cosas bastante pequeñas a las que normalmente podrías no llamar proyectos van a figurar en tu lista de proyectos, además de algunas grandes.
+* El razonamiento en el que se apoya mi definición es que si un paso no completa algo, entonces es necesario dejar algún tipo de marca que te recuerde que aún queda algo pendiente de hacer.
+* Si careces de un lugar o marcador de posición que te lo recuerde, el asunto volverá sigilosamente a tu cabeza.
+* Tiene que ser revisado semanalmente para que te sientas tranquilo sobre su situación.
+
+#### Una lista parcial de proyectos
+
+* Los proyectos no necesitan aparecer en un orden determinado por tamaño o prioridad; solo tienen que estar en una lista de referencia para que puedas revisarlos con la suficiente regularidad, a fin de asegurarte de que se han fijado las acciones siguientes adecuadas para cada uno de ellos.
+* Tú no _ejecutas_ un proyecto; lo único que puedes hacer son las acciones _relacioinadas_ con ellos.
+* Es posible que tengas razones para ordenar tus proyectos en diferentes subdivisiones, basándote en las distintas áreas que tienen tu atención.
+
+#### El material de apoyo de los proyectos
+
+* La lista de proyectos que elabores será simplemente un índice; todos los detalles, preparativos e información de apoyo que quizá necesites mientras trabajas en tus diversos proyectos deberían figurar en archivos informáticos.
+
+###### Materiales de apoyo y archivos de referencia
+
+* Una vez que hayas organizado tu material de apoyo de proyectos por temas o asuntos, probablemente te parecerá que es casi idéntico a tu material de referencia y que podría guardarse en el mismo sistema de archivo de referencia.
+
+
 ## 3. Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos
 
 
