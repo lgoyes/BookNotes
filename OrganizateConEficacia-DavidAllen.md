@@ -361,6 +361,65 @@
 ###### Materiales de apoyo y archivos de referencia
 
 * Una vez que hayas organizado tu material de apoyo de proyectos por temas o asuntos, probablemente te parecerá que es casi idéntico a tu material de referencia y que podría guardarse en el mismo sistema de archivo de referencia.
+* Capturar algo de algún sitio y copiarlo en cualquier otro es fácil y rápido, pero decidir adónde va puede ser desalentador, dado el sinnúmero de estacionamientos que tenemos disponibles y la infinidad de maneras en que podríamos querer que la información estuviera disponible así para los demás como para nosotros mismos. 
+* La mejor forma de proceder es que mantengas tu universo de referencia digital lo más sencillo posible, y que lo revises y purgues con asiduidad.
+
+#### Categorías de las acciones siguientes
+
+* La decisi´øn de la acción siguiente es capital. Sin excepción, esa acci´øn tiene que ser la siguiente conducta física visible en todos los ciclos abiertos.
+* Las que sí necesitan un seguimiento son todas las acciones que tengan que ocurrir en un momento concreto o en un día concreto (introdúcelas en tu calendario), las que tienen que hacerse tan pronto como sea posible (añade estas a tus listas de Acciones siguientes) y todas aquellas que esteás esperando a que hagan los demás (ponlas en la lista En espera).
+
+##### Calendario
+
+* A tu calendario van tres cosas:
+    1. **Acciones a realizar en un horario determinado**: Basta con hacer un simple seguimiento de ello en el calendario.
+    2. **Acciones a realizar un día concreto**: Hay cosas que tienes que hacer en cualquier momento de un día concreto, aunque no necesariamente a una hora determinada. Por ejemplo, una tarea puede ser objeto de un seguimiento en el calendario para el viernes, pero sin vincularlo a ningún horario en particular: simplemente debería pasar ese día.
+    3. **Información de un día determinado** El calendario es también el sitio para hacer el seguimiento de cosas de las que quieres saber en un días determinados; no se trata necesariamente de acciones que tengas que realizar, sino más bien de información que te pueda ser útil en cierta fecha. También es aquí donde deberías colocar los importantes recordatorios de cuándo vence algo o de cuándo debería iniciarse.
+* No más listas de "tareas diarias" en el calendario. Las tres cosas citadas son lo único que tiene que figurar en el calendario. ¡Nada más!
+* Las constantes nuvevas entradas y la modificación de las prioridades tácticas reconfiguran el trabajo diario de manera tan sistemática que es prácticamente imposible fijar con antelación las tareas pendientes.
+* Tratar de mantener una lista en el calendario, la cual debe ser introducida de nuevo otro día si las tareas no se han cumplido es, además de desmoralizante, una pérdida de tiempo.
+* El calendario debería ser un territorio sagrado; si escribes algo allí, debe ser hecho ese día o nuca. Lo único que debería escribirse de nuevo son las citas que cambien de fecha.
+* No pasa absolutamente nada por crear una lista breve, informal y rápida de cocsas como "Si tengo tiempo, me gustaría..." extraídas de tu inventario de acciones siguientes. Esta no debería confundirse con tus tareas de "obligaciones" y tendría que ser tratada con la suficiente ligereza como para eliminarla o cambiarla rápidamente, cuando surjan las inevitables sorpresas que el transcurso del día traerá consigo.
+
+##### La lista de acciones siguientes
+
+* Cualquier acción no delegable de más de dos minutos que hayas identificado tiene que ser objeto de seguimiento en algún sitio.
+* Si solo tienes veinte o treinta de estos recordatorios, tal vez sea conveniente que los guardes todos en una lista etiquetada como "acciones siguientes", la cual revisarás siempre que tengas un rato libre.
+
+#### Asuntos no accionables o que no requieren acción.
+
+* Los sistemas de las cosas que no requieren ninguna acción se dividen en tres categorías:
+
+##### Basura
+
+* Lo desechable debería resultar obvio. Tira, destruye, o recicla cualquier cosa que no tenga en potencia ninguna acción o valor de referencia futura.
+
+##### Incubación
+
+* Digamos que lees algo en un boletín que te da una idea para un proyecto que podrías querer hacer algún día, pero no ahora. Así las cosas, querrás que se te recuerde de nuevo más tarde, de manera que puedas volver a valorar la opción de hacer algo al respecto en el futuro.
+* Existen dos tipo de herramientas de incubación: (1) las listas "algún día/tal vez" y (2) un sistema de seguimiento:
+    1. **Algún día/Tal vez:** Puede ser práctico y estimulante mantener una lista continua de cosas que quizá desearías hacer en algún momento aunque no ahora. Este es el "aparcamiento" de los proyectos que sería imposible llevar adelante en el presente pero que no quieres olvidar, así que te gustaría que se te recordara la posibilidad a intervalos regulares. Todas estas cosas caen dentro de la naturaleza de "proyectos que podría hacer, pero no ahora; aunque me gustará que se me recordaran de manera regular". Se debe hacer una revisión semanal de esta lista.
+    2. **Sistema de seguimiento** Una segunda clase de cosas para incubar son aquellas que no quieres ni necesitas que se te recuerden hasta un determinado momento en el futuro. Este es un sistema que te permite casi literalmente enviarte algo a ti mismo, para que lo recibas en el futuro en una fecha determinada.
+
+##### Material de referencia
+
+* Hay muchas cosas que se cruzan en tu camino que no requieren ninguna acción pero tienen un valor intrínseco como información, así que debes guardarlas y poder recuperarlas cuando las necesites.
+* Lo más importante que hay que recordar a este respecto es que la referencia ha de ser exactamente eso, una información que se pueda consultar fácilmente cuando se necesite. Los sistemas de referencia por lo general adoptan dos formas: (1) el almacenamiento específico por área y tema y (2) los archivos de referencia general.
+    1. **Almacenamiento específico por área y tema.** Cómo están almacenados los archivos. e.g. caj´øn de un archivador dedicado a contratos por orden de fecha.
+    2. **Archivo de referencia general.** La segunda clase de sistema de referencia es el que todos necesitan tener a mano para almacenar la información específica que todos necesitan tener a mano para almacenar la información específica que no pertenezca a una categoría mayor predeterminada. Necesitas un lugar para guardar los manuales de instrucciones de los utensilios de cocina.
+
+### REFLEXIONAR
+
+* La magia de la gestión del flujo de trabajo se concreta en el uso continuado de la fase de reflexión. Aquí es donde, para una cuestión importante, semanalmente echas un vistazo a todos tus proyectos pendientes y ciclos abiertos, en lo que denomino nivel 1 del Horizonte.
+
+#### Qué revisar y cuando
+
+* Una lista de proyectos, un calendario, unas listas de accioens siguientes y otra de En espera, el mantenimiento de este sistema no requerirá grandes esfuerzos.
+* El elemento que probablemente revises con más frecuencia será el calendario, el cual te refrescará el "panorama fijo" que te espera esa jornada; esto es, aquellas cosas que tienen que ser tratadas inexcusablemente ese día.
+* Saber en todo momento lo que hay que hacer y cuándo confiere un márgen de maniobra.
+
+
+
 
 
 ## 3. Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos
