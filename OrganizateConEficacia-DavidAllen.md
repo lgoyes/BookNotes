@@ -417,12 +417,53 @@
 * Una lista de proyectos, un calendario, unas listas de accioens siguientes y otra de En espera, el mantenimiento de este sistema no requerirá grandes esfuerzos.
 * El elemento que probablemente revises con más frecuencia será el calendario, el cual te refrescará el "panorama fijo" que te espera esa jornada; esto es, aquellas cosas que tienen que ser tratadas inexcusablemente ese día.
 * Saber en todo momento lo que hay que hacer y cuándo confiere un márgen de maniobra.
+* En cuanto termines de hacer una acción anotada en tu calendario, consultar y ver qué otras cosas quedan por hacer es un buen hábito.
+* Después de consultar tu calendario, la mayoría de las veces acudirás a tus listas de _Acciones siguientes_, que contienen el inventario de las acciones definidas previsamente que puedes realizar si tienes algo de tiempo libre durante el día.
+* Las listas _Proyectos_, _En espera_, _Algún día/Tal vez_ tienen que ser revisadas con la frecuencia que consideres necesaria para que estén en orden y puedas dejar de preocuparte por ellas.
+
+#### El factor clave del éxito: la Revisión semanal
+
+* Todo lo que pudiera requerir una acción debe ser revisado con la suficiente frecuencia para evitar que tu mente recupere la labor de tener que recordarlo.
+* Todos tus proyectos, planes de proyectos en marcha y listas de _Acciones siguientes_, _Agendas_, _En espera_, e incluso la de _Algún día/Tal vez_ deberían revisarse una vez a la semana.
+* La revisión semanal es el momento de:
+    1. Reunir y procesar todos tus asuntos.
+    2. Revisar tu sistema.
+    3. Actualizar tus listas.
+    4. Limpiar, aclarar, actualizar y completar.
 
 
+### ACTUAR
 
+* El propósito esencial de ese proceso de gestión del flujo de trabajo es el de facilitar las buenas decisiones acerca de lo que vayas a hacer en cualquier momento.
+* Con la debida orientación te puedes sentir mucho más seguro acerca de tus decisiones y puedes pasar de la ilusión en tus actos a confiar en ellos, lo que aumentará tu energía y eficacia inmediatamente.
 
+#### Tres modelos para decidir las acciones
+
+* ¿Cómo decidirás qué vas a hacer y qué no y sentirte a gusto con ambas decisiones? Confiando en tu intuición. Si has _capturado_, _clarificado_, _organizado_ y _reflexionado_ sobre todos tus compromisos actuales, puedes estimular tu criterio intuitivo con algunas ideas inteligentes y prácticas acerca de tu trabajo y valores.
+    1. El modelo de los cuatro criterios para decidir las acciones en el momento.
+        1. **Contexto** Siempre estás limitado por lo que eres capaz de hacer en cada momemnto. Algunas acciones se pueden hacer en cualquier parte o disponer de alguna herramienta productiva a mano, como pueda ser un teléfono u ordenador. 
+        2. **Tiempo disponible** ¿Cuándo tienes que hacer otra cosa? Tener una reunión al cabo de cinco minutos te impediría hacer cualquier cosa acción que lleve más tiempo.
+        3. **Energía disponible** ¿Cuánta energía tienes? Algunas de las acciones que tienes que hacer necesitan una reserva de energía mental nueva y creativa. Otras precisan potencia física.
+        4. **Prioridad** En función de tu contexto, tiempo y energía disponibles, ¿cuál entre tus acciones acciones pendientes de escoger te reportará el mayor beneficio?
+    2. El modelo Tridimensional para identificar el trabajo diario.
+        1. **Haciendo trabajo predefinido** Cuando estás haciendo un trabajo definido con anterioridad, estás trabajando a partir de tus listas de _Acciones siguientes_ y tu calendario.
+        2. **Haciendo trabajo que surge en el momento** A menudo las cosas se presentan con un fin determinado -de manera insospechada e imprevista- y tienes que ocuparte de ellas o decidir hacerlo según van apareciendo. Todos los días traen sorpresas, y tendrás que dedicar al menos algún tiempo y energía a muchas de ellas. Cuando sigues estas pistas, estás decidiendo por defecto que son más importantes que cualquier otra cosa que tengas que hacer en esos momentos.
+        3. **Definiendo tu trabajo** Definir tu trabajo entraña que ordenes tu bandeja de entrada, mensajes digitales y notas de tus reuniones y que desgloses los nuevos proyoectos en pasos susceptibles de ser llevados a la práctica. A medida que proceses tus entradas, no dudes en ocuparte de las accionesd e menos de dos minutos y en arrojar a la basura y archivas numerosas cosas. Una vez que has definido todo tu trabajo, ya puedes estar seguro de que tus listas de cosas pendientes están completas.
+    3. El modelo de los seis niveles para revisar tu trabajo.
+        1. **Piso: Acciones actuales** Esta es la lista acumulada de todas las acciones que tienes que realizar.
+        2. **Horizonte 1: Proyectos actuales** La mayoría de acciones que tienes actualmente ante ti están generadas por los entre treinta a cien proyectos que estean en tu bandeja.
+        3. **Horizonte 2: Áreas de enfoque y responsabilidades** Tú creas o aceptas tus proyectos y acciones en virtud de las funciones, intereses y responsabilidades que tienes. Tu vida personal tiene un número de campos de enfoque: salud, familia, economía, entorno familiar, espiritualidad, esparcimiento, etcétera. Tales cosas **no requieren su culminación** sino más bien su utilización como criterios de valoración de nuestras experiencias y compromisos, a fin de mantener el equilibrio y la sostenibilidad mientras actuamos en el trabajo y en nuestro mundo.
+        4. **Horizonte 3: Metas** Lo que desees experimentar en las diferentes áreas de tu vida y tu trabajo dentro de uno o dos años añade otra dimensión a la definición de tu trabajo.
+        5. **Horizonte 4: Visión** Estrategias de organización, tendencias ambientales, condicones de transición vitales y profesionales, etcétera. Los factores internos engloban a la profesión a largo plazo, la familia, la economía y las aspiraciones y consideraciones sobre la calidad de vida. En cuesteioines del mundo exterior pueden incluir los cambios que afectan a tu trabajo y empresa. Las decisiones a esta altitud pueden cambiar fácilmente la posible apariencia de tu trabajo en muchos niveles.
+        6. **Horizonte 5: Propósito y principios** ¿Por qué existe tu empresa? ¿Por qué existes tú? ¿Qué es lo que realmente te importa pase lo que pase? Estas analogías de los horizontes son en cierta manera arbitrarias, y las conversaciones importantes que mantengas en la vida real acerca de tu enfoque y prioridades puede que no encajen exactamente en un nivel u otro.
+* Dominar el flujo de trabajo a todos los niveles en que experimentas ese trabajo proporciona una manera mucho más holística de hacer las cosas y sentirse bien al respecto.
 
 ## 3. Poinendo en marcha los proyectos con creatividad: las cinco fases de la planificación de proyectos
+
+* Los ingredientes clave de un control relajado son: (1) unos resultados claramente definidos y las acciones siguientes necesarias para hacerlos avanzar hacia su conclusión y (2) unos recordatorios colocados en un sistema fiable que se revise de manera regular.
+
+### POTENCIAS EL ENFOQUE VERTICAL
+
 
 
 
