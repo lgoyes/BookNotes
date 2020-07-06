@@ -465,6 +465,70 @@
 ### POTENCIAS EL ENFOQUE VERTICAL
 
 
+* La mayor parte de lo que tendrás que pensar es informal, lo que yo llamo "planificación en el reverso de un sobre", que es lo que haces literalmente en la parte de atrás de un sobre o en una servilleta cuando estás en una cafetería con un colega y discutís el orden del día y la estructura de una presentación de ventas.
+* El mayor vacío es que el resto de nosotros carecemos de un modelo para enfocar los proyectos. Necesitamos maneras de confirmar y apoyar nuestras ideas, con independencia de lo informales que sean.
+* En las reuniones más formales y estructuradas también se suele obviar cuando menos algún asunto crucial, de entrada cuestiones tales como las razones para acometer ese proyecto. O bien no conceden el tiempo necesario para la lluvia de ideas, esto es, la formulación de un puñado de ideas que nadie ha tenido antes sobre eso que haría más interesante, rentable o simplemente más divertido al proyecto en cuestión.
+* Y, por último, muy pocas de tales reuniones aportan el suficiente rigor para determinar los pasos de la acción y las responsabilidades para los diversos aspectos de la planificación de un proyecto.
+* Mi experiencia me dice que cuando la gente planifica más de manera informal y natural, se liberan de una gran cantidad de estrés y consiguen mejores resultados.
+
+### EL MODELO DE PLANIFICACION NATURAL
+
+* Tu mente pasa por cinco etapas para realizar prácticamente cualquier tarea:
+    1. Definir el propósito y los principios.
+    2. Visualizar el resultado
+    3. Lluvia de ideas.
+    4. Organizar.
+    5. Identificar las acciones siguientes.
+
+#### Un ejemplo sencillo: planificar una cena fuera de casa
+
+* Tu intención fue tu **propósito**, y este desencadenó automáticamente tu proceso interno de planificación.
+* Tus **principios** establecieron los límites de tu plan.
+* Una vez que decidiste satisfacer tu propósito, ¿cuáles fueron tus primeros pensamientos sustanciales. Casi seguro que también tuviste alguna imagen favorable acerca de lo que podrías experimentar o de cómo se desarrollaría la velada, y quizá de las personas involucradas, la atmósfera y/o el resultado. Esa fue tu **visualización del resultado**. Mientras que tu propósito lo constituyó el porqué de que salieras a cenar, tu visualización fue una imagen del qué: de qué manera el aspecto, los sonidos y sensaciones del mundo físico satisfarían mejor tu propósito.
+* Y una vez que identificaste esto con tu visión, ¿qué fue lo que empezó a hacer tu mente de forma natural? ¿EN qué empezó a pensar? Esa fue tu **lluvia de ideas**. Estas preguntas formaban parte del proceso naturalmente creativo que ocurre en cuanto te comprometes con algún resultado que no se ha producido todavía.
+* Tu cerebro percibe una discrepancia entre aquello en lo que estás pensando y el lugar donde te encuentras realmente en ese momento, y empieza a resolver esa disonancia cognitiva tratando de llevar los espacios en blanco. Este es el principio de la fase del _cómo_ de la planificaci´øn natural.
+* En cuanto generaste el número suficiente de ideas y detalles, no pudiste por menos que empezar a **organizarlas**.
+* Una vez que hayas generado los diferentes pensamientos pertinentes al resultado, tu mente empezará de manera automática a clasificarlos por elementos, prioridades y/o secuencias de acontecimientos.
+* Esta es la secci´øn de la planificación natural que, por su misma naturaleza, incluye el _cuestionamiento_, las _comparaciones_ y la _evaluación_. Una cosa es mejor, más grande o prioritaria.
+* Por último, te centras en la **acción siguiente** que tienes que realizar para conseguir que se produzca efectivamente el primer elemento.
+* Estas cinco fases de la preparación del proyecto se producen de forma natural en todas las cosas que realizas durante el día.
+> Primero sientes el impulso de hacer que ocurra algo, entonces imaginas el resultado, a continuación generas las ideas que podrían ser importantes, las clasificas dentro de una estructura y, por último, defines la actividad física que empezaría a hacerla realidad.
+
+#### La planificación natural no tiene que ser necesariamente normal
+
+* ¿Has puesto sobre la mesa todas las ideas posibles, es decir, todo lo que tienes que considerar y que pudiera afectar el resultado?
+* ¿Has identificado los elementos cruciales de la misión, los acontencimientos clave y los productos finales?
+* ¿Has definido todos los aspectos del proyecto que podrían hacerse avanzar desde ya mismo, cuál es la siguiente acción para cada parte y quién es el responsable de qué?
+* Puedes intentarlo por ti mismo en este preciso instante, si te apetece. Escoge un proyecto que sea nuevo o esté atascado o simplemente al que le podría convenir alguna mejora. Piensa en tu propósito. Piensa en cuál sería el resultado satisfactorio: ¿dónde te encontrarías física y económicamente desde el punto de vista de tu reputación o de cualquier otro aspecto¿ Genera una lluvia de ideas sobre los pasos potenciales. Organiza tus ideas. Decide las acciones siguientes. ¿Te has aclarado un poco más acerca de adónde quieres ir y cómo llegar?
+
+### EL MODELO DE LA PLANIFICACION NO NATURAL
+
+#### Cuando una "buena" idea es una mala idea.
+
+* Antes de entrar a valorar qué es una buena idea digna de confianza, el propósito debe estar claro, la visión bien definida y toda la información relavante recopilada (lluvia de ideas) y analizada (organizada).
+
+### EL MODELO DE PLANIFICACION REACTIVO
+
+* El modelo no natural es lo que la mayor plarte de la gente sigue considerando conscientemente como "planificacion" y dado que suele ser artificial e irrelevante para el verdadero trabajo, en realidad no planifican. Al menos, no desde el principio: se resisten a planificar las reuniones, presentaciones y operaciones estratégicas hasta el último minuto.
+* Entonces, cuando tienes encima las urgencias de última hora, la consecuencia es el modelo de planificación reactiva.
+* ¿Cuál es el primer nivel de enfoque cuando los asuntos estallan? **¡Acción!** Trabaja firme! Haz horas extras! Más personal! Más trabajo!
+* Luego, cuando tener a un montón de gente atareada chocándose entre sí no resuelve la situación, alguien se pone en plan más intelectual y dice: "Tenemos que **organizarnos!**"
+* Ahora alguien sugiere que se necesita más creatiidad. "**Hagamos una lluvia de ideas**".
+* Cuando no sucede gran cosa, puede que el jefe suponga que su personal ha agotado la mayor parte de su creatividad interior: Es hora de contratar a un asesor!
+* Bueno, así que, ¿qué es lo que están tratando realmente de hacer aquí? (**visión, propósito**).
+
+### LAS TECNICAS DE PLANIFICACION NATURAL: LAS CINCO FASES
+
+** Si ideamos formas más eficaces de abordar los proyectos y situaciones, podemos lograr que las cosas sucedan antes, sean mejores y tengan más exito.
+
+#### Propósito
+
+* Nunca hace daño pregutnar: ¿por qué¿ Incrementar el control en este nivel superior de enfoque puede reforzar e incluso impulsar cualquier cosa que estés haciendo en el momento?
+* Conocer y tener claro el propósito de cualquier actividad son las dos directrices principales para conseguir el enfoque adecuado, el desarrollo creativo y la cooperación. Pero este sentido común no se practica de manera habitual, sencillamente porque nos resulta muy fácil crear cosas, quedarnos atrapados en la forma de lo que hemos creado y dejar escapar la conexión con nuestras intenciones primarias y reales.
+* Cuando el dilema es si permanecer o no conectado al trabajo y al correo electrónico durante las vacaciones, tengo que preguntar: ¿Cuál es el propósito principal de las vacaciones?
+
+##### El valor de pensar en el porqué?
+
 
 
 ## 4. Puesta en marcha: establece el tiempo, el espacio y las herramientas
