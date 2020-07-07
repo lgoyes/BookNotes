@@ -529,6 +529,75 @@
 
 ##### El valor de pensar en el porqué?
 
+* He aquí algunas de las ventajas de preguntar por qué
+
+##### 1. Define el éxito
+
+* Si no tienes completamente claro cuál es el propósito de lo que estás hcaiendo, no tienes ninguna posibilidad de ganar.
+* No puedes sentirte satisfecho con lo tratado en una reunión de personal a menos que sepas cuál era el propósito de la reunión.
+
+##### 2. Establece los criterios para la toma de decisiones.
+
+* ¿Cómo sabes si merece la pena contratar a una importante empresa de diseño web para que se encargue de tu nuevo sitio wen la Red?
+* Todo depende del propósito. Teniendo en cuenta lo que tratas de llevar a cabo, ¿son esas las inversiones necesarias? No hay manera de saberlo hasta que el propósito esté definido.
+
+##### 3. Alínea los recursos.
+
+* ¿Cuál es la mejor manera de utilizar el flujo de caja ahora mismo para rentabilizar nuestra viabilidad como minoristas a lo largo del próximo año? La respuesta depende de lo que tratemos realmente de conseguir: el _por qué_
+
+##### 4. Clarifica el enfoque
+
+* Cuando das con el verdadero propósito de lo que estás haciendo, las cosas se aclararn. Dedicar tan solo dos minutos a escribir tu motivo inicial para hacer algo, invariablemente te permitirá obtener un panorama más nítido.
+
+##### 5. Amplía las opciones
+
+* Curiosamente, aun cuando el propósito permite un enfoque más preciso de las cosas, también abre mayores posibilidades al pensamiento creativo.
+
+* Está lo bastante claro y definido tu propósito? Si de verdad estás experimentado las ventajas de un enfoque del propósito -motivación, claridad, criterios de decisión, alineamiento y creatividad-, entonces es probable que tu propósito sea lo bastante concreto. Pero muchas declaraciones de propósitos son demasiado vagas para producir tales resultados. "Tener un buen equipo", por ejemplo, podría ser una meta demasiado general o imprecisa.
+
+#### Principios
+
+* Tus normas y valores tienen el mismo valor que los criterios principales que sigues para impulsar y dirigir un proyecto. Aunque las personas apenas piensan en ellos conscientemente, siempre están ahí, y si son violados, el resultado será inevitablemente una distración y un estrés improductivos.
+* Una manera fantástica de ver cuáles son tus principios es completar estea frase: "Daría plena libertad a los demás, siempre y cuando..." ¿Siempre y cuando qué?
+* Que los demás observen o permitan un comportamiento que se salga de tus normas puede ser una importante fuente de tensión.
+* Otro buen motivo para centrarse en los principios es la claridad y el puntod e referencia que propoercionan para conseguir una conducta positiva.
+> Mientras que el propósito proporciona la vitalidad y la dirección, los principios definen los parámetros de actuación y los criterios para alcanzar la perfección en la ejecución.
+
+#### Visión / Resultados
+
+* Para que accedas de la manera más productiva a los recursos conscientes e inconscientes de los que dispones, has de hacerte una idea clara de en qué consistiría el éxito, qué aspecto tendría y qué sensación e impresiones te causaría. Los propósitos y principios suministran el impulso y el control, pero la visión aporta el verdadero bosquejo del resultado final.
+
+##### La fuerza del enfoque
+
+* Sabemos que nuestro enfoque mental afecta a lo que percibimos y a nuestra manera de actuar
+* **El sistema activador reticular**. Esta formación reticular constituye en esencia la entrada a tu percepción consciente: es el interruptor que activa tu percepción de las ideas y la información. La función de búsqueda del cerebro parece estar programada por aquello a lo que prestamos atención y, más concretamente, aquello con lo que nos identificamos. Los humanos solo reparamos en lo que coincide con nuestros sistemas internos de creencias y contextos identificados. Si, por ejemplo, eres optometrista, tenderás a fijarte, entre las personas presenter, en aquellas que lleven gafas.
+> En tu mente ocurre algo automático y extraordinario cuando creas una imagen clara de lo que quieres y te centras en ella.
+
+##### Clarificación de los resultados
+
+* Nos vemos obligados a definir permanentemente lo que estamos tratando de conseguir a muchos niveles diferentes, y a reasignar una y otra vez los recursos para conseguir terminar esas tareas de la manera más efectiva y eficiente posible.
+* ¿En qué resultará ese proyecto cuando esté acabado?
+* Cuando logro que la gente se concentre en el supuesto éxito de su proyecto, suelen experimentar un entusiasmo renovado y pensar en algo único y positivo al respecto que no se les había ocurrido con anterioridad.
+
+#### Lluvia de ideas
+
+##### Captura tus ideas
+
+##### Cognición distribuida
+
+##### Las claves de la lluvia de ideas
+
+#### Organización
+
+##### Los fundamentos de la organización
+
+#### Acciones siguientes
+
+##### Lo esencial
+
+#### ¿Hasta qué punto debes planificar?
+
+
 
 
 ## 4. Puesta en marcha: establece el tiempo, el espacio y las herramientas
