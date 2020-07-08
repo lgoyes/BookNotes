@@ -581,21 +581,78 @@
 
 #### Lluvia de ideas
 
+* Cuando te identificas con una imagen mental que no concuerda con tu realidad actual, automáticamente empiezas a subsanar las diferencias con un aluvión de ideas. Estas empiezan a surgir en tu cabeza en un orden bastante aleatorio: pequeñas, grandes, no tan buenas, buenas...
+
 ##### Captura tus ideas
+
+* Cuando tengas la idea, agárrala, lo cual implica que no tendrás que volver a tenerla.
+* En los mapas mentales, la idea central se representa en el centro, con las ideas asociadas creciendo hacia fuera, alrededor de aquella, de una manera bastante libre.
 
 ##### Cognición distribuida
 
+* Lo fantástico de la lluvia de ideas externa es que además de capturar tus ideas originales, te puede ayudar a generar muchas otras nuevas que tal vez no se te hubieran ocurrido de no poseer un procedimiento que conserva tus pensamientos y te los restituye permanentemente.
+* "Cognición distribuída" consiste en extraer cosas de tu mente e introducirlas en formatos revisables y objetivos creando así una "mente extendida".
+
 ##### Las claves de la lluvia de ideas
+
+* Se pueden utilizar muchas técnicas para promover la lluvia de ideas y el pensamiento innovador,
+* **No juzgues, cuestiones, valores ni critiques**
+    * Al modelo de planificación no natural le resulta fácil erguir su horrible cabeza en el proceso de lluvia de ideas, haciendo que la gente se precipite a realizar valoraciones prematuras y críticas de las ideas.
+    * Lo entienes como algo que estás haciendo ahora durante un determinado periodo, antes de avanzar hacia una solución final, te sentirás más cómodo dándole a eseta parte del proceso lo que se merece.
+    * En esta fase debería darse luz verde a todo.
+    * Con frecuencia, es en las ideas más críticas y problemáticas donde está el germen de las mejores.
+    * Las normas fundamentales han de ser la inclusión y la expansión, no la constricción y la contracción.
+* **Decídete por la cantidad, no la calidad**
+    * Buscar la cantidad mantiene a tu pensamiento en expansión.
+    * Con frecuencia no sabrás qué es una buena idea hasta que la tienes; y, a veces, solo te darás cuenta de que es una buena idea andando el tiempo.
+    * Cuanto mayor sea el volumen de las ideas con el que tengas que trabajar, mejor será el contexto que puedes crear para elaborar las alternativas y confiar en tus decisiones.
+* **Sitúa el análisis y la organización en segundo plano**
+    * Igual que le das carta blanca al pensamiento innovador y creativo, así debes dársela al análisis, valoración y organización de tus ideas. Aunque en la fase de lluvia de ideas, esta actividad esencial no debería ser la clave.
 
 #### Organización
 
+* Si has hecho un trabajo concienzudo vaciando tu cabeza de todas las cosas que surgieron en la fase de la lluvia de ideas, observarás que empmieza a emerger una organización natural.
+* Una vez que tengas todas las ideas fuera de la cabeza y ante tu vista, automáticamente repararás en las relaciones y estructuras mentales.
+* La organización se produce cuando identificas los elementos principales y los elementos secundarios, la secuencia de acontecimientos y/o las prioridades.
+* Si un proyecto requiere un control objetivo sustancial, necesitarás algún tipo de esquema jerárquico de los elementos principales y los elementos cronológicamente donde se identifiquen las partes y hechos decisivos independientes y dependientes en relación con el conjunto.
+* En cuanto detectes una estructura básica, tu mente empezará a intentar rellenar los espacios en blanco.
+
 ##### Los fundamentos de la organización
+
+* Identificar las partes importantes
+* Ordenar por elementos, secuencias, prioridades.
+* Detallar en la medida necesaria.
 
 #### Acciones siguientes
 
+* La última fase de la planificación se reduce a las decisiones sobre la distribución de los recursos físicos a fin de lograr que el proyecto avance.
+* ¿Cuál es la acción siguiente?
+* Sé por propia experiencia que crear una lista de cuáles son tus verdaderos proyectos y gestionar coherentemente las acciones siguientes para cada uno de ellos, representará el 90 por ciento de lo que generalmente se considera planificación de un proyecto.
+* Si el proyecto está en la categoría de los que requiere una acción, la decisión de pensar la acción siguiente habrá de tomarse en algún momento.
+* Responder a la pregunta de qué cosa concreta harías físicamente en relación con algo si no tuvieras nada más que hacer pondrá a prueba la madurez de tus ideas sobre el proyecto.
+* Si todavía no estás preparado para responder a esa pregunta, entonces es que tienes que afinar los detalles en algún nivel previo dentro de la secuencia de planificación natural.
+
 ##### Lo esencial
 
+* Decidir las acciones siguientes para cada uno de las "partes móviles" del proyecto.
+* Decidir la acción siguiente en el proceso de planficación.
+
+* **Activación de las partes móviles**.
+    * Un proyecto estará suficientemente planificado para ponerlo en ejecución cuando se hayan decidido las acciones siguientes para todos los frentes en los que se le pueda hacer avanzar, sin que previamente haya que completar ningún otro elemento.
+    * ¿Hay algo que alguien podría estar haciendo en este preciso instante?
+    * En algunos supuestos habra solo un aspecto susceptible de activarse, y todos los demás dependerán del resultado de hacerlo. Así que puede que solo haya una acción siguiente, la cual será el eje alrededor del cual gire todo lo demás.
+* **Más cosas que planificar**
+    * ¿Y si todavía tuvieras que planificar más cosas antes de que te puedas sentir tranquilo con lo que ocurrirá a continuación?
+    * ¿Cuál es entonces el siguiente paso para continuar con la planificación? Elaborar más ideas.
+    * El hábito de clarificar la acción siguiente de los proyectos, independientemente de cuál sea la situación, es fundamental para que conserves el control y la tranquilidad.
+* **Cuando la siguiente acción depende de otra persona**
+    * Aunque la siguiente acción no sea cosa tuya, aún así debes aclarar a quién le corresponde.
+    * A menudo solo se necesita distribuir las responsabilidades para cada una de las partes del proyecto entre las personas adecuadas y dejar en sus manos la identificación de las acciones siguientes en aquella que sea de su competencia.
+    * Mantener una charla sobre las acciones siguientes obliga a la claridad organizativa. Hay asuntos y detalles que no surgen hasta que alguien pone a los demás contra las cuerdas en relación con la realidad física de la asignación de los recursos.
+
 #### ¿Hasta qué punto debes planificar?
+* ¿Hasta qué punto tienes que completar este modelo de planificación y con qué grado de detalle? La respuesta es sencilla: hasta donde sea necesario para que dejes de pensar en el proyecto.
+* En general, la razón de que sigas pensando en las cosas es que no has definido adecuadamente el resultado y las acciones y no has colocado ningún recordatorio en los lugares en los que confías para ir a buscarlos cuando proceda.
 
 
 
