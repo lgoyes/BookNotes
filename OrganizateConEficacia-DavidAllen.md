@@ -653,11 +653,75 @@
 #### ¿Hasta qué punto debes planificar?
 * ¿Hasta qué punto tienes que completar este modelo de planificación y con qué grado de detalle? La respuesta es sencilla: hasta donde sea necesario para que dejes de pensar en el proyecto.
 * En general, la razón de que sigas pensando en las cosas es que no has definido adecuadamente el resultado y las acciones y no has colocado ningún recordatorio en los lugares en los que confías para ir a buscarlos cuando proceda.
+* A mayor abundamiento, puede que no hayas elaborado bastante los detalles, las perspectivas y las soluciones para que confíes en la eficacia de tu proyecto.
+* La mayoría de estos, teniendo en cuenta mi definición de proyecto como un resultado que requiere más de una acción, no precisan más que una relación de sus resultados y acciones siguientes para que te puedas olvidar de ellos.
+* Un 5 por ciento de los proyectos tal vez necesiten la aplicación deliberada de una o más de las cinco fases del modelo de planificación natural.
 
+##### ¿Necesitas más claridad?
 
+* Si falta claridad desde el punto de vista de la planificación, es probable que se necesite más lluvia de ideas para generar un inventario suficiente de ideas y datos actuales para promover la confianza en el plan.
+* Si la sesión de lluvia de ideas se atasca con ideas vagas, debería volver a ponerse el enfoque en la visualización del resultado, lo que garantizaría que el filtro reticular del cerebro se abra para suministrar ideas sobre cómo hacer las cosas.
 
+##### ¿Necesitas que ocurra algo más?
+
+* Tal vez haya entusiasmo por el propósito de un proyecto pero, al mismo tiempo, también cierta resistencia a concretar la apariencia que su realización podría tener en el mundo real.
+* Y si _hay_ un plan, pero la cosa no marcha como debería, alguien tendrá que valorar cada uno de los elementos guiándose por esta pregunta: ¿Cuál es la acción siguiente, y a quién le compete?
+* ¿Qué partes se podrían hacer avanzar ahora mismo? Después de identificar media docena, aclaramos la acción siguiente de cada una.
+* Debes ser responsable de recopilar todos tus ciclos abiertos, aplicar un proceso previo de reflexión a cada uno de ellos y gestionar los resultados, organizándolos y actuando.
+* Hacer uso de ese modelo de cinco fases a menudo puede conseguir que la evolución sea más fácil, rápida y productiva.
 
 ## 4. Puesta en marcha: establece el tiempo, el espacio y las herramientas
+
+### LA IMPLEMENTACION, SEA TOTAL U OCASIONAL TIENE MUCHO QUE VER CON LOS TRUCOS
+
+* Por ejemplo, si eres un deportista medianejo como yo, es probable que tengas tus trucos para ponerte a hacer ejercicio, En mi caso, el mejor truco es la vestimenta, la ropa que me pongo o me quito. Si me pongo la ropa de deporte, empezaré a tener ganas de hacer ejercicio; si no, es muy probable que me apetezca hacer otra cosa.
+* Tu parte iteligente sabe la noche anterior que a primera hora de la mañana tu parte menos inteligente apenas estará consciente. ¿Qué es eso que hay delante de la puerta? Ah! si, me lo tengo que llevar!
+* Si sacaras ahora mismo tu calendario y repasaras con atención todos y cada uno de los asuntos para los próximos catorce días, es probable que pensaras al menos una vez: "Ah, eso me recuerda que tengo que ___"
+* Entonces captura lo que aparezca en tu cabeza en una hoja de papel y ponla donde realmente pudieras utilizar esa idea o información.
+
+### RESERVAR TIEMPO
+
+* Establezcas un periodo específico para iniciar este proceso y que prepares un puesto de trabajo que disponga del espacio, el mobiliario y las herramientas adecuadas. Si estableces y racionalizas el espacio de forma apropiada, eso puede reducir tu resistencia inconsciente a enfrentarte a tus "asuntos" e incluso que te resulte atractivo sentarte y ponerte a resolver rápidamente tus entradas y trabajo.
+* El momento ideal para ayudar a alguien a implementar esta metodología es durante un fin de semana o unas vacaciones, porque entonces las posibilidad de que se produzcan perturbaciones externas son mínimas.
+* Capturar y tomar decisiones sobre un inventario tan grande de ciclos abiertos requiere mucha energía mental, sobre todo cuando llevan abiertos, sin resolver o estancados desde hace mucho tiempo.
+
+### PREPARAR EL ESPACIO
+
+* Tendrás que escoger un lugar físico que te sirva de cabina de mando central.
+* Lo básico para un espacio de trabajo es una superficie donde escribir y espacio para colocar una bandeja de entrada y quizás también los dispositivos digitales fundamentales.
+* Disponer de un espacio suficiente aparte para dedicarse a procesar las notas, el correo, los proyectos familiares y del hogar, así como las aficiones, la economía y otras cosas similares, es crucial.
+* Por lo general, estos asuntos de la vida cotidiana andan desperdigados sinorden ni concierto por la cocina y el recibidor, sobre la mesa del comedor, dentro de los libros y en los revisteros y siempre con un efecto inhibidor.
+
+#### Aunque trabajes en una oficina, aún así necesitas un espacio en casa
+
+* No escatimes en un espacio de trabajo en casa.
+* Es esencial que tengas al menos un sistema satélite en casa idéntico al que posees en tu oficina.
+
+##### Un espacio de trabajo móvil
+
+* Si te mueves mucho, como un viajante de comercio o simplemente porque ese es tu estilo de vida, también deberás montar una diminuta oficina móvil organizada y eficaz.
+* La combinación de un buen estilo de procesamiento, las herramientas adecuadas y unos buenos sistemas interconectados en casa, y en el trabajo pueden convertir los viajes en una manera sumamente provechosa de hacer ciertos tipos de trabajo. A medida que la tecnología nos sigue suministrando a la mayoría unos equipos móviles más potentes y un acceso global veloz, la capacidad para gestionar virtualmente la propia vida aumenta. Pero el problema inherente a esto es la confusión de la gestión del tráfico que resulta con todas las opciones disponibles en tus dispositivos móviles. Si no ha establecido una buena metodología de captura, clarificación y organización, provista de las adecuadas aplicaciones y herramientas estructuradas para permitir manejarlo cuando se produce, el nuevo mundo del acceso móvil global acabará infrautilizado, si es que no se convierte en sí mismo en una fuente de distracción innecesaria y estrés.
+
+##### ¡No compartas el espacio!
+
+### HAZTE CON LAS HERRAMIENTAS QUE VAYAS A NECESITAR
+
+#### Las herramientas básicas de procesamiento
+
+##### Bandejas para papel
+##### Papel
+##### Postits, clips, grapadora, etcétera
+##### Etiquetadora
+##### Carpetas archivadoras
+##### Calendario
+##### Papelera y cestas de reciclado
+##### ¿Necesitas un organizador?
+
+#### El factor fundamental de un sistema de archivo
+##### Factores para archivar con éxito
+
+
+
 
 
 
