@@ -704,21 +704,65 @@
 
 ##### ¡No compartas el espacio!
 
+* Es indispensable que tengas tu propio espacio de trabajo, o cuando menos tu propia bandeja de entrada y un lugar en el que procesar el papel y el material físico.
+* Algunas organizaciones están interesadas en el concepto de "hostelaje", esto es, hacer que los empleados creen puestos de trabajos móviles y autosuficientes de manera que en cualquier momento puedan "conectarse" en el lugar de la empresa donde se encuentren y trabajen desde allí.
+* Los experimentos con este sistema han fracasado porque alteran la estabilidad de la estación de trabajo.
+* Puedes trabajar virtualmente en cualquier parte siempre que dispongas de un sistema compacto y ordenado y sepas cómo procesar tus "asuntos" con rapidez y portabilidad. Pero aún así necesitarás una base de operaciones con un conjunto de referencia y de apoyo que necesitarás tener en algún lugar al alcance de la mano, cuando te sientes.
+* Grande o pequeño, ese inventario de elementos colaterales y de referencia necesita un hogar al que se pueda acceder fácilmente.
+
 ### HAZTE CON LAS HERRAMIENTAS QUE VAYAS A NECESITAR
 
 #### Las herramientas básicas de procesamiento
 
+* SUpongamos que empiezas de cero. Además de una mesa y un espacio de trabajo necesitarás:
+
 ##### Bandejas para papel
+
+* Estas te servirán como bandejas de entrada y salida, con una o dos más para los documentos de apoyo al trabajo en curso y para los documentos pendientes de leer y revisar.
+
 ##### Papel
+
+* Utilizarás hojas de papel durante el proceso inicial de recopilación.
+* La mayoría de la gente acabará procsando sus notas en alguna especie de organizador de listas, pero tener las ideas iniciales por separado en lugares independientes facilita su cierre posterior en las fases de procesamiento y organización.
+
 ##### Postits, clips, grapadora, etcétera
+
+* Los postits, clips, grapadora, cinta adhesiva y gomas elásticas vendrán bien para orientar y almacenar los materiales en soporte papel.
+
 ##### Etiquetadora
+
+* La etiquetadora se utilizará para marcar las carpetas, los lomos de las encuadernaciones y otras muchas cosas.
+
 ##### Carpetas archivadoras
+
+* Las carpetas de un solo color están bien; la codificación por colores implica un nivel de complejidad que apenas justifica el esfuerzo. Tu sistema de archivo de referencia general debería ser una sencilla biblioteca.
+
 ##### Calendario
+
+* El calendario no debería utilizarse para contener las listas de acciones, sino para seguirle el rastro al "panorama fijo" de las cosas que tienen que hacerse en un momento dado o en un día concreto.
+
 ##### Papelera y cestas de reciclado
+
+* Si eres como la generalidad de la gente, cuando pongas en práctica este proceso vas a tirar muchas más cosas de las que supones, así que preparárate para un buen montón de basura.
+
 ##### ¿Necesitas un organizador?
 
+* Lo que quede -mantener un inventario de proyectos, registrar asuntos, acciones y recordatorios de citas en el calendario y hacer el seguimiento de las cosas que están en espera- necesitará algún tipo de lista o que las agrupes por asuntos para revisarlas después.
+* Has de tener presente que las herramientas que utilices no te proporcionarán una productividad sin estrés; esto es algo que _conseguirás_ llevando a la práctica el método GTD.
+* La estructura que incorpores _será_ de suma importancia para tu manera de expresar e implementar el proceso, pero no es un sustituto de este.
+> Un estupendo martillo no hace un carpintero fantástico; aunque un fantástico carpintero siempre querrá tener un martillo estupendo.
+* No te olvides de que en realidad lo único que necesitas hacer es gestionar unas listas. Tienes que ser capaz de crear una lista sobre la marcha y revisarla fácilmente y con la regularidad que necesites.
+
 #### El factor fundamental de un sistema de archivo
+
+* Y la razón de que esto sea así no es que el contenido sea tan importante o estratégico; se trata más bien de que, si no se gestiona, empaña sobremanera el espacio mental y físico. El materal aleatorio que no requiera ninguna acción pero potencialmente importante que no se procesa ni se organiza, genera unas interferencias psicológicas enervantes. Y lo que es más importante, produce un bloqueo en la "fluidez" del flujo de trabajo, de manera que las cosas suelen dar marcha atrás e inundar la zona como ocurre con las cañerías atascadas.
+* Los archivos de referencia general deben contener los artículos, folletos, hojas de papel, notas, impresos y documentos e incluso cosas físicas como entradas, llaves, tarjetas de clubes de compra y memorias externas; en esencia, cualquier cosa que quieras conservar por lo interesante o útil de su información y propósito y que no encaje en tus sistemas de archivo especializados ni se sostenga por sus propios medios en un estante.
+* Muchas personas siguen utilizando la bandeja de entrada de su correo electrónico como un difuso almacén de referencia general y se resisten a abrir en la aplicación una carpeta con el nombre "Robert" o "Programas escolares" a la cual pueda ser arrastrado y dejarlo guardado, o bien copiarlo y pegarlo en un buen programa o base de datos para almacenar referencias.
+* En la actualidad disponemos de la ofimática que nos permite capturar y catalogar este tipo de información, aunque también te exige que pares a pensar un poco sobre la forma de estructurarla, además de cierta predisposición a hacer fluir esta clase de asuntos a los lugares adecuados, en lugar de complicar y desorganizar el propio entorno digital.
+
 ##### Factores para archivar con éxito
+
+* Te recomiendo encarecidamente que mantengas un sistema de archivo personal accesible, tanto físico como digital. Deberás tardar menos de un inuto en recoger algo de tu bandeja de entrada o imprimirlo desde el correo electrónico, decidir si no precisa de una acción siguiente pero tiene algún posible valor para el futuro y terminar almacenándolo en un sistema fiable.
 
 
 
