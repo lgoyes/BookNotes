@@ -237,7 +237,7 @@
 * Uno únicamente puede pensar en dos o tres cosas a la vez. Pero los temas incompletos siguen estando almacenados en el espacio de la memoria a corto plazo, que, como la RAM, tiene una capacidad limitada; ahí solo puedes guardar una cantidad limitada de cosas para que esa parte de tu cerebro siga funcionando a un nivel elevado.
 * Los estudios han demostrado que nuestros procesos mentales se ven obstaculizados por la carga impuesta a nuestra mente de seguirle el rastro a las cosas que nos hemos comprometido a terminar, sin haber establecido un plan o sistema fiable para manejarlas.
 * Un problema considerable es que tu mente no para de recordarte las cosas cuando no puedes hacer nada al respecto, ya que para ella no existe el pasado ni el futuro. Esto significa que en cuanto te dices que quizá tuvieras que hacer algo, y lo almacenas solo en tu cabeza, habrá una parte de ti que pensará _permanentemente_ que deberías estar haciendo eso. Todo lo que en algún momento te hayas dicho que deberías hacer, la mente piensa que deberías estar haciendolo _ahora mismo_.
-* El único momento en que la mayoría se dará cuenta de la gran tensi´øn que han estado soportando será cuando se liberen de ella y comprueben lo distintos que se sienten.
+* El único momento en que la mayoría se dará cuenta de la gran tensión que han estado soportando será cuando se liberen de ella y comprueben lo distintos que se sienten.
 
 ## 2. Controla tu vida: las cinco fases para dominar el flujo de trabajo
 * No se trata simplemente de "organizarse" o "establecer prioridades"; son cosas buenas, pero suceden como resultado de aplicar esos cinco pasos, no por sí solas.
@@ -329,7 +329,7 @@
 * **¿Cuál es la acción siguiente?** La "acción siguiente" es la siguiente actividad física y visible en la que hay que comprometerse, a fin de hacer avanzar la realidad actual de esa cosa hacia su finalización.
 * Estas son actividades reales que tienen que producirse. Los recordatorios de estas se convertirán en la principal molienda para el molino de tu sistema de gestión de productividad personal.
 * **Hacerlo, delegarlo o diferirlo** En cuanto hayas decidido la acción siguiente, tienes tres opciones:
-    1. _Hacerla_. Si realizar una acci´øn supusiera menos de dos minutos, debería _hacerse_ en cuanto se deina.
+    1. _Hacerla_. Si realizar una acción supusiera menos de dos minutos, debería _hacerse_ en cuanto se deina.
     2. _Delegarla_. Si la acción durará más de dos minutos, pregúntate: "Soy la persona adecuada para hacer esto?" Si la respuesta es no, _delégala_ en la instancia correcta.
     3. _Diferirla_. Si la acción se prolongará más de dos minutos, y eres la persona adecuada para hacerla, tendrás que diferir su ejecución a un momento posterior y seguirle la pista en una o más listas de "acciones siguientes".
 
@@ -342,7 +342,7 @@
 
 #### Proyectos
 
-* Defino "proyecto" como cualquier resultado deseado que se pueda conseguir antes de un año y que exija una acci´øn de más de un paso.
+* Defino "proyecto" como cualquier resultado deseado que se pueda conseguir antes de un año y que exija una acción de más de un paso.
 * Algunas cosas bastante pequeñas a las que normalmente podrías no llamar proyectos van a figurar en tu lista de proyectos, además de algunas grandes.
 * El razonamiento en el que se apoya mi definición es que si un paso no completa algo, entonces es necesario dejar algún tipo de marca que te recuerde que aún queda algo pendiente de hacer.
 * Si careces de un lugar o marcador de posición que te lo recuerde, el asunto volverá sigilosamente a tu cabeza.
@@ -366,7 +366,7 @@
 
 #### Categorías de las acciones siguientes
 
-* La decisi´øn de la acción siguiente es capital. Sin excepción, esa acci´øn tiene que ser la siguiente conducta física visible en todos los ciclos abiertos.
+* La decisión de la acción siguiente es capital. Sin excepción, esa acción tiene que ser la siguiente conducta física visible en todos los ciclos abiertos.
 * Las que sí necesitan un seguimiento son todas las acciones que tengan que ocurrir en un momento concreto o en un día concreto (introdúcelas en tu calendario), las que tienen que hacerse tan pronto como sea posible (añade estas a tus listas de Acciones siguientes) y todas aquellas que esteás esperando a que hagan los demás (ponlas en la lista En espera).
 
 ##### Calendario
@@ -405,7 +405,7 @@
 
 * Hay muchas cosas que se cruzan en tu camino que no requieren ninguna acción pero tienen un valor intrínseco como información, así que debes guardarlas y poder recuperarlas cuando las necesites.
 * Lo más importante que hay que recordar a este respecto es que la referencia ha de ser exactamente eso, una información que se pueda consultar fácilmente cuando se necesite. Los sistemas de referencia por lo general adoptan dos formas: (1) el almacenamiento específico por área y tema y (2) los archivos de referencia general.
-    1. **Almacenamiento específico por área y tema.** Cómo están almacenados los archivos. e.g. caj´øn de un archivador dedicado a contratos por orden de fecha.
+    1. **Almacenamiento específico por área y tema.** Cómo están almacenados los archivos. e.g. cajón de un archivador dedicado a contratos por orden de fecha.
     2. **Archivo de referencia general.** La segunda clase de sistema de referencia es el que todos necesitan tener a mano para almacenar la información específica que todos necesitan tener a mano para almacenar la información específica que no pertenezca a una categoría mayor predeterminada. Necesitas un lugar para guardar los manuales de instrucciones de los utensilios de cocina.
 
 ### REFLEXIONAR
@@ -486,10 +486,10 @@
 * Tus **principios** establecieron los límites de tu plan.
 * Una vez que decidiste satisfacer tu propósito, ¿cuáles fueron tus primeros pensamientos sustanciales. Casi seguro que también tuviste alguna imagen favorable acerca de lo que podrías experimentar o de cómo se desarrollaría la velada, y quizá de las personas involucradas, la atmósfera y/o el resultado. Esa fue tu **visualización del resultado**. Mientras que tu propósito lo constituyó el porqué de que salieras a cenar, tu visualización fue una imagen del qué: de qué manera el aspecto, los sonidos y sensaciones del mundo físico satisfarían mejor tu propósito.
 * Y una vez que identificaste esto con tu visión, ¿qué fue lo que empezó a hacer tu mente de forma natural? ¿EN qué empezó a pensar? Esa fue tu **lluvia de ideas**. Estas preguntas formaban parte del proceso naturalmente creativo que ocurre en cuanto te comprometes con algún resultado que no se ha producido todavía.
-* Tu cerebro percibe una discrepancia entre aquello en lo que estás pensando y el lugar donde te encuentras realmente en ese momento, y empieza a resolver esa disonancia cognitiva tratando de llevar los espacios en blanco. Este es el principio de la fase del _cómo_ de la planificaci´øn natural.
+* Tu cerebro percibe una discrepancia entre aquello en lo que estás pensando y el lugar donde te encuentras realmente en ese momento, y empieza a resolver esa disonancia cognitiva tratando de llevar los espacios en blanco. Este es el principio de la fase del _cómo_ de la planificación natural.
 * En cuanto generaste el número suficiente de ideas y detalles, no pudiste por menos que empezar a **organizarlas**.
 * Una vez que hayas generado los diferentes pensamientos pertinentes al resultado, tu mente empezará de manera automática a clasificarlos por elementos, prioridades y/o secuencias de acontecimientos.
-* Esta es la secci´øn de la planificación natural que, por su misma naturaleza, incluye el _cuestionamiento_, las _comparaciones_ y la _evaluación_. Una cosa es mejor, más grande o prioritaria.
+* Esta es la sección de la planificación natural que, por su misma naturaleza, incluye el _cuestionamiento_, las _comparaciones_ y la _evaluación_. Una cosa es mejor, más grande o prioritaria.
 * Por último, te centras en la **acción siguiente** que tienes que realizar para conseguir que se produzca efectivamente el primer elemento.
 * Estas cinco fases de la preparación del proyecto se producen de forma natural en todas las cosas que realizas durante el día.
 > Primero sientes el impulso de hacer que ocurra algo, entonces imaginas el resultado, a continuación generas las ideas que podrían ser importantes, las clasificas dentro de una estructura y, por último, defines la actividad física que empezaría a hacerla realidad.
@@ -763,14 +763,39 @@
 ##### Factores para archivar con éxito
 
 * Te recomiendo encarecidamente que mantengas un sistema de archivo personal accesible, tanto físico como digital. Deberás tardar menos de un inuto en recoger algo de tu bandeja de entrada o imprimirlo desde el correo electrónico, decidir si no precisa de una acción siguiente pero tiene algún posible valor para el futuro y terminar almacenándolo en un sistema fiable.
+* Si tardas más de un minuto en archivar algo en un formato fácilmente recuperable, es probable que en vez de hacerlo acabes apilándolo o metiéndolo en alguna parte.
+* Si confías en que toda esa clase de información está disponible de manera instantánea y virtual en la Red y que jamás necesitarías disponer de ella en forma impresa, entonces asegúrate de que no duplicas los sistema innecesariamente y de que lo que escojas y cómo lo utilices lo hacer de forma fluida.
 
+* **Ten al alcance de la mano tus archivos de referencia general** Archivar tiene que ser una labor instantánea y fácil. Si te tienes que levantar cada vez que quieres archivar un papel especial, o tienes que buscar en multitud de lugares de tu ordenador una ubicación adecuada para un dato que quieres guardar, tu inclinación natural será la de apilar o dejar las cosas en su sitio original en lugar de archivarlas.
+* **Un único sistema alfabetizado** Mis carpetas de referneica del correo electrónico también están organizadas de esta manera. Las personas se sienten inclinadas a utilizar sus archivos como un sistema de gestión personal y, por consiguiente, intentan organizarlos agrupándolos por proyectos o áreas de enfoque. Esto aumenta geométricamente el número de lugares donde _no_ está algo, cuando olvidas en dónde lo archivaste. En lineas generales, podrías incluir al menos un subgrupo de temas en cada etiqueta, como pueda ser "Jardín: Macetas" y "Jardín: Ideas", que serían archivados en la J. Con tantas opciones y ubicaciones para el almacenamiento de información, esa capacidad puede añadir fácilmente una buena dosis de complejidad y confusión. La mayoría de las personas que conozco que ni siquiera están muy ocupadas, no dedicarán el tiempo ni el esfuerzo necesario para utilizar esas herramientas y catalogar todos sus asuntos en todas sus posibles aplicaciones.
+* El mayor problema que se les plantea a las personas familiarizadas con la electrónica es que la facilidad para capturar y almacenar ha generado el síndrome del "solo escritura": esto es, todo lo que hacen es capturar información, y en realidad ni la consultan ni la utilizan con inteligencia. Es necesario actuar con cierto sentido para mantener operativa la potencialmente enorme biblioteca digital y no convertirla en un agujero negro donde se descargue la información con un par de golpes de tecla.
+* **Haz fácil la creación de una nueva carpeta** Dominar la forma de crear instantáneamente un nuevo directorio en tu programa de almacenamiento de datos, siempre que lo necesites.
+* **Asegúrate de tener suficiente espacio para facilitar el almacenamiento** Si un cajón empieza a estar apretado, tal vez lo depure mientras espero al teléfono. Si estás atengo al espacio de almacenamiento de tus dispositivos digitales, este es un buen momento para revisar y depurar. 
+* Preocuparse de tener espacio en el ordenador o en la nube. Una decisión que tienes que tomar de forma permanente es la de la cantidad de espacio que te concedes de manera que el contenido mantenga su significado y siga siendo fácilmente accesible, sin necesidad de crear un agujero negro de una cantidad desorbitada de información vagamente organizada.
+* **Depura tus archivos una vez al año por lo menos** Hacer limpieza general en tus archivos de manera regular impide que se estanquen y parezcan un agujero negro, y también te da libertad para guardar lo que se te antoje "por si pudieras necesitarlo".
 
+##### El archivado como un factor de éxito en sí.
 
+* Los materiales de apoyo y referencia rara vez se asocian con la urgencia ni tienen un carácter estratégico en el esquema general de las cosas. De ahí que su gestión se suela poner como algo de poca importancia, eso si se llega a abordar alguna vez.
+* Sin embargo, el problema es que tus espacios de trabajo tanto físico como mental acaban atestados de "asuntos" que no requieren acción pero que son potencialmente relevantes y útiles: "¿Qué es esto?", "¿Por qué está aquí" y "¿Qué debería hacer con esto? y "¿Dónde está lo que necesito ahora?" se convierten en voces subliminales que asolan la conciencia si este aspecto de tu mundo no está debidamente establecido y mantenido.
 
+### UNA ULTIMA COSA QUE PREPARAR
 
+* Si has decidido dedicar un tiempo determinado a establecer tu sistema de flujo de trabajo, hay una cosa más que tendrás que hacer para dotarle de la máxima efectividad: debes despejar las superficies de trabajo de cualqueir otro compromiso mientras dure la sesión.
+* Si tienes que hacer algo inexcusablemente, hazlo ahora. O llega a un acuerdo contigo mismo sobre cuándo lo harás, y luego, coloca algún recordatorio para hacerlo donde no lo pases por alto. Es crucial que el trabajo que te dispones a hacer cuente con toda tu atención.
 
 ## 5. Capturando: acorralando tus _asuntos_
 
+* Es probable que en el mundo real no seas capaz de tener recopilado el 100% de tus cosas a todas horas. Si te pasa lo mismo que a la mayoría de la gente, durante la semana te faltará tiempo, ocupado en mil menesteres, para conseguir capturar todas tus ideas y compromisos fuera de tu cabeza. 
+* Sería ideal que te impongas la norma de conservar la motivación para hacer una limpieza sistemática de todas las cosas de trabajo y de la vida que distraen tu atención.
+
+### PREPARADO, LISTO...
+
+* Existen razones muy prácticas para recopilarlo todo antes de que empieces a procesarlo:
+    1. Es útil tener una idea del volumen de los asuntos que tienes que manejar;
+    2. Te permite saber dónde se encuentra el "final del tunel" y 
+    3. Cuando estás clarificando y organizando, tú no quieres ser distraído psicológicamente por una masa amorfa de asuntos que puedan andar por ahí "en algún lado". Una vez que tienes todas las cosas que requieren de tu atención reunidas en un solo lugar, estarás automáticamente operando desde un estado de enfoque y control.
+* Capturar al mismo tiempo en una sola ubicación todas las cosas que están fuera de su sitio puede resultar desalentador. Hasta puede antojarse un poco ilógico, dado que en la mayor parte de los casos la inmensa mayoría de esas cosas no eran ni son "tan importantes": esa es la razón de que todavía anden por ahí. Esta es la clase de cosas que te incordian pero sobre las que no has decidido si te ocuparás de ellas o las eliminarás de tu lista de ciclos abiertos. Sin embargo, dado que piensas que aún podrían ser importantes, esas cosas te están controlando y robando más energía de la que merecen.
 
 
 ## 6. Clarificando: llevando las _entradas_ a cero
