@@ -797,6 +797,74 @@
     3. Cuando estás clarificando y organizando, tú no quieres ser distraído psicológicamente por una masa amorfa de asuntos que puedan andar por ahí "en algún lado". Una vez que tienes todas las cosas que requieren de tu atención reunidas en un solo lugar, estarás automáticamente operando desde un estado de enfoque y control.
 * Capturar al mismo tiempo en una sola ubicación todas las cosas que están fuera de su sitio puede resultar desalentador. Hasta puede antojarse un poco ilógico, dado que en la mayor parte de los casos la inmensa mayoría de esas cosas no eran ni son "tan importantes": esa es la razón de que todavía anden por ahí. Esta es la clase de cosas que te incordian pero sobre las que no has decidido si te ocuparás de ellas o las eliminarás de tu lista de ciclos abiertos. Sin embargo, dado que piensas que aún podrían ser importantes, esas cosas te están controlando y robando más energía de la que merecen.
 
+### YA!
+
+#### Recopilación física
+
+* El primer paso consiste en inspeccionar tu entorno físico en busca de cualquier cosa que esté permanentemente fuera de lugar en su estado actual y la pongas en la bandeja de entrada.
+* Vas a reunir las cosas que estén incompletas, esas que están pendiente de decisión sobre cualquier acción potencial asociada a ellas. Todas van a "entradas", de manera que estén disponibles para un procesamiento posterior.
+
+##### Lo que se da donde está
+
+* Si tu cajón de suministros está descontrolado o lleno de montones de cosas sin organizar o inservibles, entonces es una cosa icompleta que hay que capturar. ¿Las fotos de tus hijos son actuales? ¿Es ese cuadro lo que quieres en la pared? ¿Quieres seguir conservando realmente esos recuerdos? ¿Es así como debería ser el mobiliario? ¿Está instalado el ordenador como querías? ¿Están vivas las plantas de tu oficina? En otras palabras, los suministros, materiales de referencia, la decoración y el equipo tal vez necesiten ser arrojados a la bandeja de entrada si no están donde tendrían que estar ni en el estado debido.
+
+##### Cuestiones acerca de la captura
+
+* Cuando emprendas la fase de la captura, es posible que te encuentres con una o varias de las siguientes complicaciones:
+* Por otro lado, ponerle la fecha a todo lo que escribes es un hábito fantástico, ya sean las notas en postit para tu secretaria, ya las transcripciones que hagas de los correos de voz en una libreta, ya las notas que tomas mientras hablas por teléfono con un cliente.
+* El 3 por ciento de las ocasiones en que esta sencilla información se revelará sumamente útil justifica con creces que adquieras esta costumbre.
+* Si no estás seguro de la naturaleza de algo o de si merece la pena guardarlo, sigue adelante y ponlo en "entradas": ya podrás decidir más tarde qué haces con ello, cuando proceses la bandeja de entrada. Lo que no debes hacer es dejarte atrapar por las cosas una a una, tratando de decidir esto o aquello.
+* La clarificación requiere una actitud diferente que la captura; lo mejor es hacer cada cosa por separado. De todas maneras, si están en "entradas", ya procesarás tus asuntos más tarde, y es más fácil tomar ese tipo de decisiones cuando estás en disposición de hacerlo.
+* El objetivo del proceso de captura es el de meter todo en "entradas" lo más deprisa posible, de modo que estés debidamente protegido y con "las líneas de combate" dispuestas.
+* **Cuidado con el virus de la depuración y la organización** Son muchos los que se infectan con el virus de limpiar y organizar mientras revisan las diversas áreas de su oficina (y su hogar).
+* Esto te puede llevar más tiempo del que cres y lo que debes hacer es ir al grano, terminar de procesar todas tus cosas e implantar tu sistema lo más pronto posible.
+* **¿Qué pasa con las cosas que ya están incluídas en listas y organizadores?** Te recomiendo que trates esas listas como elementos que tienen que ser procesados, exactamente igual que todas las demás cosas que están en "entradas".
+* Ocurre a menudo durante el proceso de captura que alguien se tope con una hoja de papel o un documento que le hace exclamar: "Ay, Dios mío! Me había olvidado de esto! Tengo que ocuparme de ello!". Si te ocurre, empieza por pregutnarte si se trata de algo que tiene que hacerse sin falta antes de que termines este periodo inicial de implementación. Si fuera así, lo mejor es que te ocupes de ello inmediatamente, para que puedas olvidarte del asunto. Si no, sigue y pongo en "entradas".
+* Si no puedes llevar a cabo esa acción de inmediato y aún así tienes que hacer el recordatorio delante para no olidarte, forma un montón de "emergencia" en alguna parte donde puedas tenerlo a mano.
+* Refrena el ipulso, habitual en todo el mundo al comenzar, de decir: "Bueno, sé lo que hay en ese montón, y es ahí donde quiero dejarlo". Esto es precisamente lo que no ha funcionado antes, así que es necesario que todo vaya a la bandeja de entrada.
+* Si hay que cambiar algo, anótalo en un papel y échalo a las "entradas".
+
+##### Los cajones de la mesa
+
+* A continuación enfréntate a los cajones de la mesa.
+* Hay algo ahí dentro digno de interés? Algún asunto que requiera una acción? Algo que esté ahí y que no deba estar? Si la respuesta a cualquiera de estas preguntas es afirmativa, coloca el asunto que requiere una acción en "entradas" o escribe una nota al respecto.
+
+##### Otras superficies
+
+* Es posible que haya material de referencia que ya has utilizado y luego dejado de lado; si es así y puedes devolverlo al archivador o estantería en un segundo, no te lo pienses y hazlo. Aunque, antes de retirarlo, medita cuidadosamente si no tienes pendiente alguna acción relacionada con dicho material. Si fuera así, colócalo en "entrads" para que peudas ocuparte de él en fases posteriores.
+
+##### Interior de los armarios
+
+* Ahora mira dentro de los armarios. ¿Qué hay allí?
+* No es infrecuente que me encuentre con piezas de colección y objetos de valor sentimental que ya no significan nada para el dueño.
+* Una vez más, si alguna de estas áreas está fuera de control y necesita ser limpiada y organizada, anótalo en una hoja y ponla en "entradas".
+
+##### Suelos, paredes y estantes
+
+* Alguna foto, ilustración, placa u objeto decorativo que requiera tu atención? Y qué hay de los estantes abiertos? Contienen algún libro que debas leer o regalar? Algún catálogo, manual o carpeta de anillas que estén desfasados o que tengan alguna posible acción asociada a ellos?
+
+##### Equipo, mobiliario y plafones
+
+* Hay algo que quieras hacer o cambiar en relación con los aparatos, el mobiliario o el propio espacio físico de tu oficina? Funciona todo bien?
+
+##### Otros lugares
+
+* A menudo se han dejado coger en la trampa de las cosas "no tan importantes" de sus casa y otros espacios de trabajo secundario y esto les ha dejado sin energía.
+
+##### No se trata de que te deshagas de cosas que podrías querer.
+
+* La gente suele confundir mi consejo como una defensa a ultranza del minimalismo. Nada más lejos de la realidad: si deshacerte de algo te hace sentir a disgusto, entonces _debes_ conservalor. De lo contrario, te dedicarás a pensar en el hecho de que ahora no tienes algo que quizás podrías querer o necesitar.
+* Eres aficionado a tener todo tipo de juguetes disparatados, ilustraciones y cachivaches esparcidos por tu oficina para estimular el pensamiento creativo? No hay ningún problema, siempre que estén en el lugar que les escojas, conserven su forma y que en el sistema hayas capturado y procesado todo lo que quieras o necesites hacer al respecto.
+
+##### Recopilación mental: El barrido mental
+
+* A qué estás dedicando tu atención que no esté representado por algo que tengas ya en tu bandeja de entrada?
+* Mi consejo es que escribas cada pensamiento, cada idea y cada proyecto en _sendas_ hojas por _separado_.
+* Para concentrarse en un asunto cada vez a medida que los procesas, al principio es necesario cierta disciplina.
+* Así pues, asignar a cada pensamiento, por trivial que te parezca, su propio marcador de posición hace las cosas mucho más fáciles.
+* Probablemente te llevará entre veinte minutos y una hora despejar tu mente escribiendo notas por separado, _después_ de que hayas recopilado todo lo demás. Cuando lo hagas, te irás dando cuenta de que se te suelen ocurrir las cosas de una forma bastante aleatoria: pequeñas, grandes, personales, profesionales y sin ningún orden concreto.
+* En este caso, busca la cantidad: en este proceso es mucho mejor pasarse de largo que arriesgarse a pasar algo por alto y de la basura siempre podrás deshacerte más tarde.
+
 
 ## 6. Clarificando: llevando las _entradas_ a cero
 
