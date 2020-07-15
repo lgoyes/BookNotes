@@ -865,10 +865,97 @@
 * Probablemente te llevará entre veinte minutos y una hora despejar tu mente escribiendo notas por separado, _después_ de que hayas recopilado todo lo demás. Cuando lo hagas, te irás dando cuenta de que se te suelen ocurrir las cosas de una forma bastante aleatoria: pequeñas, grandes, personales, profesionales y sin ningún orden concreto.
 * En este caso, busca la cantidad: en este proceso es mucho mejor pasarse de largo que arriesgarse a pasar algo por alto y de la basura siempre podrás deshacerte más tarde.
 
+### EL INVENTARIO DE LAS "ENTRADAS"
+
+#### Pero las "entradas" no deben seguir siéndolo
+
+* No debes dejar nada en "entradas" durante un periodo de tiempo indefinido, porque entonces seguro volvería a introducirse sigilosamente en tu consciencia, puesto que tu mente sabría que no se está ocupando de eso.
 
 ## 6. Clarificando: llevando las _entradas_ a cero
 
+* Vaciarla (la bandeja de entrada) no significa terminar todas las acciones y proyectos que hayas capturado, sino tan solo identificar cada una de las cosas y decidir qué es, qué significa y qué vas a hacer con ella.
+* Lo primero que hacemos es asegurarnos de que todos sus equipos y programas informáticos funcionan. A continuación, tenemos que limpiar todo lo que han intentado organizar previamente en sus listas de tareas y ponerlo todo en la bandeja de entrada.
 
+### DIRECTRICES PARA PROCESAR
+
+### Primero el elemento que esté arriba del todo
+
+* Aunque el segundo elemento sea una nota personal de tu jefe nacional y el que esté arriba de todo sea un correo basura, ¡primero tienes que procesar el correo basura! Esta es una exageración meramente ilustrativa, pero el principio que establece es importantísimo: todo se procesa de la misma manera.
+* De una forma u otra, vas a llegar al fondo de la bandeja en cuanto puedas, y tienes que procurar ocuparte de todo lo que haya allí dentro.
+
+##### Una búsqueda de emergencia no es clarificar.
+
+* Hay ocasiones en que una "búsqueda de emergencia" es adecuada y necesaria.
+* Pero esto no es procesar tu bandeja de entrada' es una búsqueda de emergencia. Cuando estés en el modo de procesamiento, tienes que acostumbrarte a empezar por un extremo e ir procesando los elementos de uno en uno por orden. En cuanto rompas esa norma y proceses solo lo que te apetezca procesar, en el orden que sea, indefectiblemente empezarás a dejar asuntos sin clarificar.
+* Si confiaran en que las "entradas" estuvieran totalmente procesadas cada uno o dos días, no se verían impulsados tan a menudo por esa necesidad de la búsqueda incesante.
+
+##### ¿Procesar primero lo último o lo primero en entrada?
+
+* Teóricamente, deberías darle la vuelta a la bandeja de entrada y procesar en primer lugar lo que primero que entró. Aunque, siempre que limpies todo empezando por un extremo y acabando por el otro en un periodo razonable de tiempo, poca o ninguna diferencia habrá.
+* Y si vas a intentar resolver un montón de correos electrónicos atrasados organizados escalonadamente es "la bandeja de entrada", en realidad acabarás descubriendo que es más eficaz procesar en primer lugar el último en llegar debido al carácter jerárquico de los mensajes en los hijos de discusión, así que no querrás responder prematuramente a algo sin haber visto la conversación entera.
+
+#### Un elemento cada vez
+
+* No dejo de recordarles a mis clientes que aplacen todo lo que no sea el elemento que está en lo más alto. Centrarse en una sola cosa obliga a que la atención y la toma de decisiones necesarias se apliquen a todos los asuntos. Y si te interrumpen (lo cual es probable), no tendrás innumerables elementos del contenido de la bandeja desperdigados a tu alrededor, fuera de esta y descontrolados de nuevo.
+
+#### Nada vuelve a ponerse de regreso en las "Entradas"
+
+* El camino de salida de las "Entradas" solo tienen un sentido. Esto es realmente lo que se pretende indicar con la vieja advertencia de "ocuparse de las cosas solo una vez".
+* El consejo aplica en la eliminación de la mala costumbre de sacar cosas de la bandeja de entrada y no decidir qué significan o qué se va a hacer con ellas y luego volver a dejarlas allí.
+* "La primera vez que coja algo de la bandeja de entrada, decide qué hacer con ello y adónde va. Jamás la vuelvas a poner en Entradas de nuevo".
+* Decidir "no decidir" acerca de un correo electrónicoo u otra cosa es una de esas decisiones que van agotando tu depósito de gasolina psicológico.
+
+### LA PREGUNTA CLAVE DEL PROCESAMIENTO: ¿CUAL ES LA SIGUIENTE ACCION?
+
+* Vas a ocuparte de un elemento cada vez y vas a tomar una decisión firme sobre la acci´øn siguiente que requiere cada uno.
+* Esto puede parecer fácil -y lo es-, aunque exige que lo pienses bien y deprisa.
+* La mayoría de las veces la acción no será obvia, tendrá que determinarse.
+
+#### ¿Qué pasa si no hay ninguna acción?
+
+##### Basura
+
+* Procesar todas las cosas de tu mundo te hará más consciente de lo que vas a hacer y de lo que no deberías estar haciendo.
+* Es probable que en algún momento te enfrentes a la pregunta de si guardas o no algo como referencia para el futuro.
+* EN caso de duda, a la basura, o guardalo. Escoge lo que prefieras. Ambos planteamientos son buenos.
+* Si eres capaz de diferenciar con claridad entre lo que es material de referencia y suministros, y lo que requiere una acción, y si tu sistema de referencia es sencillo y práctico, podrás guardar fácilmente todo el material que puedas alojar. Dado que no se requiere realizar ninguna acci´øn en realación con eso, es tan solo un problema de espacio físico y logística.
+* Por mi parte, lo que te sugiero es que distingas entre lo que requiere o no una acción.
+* La mala noticia es que esto puede promover fácilmente el archivado indiscriminado, una considerable insensibilidad para el volumen y la confusión sobre la ubicación de las cosas, por buenas que puedan ser las funciones de búsqueda.
+* Dado que el almacenamiento digital, sin demasiada planificación, se ha hecho casi automático, hay muchas posibilidades de crear un entorno de entrada permanente pero sin utilización.
+* Estás creando una biblioteca tan grande y abrumadora, que has limintado tu capacidad para hacerla funcional para el trabajo que es importante que hagas.
+* ¿REalmente es necesario o útil que guarde esto, o puedo confiar en que tendré acceso a ello desde Internet u otras fuentes, si lo necesitara?
+
+##### Incubar
+
+* Casi seguro que habrá cosas en tu bandeja de entrada sobre las que te dirás "ahora no puedo hacer nada con esto, pero puede que más tarde sí".
+* ¿Qué haces con esta clase de cosas? Hay dos opciones que pueden funcionar:
+    1. Anotarlas en la lista "algun dia/tal vez"
+    2. Colocar un recordatorio de cada uno de ellos en tu calendario o en un archivo de seguimiento.
+* El objeto de todos estos métodos de incubación es proporcionarte un medio que te permita dejar de pensar en las cosas inmediatamente y tener la certeza de que en el momento oportuno reaparezca algún recordatorio de la posible acción.
+
+##### Referencia
+
+* Muchas de las coasa que descubrirás en las "entradas" no necesitarán ninguna acción, aunque es posible que tengan valor como información potencialmente útil sobre diversos proyectos y asuntos.
+* CUando te encuentres con material en tu bandeja de entrada y correo electrónico que te gustaría guardar con fines de apoyo o de archivo, archívalo.
+* Probablemente descubrirás que hay montones de cosas de diverso tipo que quieres guardar pero que has apilado en montones o metido en cajones porque tu sistema de referencia era demasiado formal o simplemente no existía.
+* En el frenesí de la vida real, si archivar algo no resulta fácil, rápido y divertido, te limitarás a apilarlo o acumularlo en la bandeja de entrada, en vez de organizarlo.
+* Siempre que te encuentres con algo que quieres guardar, ponle una etiqueta, mételo en una carpeta archivadora e introduce esta en tu archivador.
+* Descubrí que si no puedes introducirlo en tu sistema inmediatamente, seguramente no lo hagas nunca. Si no quieres hacerlo ahora, casi seguro que tampoco lo harás más tarde.
+* Se se trata simplemente de un correo electrónico que quieres conservar para poder recuperarlo más tarde, te sugiero que utilices las carpetas de almacenamiento que suelen estar disponibles en las aplicaciones de correo electrónico.
+* En cuanto a los documentos, archivos adjuntos, textos y gráficos que haya en tu correo electrónico, y que podrías querer guardar, tendrás que crear tus propios métodos de archivado.
+* El secreto para mantener su eficacia estriba en la revisi´øn regular de nuestros datos y en nuestra forma de organizarla; y en mantenerla actualizada y en condiciones operativas.
+
+#### Y si hay que realizar una acción... ¿Cuál es?
+
+#### Una vez has decidido cuál es el paso de la acción
+
+##### Hacerla
+
+##### Delegarla
+
+##### Difiérelo
+
+### IDENTIFICAR LOS PROYECTOS QUE TIENES
 
 ## 7. Organizando: creando los recipientes adecuandos
 
