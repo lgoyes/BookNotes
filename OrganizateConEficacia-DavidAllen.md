@@ -947,15 +947,61 @@
 
 #### Y si hay que realizar una acción... ¿Cuál es?
 
+* "Acción siguiente" hace referencia a la siguiente actividad física y visible que sería necesaria para hacer avanzar la situación hacia su terminación.
+* A menudo todavía no se te han pasado por la cabeza algunos análisis rápidos y ciertos pasos de la planificación que tienes que eleaborar para poder determinar con precisión lo que ha de suceder para ponerle fin al asunto, por más que se trate de uno bastante sencillo.
+* Aunque cada una de estas cosas puede parecer relativamente clara como una tarea o proyecto, decidir la acción siguiente de cada uno precisará de alguna reflexión.
+
+##### Cada acción siguiente tiene que ser sin excusas la siguiente cosa física que hay que hacer
+
+* Recuerda que se trata de actividades físicas y visibles.
+* ¿Cómo conciertas una cita? Podría hacerse mediante una llamada telefónica o enviando un correo electrónico, pero ¿a quién? Tienes que decidir. Y si no decides ahora, seguirás teniendo que decidir en algún otro momento, y el objetivo de este proceso es conseguir que termines el ejercicio de reflexión sobre ese tema.
+* Si no has identificado la siguiente acción física necesaria para iniciarlo, entonces se producirá un vacío psicológico cada vez que pienses en ello, aunque sea vagamente.
+* El noventa y nueve por ciento de las veces lo único que necesitas es más información antes de poder tomar una decisión. Dicha información adicional puede provenir de fuentes externas o del propio pensamiento. De una u otra manera, siempre hay una acción siguiente que determinar para hacer avanzar el proyecto.
+
 #### Una vez has decidido cuál es el paso de la acción
+
+* En cuanto hayas decidido cuál es realmente la acción siguiente, tienes tres opciones:
 
 ##### Hacerla
 
+* Si la acción siguiente se puede hacer en dos minutos o menos, hazla en cuando cojas el asunto por primera vez.
+* Aunque no sea un elemento que exija máxima prioridad, hazlo ya si de todas formas piensas hacerlo en algún momento.
+* Si la cosa no es lo bastante importante para que se haga, _deshazte de ella_. Y si lo es, y vas a terminar haciéndola de una u otra manera, debería tenerse en cuenta el factor de la eficacia.
+* Si tu acción consiste en dejarle un mensaje a alguien y hablas con la persona real en lugar de dejárselo en su buzón de voz, por lo general la llamada durará un poco más que dos minutos.
+* En realidad, no tienes que hacer ningún seguimiento de nada con respecto a tus acciones de dos minutos, solo hacerlas. Ahora bien, si llevas a cabo una acción y no terminas el proyecto con ella, tendrás que clarificar cuál es la siguiente y gestionar el asunto de acuerdo a los mismos criterios.
+* En un entorno donde se mueva un gran volumen de estos (correos electrónicos), es probable que al menos el 30 por ciento de los que requieren una acción necesiten menos de dos minutos para ser respondidos y despachados.
+* Lo que no deberías hacer es convertirte en esclavo de las acciones de dos minutos y dedicarles todo el día.
+* Pero si no la haces cuando aparece, y sigues necesitando hacerla, tendrás que dedicar tiempo y energía a capturarla, clarificarla y hacerle un seguimiento para evitar que invada tu cabeza.
+
 ##### Delegarla
 
-##### Difiérelo
+* Si la acción siguiente te va a llevar más de dos minutos, hazte la siguiente pregunta: "¿Soy la persona más idónea para hacer esto?". Si no lo eres, derívala a la persona adecuada por el sistema.
+* La delegación no tiene siempre un sentido descendente, de manera que puedes decir: "Esto tiene que ir al Servicio al Cliente", o "Mi jefe tiene que echarle un vistazo a esta siguiente acción", o bien "Necesito que mi socio me dé su opinión al respecto".
+* El correo electrónico suele ser la manera más rápida del sistema; no solo proporciona un registro electrónico, sino que permite que el destinatario se ocupe del asunto a su conveniencia.
+* A veces esto (guardar la comunicación en una lista de prioridades para la siguiente reunión con esa persona) es necesario debido a la naturaleza delicada del asunto o a la minuciosidad con la que hay que tratarlo, pero eso implica que para que avance hay que esperar a que la reunión se produzca.
+* Si efecto delegas una acción a otra persona y te preocupa si va a haber algún resultado, **tendrás que hacer un seguimiento**.
+* Verás que una de las categorías importantes que hay que gestionar es la de "En espera"
+* **¿Qué pasa si la pelota ya está en el tejado de otra persona?** La acción siguiente es ahora competencia de un tercero.
+* En la hoja que dice: "Hacer la declaración de renta", escribe algo como: "Esperar a la documentación fiscal de Acme Trust" y colócala en el montón de Pendientes.
+* Es importante que siempre que entregas algo a otra persona anotes la fecha.
+
+##### Defiérelo
+
+* Es probable que la mayoría de las acciones siguientes que decidas para las cosas que están en la bandeja de entrada sean las que tengas que hacer tú y lleven más de dos minutos ponerlas en práctica.
+* Estas acciones tienen que ser anotadas en algún lugar y luego ser organizadas en las categorías adecuadas para que peudas acceder a ellas cuando lo necesites.
+
+#### Las cosas pendientes que quedan por hacer
+
+* Si sigues las instrucciones de este capítulo, tirarás un buen montón de cosas, archivarás un puñado, harás muchas acciones de dos minutos y delegarás algunos asuntos en los demás. También acabarás con un montón de asuntos con acciones asociadas que todavía tienes que hacer y recordatorios de cosas que te están esperando o esperan a otras personas.
 
 ### IDENTIFICAR LOS PROYECTOS QUE TIENES
+
+* Este último paso para llegar al fondo de la "bandeja de entrada" exige que pasemos desde la perspectiva de los detalles de una sola acción a una visión más general: la de tus proyectos.
+* Defino "proyecto" como cualquier resultado que estés dispuesto a lograr y que requerirá más de una acción para su culminación.
+* Si revisas un inventario de acciones que ya hayas creado, sin duda reconocerás algunas cosas que tienen más entidad que la única acción que hayas definido.
+* Si con la acción que has identificado no se alcanza el resultado, entonces necesitarás alguna señal que te recuerde las acciones que tienes pendientes hasta que hayas zanjado la acuestión.
+* Tienes que hacer una lista de "proyectos.
+* El propósito de esta lista no es reflejar tus prioridades, sino solo asegurarte que tienes recurdatorios para todos esos ciclos abiertos.
 
 ## 7. Organizando: creando los recipientes adecuandos
 
