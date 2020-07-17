@@ -1005,6 +1005,77 @@
 
 ## 7. Organizando: creando los recipientes adecuandos
 
+* Para que tu mente se libere de los pensamientos de escaso valor y se centre en la atención intuitiva sin que la distraigan los problemas que no han sido tratados de manera adecuada, tu sistema de organización físico debe ser mejor que el mental.
+* Esta organización significa que el lugar que ocupan las cosas cuadre con lo que significan para ti.
+* Resulta que gran parte de lo que la gente trata de organizar no ha sido procesado, de acuerdo con lo explicado en el capítulo anterior.
+* Cuando empieces a procesar tu bandeja de entrada, crearás listas y grupos de cosas que quieres organizar y en los que incluirás otros asuntos que inevitablemente se te irán ocurriendo.
+* Las distinciones fundamentales del significado que tienen las cosas para ti se mantendrán para siempre, pero dentro de un año puede que la estructura óptima para gestionarlas te suscite una opinión distinta a la que mereció hoy al enfrentarte a tu mundo.
+
+### LAS CATEGORIAS ESENCIALES
+
+* Hay siente tipos principales de cosas a las que deberías hacerles un seguimiento y gestionarlas de una forma organizada y operativa:
+    1. Una lista de proyectos
+    2. Material de apoyo a los proyectos
+    3. Calendario de acciones e información
+    4. Listas de Acciones siguientes
+    5. Una lista de En espera
+    6. Material de referencia
+    7. Una lista de Algún día / Tal vez
+
+
+#### La importancia de unos límites bien definidos
+
+* Es esencial mantener todas estas categorías nítidamente delimitadas. Cada una representa una clase distinta de acuerdo que alcanzamos con nosotros mismos para que nos sean recordados en un momento concreto y de una manera determinada, así que si sus límites se desdibujan y empiezan a mezclarse, se perderá gran parte del valor de la organización.
+* Si descuidas esta clasificación y permites que cosas con diferentes significados estén dentro del mismo grupo mental o visual, corres el riesgo de insensibilizarte psicológicamente a los contenidos.
+
+#### Lo único que necesitas son listas y carpetas.
+
+* Una vez que sepas qué cosas necesitan ser objeto de un seguimiento, lo único que realmente necesitas son unas listas y unas carpetas, herramientas más que suficientes para los recordatorios y los materiales de referencia y apoyo.
+* Tus listas les seguirán la pista a los proyectos y asuntos para hacer Algún día / Tal vez, además de a las acciones que tendrás que llevar a cabo en relación con tus ciclos abiertos activos. Las carpetas serán necesarias para que guardes tu material de referencia y la información de apoyo para los proyectos en ejecución.
+* Como ya he dicho, no deberías molestarte en crear ninguna estructura externa de prioridades sobre tus listas que más tarde tengas que reorganizar o volver a escribir cuando las cosas cambien.
+* Establecerás las prioridades de forma más intuitiva si consideras la lista en tu totalidad junto con una serie de variables cambiantes.
+* La lista es solo una manera de que hagas el seguimiento al inventario completo de cosas activas con las que has adquirido un compromiso y de que dispongas de dicho inventario para su revisión.
+
+### ORGANIZACION DE LOS RECORDATORIOS DE ACCIONES
+
+* Si has vaciado tu bandeja de entrada, casi seguro que habrás formado un montón de recordatorios Pendientes para tu uso que represental las acciones de más de dos minutos que no puedes delegar en otra persona. También habrás acumulado recordatorios de las cosas que has delegado en otra persona, y puede que tengas algunas más que tienen que ser colocadas en tu calendario o en el recipiente Algun dia/ Tal vez.
+* Así las cosas, deberías clasificar todo esto en grupos que te resulten lógicos de manera que puedas revisarlos como opciones de trabajo cuando tengas tiempo.
+
+#### Acciones que deben constar en tu calendario.
+
+* A efectos organizativos hay dos clases esenciales de acciones: aquellas que deben realizarse en un día concreto y/o una hora determinada, y aquellas otras que tienes que llevar a cabo lo antes posible, compaginándolo con los demás asuntos del calendario.
+* Lo que muchas personas quieren hacer, a causa quiá de viejos hábitos de hacer listas de tareas diarias, es anotar en el calendario las acciones que creen que les _gustaría_ tener hechas el próximo lunes, por decir algo, pero que en realidad es posible que no lo estén y tengan entonces que ser aplazdas al día siguiente.
+* _Refrena este impulso_. Tienes que confiar en tu calendario como algo sagrado que refleja con exactitud los límites escritos de tus compromisos diarios, que deberían ser perceptibles a simple vista mientras estás metido en el tráfago cotidiano.
+* Cuando el calendario queda relegado al rol que le es propio en la fase de organización, la mayoría de las acciones que tienes que hacer quedan dentro de la categoía de "lo antes posible, en función de todas las demás cosas que tengo que hacer".
+
+#### Organizar las accioens que hay que hacer lo antes posible por el contexto.
+
+* La mejor manera de acordarse de una acción que hay que hacer "lo antes posible" es por el _contexto_ particular que necesita esa acción, esto es, o la herramienta, o el lugar, o la situación necesaria para terminarla.
+* Por ejemplo, si la acción precisa un ordenador, debería anotarse en una lista En ordenador; si la acción te exige que salgas y te muevas por el mundo, el lugar adecuado para seguirle la pista sería la lista Recados.
+* Si eres de esas raras personas que solo tienen veinticinco acciones siguientes, una única lista de Acciones siguientes podría bastar. Sin embargo, si tienes cincuenta o cien acciones siguientes pendientes, guardarlas todas en una gran lista dificultaría enormemente ver lo que tiene que verse; cada vez que dispusieras de tiempo para hacer algo, tendrías que dedicarte a una reclasificación improductiva.
+* Desengancharse de una serie de conductas y adoptar otro tipo de ritmo y herramientas, consume más energía de lo que la mayoría de personas es consciente.
+
+##### Las categorías de recordatorios de acciones más habituales
+
+* **Llamadas** Esta es la lista de todas las llamadas telefónicas que tienes que hacer; puedes tratar de reducirla siempre que tengas un teléfono disponible.
+* **En el ordenador** Si trabajas con un ordenador, te puede resultar útil agrupar todas esas acciones que tienes que hacer cuando estás conectado. Esto te permitirá ver todas tus opciones de trabajo que tienes para hacer cuando estás conectado (correos electrónicos pendientes de enviar, documentos que has de redactar o editar y así sucesivamente).
+* **Recados** Cuando sabes que tienes que ir a algún sitio, es fantástico poder echar un vistazo a esa lista para tener la posibilidad de encargarte de numerosas cosas por el camino en un solo viaje.
+* **En la oficina** Yo utilizaría una lista de "Acciones oficina" para cualquier cosa que me exigiese estar físicamente presente para llevar a cablo la acción, como pueda ser expurgar un archivador o imprimir y revisar un extenso documento con un miembro de la plantilla.
+* **En casa** Estoy seguro que tienes numeros proyectos tanto personales como relacionados con tu casa, y a menudo la siguiente cosa que hay que hacer en relación con ellas es hacerla sin más.
+* **Agenda** Te parecerá que para llevar a cabo muchas de tus acciones siguientes o bien necesitas trabajar con alguien directamente o bien las tienes que plantear en una reunión de comité, de equipo o de personal. Los profesionales que tienen una carpeta para guardar todas las cosas que tienen que tratar con su jefe ya están utilizando una versión de este procesimiento. Mi consejo es que mantengas listas separadas para los jefes, los socios, los ayudantes y los hijos; también deberías abrir otras de la misma naturaleza para tu abogado, el gestor, el contable y/o el asesor informático, además de para cualquier otra persona con quien pudieras tener más de una cosa que abordar la siguiente vez que hables con ella por teléfono o en persona.
+* A menudo necesitarás llevar una lista de cosas para repasar con alguien con el que colaborarás solo durante un periodo limitado de tiempo.
+* **Leer/Revisar** Seguro que en tu bandeja de entrada descubrirás varias cosas para las que la acción siguiente sea su lectura. Espero que hayas seguido la regla de los dos minutos y despachado ya muchos de esos asuntos de rápida lectura, tirándolos, archivándolos o dándoles curso como asuntos pendientes.
+* En muchos casos, el montón de Leer/Revisar puede llevar a ser bastante grande, razón por la cual resulta esencial que se reserve solo para aquellas cosas que realmente "QUIERAS" leer cuando tengas tiempo y cuya lectura lleve más de dos minutos.
+* Además de una caja o bandeja de Leer/Revisar, suele ser recomendable tener una categoría Revisar/Responder en la que incluir las lecturas que precisen más rigor y, por consiguiente, un tipo de atención diferente.
+* También es práctico tener organizado material de lectura disponible para cuando estés a punto de asistir a una reunión que quizá empiece tarde, estés en un seminario en el que quizá haya algún momento de inactividad, te hagan esperar en la consulta del dentista o, por supuesto, si vas a pasar algún tiempo en el tren o el avión. Todas estas son oportunidades fantásticas para ojear y ocuparse de esta clase de lecturas.
+
+#### Organización de la lista "en espera"
+
+* Al igual que los recordatorios de las acciones que tienes que llevar a cabo, los recordatorios de todas las cosas que estás esperando que te devuelven o que sean hechas por los demás también tienen que ser clasificados y agrupados.
+* Cuando la acción siguiente en relación con algo depende de otra persona, no es un recordatorio de _acción_ lo que necesitas, sino tan solo algo que te recuerde lo que estás esperando y de quién.
+* Es muy práctico que tengas disponible tu lista En espera cuando estás reunido o hablando con alguien que quizás sea el responsable de alguno de esos elementos que estás esperando.
+* En esta categoría en particular es importante incluir en cada entrada la fecha en la que se solicita el asunto en cuestión, además de la fecha límite acordada.
+* Te sentirás fantásticamente bien cuando sepas que tu lista En espera es el inventario completo de todo lo que supuestamente están haciendo los demás y te concierne.
 
 
 ## 8. Reflexionando: manteniendo la funcionalidad del sistema
