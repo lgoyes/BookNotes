@@ -907,7 +907,7 @@
 
 ### LA PREGUNTA CLAVE DEL PROCESAMIENTO: ¿CUAL ES LA SIGUIENTE ACCION?
 
-* Vas a ocuparte de un elemento cada vez y vas a tomar una decisión firme sobre la acci´øn siguiente que requiere cada uno.
+* Vas a ocuparte de un elemento cada vez y vas a tomar una decisión firme sobre la acción siguiente que requiere cada uno.
 * Esto puede parecer fácil -y lo es-, aunque exige que lo pienses bien y deprisa.
 * La mayoría de las veces la acción no será obvia, tendrá que determinarse.
 
@@ -918,7 +918,7 @@
 * Procesar todas las cosas de tu mundo te hará más consciente de lo que vas a hacer y de lo que no deberías estar haciendo.
 * Es probable que en algún momento te enfrentes a la pregunta de si guardas o no algo como referencia para el futuro.
 * EN caso de duda, a la basura, o guardalo. Escoge lo que prefieras. Ambos planteamientos son buenos.
-* Si eres capaz de diferenciar con claridad entre lo que es material de referencia y suministros, y lo que requiere una acción, y si tu sistema de referencia es sencillo y práctico, podrás guardar fácilmente todo el material que puedas alojar. Dado que no se requiere realizar ninguna acci´øn en realación con eso, es tan solo un problema de espacio físico y logística.
+* Si eres capaz de diferenciar con claridad entre lo que es material de referencia y suministros, y lo que requiere una acción, y si tu sistema de referencia es sencillo y práctico, podrás guardar fácilmente todo el material que puedas alojar. Dado que no se requiere realizar ninguna acción en realación con eso, es tan solo un problema de espacio físico y logística.
 * Por mi parte, lo que te sugiero es que distingas entre lo que requiere o no una acción.
 * La mala noticia es que esto puede promover fácilmente el archivado indiscriminado, una considerable insensibilidad para el volumen y la confusión sobre la ubicación de las cosas, por buenas que puedan ser las funciones de búsqueda.
 * Dado que el almacenamiento digital, sin demasiada planificación, se ha hecho casi automático, hay muchas posibilidades de crear un entorno de entrada permanente pero sin utilización.
@@ -943,7 +943,7 @@
 * Descubrí que si no puedes introducirlo en tu sistema inmediatamente, seguramente no lo hagas nunca. Si no quieres hacerlo ahora, casi seguro que tampoco lo harás más tarde.
 * Se se trata simplemente de un correo electrónico que quieres conservar para poder recuperarlo más tarde, te sugiero que utilices las carpetas de almacenamiento que suelen estar disponibles en las aplicaciones de correo electrónico.
 * En cuanto a los documentos, archivos adjuntos, textos y gráficos que haya en tu correo electrónico, y que podrías querer guardar, tendrás que crear tus propios métodos de archivado.
-* El secreto para mantener su eficacia estriba en la revisi´øn regular de nuestros datos y en nuestra forma de organizarla; y en mantenerla actualizada y en condiciones operativas.
+* El secreto para mantener su eficacia estriba en la revisión regular de nuestros datos y en nuestra forma de organizarla; y en mantenerla actualizada y en condiciones operativas.
 
 #### Y si hay que realizar una acción... ¿Cuál es?
 
@@ -1077,6 +1077,68 @@
 * En esta categoría en particular es importante incluir en cada entrada la fecha en la que se solicita el asunto en cuestión, además de la fecha límite acordada.
 * Te sentirás fantásticamente bien cuando sepas que tu lista En espera es el inventario completo de todo lo que supuestamente están haciendo los demás y te concierne.
 
+#### Utilizar el elemento original como su propio recordatorio de acción
+
+* La manera más eficaz de hacer el seguimiento de tus recordatorios de acciones es añadirlo a las listas o carpetas en cuanto se te ocurran. El desencadenante inicial ya no será necesario una vez lo hayas procesado, lo cual quiere decir que si tomas algunas notas durante una reunión con tu jefe, las podrás tirar después de que hayas sacado los proyectos y acciones asociados.
+
+##### Gestión del flujo de trabajo en soporte papel
+
+* A todas las luces sería un exceso escribir "revisar revista Vogue" en alguna lista de acciones, cuando simplemente podrías colocar la propia revista en la bandeja Leer/Revisar para que sirviera como recordatorio.
+* Si todavía sigues pagandola facturas en papel, probablemente encuentres más fácil ocuparte de las facturas pagándolas todas al mismo tiempo, así que guárdalas en una carpeta o bandeja rotulada como "facturas a pagar" (o asuntos económicos por procesar.)
+* ¿Podrías utilizar essos recordatorios en más sitios aparte de en tu mesa? Si es así, deberías tener en cuenta la movilidad del material. Si no pudieras hacer ese trabajo en ning´¨n otro sitio que no sea tu mesa, entonces la mejor opción es gestionar sus recordatorios exclusivamente en tu puesto de trabajo.
+* Sea cual sea la opción que escojas, los recordatorios deberían estear en categorías separadas y visibles en función de la acción siguiente necesaria. Si en relación con una petición de servicio la acción siguiente es hacer una llamada, entonces debería estar agrupada en Llamadas; si consistiera en revisar cierta información y meterla en el ordenador, debería etiquetarse "En el ordenador".
+* La principal causa de menoscabo en la eficacia de muchos sistemas de flujo de trabajo lo constituye el hecho de que todos los documentos de un tipo se guardan en una única bandeja o archivo, aunque es posible que cada uno requiera un tipo de acción diferente. Así, resulta que una petici´øn requiere una llamada, otra que se revisen ciertos datos y aún otra más está esperando a que alguien vuelva con cierta información; pero todas están clasificadas en el mismo lugar. Este sistema puede provocar que cualquiera se bloquee mentalmente a la vista del montón, debido a que todas las decisiones sobre las acciones siguientes siguen pendientes.
+
+##### La gestión del flujo de trabajo basado en el correo electrónico
+
+* Así las cosas, aquellos correos sobre los que tengas que realizar alguna acción pueden ser guardados dentro del sistema, en lugar de anotar o distribuir las acciones que contengan en otra lista.
+* La mayoría de las carpetas que hay en el correo electrónico deberían utilizarse para guardar los materiales archivados y de referencia, pero también es posible establecer un sistema funcional para que guardes aquellos mensajes que requieran una acción organizados por separado fuera del área de recibidos propiamente dicha.
+* La subsiguiente carpeta @ACCION contendrá aquellos correos electrónicos sobre los que tienes que hacer algo.
+* A continuación, puedes crear una carpeta titulada "@ENESPERA" que aparecerá en el mismo lugar que la de "@ACCION".
+* Lo que parece funcionarles mejor a muchas personas cuando delegan algo via correo electrónico es enviarse a sí mismas una copia (CC) y luego archivar esa copia en su carpeta @ENESPERA.
+* La mayoría de personas utilizan la bendeja de entrada de su correo electrónico para organizar las cosas que requieren una acción sin decidir, el material de referencia e incluso la basura, una práctica que conduce rápidamente al bloqueo mental: saben que tienen que reconsiderarlo todo cada vez que echen un vistazo a la pantalla.
+* Reitero que vaciar las "entrdaas" no significa que hayas hecho todo el trabajo; significa tan solo que has _borrado_ lo que podías borrar, _archivado_ lo que querías guardar pero que no requiere ninguna acción, _realizado_ las respuestas de menos de dos minutos, y trasladado a tus carpetas de recordatorios todas las cosas que estás esperando y la totalidad de los correos electrónicos que requieran una acción.
+
+##### Una advertencia sobre el peligro de dispersar los recordatorios de tus acciones.
+
+* La función de un sistema de organización es fundamental la de suministrarte los recordatorios que tienes que ver cuando tienes que verlos, de manera que puedes confiar en tus elecciones sobre lo que estás haciendo (y lo que no estás haciendo).
+* Para poder salir con los amigos o darte un largo paseo sin rumbo fijo sin que haya nada que ocupe tu mente, tienes que saber d´ønde están ubicados todos tus asuntos que requieran una acción, de qué trata cada uno y que pueden esperar. Y tienes que poder hacer eso en unos segundos, no en días.
+
+#### ORGANIZAR LOS RECORDATORIOS DE LOS PROYECTOS
+
+* Crear y mantener una lista de todos tus proyectos puede suponer una intensa experiencia.
+
+#### La lista de proyectos
+
+* La lista de proyectos no está destinada a guardar los planes ni detalles acerca de los proyectos en sí, y tampoco se debería intentar organizar siguiendo un criterio de prioridad, entidad o urgencia; esta lista no es más que un índice exhaustivo de tus ciclos abiertos. En realidad, la lista d eproyectos no te servirá para orientar tus actividades diarias; la mayoría de las veces, el calendario, las listas de acciones y cualquier tarea que surja inesperadamente serán las que definan tu enfoque estratégico inmediato. 
+* Recuerda que no puedes hacer un proyecto; lo único que puedes hacer son las acciones siguientes que requiera. Sin embargo, ser consciente del horizonte que representan tus proyectos es fundamental para que prolongues en el tiempo tu comodidad con el control y el enfoque.
+* El verdadero valor de la lista de proyectos radica en que te permite una revisi´øn completa (al menos una vez a la semana), lo que te garantiza que además de tener definidas las acciones siguientes para todos ellos, no haya nada que se escape a tu control. Un rápido y ocasional vistazo a esta lista fortalecerá tu profunda sensación de tener el control.
+
+##### El valor de una lista de proyectos completa
+
+* Es imposible estar verdaderamente relajado y en un estado productivo cuando las cosas que te has comprometido contigo mismo a resolver siguen moviendo los hilos de tu mente.
+* Las cosas más pequeñas o sutiles que nos decimos que tenemos que resolver provocan algunos de los estados de tensión más difíciles de manejar.
+* Los proyectos no suelen aparecer envueltos en bonitos y pulcros paquetes: empiezan como lo que parece una simple situación, comunicación o actividad, pero lentamente se van transformando en algo mayor de lo que suponías.
+* La revisión semanal es el factor esencial para tener éxito en unir tus compromisos más importantes con tus actividades diarias. Asegurarte semanalmente de que estás de acuerdo con lo que estás haciendo con un proyecto, junto con lo que estás haciendo en relación con otro, es una práctica esencial.
+* Tener la sensación de control y una visión general de todos los compromisos que puedan ser relevantes en tus relaciones con ellos es sumamente valioso. Indefectiblemente, surgen problemas a la hora de asignar los recurdsos limitados: tu tiempo, tu dinero y tu atención. Y cuando la manera en que los demás se implican contigo tira de esos recursos, ser capaz de negociar (y a menudo de renegociar) esos acuerdos implícitos y explícitos es la única manera de aliviar con eficacia las presiones inherentes.
+* A menudo hay proyectos que tienen que sacarse de un simple inventario del calendario, de las listas de acciones y de tus lugares de trabajo. Vuelve a comprobar que los tienes todos asociados a los resultados posteriores y definitivos, en lugar de permanecer huérfanos del flujo de trabajo.
+* Si tienes metas profeisonales, objetivos empresariales y planes estratégicos, ¿has identificado todos los proyectos que deberían generarte, de manera que puedas hacerlos avanzar adecuadamente? ¿Ves aproximarse en el futuro más lejano de tu vida personal algunas cosas a las que aún no has empezado a prestar atención para hacer algo en relación con ellas, como los hijos que se hacen mayores, los padres que envejecen, tu jubilación, las aspiraciones de tu pareja, y las cosas divertidas y creativas que te encantaría empezar a explorar?
+* ¿Cuándo un proyecto es un problema? Siempre. Cuando consideras que alguna cosa es un problema, a diferencia de algo que tienes que aceptar sin más conforme está la situación, estás dando por sentado que hay una solución potencial.
+* También hay proyectos que merodean entre tus procesos de gestión del flujo de trabajo, administración y mantenimiento. ¿Hay algo frustrante en tus procedimientos de archivo, almacenamiento, comunicación, alquileres, seguimiento y registros?
+* Por último, bien podrías haber estado considerando algunas cosas que te gustaría aprender o experimentar para ampliar tu desarrollo personal o la expresión de tu creatividad ¿Te gustaría aprender cocina italiana o a dibujar? ¿Te has estado repitiendo que sería fantástico hacer en la Red un curso de fotografía gidital o de marketing de redes sociales? Es muy posible que muchos de estos proyectos "Quizás me gustaría" encajasen perfectamente en tus lista "Algun dia/Tal vez".
+
+##### ¿Una lista o listas subdivididas?
+
+* Una lista es la mejor manera de avanzar, porque sirve como inventario general más que como pauta de priorización cotidiana.
+* Da igual el número de listas de proyectos diferentes que tengas, siempre que mires los contenidos de todas siempre que lo necesites.
+
+#### Algunos métodos habituales de subdividir los proyectos.
+
+* Se dan situciones en las que es coherente dividir la lista de proyectos en categorías secundarias.
+* **Personal/Profesional**
+* **Proyectos delegados**
+* **Tipos específicos de proyectos** Algunas personas les gusta clasificar sus proyectos en función de las principales área de atención: padres que hacen el seguimiento de los proyectos relacionados con sus hijos, un empresario que divide los proyectos por las diferentes funciones que realiza (Financieras, Ventas, Operaciones) y cosas similares.
+* La forma en que decidas agrupar tus proyectos no es ni de legos tan esencial como que te asegures de que tu inventario esté completo, al corriente y debidamente evaluado para sacártelo de la cabeza.
 
 ## 8. Reflexionando: manteniendo la funcionalidad del sistema
 
