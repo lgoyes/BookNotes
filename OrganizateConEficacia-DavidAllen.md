@@ -1140,6 +1140,69 @@
 * **Tipos específicos de proyectos** Algunas personas les gusta clasificar sus proyectos en función de las principales área de atención: padres que hacen el seguimiento de los proyectos relacionados con sus hijos, un empresario que divide los proyectos por las diferentes funciones que realiza (Financieras, Ventas, Operaciones) y cosas similares.
 * La forma en que decidas agrupar tus proyectos no es ni de legos tan esencial como que te asegures de que tu inventario esté completo, al corriente y debidamente evaluado para sacártelo de la cabeza.
 
+#### ¿Y qué pasa con los proyectos secundarios?
+
+* Ninguna herramienta externa ni forma de organización va a ser perfecta para clasificar tanto horizontal como verticalmente todos tus proyectos; tendrás que seguir al tanto del conjunto de alguna manera coherente. Si haces del proyecto mayor tu única relación en tu lista de proyectos, deberás tener otra de los proyectos secundarios y/o del plan de los proyectos propiamente dicho como "material de apoyo al proyecto", para que lo revises cuando llegues a ese elemento principal.
+* Yo me inclinaría por que pusiereas los proyectos importantes en la lista Proyectos e incluyeras las partes secundarias en tu material de apoyo al proyecto asegurándote de abarcarlas en tu Revisión semanal.
+* Pero si esta disposición no te parece del todo acertada, pueba a incluir los proyectos secundarios activos e independientes como entradas separadas de tu lista principal.
+
+#### Materiales de apoyo a los proyectos
+
+* **No utilices el material de apoyo como recordatorio**
+* Debes añadir elr proyecto mismo a tu lista de Proyectdos como recordatorio de que hay que conseguir un resultado. Luego, debes poner los pasos de la acción y los elementos En espera en las listas de recordatorios de acciones correspondientes. Por último, cuando llegue el momento de _ejecutar_ realmente una acción, puedes sacar todos los materiales que creas que podrías necesitar como apoyo durante la conversación.
+* _No_ debes utilizar los materiales de apoyo como recordatorios principales.
+* La información de los clientes es solo eso, y se puede incorporar al archivo de referencia general sobr eel cliente o almacenar en una biblioteca destinada a los clientes. Pero si tengo que llamar a uno, no quiero que ese recordatorio esté incorporado a ningún sitio que no sea una lista de Llamadas.
+
+##### Organizar las ideas específicas sobre un proyectdo
+
+* A menudo tendrás ideas relacionadas con proyectos que no serán necesariamente acciones siguientes, que querrás guardar. Tales ideas entran en la extensa categoría de los "materiales de apoyo a proyectos" y pueden consistir en cualquier cosa, desde una idea acerca de algo que podrías querer hacer en tus próximas vacaciones, hasta la aclaración de algún elemento fundamental en la planificación de un proyecto.
+
+* **Notas adjuntas** La mayor parte de los programas informáticos de organización te permiten adjuntar una nota digital a una lista o entrada de un calendario. Si tienes una lista Proyectos en el programa, puedes ir al proyecto sobre el que tuviste la idea, abrir o adjuntarle una nota y escribir en ella tu idea.
+* Para utilizar la información tendrás que acordarte de mirar la nota adjunta cuando revises el proyecto.
+
+* **Correo electrónico y aplicaciones informáticas**
+
+* Solo conservo la cordura cuando llevo una lista de proyectos accesible y claramente delimitada y me aseguro de que analizo regularmente todas las partes relacionadas de mi sistema en busca de los detalles pertinentes.
+
+* **Hojas de agenda** Manteniendo una agenda de tamaño medio con una lista de proyectos al principio y una secci´øn de Apoyo de proyectos hacia la parte trasera, donde siempre dejo algunas páginas en blanco para capturar al azar cualquier idea o plan y detalles relacionados con los proyectos de mi lista.
+* La clave estriba en que busques regularmente los pasos de acciones inherentes a las notas de tus proyectos y que revises las propias notas tantas veces como consideres necesario, teniendo en cuenta la naturaleza del proyecto.
+* También deberás eliminar muchas de tus notas en cuanto pierdan utilidad y se vuelvan irreales o redundantes, a fin de impedir que el sistema entero contraiga el virus de la "obsolescencia".
+* Procuro estar seguro de no dejar que mis viejas ideas anden por ahí demasiado tiempo, fingiendo ser útiles cuando ya no lo son.
+
+### ORGANIZACION DE LOS DATOS QUE NO REQUIEREN ACCION
+
+* Uno de los mayores problemas con los sistemas de gestión personal de la mayoría de la gente, es que incorporan algunas cosas que requieren una acción junto con una enorme cantidad de información y material que tienen valor pero ninguna acción asociada a ellos. 
+* Disponer de unos elementos que no requieren una acción en nuestro trabajo y nuestras vidas, es tan importante como gestionar nuestros recordatorios de accionies y proyectos.
+* Cuando los elementos sin acciones asociadas no son gestionados de manera correcta, obstruyen el proceso entero.
+
+#### Materiales de referencia
+
+* Tus principales decisiones consistirán en qué cantidad guardar, cuánto espacio dedicarles, en qué forma deberían almacenarse y dónde.
+* La única vez que dbees centrar la atención en tu material de referencia es cuando tengas que cambiar de alguna manera tu sistema porque el exceso o defecto de información no te convenga en función de tus necesidades o preferencias.
+* En cuanto hayas establecido una diferencia clara asociada entre qué es cada cosa, lo que quede como material de referencia no debería tener asociada ninguna demanda ni acción incompleta: es solo tu biblioteca y tu única decisión al respecto es la de la dimensión que quieres que tenga.
+* Cuanto más, mejor, puesto que aumentar el volumen del material de referencia no contribuye a la carga psicológica.
+
+##### La variedad de los sistemas de referencia
+
+* **Archivos de referencia general**
+
+* Y tu sistema de referencia general debe ser lo bastante informal y accesible para que sea pan comido archivar algo, tenerlo al alcance la mano en tu lugar de trabajo y administrarlo y revisarlo personalmente.
+* La enorme variedad en constante aumento de información y de las maneras de acceder a ella y organizarla, no hace más que reforzar la necesidad de distinguir entre las entradas que requieren una acción y las que no, y de crear y mantener un sistema de almacenamiento de datos y referencia que no sea fácil y práctico.
+
+* **Archivos de grandes grupos** Ten presente que si tu área de atención tiene un material de apoyo que pudiera mezclarse con el de otras áreas de atención, cabe la posibilidad de que te veas en el dilema de decidir si almacenas la información en los archivos de referencia general o la incluyes en los de referencia especializada.
+* Como norma, lo mejor es ceñirse a un sistema de referencia general, salvo para un número muy limitado de temas concretos.
+* **Organización de contactos** Si te resulta útil, quizás quieras guardar información sobre cumpleaños, nombres de familiares, aficiones, intereses, etcétera. En un sentido más rigurosamente profesional, quizás debas o quieras controlar las fechas de contratación, las de las evaluaciones de rendimientos, metas y objetivos, además de otros datos que potencialmente tengan relevancia para la formación del personal y los efectos jurídicos.
+* Mientas todas las acciones relacionadas con las personas que conoces hayan sido identificadas y estén controladas en tus listas de recordatorios de acciones, un organizador de contactos no tiene otra función que cumplir que la de ser un mero almacén de datos.
+
+#### Los Algún día / Tal vez
+
+* Existen varias maneras de organizar las cosas para revisarlas más tarde, y todas son eficaces para sacarlas ahora de tu mente y dejar de prestarles atención. Puedes colocar estos elementos en las diversas versiones de listas Algún día / Tal vez, incluir un recordatorio para ellas en tu calendario o en un sistema de seguimiento en soporte papel.
+
+##### La lista Algún día / Tal vez
+
+* Es muy probable que aprovechemos las oportunidades cuando surgen si ya las hemos identificado y capturado como posibilidades.
+
+
 ## 8. Reflexionando: manteniendo la funcionalidad del sistema
 
 
