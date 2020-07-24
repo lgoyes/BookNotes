@@ -1201,10 +1201,50 @@
 ##### La lista Algún día / Tal vez
 
 * Es muy probable que aprovechemos las oportunidades cuando surgen si ya las hemos identificado y capturado como posibilidades.
+* **Elabora un inventario de tus fantasías creativas** ¿Qué cosas querrías hacer realmente algún día si tuvieras tiempo, dinero y ganas?
+* **Estudia de nuevo tus proyectos actuales** Ahora es un buen momento para que revises tu lista Proyectos desde una perspectiva más elevada (esto es, desde el punto de vista de tu trabajo, metas y compromisos personales) y si consideres si podrías traspasar algunos de tus compromisos actuales a la lista Algún día / Tal vez. Si mientras lo haces te das cuenta de que un proyecto óptimo no tiene ninguna posibilidad de que le prestes atención durante los próximos meses, traspasalo a esta lista.
 
+##### l peligro de los archivos y montones "guardar y revisar"
+
+* El valor de la condición Algún día / Tal vez desaparece si no vuelves a poner tu atención en el elemento con cierta regularidad.
+* También hay una gran diferencia entre algo que se gestiona bien, como una lista Algún día / Tal vez, y algo que es solo un cajón de sastre para los asuntos.
+
+##### Utilizar el calendario para las futuras opciones
+
+* **Detonantes para activar proyectos** Si tienes un proyecto sobre el que no necesitas pensar ahora, pero del que vale la pena que tengas un aviso en el futuro, puedes escoger una fecha adecuada y colocar un recordatorio para el proyecto en tu calendario ese día. Deberías escoger la entrada para un día concreto e incluir ahí la información sobre las cosas que quieres que se te recuerden ese día; así, cuando llegue el momento, verás el recordatorio e incluirás el elemento como proyecto activo en tu lista Proyectos.
+* **Actividades en las que quizás quieras participar** Es probable que no pares de recibir noticias sobre seminarios, conferencias, discursos y otras actividades sociales y culturales a las que podrías decidir asistir cuando se acerque el momento. Así que decide cuándo es el momento más próximo para inlcuir un recordatorio en tu calendario en la fecha adecuada.
+* **Catalizadores de decisiones** Es posible que ocasionalmente tengas que tomar una decisión trascendental que no puedas (o no quieras) tomar enseguida.
+* Para alcanzar un nivel de aceptación sobre _no_ decidir, es mejor que te pongas una red de seguridad para que puedas confiar en que en el futuro le prestarás al asunto la atención que se merece. Un recordatorio en el calendario servirá a ese fin.
+* ¿Hay alguna decisión importante para la que debiera crear un recordatorio para el futuro, de manera que pueda sentirme cómodo si por el momento me hago el "manolón" con el asunto?
+
+### LISTAS DE VERIFICACION: RECORDATORIOS CREATIVOS Y CONSTRUCTIVOS
+
+#### Para empezar, identificar los proyectos y acciones inherentes.
+
+* Para gran parte de esta clase de "asuntos", sigue estando pendiente de definir un proyecto y/o una acción. Para mucha gente, "Hacer ejercicio con más regularidad" se traduce en realidad en "Establecer un programa de ejercicio regular" (proyecto) y "Llamar a Sally para que me recomiende algún gimnasio y entrenador personal" (acción siguiente real). En tales casos, los proyectos y acciones inherentes siguen pendientes de aclarar y organizar en un sistema personal.
+* Sin embargo, hay cosas que no acaban de encajar en esta categoría, y para abordarlas suele ser necesario crear una lista de verificación apropiadas.
+
+#### Esquema de las áreas clave de trabajo y responsabilidad
+
+* Un inventario completo de todo lo que consideras importante con lo que estás comprometido en cada uno de esos niveles representaría una lista de verificación importante. Luego, descendiendo un nivel dentro de tu trabajo, podrías querer algunos recordatorios para las áreas fundamentales de la responsabilidad, el personal, los valores y todo lo demás.
+* Todos estos elementos podrían incluirse a su vez en las listas de tu sistema personal como recordatorios, cuando sea necesario, de que mantengas el rumbo y el equilibrio de la nave. En muchas ocasiones, el valor consiste simplemente en afirmar que el área en concreto está bien como está y que no es necesario añadir ni cambiar nada.
+
+##### Cuanto más nueva la situación, más control se necesita
+
+* En cualquiera de esas situaciones tal vez quieras o tengas que repetirte que necesites una lista de verificación.
+* Serán numerosas las ocasiones en las que querrás disponer de alguna lista de verificación que te ayude a mantener la atención hasta familiarizarte con lo que estás haciendo.
+* Y si acabas de ser contratado para un nuevo empleo que conlleva nuevas responsabilidades que te son relativamente desconocidas, querrás disponer de un esquema del sistema de control y la estructura, aunque solo sea durante los primeros meses.
+* En cuanto la actividad empezó a "automatizarse" en cierta medida, dejé de necesitar la lista.
 
 ## 8. Reflexionando: manteniendo la funcionalidad del sistema
 
+* El propósito de todo este método de gestión del flujo de trabajo no es el de dejar que tu cerebro se relaje, sino antes bien permitirle que sea libre de experimentar una activdad más elegante, productiva y creativa.
+* Tienes que estar seguro de que estás haciendo lo que tienes que estar haciendo y que no pasa nada porque no estés haciendo lo que no estás haciendo. Esto facilita el estado de _estar atento al momento_, el cual es siempre el óptimo para trabajar.
+
+### QUE HAY QUE TENER EN CUENTA Y CUANDO
+
+* Para empezar, tienes que determinar tu sistema personal y tu conducta de manera que te permitan ver todas las acciones posibles que tienes que ver y cuándo las tengas que ver.
+* Cuando estás a punto de mantener una charla con tu jefe o socio, dedica un minuto a revisar los asuntos que tienes pendientes con cada uno de ellos, de manera que sepas que estás utilizado tu tiempo con la máxima eficacia.
 
 
 ## 9. Actuando: tomando las mejores decisiones de acción
