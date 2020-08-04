@@ -31,6 +31,16 @@
 * Metaphors are not mutually exclusive. Use the combination of metaphors that works best for you.
 
 ## 3. Measure Twice, Cut Once: Upstream Prerequisites
+
+* THe overarching goal of preparing for construction is risk reduction. Be sure your preparation activities are reducing risks, not increasing them.
+* If you want to develop high-quality software, attention to quality must be part of the software development process from the beginning to the end. Attention to quality at the beginning has a greater incluence on product quality than attention at the end.
+* Part of a programmer's job is to educate bosses and coworkers about the software development process, including the importance of adequate preparation before programming begins.
+* The kind of project you're working on significantly affects construction prerequisites -many projects should be highly iterative, and some should be more sequential.
+* If a good problem definition hasn't been specified, you might be solving the wrong problem during construction.
+* If good requirements work hasn't been done, you might have missed important details of the problem. Requirements changes cost 20 to 100 times as much in the stages following constructdion as they do earlier, so be sure the requirements are right before you start programming.
+* If a good architectural design hasn't been done, you might be solving the right problem the wrong way during construction. THe cost of architectdural changes increases as more code is written for the wrong architecture, so be sure the architecture is right, too.
+* Understand what approach has been taken to the construction prerequisites on your project, and choose your construction approach accordingly.
+
 ## 4. Key Construction Decisions
 ## 5. Design in Construction
 ## 6. Working Classes
