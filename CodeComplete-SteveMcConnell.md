@@ -42,6 +42,13 @@
 * Understand what approach has been taken to the construction prerequisites on your project, and choose your construction approach accordingly.
 
 ## 4. Key Construction Decisions
+
+* Every programming language has strengths and weaknesses. Be aware of the specific strengths and weaknesses of the language you're using.
+* Establish programming conventions before you begin programming. It's nearly impossible to change code to match them later.
+* More construction practices exist than you can use on any single project. Consciosly choose the practices that are best suited to your project.
+* Ask yourself whether the programming practices you're using are a response to the programming language you're using or controlled by it. Remember to program _into_ the language, rather than programming _in_ it.
+* Your position on the technology wave determines what approaches will be effective -or even possible. Identify where you are on the technology wave, and adjust your plans and expectations accordingly.
+
 ## 5. Design in Construction
 ## 6. Working Classes
 ## 7. High-Quality Routines
