@@ -50,6 +50,14 @@
 * Your position on the technology wave determines what approaches will be effective -or even possible. Identify where you are on the technology wave, and adjust your plans and expectations accordingly.
 
 ## 5. Design in Construction
+
+* Software's Primary Technical Imperative is _managing complexity_. This is greatly aided by a design focus on simplicity.
+* Simplicity is achieved in two general ways: minimizing the amount of essential complexity that anyone's brain has to deal with at any one time, and keeping accidental complexity from proliferating needlessly.
+* Design is heuristic. Dogmatic adherence to any single methodology hurts creativiy and hurts your programs.
+* Good design is iterative; the more design possibilities you try, the better your final design will be.
+* Information hiding is a particularly valuable concept. Asking "What should I hide?" settles many difficult design issues.
+* Lots of useful, interesting information on design is available outside this book. The perspectives presented here are just the tip of the iceberg.
+
 ## 6. Working Classes
 ## 7. High-Quality Routines
 ## 8. Defensive Programming
