@@ -59,7 +59,78 @@
 * Lots of useful, interesting information on design is available outside this book. The perspectives presented here are just the tip of the iceberg.
 
 ## 6. Working Classes
+
+* Class interfaces should provide a consistent abstaction. Many problems arise from violeting this single principle.
+* A class interface should hide something - a system interface, a design dcision, or an implementation detail.
+* Containment is usually preferable to inheritance unless you're modeling an "is a" relationship.
+* Inheritance is a useful tool, but it adds complexity, which is counter to Software's Primary Technical Imperative of managing complexity.
+* Classes are your primary tool for managing complexity. Give their design as much attention as needed to accomplish that objective.
+
 ## 7. High-Quality Routines
+
+### 7.1 Valid reasons to create a routine
+
+* Reduce complexity,
+* Introduce an intermediate, understandable abstraction.
+* Avoid duplicate code.
+* Support subclassing.
+* Hide sequences.
+* Hide pointer operations.
+* Improve portability.
+* Simplify complicated boolean tests.
+* Improve performance.
+* To ensure all routines are small -> **THIS IS NOT NECESSARY**
+* Isolate complexity
+* Hide implementation details.
+* Limit effects of changes
+* Hide global data
+* Make central points of control
+* Facilitate reusable code
+* Accomplish a specific refactoring.
+
+### 7.2 Design at the Routine Level
+
+* Functional cohesion: A routine contains operations that must be performed.
+* Sequential cohesion: A routine contains operations that must be performed in _a specific order, that share data from step to step._
+* Communicational cohesion: Operations in a routine make use of the same data and aren't related in any other way.
+* Temporal cohesion: Operations are combined into a routine because they are all done at the same time. Temporal routines are organizers of other events.
+* Procedural cohesion: Operations in a routine are done in a specified order.
+* Logical cohesion: One operation is selected by a control flag that's passed in. Instead of having a routine that does all the possible operations, it's better to have several routines, each of which does one distinc operation. It's all right to create a logically cohesive routine if its code consists solely of a series of ir or case statements and calls other routines.
+
+### 7.3 Good Routine Names
+
+* Describe everything the routine does
+* Avoid meaningless, vague, or wishy-washy verbs.
+* Don't differentiate routine names solely by number.
+* Make names of routines as long as necessary
+* To name a funciton, use a description of the return value.
+* To name a procedure, use a strong verb followed by an object.
+* Use opposites precisely.
+* Establish conventions for common operations.
+
+### 7.5 How to Use Routine Parameters
+
+* Put parameters in input-modify-output order.
+* Consider creating your own in and out keywords.
+* If several routines use similar parameters, put the similar parameters in a consistent order.
+* Use all the parameters.
+* Put status or error variables last.
+* Don't use routine parameters as working variables.
+* Document interface assumptions about parameters (use _assertions_)
+* Limit hte number of a routine's parameters to about seven.
+* Consider an input, modify, and output naming convention for parameters.
+* Pass the variables or objects that the routine needs to maintain its interface abstraction.
+    * If the abstraction expects you to have three specific data elements, and it is only a coincidence that those happen to be provided by the same object, you should pass the three specific data elements individually.
+    * If the abstraction is that you will always have that particular object in hand and the routine will do something or other with that object, then you trully do break abstraction when you expose the three specific data elements.
+* Using named parameters
+* Make sure actual parameters match formal parameters.
+
+### 7.6 Special Considerations in the Use of Functions
+
+* Use a function if the primary purpose of the routine is to return the value indicated by the function name. Otherwise, use a procedure.
+* Chack all possible return paths.
+* Don't return references or pointers to local data.
+
 ## 8. Defensive Programming
 ## 9. The Pseudocode Programming Process
 ## 10. General Issues in Using Variables
