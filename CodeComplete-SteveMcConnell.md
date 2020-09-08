@@ -132,6 +132,104 @@
 * Don't return references or pointers to local data.
 
 ## 8. Defensive Programming
+
+In defensive programming, the main idea is that if a routine is passed ba data, it won't be hurt, even if the bad data is another routine's fault.
+
+### 8.1 Protecting your program from invalid Inputs
+
+* Instead of "Garbage in, garbage out", prefer **"Garbage in, nothing out"**, **"Garbage in, error message out"**, **"No garbage allowed"**.
+* Make sure that all data falls within the allowable range, numeric values are within tolerances and the strings are short enough to handle (check the values of all data sources).
+* Check the values of the routine input parameters.
+* Decide how to handle bad input.
+
+### 8.2 Assertions
+
+* Assertion is code that's used during development when an assertion is true, that means everything is operating as expected. When it's false, that means it has detected an unexpected error in the code.
+* Use assertions to document assumptions made in the code and to flush out unexpected conditions.
+    * Input parameter values falls within its expected range.
+    * A file or system is open for read-only, write-only, or both read and write.
+    * A pointer is not null.
+    * A container is empty when a routine begins executing.
+* Your own routines will contain specific assumptions that you can document using assertions.
+* Assertions are normally compiled into the code at development time and compiled out of the code at production time.
+* Use error-handling code for conditions you expect to occur; use assertions for conditions that should never occur.
+* Error handling code checks for off-nominal circumstances that have been anticipated by the programmer.
+* Error handling code checks for off-nominal circumstances that have been anticipated by the programmer.
+    * Error handling checks for bad input data
+    * Assertions check for bugs in the code.
+* Error handling will enable the proram to respond to error gracefully. If an assertions is fired for an anomalous condition, the corrective action is to change the programs source code, recompile and release a new version.
+* Use assertions to document and verify preconditions and postconditions.
+    * Preconditions: Properties that the client code of a routine will be true before it calls the routine.
+    * Postconditions: Routine's obligation to the code that uses it.
+* A routine will generally use either an assertion or error-handling code, but not both.
+* Conditions that should always be true are asserted, but such errors are also handled by error-handling code in case the assertions fails.
+* For extremely large, complex, long-lived applications, assertions are valuable because they help to flush out as many development-time errors as possible. But the application is so complex and has gone through so many generations of modification that it isn't realistic to assume that every conceivable error will be detected and corrected before the software ships, so errors must be handled in the production version of the system as well.
+
+### 8.3 Error-Handling Techniques
+
+* Error-handling techniques.
+    * Return a neutral value.
+    * Substitute the next piece of valid data.
+    * Return the same answer as the previous time.
+    * Substitute the closest legal value.
+    * Log a warning message to a file.
+    * Return an error code: some parts might report that an error has been detected and trus that another routine higher up will handle it.
+    * Call an error-processing routine/object: Error processing can be centralized, which can make design easier. Tradeoff: Everyone will be coupled to that class.
+    * Display an error message wherever the error is encountered: You can spread UI messages a long the entire app.
+    * Handle the error in whatever way works best locally. You can spread user interfae code thoughout the system.
+    * Shutdown.
+* The style of error processing that is most appropriate depends on the kind of software the error occurs in.
+    * Correctness: Returning no result is better than returning an inacturate result.
+    * Robustness: Always trying to do something that will allow the software to keep operating.
+* High-level code handle errors, and low-level code merely report errors.
+
+### 8.4 Exceptions
+
+* If the code in one routine encounters an unexpected condition that it doesn't know how to handle, it throws an exception.
+* Exceptions, used judiciously, can reduce complexity. Used imprudently, they can make the code almost impossible to follow.
+* Use excepetions to notify other parts of the program about errors that should not be ingored.
+* Throw an exception only for conditions that are truly exceptional. Exceptions weaken encapsulation by requiring the code that calls a routine to know which exceptions might be thrown.
+* Don't throw an uncaught exception if you can handle the error locally.
+* Include in the exception message all the information that led to the exception.
+* Avoid empty catch block. If an exception at a lower level really doesn't represent an exception at the level of abstration of the calling routine, at least document by logging a message to a file.
+* Know the exceptions your library code throws.
+* Consider building a centralized exception reporter. (What kind of exceptions there are, how each exception should be handled, formatting of exception messages).
+* Standardize your project's use of exception
+    * Consider creating you own project-specific exception class
+    * Determine whether a centralized exception reporter will be used.
+
+### 8.5 Barricade your program to contain the damage caused by errors.
+
+* Barricade: Designate certain interfaces as boundaries to "safe" areas.
+* Check data crossing the boundaries of a safe area for validity, and respond sensibly if the data isn't valid.
+* The class's public methods assume the data is unsafe and they are responsible for checking the data and sanitizing it, once the data has been accepted by the class's public methods, the class's private methods can assume the data is safe.
+* Convert input data to the proper form as soon as possible after it's input.
+* Routines that are outside the barricade should use error handling because it isn't safe to make any assumptions about the data.
+* Routines inside the barricade should use assertions, because the data passed to them is supposed to be sanitized before it's passed across the barricade.
+
+### 8.6 Debugging Aids.
+
+* Be willing to trade speed and resource usage during development in exchange for built-int tools that can make development go more smoothly.
+* Make asserts about the prorgam.
+* Be sure the code in each case statement's default or else clause fails hard or is impossible to overlook.
+* Fail hard during development so that you can fail softer during production.
+* Version-control tools can build different versions of a program from the same source files.
+* In development mode, you can set the build tool to include all the debug code. In production mode, you can set it to exclude any debug code you don't want in the commercial version.
+* If your programming language has a preprocessor, you can include or exclude debug code at the flick of the component switch.
+
+### 8.7 Determining how much defensive programming to leave in production code
+
+* Remove code taht checks for trivial errors.
+* Remove code that results in hard crashes: During development, when your program detects an error, you'd like the error to be as noticeable as possible, so that you can fix it. Often, the best way to accomplish that goal is to have the program crash.
+* During production, your users need a chance to save their work before the program crashes and they are probably willing to tolerate a few anomalies in exchange for keeping the program going along enough for them to do that.
+* Leave in code that helps the program crash gracefully.
+* Log errors for your tecnical support personel.
+* Make sure that the error messages you leave in are friendly.
+
+### 8.8 Being defensive about defensive programming.
+
+* Think about where you read to be defensive, and set your defensive programming priorities accordingly.
+
 ## 9. The Pseudocode Programming Process
 ## 10. General Issues in Using Variables
 ## 11. The Power of Variable Names
