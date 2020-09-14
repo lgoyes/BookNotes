@@ -231,6 +231,92 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Think about where you read to be defensive, and set your defensive programming priorities accordingly.
 
 ## 9. The Pseudocode Programming Process
+
+### 9.1 Summary of Steps in Building Classes and Routines
+
+* Creating a general design for the class, enumerating specific routines withing the class, constructin specific routines, and checking the class construction as a whole.
+
+#### Steps in Creating a Class
+
+* Degine the class's specific responsibilities, define what "secrets" the class will hide and define exactly what abstractions the class interface will capture. Determine whether the class will be derived from another class and whether other classes will be allowed to derive from it.
+* Once you identify the class's major routines, you must construct each specific routines.
+* Each routine is tested as it's created. Test the class as a whole, as well.
+
+#### Steps in Building a Routine
+
+* Activities included in creating a routine:
+    * Designing the routine
+    * Checking the design
+    * Coding the routine
+    * Checking the code
+
+### 9.2 Pseudocode for Pros
+
+* Avoid syntactic elements from the target programming language. When you use the programming language constructs, you sink to a lower level.
+* Describe the meaning of the approach rather than _how_ is going to be implemented.
+* Write pseudocode at a low enough level that generating code from it will be nearly automatic.
+* The pseudocode must fous on the meaning of the design, rather than how the code will be written.
+* Benefits of pseudocode:
+    * Pseudocode makes reviews easier. You can review detailed designs without examining source code.
+    * Pseudocode supports the idea of iterative refinement.
+    * A few lines of pseudocode are easier to change than a page of code.
+    * Pseudocode is easier to maintain than other forms of design documentation.
+
+### 9.3 Constructing Routines by Using PPP
+
+#### Design the routine
+
+* Check to see that the job of the routine is well defined and fits cleanly into the overall design.
+* State the problem the routine will solve in enough detail to allow creation of the routine.
+    * The information the routine will hide
+    * Inputs to the routine
+    * Outputs from the routine
+    * Preconditions that are guaranteed.
+    * Postconditions that the routine guarantees.
+* Naming the routine
+* Design how to test the routine.
+* Take a few minutes to look through the code that's already been written and make sure you're not doing more work than necessary.
+* Think about all the things that could possible go wrong in the routine. Think about bad input values, invalid returned from other routines and so on.
+* In the bast majority of systems, efficiency isn't critical. In the minority of systems, performance is critical. The architecture should indicate how many resources each routine (or class) is allowed to use and how fast it should perform its operations.
+* Design the routine so that it will meet its resource and speed goals.
+* It's ussually a waste of effort to work on efficiency at the level of individual routines. The big optimizations come from refining the high level design, not the individual routines.
+* Before you launch into writting complicated code from scratch, check an algorithms book to see what's already available.
+* Write pseudocode. Start with the general, and work toward something more specific.
+* Write a concise statement of the purpose of the routine. Express in precise english what the routine needs to do.
+* Definitions of key data types are useful to have when you design the logic of a routine.
+* Check pseudocode.
+* Try a few ideas in pseudocode, and keep the best (iterate).
+
+#### Code the Routine
+
+* Once you've designed the routine, construct it.
+* Write the routine declaration.
+    * Document any interface assumptions.
+* Turn the pseudocode into high-level comments.
+* Fill in the code below each comment.
+* Check whether code should be further factored.
+    * If there's an explosion of code below one of the initial lines of pseudoce:
+        * Factor the code below the comment into a new routine.
+        * Apply the PPP recoursively.
+
+#### Check the code
+
+* Chck that what you've built is correct.
+* One of the biggest differences between hobbyists and professional programmers is the difference that grows out of moving from superstition to understanding. If you often find yourself suspecting that the compiler of the hardware made an error, you're still in the realm of superstition.
+* A working routine isn't enough. If you don't know why it works, study it, discuss it, and experiment with alternative designs until you do.
+* Avoid the rush to completio by not compiling until you've convinced yourself that the routine is right.
+* Once the routine compiles, put it into the debugger and step through each line of code.
+* Test the code.
+* Remove errors from your routine.
+    * Hacks usually indicate incomplete understanding and guarantee errors both now and later.
+
+#### Clean up leftovers
+
+* Check the routine's interface. Make sure that all parameters are used.
+* Make sure the routine does one thing and does it well, that it's loosely coupled to other routines, and that it's designed defensively.
+* Check for inaccurate variable names, unused objects, undeclared variables, improperly initialized objects and so on.
+* Check for off-by-one errors, infinite loops, improper nesting, and resource leaks.
+
 ## 10. General Issues in Using Variables
 ## 11. The Power of Variable Names
 ## 12. Fundamental Data Types
