@@ -318,7 +318,135 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Check for off-by-one errors, infinite loops, improper nesting, and resource leaks.
 
 ## 10. General Issues in Using Variables
+
+### 10.2 Making Variable Declarations Easy
+
+#### Implicit Declarations.
+
+* Languages that require you to declare data explicitly are, in essence, requiring you to use data more carefully, which is one of their primary advantages. What do you do if you program in a language with implicit declarations?
+    * Turn off implicit declarations
+    * Declare all variables
+    * Use naming conventions
+    * Check variable names
+
+### 10.3 Guidelines for initializing variales
+
+* The problems with improper initialization stem from variables containing an initial value that you do not expect it to contain.
+    * The variable has never been assigned a value.
+    * The value in the variable is outdated.
+    * Part of the variable has been a value and part has not.
+* Following are guidelines for avoiding initialization problem:
+    * Initialize each variable as it's declared.
+    * Initialize each variable close to where it's first used.
+        * A better practice is to initialize variables as clase as possible to where they're first used.
+        * By the time execution of the first example gets to the code that uses "done", "done" could have been modified. If that's not the case, when you first write the program, later modifications might make it so.
+        * Throwing all the initializations together creates the impression that all the variables are used throughtout the whole routine -when in fact "done" is used only at the end.
+        * Principle of Proximity: keep related actions together.
+    * Declare and define each variable close to where it's first used.
+        * Ideally, each variable should be defined at the same site it's declared.
+        * Use final or const when possible.
+        * Reset counters or accumulators before the next time it's used.
+        * Initialize a class's member data in its constructor
+            * If memory is allocated in the constructor, it should be freed in the destructor.
+        * If a variable need to be reinitialized, make sure that the initialization statement is inside the part of the code that is repeated.
+        * Initialize true variables in executable code close to where they're used.
+            * Variables that are initialized in a program-level start up routine aren't reinitialized the second time through the routine.
+        * Before you assign input values to anything, make sure the values are reasonable.
+
+### 10.4 Scope.
+
+* Scope, or visiblity, refers to the extent to which your variables are known and can be referenced throughout a program.
+    * A variable with limited or small scope is known in only a small area of the program.
+    * A variable with large scope is known in many places in a program.
+
+#### Localize References to Variables
+
+* The code between references to a variable is a "window of vulnerability". In the window, new code might be added, inadvertently altering the variable, or someone reading the coee might forget the value the variable is supposed to contain.
+* When you keep references to variables close together, you enable the person reading your code to focus on one section at a time. If the references are far apart, you force the reader to jum around in the program.
+
+#### Keep variables "live" for a short a time as possible.
+
+* A variablee's life begins at the first statement in which it's references; its life ends at the last statement in which its referenced.
+
+* As with the span, the goal with respect to live time is to keep the number low. And as with span, the basic advantege of maintaining a low nuber is that it reduces the window of vulnerability.
+
+* A short live time also reduces the chance of initialization errors. As you modify a program, traigh-line code tends to turn into loops and you tend to forget initializations that were made far away from the loop. By keeping the initialization code and the loop code clase together, you reduce the chance that modifications will introduce initialization errors.
+
+* A short line time makes your code more readable . The fewer lines of coee a reader has to keep in mid at once, the easier your code is to understand.
+
+#### General Guidelines for minimizing Scope
+
+* Initialize variables in a loop immediately before the loop rather than back at the beginning of the routine containing the loop.
+    * When you modify the program and put another loop around the initial loop, the initialization will work on each pass through the new loop rather than on only the first pass.
+* Don't assign a value to a variable until just before the value is used.
+* Group related statements.
+    * Put references to variables together so that they are easier to locate.
+* Break groups of related statements into separate routines.
+* Begin with most restricted visibility, and expand the variable's scope only if necessary.
+    * Part of minimizing the scope of a variable is keeping it as local as possible. It's much more difficult to reduce the scope of a variable that has had a large scope, than to expand the scope of a variable that has had a small scope.
+
+#### Comments on Minimizing Scope.
+
+* Maximizing scope might indeed make the program easy to write, but a program in which any routine can use any variable at any time is harder to understand than a program that uses well factored routines. In such a program, you can't understand only one routine; you have to understand all the routines with which that routine shares global data. Such programs are hard to read, hard to debug, and hard to modify.
+
+### 10.5 Persistence
+
+* Some variables persist.
+    * For the life of a particular block of code or routine (e.g. variables in a for loop).
+    * As long as you allow them (e.g. new and delete)
+    * For the life of a program.
+    * Forever. These variables might include values that you store in a database between executions of a program.
+* Here are a few steps you can take to avoid this kind of problem.
+    * Use debug conde or assertions in your program to check critical values for reasonable values.
+    * Set variables to "unreasonable values" when you're through with them.
+    * Write code that assumes data isn't persistent. For example, if a variable has a certain value when you exit a routine, don't assume it has the same value the next time you enter the routine.
+    * Develop the habit of declaring and initializing all data right before it's used.
+
+### 10.6 Binding Time
+
+* Binding time: The time at which the variable and its value are bound together.
+* Are they bound together when the code is written? When it is compiled? When it is loaded? When the proggram runs? Some other time?
+* Following are the times a variable can be bound to a value:
+    * Coding time (use of magical numbers)
+    * Compile time (use of named constant)
+    * Run time
+        1. Load time (read a value from an external source file or property list).
+        2. Object instantiation time (reading the value each time the object is created).
+        3. Just in time (reading the value each time the object will be used).
+* In general, the earlier the binding time, the lower the flexbility and the lower the complexity.
+* Beyond that, the greater the flexbility, the higher the complexity at the code needed to support that flexbility and the more error prone the code will be. Because successful programming depends on minimizing complexity, a skilled programmer will build in as much flexibility as needed to meet the software's requirements but will not add flexibility beyond what's required.
+
+### 10.7 Relationship between data types and control structures
+
+* Sequential data translates to sequential statements in a program.
+* Selective data translated to if and case statements.
+* Iterative data translated to for, repeat and while looping structures in a program.
+
+### 10.8 Using each variable for exactly one purpose
+
+* Use each variable for one purpose only
+    * Creating unique variables for each purpose makes your code more readable.
+    * Avoid variables with hidden messages
+        * **"Hybrid coupling"**: The variable is stretched over two jobs, meaning that the variable is the wrong type for one of the jobs.
+        * The variable bytesWritten might be the number of bytes written to an output file, unless its value is negative, in which case it indicates the number of the kisk drive used for the output.
+        * The extra clarity you will achieve by using two variables to hold two kinds of information will amaze you.
+* Make sure that all declared variables are used.
+
 ## 11. The Power of Variable Names
+
+### 11.1 Considerations in Choosing Good Names
+
+* The goodness of badness of a variable is largely determined by its name.
+* A good variable name is readable, memorable and appropiate.
+
+#### The most important naming consideration
+
+* The most important consideration in naming a variable is that the name fully and accurately describe the entity the variable represents.
+
+* note two charatcteristics of these names. First, they're easy to decipher. In fact, they don't need to be deciphered at all because you can simply read them. But second, some of the names are long -too long to be practical.
+
+
+
 ## 12. Fundamental Data Types
 ## 13. Unusual Data Types
 ## 14. Organizing Straight-Line Code
