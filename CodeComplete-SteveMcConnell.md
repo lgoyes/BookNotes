@@ -443,7 +443,269 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 * The most important consideration in naming a variable is that the name fully and accurately describe the entity the variable represents.
 
-* note two charatcteristics of these names. First, they're easy to decipher. In fact, they don't need to be deciphered at all because you can simply read them. But second, some of the names are long -too long to be practical.
+* Note two charatcteristics of these names. First, they're easy to decipher. In fact, they don't need to be deciphered at all because you can simply read them. But second, some of the names are long -too long to be practical.
+
+* Names should be as specific as possible. Names like "X", "temp" and "i" that are general enough to be used for more than one purpose are not as informative as they could be and are ussually bad names.
+
+#### Problem Orientation
+
+* A good mnemonic name generally speaks to the problem rather than the solution. A good name tends to express the _what_ more than the _how_.
+
+* A record of employee data could be called "inputRect" or "employee". "inputRec" is a computer term that refers to computing ideas. "employee" refers to the problem, rather than the computer universe.
+
+#### Optimum Name Length
+
+* Names that are too short don't convey enough meaning.
+* Names that are too long are hard to type and can obscrure the visual structure of the program.
+* The effort required to debug a program was minimized when variables had names that averaged 10 to 16 characters. Programs with names averaging 9 to 20 characters were almost easy to debug.
+* If you look over your code and see many names that are shorter, you should check to be sure that the names are as clear as they need to be.
+
+#### The Effect of Scope on Variable Names
+
+* When you give a variable a short name like "i", the length itself says something about the variable-namely, that the variable is a scrtch value with a limited scope of operation.
+* A programmer reading such a variable should be able to assume that its value isn't used outside a few lines of code.
+* Short names are subject to many problems, however, and some careful programmers avoid them altogether as a matter of defensive-programming policy.
+* Use qualifiers on names that are in the global namespace:
+    * If you have variables that are in the global namespace, cosider whether you need to adopt a convention for partitioning the global namespace and avoiding naming conflicts.
+    * You can accomplish the same thing by using packages.
+
+#### Computed-Value qualifiers in variable names
+
+* If you modify a name with a qualifier like "Total", "Sum", "Average", "Max", "Min", "Record", "String" or "Pointer", put the modifier at the end of the name.
+* The most significant part of the variable name, the part that gives the variable most meaning, is at the front, so it's most prominent and gets read first.
+* The names are semantically equivalen, and the convention would prevent their being used as if they were different.
+* The consistency improves readability and eases maintenance.
+* Because using "Num" so often creates confusion, it's probably best to side-step the whole issue, by using "count" or "total" to refer to a total number of customers and "index" to refer to a specific customer. Thus "customCount" is the total number of customers and "customIndex" refers to a specific customer".
+
+#### Common Opposites in Variable Names
+
+* Use opposites precisely. Using naming conventions for opposites helps consistency which helps readability. Here are some common opposites:
+    * begin/end
+    * first/last
+    * lock/unlock
+    * min/max
+    * next/previous
+    * old/new
+    * open/close
+    * visible/invisible
+    * source/target
+    * source/destination
+    * up/down
+
+### 11.2 Naming Specific Types of Data
+
+#### Naming Loop Indexes
+
+* The names "i", "j" and "k" are customary.
+* If a variable is to be used outside the loop, it should be given a name more meaningful than a few lines, it's easy to forget what "i" is supposed to stand for and you're better off giving the loop index a more meaningful name.
+* Because code is so often changed, expanded and copied into other programs, many experienced programmers avoid names like "i" altogether.
+* If you have several nested loops, asign longer names to the lop variables to improve readability.
+* Carefully chosen names for loop-index variables avoid the common problem of index cross-talking. They also make array accesses clearer.
+* If you have to use "i", "j" and "k", don't use them for anything other than loop indexes for simple loops - the convention is too well established, and breaking it to use them in other ways is confusing.
+
+#### Naming Status Variables
+
+* A flag should never have "flag" in its name because that doesn't give you any clue about what the flag does. For clarity, flags should be assigned values and their values sshould be tested with enumerated types, named constants or global variables that act as named constants.
+
+#### Naming Temporary Variables
+
+* Temporary variables are used to hold intermediate results of calculations, as temporary placeholders and to hold housekeeping values.
+* In one way or another, most of the variables in your program are temporary. Calling a few of them temporary may indicate that you aren't sure of their real purposes.
+
+#### Naming Boolean Variables
+
+* Keep typical boolean names in mind
+    * Done (something is done)
+    * Error (an error has occurred)
+    * Found (a value has been found)
+    * Success (An operation has been successful.)
+        * If you can, replace "success" with a more specific name that describes precisely what it means to be successful.
+* Give boolean variables names that imply true or false
+    * Names like status and sourceFile are poor boolean names because they are not obviously true or false.
+    * Some programmers like to put "is" in front of their boolean names, then the variable becomes a question.
+        * A benefit of this approach is that it won't work with vague names. IsStatus? makes no sense at all.
+        * A drawback is that it makes simple logical expressions less readable: `if (isFound)` is slightly less readable than `if (found)`.
+* Use possitive boolean variable names.
+
+#### Naming Enumerated Types
+
+* In some languages, enumerated types are treated more like classes, and the members of the enumeration are always prefixed with the enum name, like `Color.Color_Red` or `Planet.Planet_Earth`. In that case, it makes little sense to repeat the prefix.
+
+#### Naming Constants
+
+* When naming constants, name the abstract entity the constant represents rather than the number the constant refers to.
+
+### 11.3 The Power of Naming Convention
+
+#### Why Have Conventions?
+
+* By making one global decision rather than many local ones, you can concentrate on the more important characteristics of the code.
+* They help you transfer knowledge across projects.
+* They help you learn code more quickly on a new project. All team mebers must write the same uniform/consisten code.
+* They reduce name proliferation. Without naming conventions, you can easily call the same thing by two different names.
+* They compensate for language weaknesses.
+* They emphasize relationships among related items. Programming conventions can make up for the weakness of the language you're using.
+* The key is that any convention at all is often better than no convention.
+
+
+#### When you should have a naming convention
+
+* When multiple programmers are working on a project.
+* When you plan to turn a program over to another programmer for modifications and maintenance.
+* When your programs are revieweed by other programmers in your organization.
+* When your program is so large that you can't hold the whole thing in your brain at once and must think about it in pieces.
+* When the program will be long-lived enough that you might put it aside for a few weeks or months before working on it again.
+* When you have a lot of unusual terms that are common on aproject and want to have standard terms or abbreviations to use in coding.
+
+#### Degrees of Formality
+
+* The degree of formality you need is dependent on the number of people working on a program, the size of the program, and the program's expected life span.
+
+### 11.4 Informal Naming Conventions
+
+#### Guidelines for a Language-Independent Convention
+
+* Differentiate between variable names and routine names.
+    * Begin variable and object names with lower case and routine names with uppercase.
+* Differentiate between classes and objects (types and variables)
+    * Via initial capitalization
+    * Via all caps.
+    * Via "t_" prefix for types.
+    * Via "a" prefix for variables.
+    * Via using more specific names for variables.
+* Identify global variables
+    * Give all global variable names a "g_" prefix
+* Identify member variables
+    * Identify class member variables with an "m_" prefix.
+* Identify type definitions
+    * Explicitly identify a name as a type name, and avoid naming classes with variables.
+    * You can prefix the type names with "t_", such as "t_Color".
+* Identify named constants
+    * Use a prefix like "c_"
+    * Use all uppercase letters, possibly with underscores to separate words.
+* Identify elements of enumerated types
+    * You can use all caps or an "e_" or "E_" prefix for the name of the type itself.
+    * Use a prefix based on the specific type like "Color_" or "Planet_" for the members of the type.
+* Identify input-only parameters in languages that don't enforce them
+    * If you modify an input variable, it is returned whether you like it or not. This is specially true when passing objects.
+    * If you establish a naming convention in which input-only parameters are given a "const" prefix, you will know that an error has ocurred when you see anything with a "const" prefix on the left side of the equal sign.
+* Format names to enhance readability
+    * You can use capitalization and spacing characters to separate words.
+    * Try not to mix these tecniques; that makes the code hard to read.
+    * As long as you and your team are consistent, it doesn't matter whether the first character in a name should be capitalized.
+
+#### Guidelines for language-specific conventions
+
+##### C conventions
+
+* Variable and routine names are in `all_lowercase`.
+* The underscore (_) character is used as a separator.
+
+##### C++ Conventions
+
+* Constants, typedefs, and preprocessor macros are in `ALL_CAPS`.
+* Variable and function names use lowercase for the first word, with the first letter at each following word capitalized.
+* Underscore is not used as separator within names, except for names in all caps and certain kinds of prefixes.
+
+##### Java Conventions
+
+* Constants are `ALL_CAPS`.
+* Class and interfaces names capitalize the first letter of each word, including the first word.
+* Variable and method names use lowercase for the first word, and capitalize the first letter of the following words.
+* The underscore is not used.
+* Get and set prefixes are used as accessor methods.
+
+##### Mixed-language Programming Conventions
+
+* When programming in a mixed-language environment, the naming conventions can be optimized for overall consistency and readability.
+* Even if that means going against conventions for one of the languages that's part of the mix.
+
+### 11.5 Standardized Prefixes
+
+* Standardized prefixes are composed of two parts: the used-defined type (UDT) abbreviation and the semantic prefix.
+
+#### User-Defined Type Abbreviations
+
+* The UDT abbreviation identifies the data type of the object or variable being named.
+* A UDT abbreviation doesn't refer to any of the predefined data types offered by the programming language.
+* UDTs are described with short codes that you create for a specific program and then standardize on for use in that program.
+    * e.g. "wn" for "window", or "scr" for "screen region".
+
+#### Semantic Prefixes
+
+* Describe how the variables or object is used.
+* Semantic prefixes are somewhat standard across projects.
+    * c: count
+    * first
+    * g: global variable
+    * i: index
+    * last
+    * lim: upper limit. "lim" is not a valid index. Generally `lim=last+1`.
+    * m: class member variable
+    * max
+    * min
+* Semantic prefixes are combined with the UDT, and are formatted in lowercase or mixed uppercase and lowercase.
+* e.g. The paragraph count would be cPa.
+* If iPa unambiguosly designates an index into an array of paragraphs, it's tempting not to make the name more meaningful like `ipaActiveDocument`. For readability, come up with a descriptive name.
+
+### 11.6 Creating Short Names that Are Readable
+
+* In modern languages, you can create names of virtually any length; you have almost no reason to shorten meaningful names.
+
+#### General Abbreviation Guidelines
+
+* Use standard abbreviations
+* Remove all non leading vowel ("computer" becomes "cmptr")
+* Remove articles: "and", "or", "the".
+* Use first few letters of each word.
+* Use every significant word in the name, up to a maximum of three words.
+* Remove useless suffixes, -ing, -ed.
+* Be sure not to change the meaning of the variable.
+
+#### Phonetic Abbreviations
+
+* it's not recommended to abbreviate based on the sound of the words, rather than the spelling.
+
+#### Comments on Abbreviations
+
+* Don't abbreviate by removing one character froma word
+    * Instead of "Jun" or "Jul", write "June" or "July", respectively.
+* Abbreviate consistently.
+* Create names that you can pronounce
+    * If you can't read your code to someone over the phone, rename your variables to be more distinctive.
+* Avoid combinations that result in misreading or mispronunciation
+    * To refer to the end of B, favor ENDB over BEND.
+* Use a thesaurus to resolve naming collisions.
+* Document extremely short names with translation tables in the code.
+    * Include a translation table to provide a reminder of the mnemonic content of the variables.
+* Documnt all abbreviations in a project-level "standard abbreviation" document.
+* Abbreviations in code create two general risks:
+    * A reader of the code might not understand the abbreviation
+    * Other programmers might use multiple abbreviations to refer to the same word, which creates needless confusion.
+* You can create a "Standard Abbreeviation" document that captures all the coding abbreviations used on your project.
+    * The document is checked into version control and checked out anytime anyone creates a new abbreviation in the code. Entries in the document should be sorted by the full word, not the abbreviation.
+    * The fact that a programmer can't create a new abbreviation without the overhead of checking the standard abbreviations document is a good thing. It means that an abbreviation won't be created unless it's so common that it's wordth the hassle of documenting it.
+    * This approach addresses the second risk by reducing inconvenience, but programmers over the lifetime of a system spend far more time reading code than writting code. This approach increases read-time convenience.
+* Remember that names matter more to the reader of the code than to the writter.
+
+### 11.7 Kind of Names to Avoid
+
+* Avoid misleading names or abbreviations
+* Avoid names with similar meanings
+* Avoid variables with different meanings but similar names.
+    * Avoid names like "clientRects" and "clientReps".
+* Avoid names that sound similar, such as "wrap" and "rap"
+* Avoid numerals in names.
+    * If the numerals in a name are really significant, use an array instead of separate variables.
+* Avoid mispelled words in names.
+* Avoid words that are commonly misspelled in english.
+* Don't differentiate variable names solely by capitalization.
+* Avoid multiple natural languages.
+* Avoid the names of standard types, variables and routines.
+    * Do not use "if", "else", and "then" as variable names.
+* Don't use names that are totally unrelated to what the variables represent.
+* Avoid names containing hard-to-read characters:
+    * Pais that are hard to distinguish include (l and 1), (l and I), (0 and O), (2 and Z), (S and 5), (6 and G).
 
 
 
