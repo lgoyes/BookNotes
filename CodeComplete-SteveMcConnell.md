@@ -707,10 +707,130 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Avoid names containing hard-to-read characters:
     * Pais that are hard to distinguish include (l and 1), (l and I), (0 and O), (2 and Z), (S and 5), (6 and G).
 
-
-
 ## 12. Fundamental Data Types
+
+### 12.1 Numbers in General
+
+* Avoid "magic numbers"
+    * Magic numbers are literal numbers, such as 100 or 47592, that appear in the middle of a program without explanation.
+    * Avoiding magic numbers yields three advantages
+        * Changes can be made more reliably
+        * Changes can be made more easily
+        * Your code is more readable
+* Use hard coded 0s and 1s if you need to
+    * The values 0 and 1 are used to increment, decrement, and start loops at the first element of an array.
+    * The only literals that should occur in the body of a program are 0 and 1.
+* Anticipate divide-by-zero errors
+    * Each time you use the division symbol, think about thether it's possible for the denominator of the expression to be 0. If the possiblity exists, write code to prevent a divide-by-zero error.
+* Make type conversions obvious.
+* Avoid mixed type comparisons.
+* Many modern compilers tell you when you have different numeric types in the same expression
+
+### 12.2 Integers
+
+* Check for integer division
+    * When you're using integers, 7/10 doesn't equal 0.7, but usually equals 0.
+* Check for integer overflow.
+    * Be aware of the largest possible integer, when doing integer multiplication or addition.
+    * The easiest way to prevent integer overflow is to think through each of the terms in your arithmetic expression and try to imagine the largest value each can assume.
+* Check for overflow in intermediate results
+    * `(1_000_000 * 1_000_000 / 1_000_000) = -727_379_968 / 1_000_000 = -727`.
+    * You can handle overflow in intermediate results the same way you handle integer overflow, by switching to a long-integer or floating-point type.
+
+### 12.3 Floating-Point Numbers
+
+* The main consideration in using floating-point numbers is that many fractional decimal numbers can't be represented accurately using hte 1s and 0s available on a digital computer.
+* Avoid additions and subtractions on numbers that have greatly different magnitudes.
+    * With a 32-bit floating point variable, `1_000_000 + 0.1` probably produces an answer of `1_000_000` because 32 bits don't give you enough significant digits to encompass the range.
+    * If you have a sequence of numbers that contains huge differences like this, sort the numbers first, and then add them starting with the smallest values.
+* Avoid equality comparisons
+    * One effective approach is to determine a range of accuracy that is acceptable and then use a boolean function to determine whether the values are close enough.
+    *Typically, you'd write an `Equals()` funciton that returns `true` if the values are close enough and `false` otherwise.
+* Anticipate rounding errors
+    * Change to a variable type that has greater precision
+    * Change to binary coded decimal (BCD) variables
+    * Change from floating-point to integer variables
+        * You can make these manipulations easier by creating a class that hides the integer representation and supports the necessary numeric operations.
+* Some languages, including Visual Basic, have data types such as `Currency` that specifically support data that is sensitive to rounding errors. If your language has a built-in data type that proviedes such functionality, use it.
+
+#### 12.4 Characters and Strings
+
+* Avoid magic characters and strings. Use named constants instead.
+    * It's easier to translate strings that are grouped in a string resource file.
+    * String literals tend to take up a lot of space.
+    * Character and string literals are cryptic. Comments or named constants clarify your intentions.
+* Know how your language and environment supports Unicode.
+* Decide on an internationalization / localization strategy early in the lifetime of a program.
+* If you know you only need to support a single alphabetic language, consider using an ISO 8859 character set.
+* If you need to support multiple languages, use Unicode.
+* Decide on a consistent conversion strategy among string types
+    * Keep all the strings in a single format within the program.
+
+#### 12.5 Boolean Variables
+
+* Instead of merely tsting a boolean expression, you can assign the expression to a variable that makes the implication of the test unmistakable.
+* By creating some boolean variables for testing, you make the "if" test simpler: easier to read, less error prone, and easier to modify.
+* Create you own boolean type, if necessary.
+
+#### 12.6 Enumerated Types
+
+* Enumerated types are generally used when you know all the possible values of a variable and want to express them in words.
+* Use enumerated types for readability:
+    * Anytime you see a numeric literal, ask whether it makes sense to replace it with an enumerated type.
+    * Enumerated types are especially useful for defining routine parameters.
+* With named constants, the compiler has no way of knowing that the only legal values are Color_Red, Color_Blue, and Color_Green.
+* Enumerated types make your code easy to modify. You can continue adding elements to the list just by putting them into the type of definition and recompiling.
+* Use enumerated types are an alternative to boolean variables. Often a boolean variable isn't rich enough to express the meanings it needs to.
+* When you test an enumerated type in an `if` or `case` statement, check for invalid values. Use the `else` clause in a `case` statement to trap invalid values.
+* Define the first and last entries of an enumeration for use as loop limits.
+* Reserve the first entry in the enumerated type as invalid.
+* Define precisely how First and Last elements are to be used in the project coding standard, and use them consistently.
+* Beware of pitfalls of assigning explicit values to elements of an enumeration. (One element is assigned a 1, and the next is assigned a 3. This might lead to an error in a for loop).
+* If your language doesn't have enumerated types, you can simulate them with global variables or classes.
+
+#### 12.7 Named Constants
+
+* Named constants enable you to refer to fixed quantities, by a name rather than a number - `MAXIMUM_EMPLOYEES` rather than `1000`, for instance.
+* Using a named constant is a way of "parameterizing" your program:
+    * Putting an aspect of your program that might change into a parameter that you can change in one place rather than having to make changes throughout the program.
+    * Using named constants helps program readability and maintainability in data declarations.
+    * As a general rule, any technique that centralizes control over things that might change is a good technique for reducing maintenance efforts.
+    * Avoid literal, even "save" ones.
+    * If your language doesn't support named constants, you can create your own. Simulate named constants with approriately scoped variables or classes.
+    * Use named constants consistently.
+
+#### 12.8 Arrays
+
+* Make sure that all array indexes are within the bounds of the array.
+* Consider using container classes that you can access sequentially -sets, stacks, queues, and so on- as alternatives beore you automatically choose an array.
+* Ask yourself whether the code correctly accesses the first/last element of the array or mistakenly accesses the element before or after the first/last element.
+* If an array is multidimensional, make sure its subscripts are used in the correct order.
+    * Consider using more meaningful names than `i` and `j` in cases in which their roles aren't immediately clear.
+    * Watch out for index cross-talking
+        * Switching loop indexes is called "index cross-talk".
+
+#### 12.9 Creating your own types (type aliasing)
+
+* Programmer-defined data types protect your program against unforseen changes and make it easier to read -all without requiring you to design, construct, or test new classes.
+* Reasons to create your own types:
+    * To make modifications easier.
+    * To avoid excesive information distribution
+    * To increase reliability
+    * To make up for language weakness
+
+##### Guidelines for Creating your own types
+
+* Use type names that refer to the parts of the real-world problem that the new type represents.
+* The big advantage of creating your own type is that it provides a layer of insulation between your program and the implementation language
+    * Problem-oriented names buy you easy modifiability and data declarations that are self-documenting.
+* If there is any possibility that a type might change, avoid using predefined types anywhere but in `typedef` or `type` definitions.
+* Use of functionally oriented type declarations partially documents the variables declared with them.
+* Don't redefine a predefined type.
+* Simple `typedefs` can go a long way toward hiding information about a variable's underlying type. In some cases, however, you might want the additional flexibilty and control you'll achive by creating a class.
+
 ## 13. Unusual Data Types
+
+
 ## 14. Organizing Straight-Line Code
 ## 15. Using COnditionals
 ## 16. Controlling Loops
