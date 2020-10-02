@@ -830,6 +830,26 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 13. Unusual Data Types
 
+### 13.1 Structures
+
+* THe term "structure" refers to data that's build up from other types.
+* Use structures to clarify data relationships.
+    * Structures bundle groups of related items together.
+* Use structures to simplify operations on blocks of data
+    * It's easier to operate on the structure than to perform the same operation on each of the elements. It's also more reliable, and it takes fewer lines of code.
+    * If you ever add a new piece of data to the set of related information, you have to find every place at which you have a block of assignments and add an assignment for that new data.
+* Use structures to simplify parameter lists
+    * Rather than passing each of the elements needed individually, you can group related elements into a structure and pass the whole enchulada as a group structure.
+    * Careful programmers avoid passing a structure as a parameter when only one or two fields from the structure are needed -they pass the specific field instead.
+    * Some information is hidden in routines, and some is hidden from routines.
+* Use structures to reduce maintenance
+    * Because you group related data when you use structures, chaning a structure requires fewer changes throughout a program.
+    * If your employee strcutre has a title fields and you decide to delete it, you don't need to change any of the parameter lists or assignments that use the whole structure.
+    * Individual components, such as the "title" field, are referenced merely because they are part of the collection. Such sections of code don't have any logical reason to work with the title field specifically, and those sections are easy to overlook when you change "title".
+
+### 13.3 Global Data
+
+
 
 ## 14. Organizing Straight-Line Code
 ## 15. Using COnditionals
