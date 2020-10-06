@@ -849,9 +849,73 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ### 13.3 Global Data
 
+* Global variables are accessible anywhere in a program. THe term is also sometimes used sloppily to refer to variables with a broader scope than local variables - such as class variables that are accessible anywhere within a class. But accessibility anywhere within a single class does not by itself mean that a variable is global.
 
+#### Common Problems with Global Data
+
+* You might change the value of a global variable in one place and mistakenly think that it has remained unchanged somewhere else.
+* "Aliasing" refers to calling the same variable by two or more different names. This happens when a global variable is passed to a routine and then used byu the routine as a global variable and as a parameter.
+* Multithread code created the possibility that global data will be shared not only among routines, but among different copies of the same program. In such an environment, you have to make sure that global data keeps its meaning even when multiple copies of a program are running.
+* If the class you want to reuse reads or writes global data, you can't just plug it into the new program. You have to modify the new program or the old class so that they're compatible.
+* If the initialization of a global variable in one file uses a global variable that was initialized in a different file, all bets are off on the second variable's value unless you take explicit steps to ensure the two variables are initialized in the right sequence.
+* Global data pokes holes in your ability to modularize. If you use global data, can you concentrate on one routine at a time? No. You have to concentrate on one routine and every other routine that uses the same global data.
+
+#### Reasons to Use Global Data
+
+* Sometimes you have data that applies conceptually to your whole program. This might be a variable that reflects the state of a program, or it might be information that's needed throughout a proggram.
+* You can use global variables as substitutes for named constants when your language doesn't support them.
+* The disciplined use of global data is a prime example of the distinction between programming in vs. programming into a language.
+* Use global variables to emulate enumerated types.
+* Sometimes you have so many references to a variables that it appears in the parameter list of every routine you write. Rather than including it in every parameter list, you can make it a global variable.
+    * If the data is accessed by a limited set of routines, you can package into a class with the data they work on.
+* Sometimes you pass data to a routine or class merely so that it can be passed to another routine or class. When the routine in the middle of the call chain doesn't use the object, the object is called "tramp data".
+
+#### Use Global Data as a Last Resort
+
+* Begin by making each variable local and make variables global only as you need to.
+* Some variables are truly global. Others are really class variables, used heavily only within a certain set of routines.
+    * If routines outside the class need to use it, provide the variable's value by means of an access routine. Don't access class values directly.
+* Use access routines.
+
+#### Using Access ROutines Instead of Global Data
+
+* You can use access routines to centralize control over your data and to protect yourself against changes.
+
+##### Advantages of Access Routines
+
+* You get centralized control over the data.
+* You can ensure that all references to the variables are barricaded.
+* You get the general benefits of information hiding automatically.
+* Access routines are easy to convert to an abstract data type.
+
+##### How to Use Access Routines
+
+* Summary:
+    1. Hide data in a class
+    2. Declare that data by using the static keyword or its equivalent to ensure that only a single instance of the data exists.
+    3. Write routines that let you look at the data and change it.
+    4. Require code outside the class to use the access routines rather than working directly with the data.
+* Require all code to go through the access routines for the data.
+* As long as you're writing routines, take a moment to think about which class each global variable belongs in and then package the data and its access routines in that class.
+* Similar to concurrency control in a multiuser database environments, locking requires that before the value of a global variable can be used or updated, the variable must be "checked out". After the variable is used, it's checked back in. During the time it's in use, if some other part of the program tries to check it out, the lock/unlock routine displays an error message or fires an assertion.
+* Build access routines at the level of the problem domain, rather than at the level of the implementation details.
+* Keep all access to the data at the same level of abstraction.
+    * If you use an access routine to do one thing to a structure, you should use an access routine to do everything else to it too.
+
+##### How to Reduce the Risks of Using Global Data
+
+* In most instances, global data is really class data for a class that hasn't been designed or implemented very well.
+    * In a few instances, data really needs to be global, but accesses to it can be wrapped with access routines to minimize potential problems.
+    * In a tiny number of remaining instances, you really need to use global data.
+    * Develop a naming convention to make global variables obvios.
+    * Create a well-annotated list of all your global variables.
+    * Don't use global variables to contain intermediate results.
+    * Don't pretend you're not using global data by tutting all your data into a monster object and passing it everywhere.
 
 ## 14. Organizing Straight-Line Code
+
+
+
 ## 15. Using COnditionals
 ## 16. Controlling Loops
 ## 17. Unusual Control Structures
