@@ -914,7 +914,32 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 14. Organizing Straight-Line Code
 
+### 14.1 Statements That Must Be in a Specific Order
 
+* The easiest sequential statements to order are those in which the order counts, because there is any kind of dependency between the statements.
+* When statements have dependencies that require you to put them in a certain order, take steps to make the dependencies clear.
+* Organize code so that dependencies are obvious.
+    * Why should initialization be done in a given routine instead of one of the others? Unlessyou can think of a good reason, you should write another ruotine, `InitializeData()`, to initialize the member data. The routine's name is a clear indication that it should be called before the other routines.
+* Name routines so that dependencies are obvious.
+* Use routine parameters to make dependencies obvious.
+    * A better approach might be to convert the routines to functions that take `expenseData` as inputs and return updated `expenseData` as outputs, which makes it even clearer that the code includes order dependencies.
+* Document unclear dependencies with comments.
+* Check for dependencies with assertions or error-handling code:
+    * If the codee is critical enough, use status variables and error-handling code or assertions to document critical sequential dependencies.
+    * This tecnique creates new code, which creates additional possibilities for error. The benefits of this technique should be weighted against the additional complexity and increased chance of secondary errors that this technique creates.
+
+### 14.2 Statements Whose Order Doesn't Matter.
+
+* Principle of Proximity: _Keep related actions together_.
+
+#### Making Code Read from Top to Bottom
+
+* Make the program read from top to bottom rather than jumping around.
+* References to each object are kept close together; they are "localized". The number of lines of code in which the objects are "live" is small. And perhaps most important, the code now looks as if it could be broken into separate routines for marketing, sales and travel data.
+
+#### Grouping Related Statements
+
+* Put related statements together. THey can be related because they operate on the same data, perform similar tasks, or depend on each other's being performed in order.
 
 ## 15. Using COnditionals
 ## 16. Controlling Loops
