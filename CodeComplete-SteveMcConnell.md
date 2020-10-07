@@ -942,6 +942,80 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Put related statements together. THey can be related because they operate on the same data, perform similar tasks, or depend on each other's being performed in order.
 
 ## 15. Using COnditionals
+
+* A conditional statement controls the execution of other statements; execution of other statements is "conditioned" on statements such as "if", "else", "switch" and "case.
+
+### 15.1 If statements
+
+#### Plain If-then statements
+
+* Write the nominal path through the code first; then write the unusual cases.
+* Make sure that you branch correctly on equality.
+* Put the normal case after the "if" rather than after the "else".
+    * Try not to mix the nominal cases and the error cases together.
+    * If the error conditions are sometimes processed in the "if" clause rather than the "else" clause, then it will be hard to figure out which "if" test the normal case goes with.
+* Follow the "if" clause with a meaningful statement
+    * Instead of having an empty "if" clause, negate the predictae in the "if" statement, move the code from the else clause to the if clause, and eliminate the else clause.
+* Consider the else clause
+    * When you have an "if" test without an else, unless the reason is obvious, use comments to explain why the else clause isn't necessary.
+* Test the else clause for correctness.
+
+#### Chains of if-then-else statements
+
+* Simplify complicated tests with boolean function calls.
+* Put the most common cases first
+    * You improve efficiency because you minimize the number of tests the code does to find the most common cases.
+* Make sure that all cases are covered.
+    * Code a final "else" clause with an error message or assertion to catch cases you didn't plan for.
+* Replace if-then-else chains with other constructs if your languages supports them.
+
+### 15.2 Case statements
+
+#### Choosing the Most Effective Ordering of Cases
+
+* Order cases alphabetically or numerically, if cases are equally important.
+* If you have one normal case and several exceptions, put the normal case first.
+* Put the most frequently executed cases first and the least frequently executed last.
+
+#### Tips for Using "case" statements
+
+* If the actions performed for a case are complicated, write a routine and call the routine from the case, rather than putting the code into the case itself.
+* A case statement should be used for simple data that's easily categorized. If your data isn't simple, use chains of if-then-elses instead.
+* If you have one case remaining, don't code it as the default case.
+    * You lose the automatic documentation provided by case staement labels, and you lose the ability to detect errors.
+* If the default clause in a case statement isn't being used for other processing and isn't supposed to occur, put a diagnostic message in it.
+* Avoid dropping through the end of a case statement.
+* If you intentionally write code to drop through the end of a case, clearly comment the place at which it happens and explain why it needs to be coded that way.
+
+## 16 Contorlling Loops.
+
+### 16.1 Selecting the Kind of Loop
+
+* Types:
+    * Counted loop is performed a specific number of times
+    * Continuosly evaluated loop doesn't know ahead how many times it will be executed and tests whether it ahs finished in each iteraction
+    * Endless loop executes forever
+    * Iterator loop performs its action for each element in a container class.
+* If the loop is tested at the beginning, its body isn't necessarily executed. If the loop is tested at the end, its body is executed at least once. If the loop is tested in the middle, the preceeding part is executed at least once, but the other part that follows isn't necessarily tested.
+
+#### When to Use a while loop.
+
+* The test for the loop exit is performed only once each time through the loop, and the main issue with respect to while loop is deciding whether to test at the beginning or the end of the loop.
+
+#### When to Use a Loop-with-exit loop.
+
+* The exit condition of a loop appeaers in the middle of the loop rather that at the beginning or at the end.
+* You can emulate it with the structured constructs while and break.
+
+#### Normal Loop-with-exit loops
+
+* A typical use of a loop-with-exit loop is for the case in which testing at the beginning or at the end of the loop requires coding a loop-and-a-half.
+* Put all the conditions in one place. Spreading them around practically guarantees that one exit condition or another will be overlooked during debugging, modification, or testing.
+* In common practice, the loop-with-exit isn't widely used yet.
+
+
+
+
 ## 16. Controlling Loops
 ## 17. Unusual Control Structures
 ## 18. Table-Driven Methods
