@@ -987,7 +987,7 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Avoid dropping through the end of a case statement.
 * If you intentionally write code to drop through the end of a case, clearly comment the place at which it happens and explain why it needs to be coded that way.
 
-## 16 Contorlling Loops.
+## 16 Controlling Loops.
 
 ### 16.1 Selecting the Kind of Loop
 
@@ -1013,10 +1013,104 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Put all the conditions in one place. Spreading them around practically guarantees that one exit condition or another will be overlooked during debugging, modification, or testing.
 * In common practice, the loop-with-exit isn't widely used yet.
 
+#### When to Use a For Loop
+
+* A for loop is a good choice when you need a loop that executes a specific number of times.
+* Use for loops for simple activities that don't require internal lop controls. Use them when the loop controls involves simple increments or simple decrements, such as iterating through the elements in a ontainer.
+* If you have a condition under which execution has to jump out of a loop, use a while loop instead.
+* Likewise, don't explicitly change the index value of a for loop to force it to terminate. Use a while loop instead. The for loop is for simple uses. Most complicated looping tasks are better handled by a while loop.
+
+#### When to Use a Foreach loop
+
+* The foreach loop or its equivalent is useful for performing an operation on each member of a collection.
+* It has the advantage of eliminating loop-housekeeping arithmetic.
+
+### 16.2 Controlling the Loop.
+
+* To forstall most of the problems of a loop, you have to follow two practices:
+    1. Minimize the number of factors that affect the lop
+    2. Treat the inside of the loop as if it were a routine. - keep as much of the control as possible outside the loop. Explicitly state the conditions under which the body of the loop is to be executed. Don't make the reader look inside the loop to understand the loop control.
+
+#### Entering the Loop
+
+* Enter the loop from one location only.
+* Put initialization code directly before the loop.
+* Use `while(true)` for infinite loop.
+* Prefer for loops when they're appropriate.
+    * In a for loop, all the relevant code is together at the top of the loop, which makes correct modifications easier.
+* Don't use a `for` loop when a `while` loop is more appropriate.
+    * Reserve the for loop header for loop-control statements - statements that initialize the loop, terminate it, or move it toward termination.
+    * If you want to use the `for` loop rather than the while loop, put the loop-control statements in the loop header and leave everything else out.
+
+#### Processing the Middle of the Loop
+
+* Use code brackets to enclose the statements in a loop, EVERY TIME.
+* Avoid empty loops.
+    * Do not code the work the loop is doing on the same line as the test that checks whether the work is finished.
+* Keep look-householding chores at either the beginning or the end of the loop.
+    * Loop housekeeping chores are expressions, whose main purpose isn't to do the work of the loop, but to control the loop.
+* Make each loop perform only one function.
+    * Loops should be like routines in that each one should do only one thing and do it well.
+
+#### Exiting the loop
+
+* Assure yourself that the loop ends.
+* Make loop-termination conditions obvios.
+    * If you use a while loop and put all the contorl in the while clause, the termination condition will be obvious.
+    * If you use a for loop and don't use break to get out of the loop, the termination condition will be obvious.
+    * The key is putting the control in one place.
+* Don't monkey with the loop index of a for loop to make the loop terminate.
+* Avoid code that depends on the loop index's final value.
+    * It's better form and more self-documenting if you assign the final value to a variable at the approapriate point inside the loop.
+    * Consider using safety pointers
+        * A safety counter is a variable you increment each pass through a loop to determine whether a loop has been executed too many times. If you have a program in which an error would be catastrophic, you can use safety counters to ensure that all loops end.
+
+#### Exiting Loops Early
+
+* The `break` statement (or equivalent) causes a loop to terminate through the normal exit channel; the program resumes execution at the first statement following the loop.
+* Rather than cousing a loop exit, however, `continue` causes the program to skip the loop body and continue executing at the beginning of the next iteration of the loop.
+* Consider using break statements rather than boolean flags in a while loop.
+* A loop's containing a lot of breaks can indicate unclear thinking about the lop or its role in the surrounding code.
+* Use continue for tests at the top of a loop.
+* Use the labeled break structure if your language supports it.
+* Use break and continue only with caution.
+    * Use of break eliminates the possibility of treating a loop as a black box.
+
+#### Checking Endpoints
+
+* When you create a loop, mentally run through the first, middle, and last cases, to make sure that the loop doesn't have any off-by-one errors. If you have any special cases that are different from the first or last case, check those too.
+* The mental discipline results in fewer errors during initial coding, in more rapid detection of errors during debugging and in better overall understanding of the program.
+* The mental exercise means that you understand how your code works rather than guessing about it.
 
 
+#### Using loop variables
 
-## 16. Controlling Loops
+* Loop counters should be integer values.
+* Use meaningful variable names to make nested loops readable.
+    * If you have a one-dimensional array, you omight be able to get away with `i`, `j`, or `k` to index it. But if you have an array with two or more dimensions, you should use meaningful index names to clarify what you're doing.
+* Use meaningful names to avoid loop-index cross-talk.
+* Limit the scope of loop-index cross-talk.
+* Limit the scope of loop-index variables to the loop itself.
+
+#### How long should a loop be?
+
+* Make your loops short enough to view all at once.
+* Limit nesting to three levels
+    * If you're going beyond that number of levels, make the loop shorter by breaking part of it into a routine or simplifying the control structure.
+* If the loop is well designed, the code of the inside can often be moved into one or more routines that are called from within the loop.
+* Make long loops especially clear.
+    * If you write a short loop, you can use `break` or `continue`.
+    * If you write a longer loop, you'll give the loop a single exit and make the exit condition unmistakely clear.
+
+### 16.3 Creating loops easily -from the inside out
+
+* Start with one case. Then indent it, put a loop around it, and replace the literals with loop indexes or computed expresions. Put another loop around that, if necessary. When you finish, add all the necessary initializations.
+
+### 16.4 Correspondence between loops and arrays
+
+* In many instances, a loop is created to perform an array manipulation.
+* You do some programming to solve a problem. The language you use to solve a problem substantially affects your solutions.
+
 ## 17. Unusual Control Structures
 ## 18. Table-Driven Methods
 ## 19. General Control Issues
