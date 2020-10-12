@@ -1112,7 +1112,65 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * You do some programming to solve a problem. The language you use to solve a problem substantially affects your solutions.
 
 ## 17. Unusual Control Structures
+
+### 17.1 Multiple Returns from a Routine
+
+* THe `return` statement is a ontrol construct that enables a program to exit frorm a routine at will. It causes the routine to terminate through the normal exit channel, returning control to the calling routine.
+* Use a `return` when it enhances readability.
+    * In certain routines, once you know the answer, you want to return it to the calling routine immediately.
+    * Use guard clauses (early returns or exits) to simplify complex error processing.
+    * Minimize the number of returns in each routine.
+
+### 17.2 Recursion
+
+* Recursion is usually called into play when a small part of the problem is easy to solve, and a large part is easy to decompose into smaller pieces.
+* Recursion isn't useful often, but when used judiciously, it produces elegant solutions.
+* For a small group of problems, recursion can produce simple elegant solutions. For a slightly larger group of problems, it can produce simple, elegant, hard-to-understand solutions. For most problems, it produces massively complicated solutions - in those cases, simple iteration is usually more understandable.
+* One key aim in writing a recursive routine is the prevention of infinite recursion.
+* Most people experience some initial discomfort using recursion because it's self-referential.
+
+#### Tips for Using Recursion
+
+* Make sure the recursion stops.
+* Use safety counters to prevent infinite recursion
+* Limit recursion to one routine:
+    * Cyclic recursion (A calls B calls C calls A) is dangerous becase it's hard to detect.
+    * If you have a cyclic recursion, you can usually redesign the routines so that recursion is restricted to a single routine.
+* Keep an eye on the stack
+    * Watch for allocation of local variables in recursive functions, especially memory-intense objects. In other words, use `new` to create objects on the heap rather than letting the compiler create auto objects on the stack.
+* Don't use recursion for factorials or fibonacci numbers.
+* You should consider alternatives to recursion before using it. You can do anything with stacks and iteraction that you can do with recursion.
+
+### 17.3 Goto
+
+#### The Argument Against gogo
+
+* Use of gotyos defeats compiler optimizations. Some optimizations depend on a programs flow of control residing withing fewer statements. An unconditional goto makes the flow harder to analyze and reduces the ability of the compiler to optimize the code.
+
+#### The argument for gotos
+
+* Good programming doesn't mean eliminating gotos. Methodical decomposition refinement, and selection of control structures automatically lead to goto-free programs in most cases. Achieving goto-less code is not the aim but the outcome, and putting the focus on avoiding gotos isn't helpful.
+
+#### goto and Sharing Code in an else Clause
+
+* Normally, writting a new routine is the best approach. Sometimes, however, it's not practical to put duplicated code into its own routine.
+* You can restructure the initial condition so that you keep the code in the same routine rather than putting it into a new routine.
+
+#### Summary of Guidelines for Using gotos.
+
+* use gotos to emulate structured control constructs in languages that don't support them directly.
+* Don't use the goto when an equivalent build-in construct is available.
+* In most cases, you can recode without gotos for improved readability and no loss in efficiency. If your case is the exception, document the efficiency improvement.
+* Limit yourself to one goto label per routine.
+* Limit yourself to gotos that go forward, not backward.
+* Make sure all goto labels are used.
+* Make sure a goto doesn't create unreachable code.
+* If you're a manager, adopt the perspective that a battle over a single goto isn't worth the loss of the war. If the programmer is aware of the alternatives and is willing to argue, the goto is probably OK.
+
 ## 18. Table-Driven Methods
+
+
+
 ## 19. General Control Issues
 ## 20. The Software-Quality Landscape
 ## 21. Collaborative Construction
