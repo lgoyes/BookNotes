@@ -1169,6 +1169,57 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 18. Table-Driven Methods
 
+* A table-driven method is a scheme that allows you to look up information in a table rather than using logic statements (if and case) to figure it out.
+* Virtually anything you can select with logic statements, you can select with tables instead.
+
+### 18.1 General Considerations in Using Table-Driven Methods
+
+* You put your program's knowledge into its data rather than into its logic.
+
+#### Two issues in using table-driven methods
+
+* The first issue you have to address is the question of how to lookup entries in the table.
+* The second issue if you're using a table-driven method is what you should store in the table.
+
+### 18.2 Direct Access Tables
+
+* You don't have to jump through any complicated loops to find the information you want in the table; you can pick out the entry you want directly.
+
+##### Fudging Lookup Keys.
+
+* Diplicate information to make the key work directly.
+    * The benefits of this approach are that the table structure itself is straightforward and the table accesses are also straghtforward.
+    * The drawbacks are that the duplication would waste space for redundant information and increase the possibility of errors in the table.
+* Transform the key to make it work directly
+    * You can transform all ages above 66 to another key, say 66.
+    * Creating the transformation function requires that you recognize a pattern in the data you want to use as a key.
+* Isolate the key transformation in its own routine.
+    * If your environment provides ready-made key transformations, use them. For example, Java provides HashMaps, which can be used to associate key/value pairs.
+
+### 18.3 Indexed Access Tables
+
+* When you use indexes, you use the primary data to lookup a key in an index table and then you use the value from the index table to lookup the main data you're interested in.
+    * The arrray of 10.000 entries is empty except for the 100 entries that correspond to part numbers of the 100 items in your warehouse.
+* If each of the entries in the main lookup table is large, it takes a lot less space to create an index array with a lot of wasted space than it does to create a main lookup table with a lot of wasted space.
+* It is sometimes cheaper to manipulate entries in an index table than entries in a main table. You can create one index that accesses the table by employee name, another that accesss the table by hiring date, and a third that accesses the table by salary.
+
+### 18.3 Stair-step Access Table
+
+* The general idea of stair-step structures is that entries in a table are valid for ranges of data rather than for distinct data points.
+* To use the stair-step method, you put the upper end of each range into a table and then write a loop to check a score against the upper end of each range. When you find the point at which the score first exceeds the top of a range, you know what the grade is.
+* The advantage of this approach over other table-driven methods is that it works well with irregular data.
+* Few subtleties to consider
+    * Watch the endpoints
+        * Make sure that the loop terminates properly with values that fell into the top ranges and that the range boundaries are handled correcctly.
+        * Be careful about mistaking `<` for `<=`.
+        * Consider using a binary search rather than a sequential search.
+        * Consdier using indexed access instead of the stair-step technique.
+            * It's better to strive for a good solution and svoid disaster rather than trying to find the best solution.
+        * PUt the stairstep table lookup into its own routine.
+
+## 19. General Control Issues.
+
+
 
 
 ## 19. General Control Issues
