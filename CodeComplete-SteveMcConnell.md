@@ -1219,11 +1219,157 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 19. General Control Issues.
 
+### 19.1 Boolean Expressions
+
+#### Using true and false for Boolean Tests
+
+* Use the identifiers `true` and `false` in boolean expressions rather than using values like `0` and `1`.
+* Use terms named `true` and `false` for tests with boolean expressions. If your language doesn't support such terms directly, create them using preprocessor macros or global variables.
+* Compare boolean values to `true` and `false` implicitly.
+    * Write `while(!done)` rather than `while(done == false)`.
+* Break complicated tests into partial tests with new boolean variables.
+* If a test is repeated often or distracts from the main flow of the program, move the code from the test into a function and test the value of the function.
+* Putting the test into a well-named function improves readability and makes it easier for you to see what your code is doing, and that's a sufficient reason to do it.
+    * The new function name introduces an abstraction into the program that documents the purpose of the test in code.
+* Use decision tables to replace complicated conditions.
+* If your data changes, you can change a decision table without changing the code; you only need to update the contests of the data structure.
+
+#### Forming Boolean Expressions Positively
+
+* In `if` statements, convert negatives to positives and flip-flop the code in the `if` and `else` clauses.
+    * Alternatively, you could choose a different variable name, one that would reverse the truth value of the test.
+* Apply DeMorgan's Theorems to simplify boolean tests with negatives.
+
+#### Using Parenthesis to Clarify Boolean Expressions
+
+* Rather than relying on the language's evaluation order, parenthesize to make your meaning clear.
+* Fully parenthesize logical expressions.
+
+#### Knowing How Boolean Expressions Are Evaluated
+
+* Compilers for some languages evaluate each term in a boolean expression before combining the terms and evaluating the whole expression.
+    * Compilers for other languages have "short-circuit" evaluation. This is particualary significant when, depending on the results of the first test, you might not want the second test to be executed.
+* Java further complicated this picture by providng "logical" operators. Java's logical `&` and `|` operators guarantee that all terms will be fully evaluated regardless of whether the truth or fasity of the expression could be determined without a full evaluation.
+* Since a reader of your code might not be as sharp as you are, use nested tests to clarify your intentions instead of depending on evaluation order and short-circuit evaluation.
+
+#### Writing Numeric Expressions in Numer-Line Order
+
+* Organize tests so that they follow the points on a numeric line. Ingeneral, structure your numeric tests so that you have comparisons like these:
+    * `MIN_ELEMENTS <= i && i < MAX_ELEMENTS`
+    * `i <= MIN_ELEMENTS && MAX_ELEMENTS < i`
+* The idea is to order the elements left to right, from smallest to largest.
+
+#### Guidelines for comparisons to 0.
 
 
+* Compare logical variables implicitly.
+* Compare numbers to 0 explicitly.
+* Compare characters to the null terminator (`\0`) explicitly in C.
+* Compare pointers to `NULL` explicitly.
 
-## 19. General Control Issues
+#### Common Problems with Boolean Expressions
+
+* In C-derived languages, put constants on the left side of the comparison.
+    * If you have problems mistyping `=` instead of `==`, consider the programming convention of putting constatns and literals on the left sides of expressions.
+    * The compiler should flag the single `=` as an error since assigning anything to a constant is invalid.
+    * In Java, know the difference between `a==b` and `a.equals(b)`.
+        * `a==b` tests for whether `a` and `b` refer to the same object.
+        * `a.equals(b)` tests for whether the objects have the same logical value.
+
+### 19.2 Compound Statements (Blocks)
+
+* A "compound statement" or "block" is a collection of statements that are trested as a single statement for purposes of controlling the flow of a program.
+* Write pairs of braces together.
+* Use braces to clarify conditionals, regardless of whtether the code inside the block is `1` line or `20`.
+
+### 19.3 Null statements
+
+* Call attention to null statements
+    * Use a semicolon in a single line.
+    * Use a set of empty braces to emphasize.
+* Create a preprocessor `DoNothing()`.
+    * The statement doesn't do anything but make indisputably clear the fact that nothing is supposed to be done.
+    * In addition to using `DoNothing()` in empty `while` and `for` loops, you can use it for unimportant choises of a switch statement; including `DoNothing()` makes it clear that the case was considered and nothing is supposed to be done.
+* Most of the code that results in loops with empty bodies relies on side effects in the loop-control code. In most cases, the code is more readable when the side effects are made explicit.
+
+### 19.4 Taming Dangerously Deep Nesting.
+
+* Many researchers recommend avoiding nesting to more than three or four levels.
+* If the nesting gets too deep, you can decrease the number of nesting levels by retesting some of the conditions.
+* A nested if can be simplified by using a `do-while` loop with only one iteration (`do-while(false)`), and breaking the block if some condition in the middle of the block fails.
+    * This is a very uncommon technique.
+* Convert a nested `if` to a set of `if-then-elses`.
+* Convert a nested `if` to a `case` statement.
+* Factor deeply nested code into its own routine.
+* Use a more object oriented approach.
+    * Create an abstract base class, and some subclasses.
+    * Convert the switch statement to use a factory method.
+* Redesign deeply nested code.
+    * Case statements virtually always indicate poorly factored code in object-oriented programming and are rarely needed.
+
+### 19.5 A Programming FOundation: Structured Programming.
+
+* The core of structured programming is the simple idea that a program should use only one-in, one-out control constructs.
+* A structured program progresses in an orderly, disciplined way, rather than jumpling around unpredictably.
+
+#### The Three Components of Structured Programming
+
+##### Sequence
+
+* A sequence is a set of statements executed in order. Typical sequential statements include assignments and calls to routines.
+
+##### Selection
+
+* A selection is a control structure that causes statements to be executed selectively. The `if-then-else` statement is a common example. One of the clases is "selected" for execution.
+
+##### Iteration
+
+* An iteration is a control structure that causes a group of statements to be executed multiple times. An iteration is commonly referred to as a "loop".
+
+* The core thesis of structured programming is that any control flow whatsoever can be created from these three constructs of sequence, selection and iteration.
+
+* Use of any control structure other than the three standard structured programming constructs - that is, the use of `break`, `continue`, `return`, `throw-catch` and so on - should be viewed with a critical eye.
+
+### 19.6 Contorl Structures and Complexity.
+
+* One measure of "programming complexity" is the number of mental objects you ohave to keep in mind simultaneously in order to understand a program.
+* Contorl flow is at least one of the largest contributors to complexity, if not the largest.
+
+#### How Important Is Complexity?
+
+* The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approches the proggramming task with full humility.
+    * It implies that you can never deal with enormous complexity, and must take steps to reduce it wherever possible.
+
+#### General Guidelines for Reducing Complexity
+
+* You can decrease the complexity of your programs and the amount of concentration required to understand them.
+
+#### How to Measure Complexity
+
+* Complexity is measured by counting the number of "decision points" in a routine.
+    * Start with 1
+    * Add 1 for each `if`, `while`, `repeat`, `for`, `and`, `or`.
+    * Add 1 for each `case` in a `case` statement.
+
+#### What to Do with Your Complexity Measurements
+
+* 0 to 5: The routine is probably fine.
+* 6 to 10: Start to think about ways to simplify the routine.
+* More than 10: Break part of the routine into a second routine and call it from the first routine.
+
+* Moving part of the routine into another routine doesn't reduce the overal complexity of the program; it just moves the decision points around. But it reduces the amount of complexity you have to deal with at any one time.
+
+#### Other Kinds of Complexity
+
+* Amount of Data used.
+* Number of lines between successive references to variables (span)
+* Number of lines that a variable is in use ("live time").
+* The amount of input and output.
+
 ## 20. The Software-Quality Landscape
+
+
+
 ## 21. Collaborative Construction
 ## 22. Developer Testing
 ## 23. Debugging
