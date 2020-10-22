@@ -1368,6 +1368,102 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 20. The Software-Quality Landscape
 
+### 20.1 Characteristics of Software Quality
+
+* External characteristics are characterics that a user of the software product is aware of.
+    * **Correctness:** Free from faults in its specification, design and implementation.
+    * **Usability:** Ease with which users can learn and use a system.
+    * **Efficiency:** Minimal use of system resources, including memory and execution time.
+    * **Reliability:** The ability of a system to perfom its required functions under stated conditions whenever required, having a long mean time between failures.
+    * **Integrity:** The degree to which a system prevents unauthorized or improper access to its programs and its data.
+    * **Adaptability:** The extent to which a system can be used, without modifications, in applications or environments other than those for which it was specifically designed.
+    * **Accuracy:** The degree to which a system, as built, is free from error, especially with respect to quantitative outputs. Accuracy deffers from correctess; it is a determination of how well a system does the job it's built for rather than whether it was built correctly.
+    * **Robustness:** The degree to which a system continues to function in the presence of invalid inputs or stressful environmental conditions.
+* Interal characteristics:
+    * **Maintainability:** THe ease with which you can modify a software system to change or add capabilities, improve performance or correct defects.
+    * **Flexibililty:** The extent to which you can modify a system for users or environments other than those for which it was specifically designed.
+    * **Reusability:** The extent to which and the ease with which you can use parts of a system in other systems.
+    * **Readability:** The ease with which you can read and understand the source code of a system.
+    * **Testability:** The degree to which you can unit-test and system-test a system; the degree to which you can verify that the system meets its requirements.
+    * **Understandability:** Coherence of both system-organizational and detailed-statement levels.
+* Some quality characteristics are emphasized to make life easier for the user and some are emphasized to make life easier for the programmer.
+* The attempt to maximize certain characteristics inevitably conflicts with the attempt to maximize others.
+* It's useful to think about your specific quality goals and whether each pair of goals is mutually benefitial or antagonistic.
+
+### 20.2 Techniques for Improving Software Quality
+
+* Setting explicit quality objectives from among the external and internal characteristics.
+* Quality can be perceived as a secondary goal. That's why organizations must show programmers that quality is a priority. Making the quality-assurance activity explicit makes the priority clear, and programmers with respond accordingly.
+* Developers in many projects rely on testing as the primary method of both quality assessment and quality improvement.
+* Guidelines should controrl the technical character of the software as it's developed.
+* Review your work informally before turning it over for formal review.
+* One part of managing a software-engineering process is catching problems at the time at which the least investment has been made and at which problems cost the least to correct.
+    * Periodic tests or reviews are used to determine whether the quality of the product at one stage is sufficient to support moving on to the next.
+* An external audit is a specific kind of technical review used to determine the status of a project or the quality of a product being developed.
+
+#### Development Process
+
+* One big obstacle to achieving software quality is uncontrolled changes.
+    * Uncontrolled requirements changes can result in disruption to design and coding.
+    * Uncontrolled changes in design can result in code that doesn't agree with its requirements, inconsistencies in the code, or more time spent modifying code to meet the changing design than spent moving the project forward.
+    * Uncontrolled changes in the code itself can result in internal inconsistencies and uncertainties about which code has been fully reviewed and tested and which hasn't.
+* Unless results of a quality-assurance plan are measured, you'll have no way to know whether the plan is working.
+* Prototyping is the development of realistic models of a system's key functions. Prototyping can lead to better designs, better matches with user needs, and improved maintainability.
+
+#### Setting Objectives
+
+* If you set explicid and reasonable quality objectives, programmers with work to achieve them. They can't respond to a set of objectives that change daily or that are impossible to meet.
+
+### 20.3 Relative Effectiveness of Quality Techniques
+
+* Some defect-detection methods:
+    * Informal design reviews
+    * OFrmal design inspections.
+    * Informal code reviews
+    * Formal code inspections
+    * Model or prototyping
+    * Personal desk-checking of code
+    * Unit test
+    * New function (component) test
+    * Integration test
+    * Regression test
+    * System test
+    * Low-volume beta test (<10 sites)
+    * High-volume beta test (>1000 sites)
+* Glenford Myers points out that human processes (inspections and walkthroughs, for instance) tend to be better than computer-based testing at finding certain kinds of errors and that the opposite is fine for other kinds of errors.
+* The upshot is that the defect-detection methods work better in combination that they do singly.
+
+#### Cost of Finding Defects
+
+* Most studies have found that inspections are cheaper than testing.
+
+#### Cost of Fixing Defects
+
+* The longer a defect remains in the system, the more expensive it becomes to remove.
+* A detection technique that finds the error earlier therefore results in a lower cost of fixing it.
+* Some techniques, such as inspections, detect the symptoms and causes in one stem; other, such as testing, find symptoms but require additional work to diagnose and fix the root cause.
+* Here's a recommended combination for achieving higher-than-average quality:
+    * Formal inspections of all requirements, all architecture, and designs for critical parts of a system.
+    * Modeling or prototyping.
+    * Code reading or inspections.
+    * Execution testing.
+
+### 20.4 When to Do Quality Assurance
+
+* The earlier an error is inserted into software, the more entagled it becomes in other parts of the software and the more expensive it becomes to remove.
+* Defects creep into software at all stages. Consequently, you should emphasize quality assurance work in the early stages and throughout the rest of the project. It should be planned into the project as work begins; it should be part of the technical fiber af the project as work continues, and it should punctuate the end of the project.
+
+### 20.5 The General Principle of Software Quality
+
+* The general principle of software quality is that improving quality reduces development costs.
+* The best way to improve productiviy and quality is to reduce the time spent reworking code, whether the rework arises from changes in requirements, changes in design, or debugging.
+* The most obvious method of shortening a development schedule is to improve the quality of the product and decrease the amount of time spent debugging and reworking the software.
+* Software defects removal is actually the most expensive and time-consuming form of work for software.
+* Compared to the traditional code-test-debug cycle, an enlightened sofware-quality program saves money. It redistributes resources away from debuggina and refactoring into upstream quality-assurance activities.
+
+## 21. Collaborative Construction
+
+
 
 
 ## 21. Collaborative Construction
