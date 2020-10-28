@@ -1463,10 +1463,171 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 21. Collaborative Construction
 
+* All collaborative construction techniques are attepts to formalize the process of showing your work to someone else for the purpose of flushing out errors.
 
+### 31.1 Overview of Collaborative Development Practice
 
+* All collaborative construction techniques, despite their differences, are based on the ideas that developers are blind to some of the trouble sports in their work, that other people don't have the same blind spots, and that it's beneficial for developers to have someone else look at their work.
 
-## 21. Collaborative Construction
+#### Collaborative Construction Complements Other Quality-Assurance Techniques
+
+* Pair programming can achieve a code-quality level similar to formal inspections. The cost of full-up pair programming is on the order of 10-25 percent higher than the cost of solo development. The reduction in development time appears to be on the order of 45 percent.
+* A study of large programs found that each hour spent on inspections avoided an average of 33 hours of maintenance and that inspections were up to 20 times more efficient than testing.
+* Reducing the number of defects in the software also improves the development time.
+* In addition to being name effective at catching errors than testing, collaborative practices find different kinds of errors than testing does.
+* A human reviewer can spot unclear error messages, inadequate comments, hard-coded variable values, and repeated code patterns that should cbe consolidated. Testing won't.
+* When people know their work will be reviewed, they scrutinize it more carefully.
+
+#### Collaborative Construction Provides Mentoring in Corporate Culture and Programming Expertise.
+
+* The code, the standards, and the reasons for making the code meet the standards are good topics for review discussions.
+* In addition to feedback about how well they follow standards, programmers need feedback about more subjective aspects of programming: formatting, comments, variable names, local and global variable use, design approaches, the-way-we-do-things-around-here, and so on.
+
+#### Collaborative Ownership Applies to All Forms of Collaborative Construction
+
+* Better code quality arises from multiple sets of eyes seeing the code and multiple programmers working on the code.
+* The impact of someone leaving the project is lessened because multiple people are familiar with each section of code.
+* Defect-correction cycles are shorter overall because any of several programmers can potentially be assigned to fix bugs on as as-available basis.
+* SOme methodologies, such as Extreme Programming, recommend formally pairing programmers and rotating their work assignments over time.
+
+### 21.2 Pair Programming
+
+* When pair programming, one programmer types in code at the keyboard and the other programmer watches for mistakes and thinks strategically about whether the code is being written correctly and whether the right code is being written.
+
+#### Keys to Success with Pair Programming
+
+* Pair programming will not be effective if the two people in the pair spend their time arguing about coding style.
+* The person without the keyboard should be an active participant in the programming. That person is analyzing the code, thinking a head to what will be coded next, evaluating the design, and planning how to test the code.
+* Don't force pair programming of the easy stuff.
+    * One group that used pair programming for the most complicated code found it more expedient to do detailed design at the whiteboard for 15 minutes and then to program solo.
+* Rotate pairs and work assignments regularly.
+    * In pair programmin, benefit arises from different programmers learning different parts of the system.
+* Encourage pairs to match each other's pace.
+    * The faster partner need to slow down, or the pair should be broken up and reconfigured with different partners.
+* Make sure both partners can see the monitor.
+* Don't force people who don't like each other to pair.
+* Pair programming works best when at least one of the partners has paired before.
+* If your whole teams wants to do 100 percent of its programming in pairs, you'll still need to assign one person to coordinate work assignments, be held accountable for results, and act as the point of contact for people outside the project.
+
+#### Benefits of Pair Programming
+
+* Pairs encourage each other to keep code quality high even when there's pressure to write quick and dirty code.
+* The readability and understandability of the code tends to rise to the level of the best programmer on the team.
+* Pairs tend to write code faster and with fewer errors. The project team spends less time at the end of the project correcting defects.
+* Disseminating corporate culture, mentoring junior programmers, and fostering collective ownership.
+
+### 21.3 Formal Inspections
+
+* An inspection is a specific kind of review that has been shon to be extremely effective in detecting defects and to be relatively economical compared to testing.
+    * Checklists focus the reviewer's attention.
+    * Inspections focus on defect detection, not correction.
+    * Reviewers prepare for the inspection meeting before hand, and arrive with a list of programs they've discovered.
+    * Distinct roles are assigned.
+    * The moderator of the inspection isn't the author of the work.
+    * The moderator receives specific training in moderating inspections.
+    * General management doesn't attend the inspection meeting.
+* Individual inspections typically catch about 60 percent of defects.
+* Formal inspections result in 20-30 percent fewer defects per 1000 lines of code than less formal review practices.
+* Designers and coders learn to improve their work through participating in inspections, and inspections increase productivity by about 20 percent.
+* On a project that uses inspections for design and code, the inspections will take up about 10-15 percent of the project budget and will typically reduce overall project cost.
+
+#### Roles during Inspections
+
+* Roles:
+    * Moderator
+        * Responsible for keeping the inspection moving at a rate that's fast enough to be productive but slow enough to find the most errors possible.
+        * SHould distribute the design or code to be reviewed, distribute the inspection checklist, setup a meeting room, reporting inspection results, follow-up on the actions required.
+    * Author
+        * Since the design or code should speak for itself, the author should explain parts of the design or code that are unclear.
+        * The author might also present an overview of the project.
+    * Reviewer
+        * Finds errors.
+    * Scribe
+        * Records detected errors, and assigned action items.
+* Under no circumstances should inspections results be used for performance appraisals.
+* Overal, an inspection should have no fewer than three participants (moderator, author and reviewer).
+
+#### General Procedure for an Inspection
+
+* Planning
+    * The author gives the design or code to the moderator. The moderator decides who will review the material and when and where the inspection meeting will occur.
+* Overview
+    * When reviewers aren't familiar with the project they are reviewing, the author can spend up to an hour or so, describing the tecnical environment within which the design or code has been created.
+* Preparation
+    * Each reviewer works alone to scrutinize the design or code for errors. The reviewers use the checklist to stimulate and direct their examination of the review materials.
+    * An additional variation in inspection preparation is to assign each reviewer one or more scenarios to check.
+    * A scenario might also involve a specific task that a reviewer is assigned to perform, such as listing the specific requirements that a particular design element satisfies.
+* Inspection meeting
+    * The moderator chooses someone other than the author to paraphrase the design or read the code.
+    * During the presentation, the scribe records errors as they are detected.
+    * Don't discuss solutions during the meeting. The group should stay focused on identitying defects. Some inspection groups don't even allow discussion about whether a defect is really a defect. They assume that if someone is confused enough to think it's a defect, the design, code or documentation needs to be clarified.
+    * The meeting generally should not last more than two hours.
+* Inspection report
+    * Within a day of the inspection meeting the moderator produces an inspection report (email or equivalent) that lists each defect, including its type and severity.
+    * If you collect data on time spent and the number of errors found over time, you can respond to challenges about inspection's efficacy with hard data.
+* Rework
+    * The moderator assigns defects to the author, for repair.
+* Follow-up
+    * The moderator is responsible for seeing that all rework assigned during the inspection is carried out.
+    * Depending on the number of errors found and the severity of those errors, you might follow up by having the reviewers reinspect the entire work product, having the reviewers reinspect only the fixes, or allowing the author to complete the fixes without any follow up.
+* Third-hour meeting
+    * You can allow interested parties to discuss solutions after the official inspection is over.
+
+#### Fine-Tuning the Inspection
+
+* Companies have often found that removing or combining any of the stages costs more than is saved. If you're tempted to change the inspection process without measuring the effect of the change, don't.
+* As you do inspections, you'll notice that certain kinds of errors occur more frequently than other kinds. Create a checklist that calls attention to those kinds of errors so that reviewers will focus on them.
+
+#### Egos in Inspection
+
+* The point of the inspection is to discover defects in the design or code. It is not to explore alternatives or to debate who is right and who is wrong. The point is most certainly not to criticize the author of the design or code.
+* The author should acknowledge each alleged defect and move on. Acknowledging a criticism doesn't imply that the author agrees with the content of the criticism. The author should not try to defend the work under review. After the review, the author can think about each point in private and decide whether it's valid.
+* Reviewers must remember that the author has the ultimate responsibility for deciding what to do about a defecdt each reviewer must respect the author's ultimate right to decide how to resolve an error.
+
+### 21.4 Other Kinds of Collaborative Development Practices
+
+#### Walk-Throughs
+
+* Where two or three are gathered toether, there is a walkthrough.
+* The walkthrough is usually hosted and moderated by the author of the design or code under review.
+* The walk-through focuses on technical issues.
+* All participants prepare for the walk-through by reading the design or code and looking for errors.
+* The walk-through is a chance for senior programmers to pass on experience and corporate culture to junior programmers.
+* A walk-through usually lasts 30 to 60 minutes.
+* The emphasis is on error detection, not correction.
+
+##### What Results Can You Expect from a Walk-Through
+
+* Used intelligently and with discipline, a walk-through can typically find between 20 and 40 percent of the errors in a program.
+* In general, walk-throughs are significatly less effective than inspections.
+* Used unintelligently, walk-throughs are more trouble than they're worth. When project pressure increase, walk-throughs become nearly impossible.
+* If you're going to incur the overhead of holding a meeting, it's worthwhile to structure the meeting as a formal inspection. If the work product you are reviewing doesn't justify the overhead of a formal inspection, it doesn't justify the overhead of a meeting at all.
+* If you have a large review group, a walk-through is a good review choice because it brings many diverse view points to bear on the item under review.
+* If reviewers from other organizations are involved, a walk-through might also be preferable.
+* Inpsections are more focused than walk-throuhts and generally pay off better.
+
+#### Code Reading
+
+* You read source code and look for errors. You also comment on qualitative aspects of the code, such as its design, style, readability, maintainability, and efficiency.
+* Code reading detected about 3.3 defects per hour of effort. Testing detected about 1.8 errors per hour.
+* A code reading usually involves two or more people reading the code independently and then meeting with the author of the code to discuss it.
+    * Two or more people read the code.
+    * Reviewers read the code independently.
+    * When the reviewers have finished reading the code, the code reading meeting is hosted by the author of the code.
+    * The meeting lasts one or two hours and focuses on problems discovered by the code readers. No one makes any attempt to walk through the code line by line. The meeting is not even strictly necessary.
+    * The author of the code fixes the problems identified by the errors.
+* Each reviewer's time is focused on finding problems in the code.
+* Code readings are especiallly valuable in situations in which reviewers are geographically dispersed.
+
+#### Dog-and-Pony Shows
+
+* Reviews in which a software product is demostrated to a customer.
+* The purpose of this review is to demonstrate to the customer that the project is OK, so it's a management review rather than a technical review.
+
+#### Comparison of Collaborative Construction Techniques
+
+* If pair programming and formal inspections produce similar results for quality (40-60% vs 45-75% in error detection, respectively), cost and schedule, the choice between them becose a matter of personal style rather than one of tecnical substance.
+
 ## 22. Developer Testing
 ## 23. Debugging
 ## 24. Refactoring
