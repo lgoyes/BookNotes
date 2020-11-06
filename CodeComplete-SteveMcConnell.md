@@ -1629,6 +1629,279 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * If pair programming and formal inspections produce similar results for quality (40-60% vs 45-75% in error detection, respectively), cost and schedule, the choice between them becose a matter of personal style rather than one of tecnical substance.
 
 ## 22. Developer Testing
+
+* **Unit testing:** Execution of a program element, writen by a single programmer which is tested in isolation frorm the more complete system.
+* **Component testing:** Execution of a program element that involves the work of multiple programmers, which is tested in isolation from the more complete system.
+* **Integration testing:** Combined execution of two or more program elements that have been created by multiple programmers.
+    * Starts as soon as there are two classes to test.
+* **Regression testing:** Repetition of previously executed test cases from the purpose of finding defects in software that previously passes the same set of tests.
+* **System testing:** Execution of the software in its final configuration including integration with other software and hardware system.
+* Testing is usually broken into two broad categories: blackbox testing and whitebox testing. "Black-box testing" refers to tests in which the tester cannot see the inner workings of the item being tested. "White-box testing" refers to tests in which the tester is aware of the inner workings of the item being tested.
+
+### 22.1 Role of Developer Testing in Software Quality
+
+* Collaborative development practices in their vaious forms have been shown to find a higher percentage of errors than testing does, and they cost less than half as much per error dound as testing does.
+* Testing is a hard activity for most developers to swallow for several reasons:
+    * The goal is to find errors. The goal of every other development activity is to prevent errors.
+    * Testing can never completely prove the absence of errors.
+    * Teseting by itself does not improve software quality. If you want to improve software, don't just test more, develop better.
+    * Testing requires you to assume that you'll find errors in your code. You must hope that it's you who finds the errors and not someone else.
+
+#### Testing During Construction
+
+* You generally want to design a class to be a black-box - a user of the class won't have to look past the interface to know what the class does. In testing, if you know what's inside the box, you can test the class more thoroughly.
+* If you are writting several routines you should test them one at a time. If you add one routine at a time to a collection of previously tested routines, you know that any new errors are the result of the new routine or of interactions with the new routine. The debugging job is easier.
+
+### 22.2 Recommeded Approach to Developer Testing
+
+* Test for each relevant requirement to make sure that the requirements have been implemented.
+* Test for each relevant design concern to make sure that the design has been implemented.
+* Use "basis testing" to add detailed test cases to those that test the requirements and the design.
+* Use checklist of the kinds of errors you're made on the project to date.
+
+#### Test First or Test Last?
+
+* Writing test cases first will minimize the amount of time between when a defect is inserted into the code and when the defect is detected and removed.
+    * Writing test cases before writing the code doesn't take any more effort than writting test cases after the code.
+    * When you write test cases first, you detect defects earlier and you can correct them more easily.
+    * Writing test cases first forces you to think at least a little about the requirements and design before writing code.
+    * Writing test cases first exposes requirements problems sooner, before the code is written, because it's hard to write a test case for a poor requirement.
+
+#### Limitations of Developer Testing
+
+* Developers tend to test for whether the code works (clean tests) rather than test for all the ways the code breaks (dirty tests).
+    * Mature testing organizations tend to have five dirty tests for every clean test.
+* Developer testing tends to have an optimistic view of test coverage.
+* A better coverage standard is to meet what's called "100% branch coverage", with every predicate term being tested for at least one `true` and one `false` value.
+* As valuable as developer testing is, it isn't sufficient to provide adequate quality assurance on its own and should be supplemented with other practices, including independent testing, and collaborative construction techniques.
+
+### 22.3 Bag of Testing Tricks
+
+* To use testing to prove that a program works, you'd have to test every conceivable input value to the program, and every conceivable combination of input values.
+
+#### Incomplete Testing
+
+* You need to concentrate on picking a few test cases, most likely to find errors, that tell you different things rather than a set that tells you the same thing over and over.
+
+#### Structured Basis Testing
+
+* You need to test each statement in a program at least once. If the statement is a logical statement - an `if` or a `while`, for example- you need to vary the testing according to how complicated the expression inside the `if` or `while` is to make sure that the statement is fully tested.
+* "Code coverage" testing or "logic coverage" testing are approaches in which you test all the paths through a program.
+* You can compute the minimum number of cases needed for basis testing in this way:
+    1. Start with 1
+    2. Add 1 for each of the following keywords: `if`, `while`, `repeat`, `for`, `and`, and `or`.
+    3. Add 1 for each `case` in a `case` statement. If the case statement doesn't have a default case, add 1 more.
+* Each keyword in the code represents something that can be either `true` or `false`; make sure you have at least one test case for each `tru` and at least one for each `false`.
+* This kind of testing assures you only that all of the code will be executed. It doesn't account for variations in data.
+
+#### Data-Flow Testing
+
+* Data usage is at least as error prone as control flow.
+* Data can exist in one of three states:
+    1. **Defined:** The data has been initialized, but it hasn't been used yet.
+    2. **Used:** The data has been used for computation.
+    3. **Killed:** The data was once defined, but it has been undefined in someway.
+* Regarding routines:
+    1. **Entered:** The control flow enters the routine immediately before the variable is acted upon.
+    2. **Exited:** The control flowleaves the routine immediately after the variable is acted upon.
+
+#### Combination of Data States
+
+* Some suspicious patterns:
+    * **Defined-Defined:** There's an error if you need to define a variable twice before the value sticks.
+    * **Defined-Exited:** It doesn't have sense to define a local variable and exit without using it. If it's a global variable, it's all right.
+    * **Defined-Killed:** Defined a variable and then killing it suggest that there's some code missing.
+    * **Entered-Killed:** A local variable doesn't need to be killed before it's been defined or used.
+    * **Entered-Used:** A local variable needs to be defined before it's used.
+    * **Killed-Killed:** A variable shouldn't need to be killed twice.
+    * **Killed-Used:** Using a variable after it has been killed, is a logical error.
+    * **Used-Defiend:** You should not use a variable before defining it.
+* Check for anomalous sequences of data states.
+* A good way to develop test cases is to start with structred basis testing. Then add the cases you still need to have a complete set of defined-used data flow test cases.
+
+#### Equivalence Partitioning
+
+* An equivalence ">" or "<" break sets into two related equivalence classes.
+
+#### Error Guessing
+
+* Create test cases based upon guesses about where the program might have errors, although it implies certain amount of sophistication in guessing.
+
+##### Boundary Analysis
+
+* Write test cases that exercise the boundary conditions. If you're testing for a range of values that are less than `max`, there are three boundary cases: just less than `max`, `max` itself, and just greater than `max`.
+
+##### Compound Boundaries
+
+* A more subtle kind of boundary condition occurs when the boundary involves a combination of variables. For example, if two variables are multiplied together.
+
+#### Classes of Bad Data
+
+* Typical bad-data test cases include
+    * too little data (or no data)
+    * Too much data
+    * The wrong kind of data (invalid data, e.g. negative salary)
+    * Uninitialized data.
+
+#### Classes of Good Data
+
+* Following are other kinds of good data that are worth checking:
+    * Nominal cases-middle-of-the-road, expected values.
+    * Minimum normal configuration
+    * Maximum normal configuration
+    * Compatibility with old data.
+* Testing for compatibility with old data comes into play when the program or routine is a replacement for an older program or routien. The new routine should produce the same result with old data that old routine did, except in cases in which the old routine was defective.
+
+#### Use Test Cases that Make Hand-Check Convenient
+
+* When you try to do hand-calculations with an ugly number like 949871234, however, you are as likely to make an error in the hand-calc as you are to discover one in your program.
+    * A nice, even number, like 20.000 makes number crunching a snap.
+
+### 22.4 Typical Errors
+
+#### Which Classes Contain the Most Errors?
+
+* It's wrong to assume that defects are distributed evenly throughout your source code.
+* Eighty percent of the errors are found in 20 percent of a project's classes or routines.
+* Fifty percent of errors are found in 5 percent of a project's classes.
+* The implication of expensive routines for development is clear. As the old expression goes, "time is money". This is a clear illustration of the general principle of software quality: improving quality improves the development schedule and reduces development costs.
+* Maintenance activities should be focused on identifying, redesigning, and rewriting from the ground up those routines that have been identified as error prone.
+
+#### Erros by Classification
+
+* The cope of most errors is fairly limited. Most errors can be corrected without modifying more than one routine.
+* The three most common sources of errors were thin application-domain knowledge, fluctuating and conflicting requirements, and communication and coordination breakdown.
+* Most construction errors are the programmers' fault.
+* Typos (clerical errors) are a common source of problems.
+* Many errors result from misunderstanding the design.
+* Most errors are easy to fix.
+* Start measuring your development process so that you know where the problems are.
+
+#### Proportion of Errors Resulting from Faulty Construction
+
+* On small projects, construction defects make up the vast bulk of all errors.
+* Construction defects account for at least 35% of all defects regardless of project size.
+* Construction errors, although cheaper to fix than requirements and design errors, are still expensive.
+
+#### How Many Errors SHould You Expect to Find?
+
+* The application division at Microsoft experiences about 10-20 defects per 1000 lines of code during in-house testing and 0,5 defects per 1000 lines of code in released product.
+    * The technique used to achieve this level is a combination of code-reading technquies and independent testing.
+* A few projects achieved a level of 0 defects in 500.000 lines of code by using a system of formal development methods, peer reviews and statistical testing.
+
+#### Errors in Testing Itself
+
+* Test cases are often as likely or more likely to contain errors than the code being tested. Test cases tend to be created on the fly rather than through careful design and construction process.
+* Develop test cases as carefully as you develop code. Such care certainly includes double checking your own testing.
+* Effective planning for testing should start at the requirements stage or as soon as you get the assignment for the program.
+* Write code for unit tests first, but integrate them into a system wide test framework (like JUnit) as you complete each test.
+
+### 22.5 Test Support Tools
+
+#### Building Scaffolding to Test Individual Classes
+
+* Software scaffolding is built for the purpose of making it easy to exercise code.
+* One kind of scaffolding is a class that's dummied up so that is can be used by another class that's being tested such a class is called a "mock object".
+* On "mock objects" or "stub routines", the scaffolding can:
+    * Return control without taking no action.
+    * Test the data fed to it.
+    * Log a message.
+    * Get return values from interactive input.
+    * Return a standard answer regardless of the input.
+    * Burn up the number of clock cycles.
+    * Function as a slow version of the real object.
+* Another kind of scaffolding is a fake routine that calls the real routine. This is called a "driver" or a "test harness". This scaffolding can:
+    * Call the object with a fixed set of inputs.
+    * Prompt for input and call the object with it.
+    * Take arguments from the command line, and call the object.
+    * Read arguments from a file and call the object.
+    * Run through predefined sets of input data in multiple calls to the object.
+* A final kind of scaffolding is the dummy file, a small version of the real thing that has the same types of components that a full-size file has.
+* If you use scaffolding, the class can also be tested without the risk of its being affected by interactions with other classes.
+* It's easy to get stuck in a rut in which it takes several minutes to execute each test case because the code being exercised is embedded in other code. Scaffolding allows you to exercise the code directly.
+* If your environment isn't supported by one of the existing test frameworks you can write a few routines in a class and include a `main()` scaffolding routine in the file to test the class.
+
+#### Diff Tools
+
+* Regression testing, or retesting, is a lot easier if you have automated tools to check the actual output against the expected outputs.
+
+#### Test-Data Generators
+
+* Properly designed random-data generators can generate unusual combinations of test data that you wouldn't think of.
+* Random-data generators can exercise your program more thoroughly than you can.
+* You can refine randomly generated test cases over time so that they emphasize a realistic range of input. This concentrated testing in areas most likely to be exercised by users, maximizing reliability in those areas.
+* Modular design pays off during testing. I was able to pull out the encryption and decryption code and use it independently of the user-interface code.
+* You can reuse the test driver if the code it tests ever has to be changed.
+
+#### Coverage Monitors
+
+* Testing done without measuring code coverage typically exercises only about 50-60% of the code.
+
+#### Data Recorder / Logging
+
+* Strong logging aids eerror diagnosis and supports effective service after the software has been released.
+* You can build your own data recorder by logging significat events to a file. If you implement logging with self prunning storage and thoughtful placement and content of error messages, you can include logging functions in release versions.
+
+#### Symbolic Debuggers
+
+* A debugger has the capacity to setp through code line by line, keep track of variables' values, and always interpret the code the same way the computer does.
+
+#### System Perturbers
+
+* You want to be sure you don't have any uninitialized variables. Some tools fill memory with arbitrary values before you run your program so that uninitialized variables aren't set to 0 accidentally.
+* In multitasking systems, some tools can rearrange memory as your program operates.
+* A memory driver can simulate low-memory conditions in which a program might be running out of memery, fail on a memory request, grant an arbitrary number of memory requests before failing, or fail on an arbitrary number of requests before granting one.
+* Memory access checkers watch pointer operations to make sure your pointers behave themselves.
+
+#### Error Databases
+
+* One powerful test tool is a database of errors that have been reported.
+* It allows you to check for recurring errors, track the rate at which new errors are being dtected and corrected, and track the status of open and closed errors and their severity.
+
+### 22.6 Improving Your Testing
+
+#### Planning to Test
+
+* Putting testing on the same level of importance as dsign or docidng means that time will be allocated to it, it will be viewed as important, and it will be a high-quiality process.
+
+#### Retesting
+
+* Testing designed to make sure the software hasn't taken a step backward or "refressed" is called "regression testing".
+* It's nearly impossible to produce a high-quality software product unless you can systematically retest it after changes have been made.
+* Regression testing must run the same tests each time.
+
+#### Automated Testing
+
+* The only practical way to manage regression testing is to automate it.
+* Benefits of test automation:
+    * An automated test has a lower chance of being wrong than manual test.
+    * Once you automate a test, it's readily available for the rest of the project.
+    * If tests are automated, they can be run frequently to see whether any code check-ins have broken the code.
+    * Automated tests improve your changes of detecting any given problem at the earliest possible moment.
+    * Automated tests increase your chance of quickly detecting defects inserted during the modifications.
+    * Automated tesets are especially useful in new, volatile technology environments because they flush out changes.
+* The main tool used to support automated testing provide test scaffolding, generate input, capture output, and compare actual output with expected output.
+
+### 22.7 Keeping Test Records
+
+* Some kinds of data that can be collected to measure a project:
+    * Administrative description of the defect (date reported, date fixed, person who reported it, a title or description).
+    * Steps to repeat the problem.
+    * Full description of the problem.
+    * Suggested workaround for the problem.
+    * Related defects.
+    * Severity of the problem
+    * Origin of the defect (requirement, design, code, testing)
+    * Subclassification of a coding defect.
+    * Classes and routines changed by the fix.
+    * Number of lines of code affected by the defect.
+    * Hours to find the defect.
+    * Hours to fix the defect
+
+#### Personal Test Records
+
+* You might find it useful to keep track of your personal test records.
+
 ## 23. Debugging
 ## 24. Refactoring
 ## 25. Code-Tuning Strategies
