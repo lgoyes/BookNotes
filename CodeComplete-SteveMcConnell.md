@@ -1903,6 +1903,121 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * You might find it useful to keep track of your personal test records.
 
 ## 23. Debugging
+
+* Debugging is the process of identifying the root cause of an error and correcting it.
+
+### 23.1 Overview of Debugging Issues
+
+#### Role of Debugging in Software Quality
+
+* Like testing, debugging isn't away to improve the quality of your software per se; it's a way to diagnose defects.
+
+#### Defects as Opportunities
+
+* Having a defect means that you don't fully understand what the program does.
+* If you don't know exactly what you are telling the computer to do, you're only a small step away from merely trying different things until something seems to work - that is, programming by trial and error.
+* An error in your program provides a powerful opportunity for you to learn many things:
+    * Learn about the program you're working on.
+    * Once you find the mistake, ask yourself how and why you made it. How could you have found it more quickly? How could you have prevented it? Does the code have other mistakes just like it? Can you correct them before they cause problems af their own?
+    * When you read your code to find the defect, look critically at the quality of your code. Is it easy to read? How could it be better?
+    * Learn about how you debug (find defects).
+    * Learn about how you fix the defects you find.
+
+#### An ineffective Approach
+
+##### The Devil's Guide to Debugging.
+
+* To find a defect, scatter print statements randomly throughout a progrm. Examine the output to see where the defect is. If you can't find the defect with print statements, try changing things in the program until something seems to work.
+* Don't waste time understanding the problem.
+* It's usually good just to fix the specific problem you see, rather than wasting a lot of time making some big, ambitious correction that's going to affect the whole program.
+
+##### Debugging by Superstition
+
+* If you have a problem with a program you've written, it's your fault. It's not the computer's fault, and it's not the compiler's fault. The program doesn't do something different every time. It didn't write itself; you wrote it, so take responsibility for it.
+
+### 23.2 Finding a Defect
+
+* Effective approach for finding a defect
+    1. Stabilize the error (make it occur reliably).
+    2. Locate the source of the error (the "fault").
+        1. Gather the data that produces the defect.
+        2. Analyze the data that has been gathered, and form a hypothesis about the defect.
+        3. Determine how to prove or disprove the pypothesis, either by testing the program or by examining the code.
+        4. Prove or disprove the hypothesis.
+    3. Fix the defect.
+    4. Test the fix.
+    5. Look for similar errors.
+* The defect is easier to diagnose if you can stabilize it.
+
+#### Stabilize the Error
+
+* An error that doesn't occur predicably is usually an initialization error, a timing issue, or a dangling-pointer problem.
+* Stabilizing an error usually requires more than finding a test case that produces the error. It includes narrowing the test case to the simplest one that still produces the error. The goal of simplifying the test case is to make it so simple that changing any aspect of it changes the behaviour of the error.
+
+#### Locate the source of the error
+
+* You might suspect that the defect is a result of a specific problem. You could then vary the parameter you suspect is causing the problem and determine whether your hypothesis is correct.
+
+### Tips for Finding Defects
+
+* It's all right that the hypothesis doesn't account for all of the data at first, as long as you keep refining the hypothesis so that it does eventually.
+* Refine the test cases that produce the error.
+* Defects tend to be easier to find in small fragments of code than in large integrated programs. Use your unit tests to test the code in isolation.
+* Use available tools. The right tool can make a difficult job easy.
+* Reproduce the error several different ways.
+    * Sometimes trying cases that are similar to the error producing case but not exactly the same is instructive.
+    * Once you think you've identified the defect, run a case that's close to the cases that produce error but that shouldn't produce an error itself. If it does produce an error, you don't completly understand the problem yet.
+* Generate more data to generate more hypothesis.
+* A test case that disproves your hypothesis is also helpful.
+* Brainstorm for possible hypothesis. Don't analyze them at first - just come up iwth as many as you can in a few minutes.
+* Keep a notepad by your desk, and make a list of things to try.
+* Narrow the suspicious region of the code.
+    * Systematically remove parts of the program and see whether the error still occurs. If it doesn't, you know it's in the part you took away. If it does, you know it's in the part you've kept.
+* Be suspicious of classes and routines that have had defects before.
+* If you have a new error that's hard to diagnose, it's usually related to code that's changed recently. If you can find a defect, run an old version of the program to see whether the error occurs.
+* It's easy to focus on a small section of code, sure that "the defect must be in this section". If you don't find it in the section, consider the possibility that the dfect isn't in the section.
+* If you add a piece of code to a system and encounter a new error, remove the piece and test it separately.
+* Check for common defects.
+    * Use code quality checklists to stimulate your thinking about possible defects.
+* You often discover your own defect in the act of explaining it to another person.
+* Take a break. Sometimes you concentrate so hard you can't think.
+
+#### Brute-Force Debugging.
+
+* Some general candidate techniques for brute-force debugging.
+    * Perfom a full design and code review on the broken code.
+    * Throw away the section of code and redesign/recode.
+    * Step through a big loop in the debugger manually until you get to the error condition.
+    * Instrument the code with print statements.
+    * Replicate the end-user's full machine configuration.
+* When you decide to go for the quick victory, set a maximum time limit for trying the quick way. If you go past the time limit, resign yourself to the idea that the defect is going to be harder to diagnose than you originally thought, and flush it out the hard way.
+* Make a list of brute-force techniques:
+    * If you can identify at least one brute force technique that will fix the problem -including rewriting the code in question- it's less likely that you'll waste hours or days when there's a quicker alternative.
+
+#### Syntax Errors.
+
+### 23.3 Fixing a Defect
+
+### 23.4 Psychological Considerations in Debugging.
+
+#### How "Psychological Set" Contributes to Debugging Blindness
+
+#### How "Psychological Distance" Can Help.
+
+### 23.5 Debugging Tools
+
+#### Source-Code Comparators
+
+#### Compiler Warning Messages
+
+#### Extended Syntax and Logic Checking
+
+#### Execution Profilers.
+
+#### Test Framework / Scaffolding
+
+#### Debuggers
+
 ## 24. Refactoring
 ## 25. Code-Tuning Strategies
 ## 26. Code-Tuning Techniques
