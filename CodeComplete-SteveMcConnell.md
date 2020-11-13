@@ -1996,41 +1996,96 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 #### Syntax Errors.
 
+* When your compiler reports a mysterious syntax error, look immediately before and after the error.
+* Compilers try to tell you exactly what's wrong, but compilers are dissembling little rascals, and you often have to read between the lines to know what one really means.
+* When your compiler generates a series of cascading error messages don't worry if you can't quickly find the source of the second or third error message. Fix the first one and recompile.
+* If you have a troublesome syntax error, remove part of the code and compile again. You'll either get no error (because the error's in the part you removed), get the same error (meaning you need to remove a different part), or get a different error (because you'll have tricked the compiler into producing a message that makes more sense).
+* Find misplaced comments and quotation marks:
+    * To find the extra comment or quotation mark, insert the following sequence into your code: `/*"/**/`.
+
 ### 23.3 Fixing a Defect
+
+* Before you fix a problem, make sure you understand it to the core. Triangulate the defect both with cases that should reproduce the error and with cases that shouldn't reproduce the error.
+* If you understand the context in which a problem occurs, you're more likely to solve the problem completly rather than only one aspect of it.
+* Before you rush to fix a defect, make sure that you've diagnosed the problem correctly.
+* Hurrying to solve a problem is one of the most time-ineffective things you can do. It leads to rushed judegments, incomplete defect diagnosis, and incomplete corrections.
+    * Relax long enough to make sure your solution is right. Don't be tempted to take shortcuts. It might take more time, but it will probably take less.
+* Before you begin fixing the defect, be sure to archive a version of the code that you can return to later.
+* The focus should be on fixing the underlying problem rather than wrapping it in programming duct tape.
+    * Fixes might not work most of the time. Initialization defects are, by definition, unpredictable.
+    * Fixes are unmaintainable, when code is special-cased to work around errors, the special cases become the code's most prominent feature.
+    * Computers are good at prodictable, systematic calculations, but humans are better at fudging data creatively.
+* Don't change code randomly. That's voodoo programming. The more different you make it without understanding it, the less confidence you will have that it works correctly.
+* Make one change at a time.
+* Check your fix. Use an automated suite of regression tests in JUnit.
+* When you encounter an error that wasn't exposed by your test suite, add a test case to expose the error so that it won't be reintroduced later.
+* Look for similar defects.
 
 ### 23.4 Psychological Considerations in Debugging.
 
 #### How "Psychological Set" Contributes to Debugging Blindness
 
+* People expect a new phenomenon to resemble similar phenoma they've seen before.
+    * You see what you expect to see and thus overlook differences.
+* What does sychological set have to do with debugging?
+    1. Good programming practices help structure the programming backgrorund so that likely defects appear as variabtions and stand out.
+    2. Programmers who debug most effectively mentally slick away parts of the program that aren't relevant during debugging.
+
 #### How "Psychological Distance" Can Help.
+
+* Psychological distance can be defined as the ease with which two items can be differentiated.
+    * As you debug, be ready for the problems caused by insufficient psychological distance between similar variable names and between similar routine names.
+    * As you construct code, choose names with large differences so that you avoid the problem.
 
 ### 23.5 Debugging Tools
 
 #### Source-Code Comparators
 
+* If you make several changes and need to remove some than can't quite remember, a comparator can pin point the differences and job your memory.
+
 #### Compiler Warning Messages
+
+* Set your compiler's warning level to the highest, pickeiest level possible and fix the error it reports.
+* Treat warning as errors.
+* Set a standard that requires everyone on your team to compile code using the same compiler settings.
 
 #### Extended Syntax and Logic Checking
 
+* The lint utility pain stakingly checks for use of uninitialized variables and similar subtle problems.
+
 #### Execution Profilers.
+
+* A few minutes spent studying a prorgam profile can uncover some surprising (and hidden) defects.
+* Examine the output of an execution profiler to satisfy yourself that your program spends a reasonable amount of time in each area.
 
 #### Test Framework / Scaffolding
 
+* Pulling out a troublesome piece of code, writing code to test it, and executing it by itself is often the most effective way to exorcise the demons from an error-prone program.
+
 #### Debuggers
 
+* The debugger isn't a subtitute for good thinking. But, in some cases, thinking isn't a subtitute for a good debugger either. The most effective combination is good thinking and good debugger.
+
 ## 24. Refactoring
+
 ## 25. Code-Tuning Strategies
+
 ## 26. Code-Tuning Techniques
+
 ## 27. How Program Size Affects Construction
+
 ## 28. Managing Construction
+
 ## 29. Integration
+
 ## 30. Programming Tools
+
 ## 31. Layout and Style
+
 ## 32. Self-Documenting Code
+
 ## 33. Personal Character
+
 ## 34. Themes in Software Craftsmanship
+
 ## 35. Where to Find More Information
-
-
-
-
