@@ -2068,6 +2068,164 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 24. Refactoring
 
+* Many of the changes seen during initial coding are at least as dramatic as changes seen during maintenance.
+* Even on well-managed projects, however, requirements change by about one to four percent per month.
+* If you fix errors with logical duct tape and superstition, quality degrades. If you treat modifications as opportunities to tighten up the original design of the program, quality improves.
+* Changes during construction can be more freewheeling - the system is in a more dynamic state, and the penality for making mistakes is low. These circumstances imply a style of software evolution that's different from what you'd find during software maintenance.
+
+#### Philosophy of Software Evolution
+
+* When you have to make a change, strive to improve the code so that future changes are easier.
+
+### 24.2 Introduction to Refactoring
+
+* **Refactoring:** A change made to the internal structure of the software to make it easier to understand and cheaper to modify without changing its observable behavior.
+
+#### Reasons to Refactor
+
+* Duplicate code sets you up to make parallel modifications - whenever you make changes in one place, you have to make parallel changes in another place.
+* A routine is too long
+    * One way to improve a system is to increase its modularity - increase the number of well-defined, well-named routines that do one thing and do it well.
+    * If a routine would be cleaner if part of it were made into a separte routine, create a separate routine.
+* A loop is too long or too deeply nested.
+    * Reduce the loop's complexity by converting its content into a routine.
+* A class has poor cohesion.
+* A class interface does not provide a consistent level of abstraction.
+* A parameter list has too many parameters.
+* Sometimes a class has two or more distinct responsibilities. Then, the class should be cleared into multiple clases along the lines of the separate responsibilities.
+* Changes require parallel modifications to multiple classes.
+    * When you find yourself routinely making changes to the same set of classes, that suggests the code in those classes could be rearranged so that changes affect only one class.
+* Finding yourself making a subclass of one class every time you make a subclass of another class is a special kind of parallel modification and should be addressed.
+* If you find yourself making parallel modifications to similar case statements in multiple parts of the program, you should ask whether inheritance might be a better approach.
+* Related data items that are used together are not organized into classes.
+* A routine uses more features of another class than of its own class.
+    * This suggests that the routine should be moved into the other class and then invoken by its old class.
+* If your program uses a primitive data type like an integer to represent a common entity such as money, consider creating a simple `Money` class so that the compiler can perform type checking on Money variables.
+* A class doesn't do very much, then consider assign all the class's responsibilities to other classes.
+* Finding yourself passing data to one routine just so that routine can pass it to another routine is called "tramp data". This might be OK, but ask yourself whether passing the specific data in question is consistent with the abstraction presented by each of the routine interfaces.
+* If you find that most of the code in a class is just passing off calls to routines in other classes, consider whether you should eliminate the middleman, and call those other classes directly.
+* Anytime you see one class that knows more about another class than it should - including derived classes knowing too much about their parents - err on the side of stronger encapsulation rather than weaker.
+* If a routine has a poor name, change it.
+* Public data members are always a bad idea. They blur the line between interface and implementation, and they inherently violate encapsulation and limit future flexibility. Consider hiding public data members behind access routines.
+* A subclass uses only a small percentage of its parent's routines.
+    * This indicates that that parent class happened to contain the routines that subclass needed, not because the subclass is logically a descent of the supper class.
+    * Consider switching the subclass's relationship to its supperclass from an `is-a` relationship to a `has-a` relationship.
+* Comments are used to explain difficult code, not bad code.
+* Isolate global variables in access routines.
+* A program contains code that seems like it might be needed someday.
+    * Any "design ahead" code is useless.
+
+#### Reasons Not to Refactor
+
+* "Refactoring" is used loosely to refer to making any change to the code whatsoever. purposeful change, can be the key strategy that supports steady improvement in a program's quality.
+
+### 24.3 Specific Refactorings
+
+#### Data-Level Refactorings
+
+* Replace a magic number with a named constant
+* Rename a variable with a clearer or more informative name.
+* Replace the intermediate variable that was assigned the result of an expression with the expression itself.
+* Replace an expression with a routine.
+* Introduce an intermediate variable.
+* Convert a multiuse variable to multiple single-use variables.
+* Use a local variable for local purposes rather than a parameter.
+* If a data primitive needs additional behavior (including stricter type checking) or additional data, convert the data to an object and add the behavior you need.
+* Convert a set of type codes to an enumeration.
+* Convert a set of type codes to a class with subclasses, if the different elements associated with the different types might have different behavior.
+* Change an array to an object.
+* Encapsulate a collection.
+* Create a class that contains the members of a record.
+
+#### Statement-Level Refactorings
+
+* Decompose a boolean expression by introducing well named intermediate variables.
+* Make a complex boolean expression into a well-named boolean function.
+* Consolidate fragments that are duplicated within different parts of a conditional.
+* Use break or return instead of a loop control variable.
+* Return as soon as you know the answer instead of assigning a return value withing nested `if-then-else` statement.
+* Replace conditionals with polymorphism.
+* Create and use null objects instead of testing for null values.
+
+#### Routine-Level Refactorings
+
+* Extract routine/extract method.
+* Move a routine's code inline.
+* Convert a long routine to a class.
+* Substitute a simple algorithm for a complex algorithm.
+* Add a parameter to provide more information to a routine.
+* If a routine no longer uses a parameter, remove it.
+* Separate query operations (which are not supposed to change the object state) from modification operations.
+* Combine similar routines by parameterizing them.
+* Separate routines whose behavior depends on parameters passed on.
+* Pass a whole object rather than specific fields.
+* Pass specific fields rather than a whole object.
+* If a routine returns an object, it normally should return the most specific type of object it knows about.
+
+#### Class Implementation Refactorings
+
+* Chagne value objects to reference objects.
+* Change reference objects to value objects.
+* Replace virtual routines with data initialization.
+* Extract specialized code into a subclass.
+* Combine similar code into a superclass.
+
+#### Class Interface Refactorings
+
+* Move a routine to another class.
+* Convert one class to two.
+* Eliminate a class.
+* Hide a delegate. (Do not make chained calls)
+* Remove a middleman.
+* Replace inheritance with delegation.
+* Replace delegation with inheritance.
+* If you can't modify a class, you can subclass the original class and add new routines, or you can wrap the class and expose the routines you need.
+* Encapsulate an exposed member value.
+* Remove `set()` routeines for fields that cannot be changed.
+* Hide routines that are not intended to be used outside the class.
+* Encapsulate unused routines with a specific interface.
+* If a subclass doesn't provide much specialization, combine it into its superclass.
+
+#### System-Level Refactorings
+
+* SOmetimes you have data maintained by the system that you can't consistently access. In that cas, you can create a single class, which will serve as the definite source of data, and that will fetch the data, wherever it's located.
+* Change unidirectional class association to bidirectional class association.
+* Change bidirectional class association to unidirectional class association.
+* Provide a factory method rather than a simple constructor.
+* Replace error codes with exceptions.
+
+### 24.4 Refactoring Safely
+
+* Sve the code you start with.
+* Keep refactorings small.
+* Do refactoring one at a time.
+* Make a list of steps you intend to take.
+* Make a list of the changes that you'd like to make at some point, but that don't need to be made right now.
+* In addition to saving the code you started with, save checkpoints at various steps in a refectoring session so that you can get back to a working program if you find a dead end.
+* Use your compiler warnings.
+* Retest.
+* Remove any test cases that have been made obsolete by the refactorings, and add new unit tests to exercise your code.
+* Review the changes.
+    * Treat every simple change as if it were complicated.
+* For easier refactorings, you might streamline our refactoring process to do more than one refactoring at a time. For riskier refactorings, err on the side of caution. Do the refactorings one at a time, and have some one else review the refactoring.
+
+#### Bad Times to Refactor
+
+* Refactoring refers to changes in working code that do not affect the program's behavior. Programmers whoa re tweaking broken code aren't refactoring; they are hacking.
+* If you find yourself in a major refactoring session, ask yourself whether instead you should be redesigning and reimplementing that section of code from the ground up.
+
+### 24.5 Refactoring Strategies
+
+* Spend your time on the 20 percent of the refactorings that provide 80 percent of the benefit.
+* When you add a routine, check whether related routines are well organized.
+* Adding a class often brings issues with existing code. Refactor other classes that are closely related to the class you're adding.
+* When you fix a defect, use the understanding you gained to improve other code that might be prone to similar defects.
+* Is there a section of code that you are afraid of? Targeting these challending sections for refactoring can be one of the most effective strategies.
+* Target high-complexity modules.
+* In a maintenance environment, improve the parts you touch.
+* Define an interface between clean code and ugly code, and then move accross the interface.
+    * Anytime you touch a sectino of messy code, you are required to bring it up to current coding standards, give it clear variable names and so on.
+
 ## 25. Code-Tuning Strategies
 
 ## 26. Code-Tuning Techniques
