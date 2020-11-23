@@ -2228,6 +2228,125 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 25. Code-Tuning Strategies
 
+* Programmers realized how much their focus on performance had hurt readability and maintainability and ode tuning received less attention.
+
+### 25.1 Peformance Overview
+
+#### Quality Characteristics and Performance
+
+* Users are more interested in tangible program characteristics than they are in code quality.
+* Delivering software on time, providing a clean user interface and avoiding downtime are often more significant.
+
+#### Performance and Code Tuning
+
+##### Program Requireements
+
+* Performance is stated as a requirement far more often than it actually is a requirement.
+* Before you invest time solving a performance problem, make sure that you're solving a problem that needs to be solved.
+
+##### Program Design
+
+* Setting individual resources oals makes the system's ultimate performance predictable. If each feature meets its resouce goals, the whole system will meet its goals.
+* The mere act of making goals explicit improves the likelihood that they'll be acieved.
+* You can set goals that don't achieve efficiency directly but promote efficiency in the long run. For example, achieving a high degree of modifiability can provide a better basis for meeting efficiency goals than explicitly setting an efficiency target.
+
+##### Class and Routine Design
+
+* The choice of data types and algorithms usually affect both the program's memory use and execution speed.
+
+##### Operating-System Interactions.
+
+* If performance isn't good, it might be because the operating system routines are slow or fat.
+
+##### Code Compilation
+
+* Choosing the right compiler will allow you not to think about optimizing speed.
+
+##### Hardware
+
+* Sometimes the cheapest and best way to improve a program's performance is to buy a new hardware.
+
+##### Code Tuning
+
+* Code tuning is the practice of modifying correct code in ways that make it run more efficiently.
+* "Tuning" refers to small-scale changes that affect a few lines of code.
+
+### 25.2 Introduction to Code Tuning
+
+* It's incredibly satisfying to take a routine that executes in 20 microsends, tweak a few lines, and reduce the execution speed to 2 microseconds.
+* The problem with code tuning is that efficient code isn't necessarily "better" code.
+
+#### The Pareto Principle
+
+* 20 percent of a program's routines consume 80 percent of its execution time.
+* "The best it the enemy of the good". Working toward perfection might prevent completion. Complete it first, and then perfect it.
+
+#### Old Wives' Tales
+
+* Some misapprehensions about code tuning.
+    * Reduce the lines of code in a high-level language improves the speed or size of the resulting machine code - **false!**.
+    * Certain operations are probably faster or smaller than others - **fake!**
+        * If you change compilers or upgrade, the new compiler might automatically optimize code the way you were hand-tuning it and your work will have been wasted. Even worse, your code tuning might defect more powerful compiler optimization that have been designed to work with straightforward code.
+    * You should optimize as yo go - **false!**
+        * It's almost impossible to identify performance bottle necks before a program is working completly.
+        * Premature opimization's primary drawback is its lack of perspective.
+    * A fast program is just as important as a correct one - **false!**
+        * It's hardly ever true that programs need to be fast or small before they need to be correct.
+
+#### When to Tune.
+
+* Use a high-quality design. Make the program right. Make it modular and easily modifiable so that it's easy to work on later. When it's complete and correct, check the performance. If the program lumbers, make it fast and small. Don't optimize until you know you need to.
+
+#### Compiler Optimizations
+
+* Opimizing compilers are better at optimizing straighforward code than they are at optimizing tricky code. If you do "clever" things like fooling around with loop indexes, your compiler has a harder time doing its job and your program suffers.
+
+### 25.3 Kinds of Fat and Molasses.
+
+* You must profile the program to know with any confidence whih parts are slow and fat.
+
+#### Common Sources of Inefficiency.
+
+* **Input/Output operations**
+    * If you have a choice of working with a file in memory vs. on disk, in database, or across a network, use a in-memory data structure unless space is critical.
+* **Paging**
+    * An operation that causes the operating system to swap pages of memory is much slower than an operation that works on only one page of memory.
+* **System Calls**
+    * Calls to system routines are often expensive. They often involve a context switch - saving the program's state, recovering the kernel's state, and the reverse.
+    * System routines include input/output operations to disk, keyboard, scren, pointer, or other device; memory-management routines; and certain utility routines.
+    * If system routines are expensive, consider:
+        1. Writing your own services.
+        2. Avoid going to the system.
+        3. Work with the system vendor to make the call faster.
+* **Interpreted languages**
+    * Interpreted languages must process each programming-language instruction before creating and executing machine code.
+* **Errors**
+    * Errors include leaving debugging code turned on, forgetting to deallocate memory, improperly designing database tables, polling non-existing devices until they time out.
+    * Simply indexing the table improved performance by a factor of 30 for some operations. Defining an index on a commonly used table is not optimization; it's just good programming practice.
+
+### 25.4 Measurements.
+
+* Measure your code to find the hot spots. Once you've found the hot spots and optimized them, measure the code again to assess how much you've improved it.
+* Experince doesn't help much with optimization either. A person's expercience might have come from an old machine, language or compiler.
+* The only result of opimization you can usually be sure of without measuring performance is that you've made you're code harder to read. If it's not worth measuring to know that it's more efficien, it's not worth sacrificing clarity for a performance gamble.
+
+#### Measurements Need to Be Precise
+
+* Make sure that you're measuring only the execution time of the code you're tuning.
+    * Try to factor out measurement overhead and program-startup overhead so that neither the original code nor the tuning attempt is unfaily penalized.
+
+### 25.6 Summary of the Approach to Code Tuning
+
+1. Develop the software by using well-designed code that's easy to understand and modify.
+2. If performance is poor.
+    1. Save a working version of the code.
+    2. Measure the system to find hotspots.
+    3. Determine whether code tuning is appropriate.
+    4. Tune the bottleneck.
+    5. Measure each improvement one at a time.
+    6. If the improvement doesn't work, revert to step 1.
+
+
 ## 26. Code-Tuning Techniques
 
 ## 27. How Program Size Affects Construction
