@@ -6,7 +6,7 @@
 
 **Start date**: Jul 28th, 2020
 
-**End date**: Nov 27th, 2020.
+**End date**: Dec 27th, 2020.
 
 ## Index:
 
@@ -2348,6 +2348,155 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 
 ## 26. Code-Tuning Techniques
+
+* Performance usually refers to both speed and size, but size reductions tend to come more frfom redesigning classes and data, rather than from tuning code. Coe tuning refers to small-scale changes rather than changes in large-scale designs.
+* Code-tuning changes might seem cosmetically rimilar to store refactorings, however, refactorings are changes that improve a program's internal structure. The changes in code-tuning might better be called "anti-refactorings". Far from "improving in the internal structure", these changes degrade the internal structure in exchange for gains in performance.
+    * If changes didn't degrade the internal structre, we wouldn't consider them to be optimizations; we would use them by default and consider them to be standard coding practice.
+
+### 26.1 Logic
+
+#### Stop testing when you know the answer
+
+* Suppose you have a statement like `if (5<x) and (x<10) then`, the second part of the statement is not necessary.
+* Prevent from iterating in a loop when it can already be broken.
+
+#### Order Tests by Frequency
+
+* Arrange tests so that the one that's fastest and most likely to be true is performed first.
+
+#### Compare Performance of Similar Structures
+
+* Depending on the environment, either approach (`case` statement or an `if-then-else` statement) might work better.
+
+#### Substitute Table Lookups for Complicated Expressions
+
+* In some circumstances, a table lookup might be quicker than traversing a complicated chain of logic.
+    * The point of a complicated chain is usually to categorize something and then to take action based on its category.
+
+#### Use Lazy Evaluation
+
+* If a program uses lazy evaluation, it avoids doing any work until the work is needed.
+    * If the program uses only a small percentage of the entries of a table, it might make more sense to compute them as they're needed rather than all aat once. Once an entry is computed, it can still be stored for future reference.
+
+### 26.2 Loops
+
+#### Unswitching
+
+* Switching refers to making a decision inside a loop every time it's executed.
+    * If the decision doesn't change while the loop is executing, you can unswitch the loop by putting the loop inside the conditional rather than the conditional inside the loop.
+
+#### Jamming
+
+* Jamming or "fusion" is the result of combining two loops that operate on the same set of elements.
+    * Usually this means the loop counters have to be the same.
+
+#### Unrolling
+
+* The goal of loop unrolling is to reduce the amount of loop house keeping.
+* Unrolling a loop is not a practical solution when you have a large number of elements or when you don't know in advance how many elements you'll have.
+* To unroll the loop partially, you handle two or more cases in each pass through the loop instead of one.
+
+#### Minimizing the Work inside loops
+
+* Try to evaluate a statement or part of it, outside a loop so that only the result is used inside the loop.
+
+#### Sentinel Values
+
+* To reduce the amount of tests performed in a loop search, you can put a "sentinel" at the end of the seach range to stop the loop.
+    * You can simply assign the value you're looking for to the element just beyond the end of the search range. (Remember to leave space for that element when you declare the array).
+    * YOu then check each element, and if you don't find the element until you find the one you stucket at the end, you know that the value you're looking for isn't really there.
+
+#### Putting the Busiest Loop on the Inside
+
+* Each time the loop executes, it has to initialize the loop index, increment it on each pass through the loop, and check it after each pass.
+    * The loop that executes more often must be the inner one.
+
+#### Strength Reduction
+
+* Reducing strength means replacing an expensive operation such as multiplication with a cheaper operation such as addition.
+
+### 26.3 Data Transformations
+
+#### Use Integers Rather than Floating-Point Numbers
+
+* Integer addition and multiplication otend to be faster than floating point.
+
+#### Use the Fewest Array Dimensions Possible
+
+* If you can structure youor data so that it's in a one-dimensional array rather than a two dimensional or three-dimensional array, you might be able to save some time.
+
+#### Minimize Array References.
+
+* It's advantageous to minimize array access. A loop that repeatedly uses one element of an array is a good cadidate for the application of this technique.
+
+#### Use Supplementary Indexes.
+
+* String-length index
+    * It's ofthen more efficient to keep track of the length of the structure rather than computing the length each time you need it.
+* Independent, Parallel Index Structure.
+    * If each data item is large, you can create an auxiliary structure that consists of key values and pointers to the detailed information.
+    * All searching and sorting is done in memory, and you have to access the disk only once, when you know the exact location of the item you want.
+
+#### Use Cahing
+
+* Cachin means saving a few values in such a way that you can retrieve the most commonly used values more easily than the less commonly used values.
+* The success of the cache depends on the relative cost of accessing a cached element, creating an uncached element, and saving a new element in the cache.
+    * Success also depends on how often the cached information is requested.
+* The cheaper it is to access a cached element and save new elements in the cache, the more valuable a cache is.
+
+### 26.4 Expressions
+
+#### Exploit Algebraic Identities.
+
+* Since `sqrt(x) < sqrt(y)` only when `x` is less than `y`, youo can replace this test with `x < y`.
+
+#### Use Strength Reduction
+
+* Replace expensive operations with cheaper ones.
+
+#### Initialize at Compile Time
+
+* If you're using a named constant or a magic number is a routine call and it's the only argument, that's a clue that you could precompute the number, put it into a constant and avoid the routine call.
+
+#### Be Wary of System Routines
+
+* System routines are expensive and provide accuracy that's often washed. Typical system math routines are designed to put an astronaut on the moon within +/- 2 feet of the target. If you don't need that degree of accuracy, you don't need to spend the time to compute it either.
+
+* Most of the so-called "trascendental" functions are designed for the worst case - that is, they convert to double precision floating point internally even if you give them an integer argument.
+
+#### Use the Correct Type of Constants
+
+* Use named constants and literals that are the same type as the variables they're assigned to. When a constant and its related variable are different types, the compiler has to do a type conversion to assign the constant to the variable.
+
+#### Precompute Results
+
+* A common low-level design decision is the choice of whether to compute results on the fly or compute them once, save them, and look them up as needed. If the results are used many times, it's often cheaper to compute them once and look them up the rest of the time.
+    * At the simplest level, you might compute part of the expression outside a loop rather than inside.
+    * At a more complicated level, you might compute a lookup table once when program execution beings, using it every time thereafter.
+
+#### Eliminate Common Sub-expressions
+
+* If you find an expression that's repeated several times, assign it to a variable an refer to the variable rather than recomputing the expression in several places.
+
+### 26.5 Routines
+
+#### Rewrite Routines Inline
+
+* In some cases, you might be able to save a few nanoseconds by putting the code from a routine into the program directly where it's needed via the `inline` keyword.
+    * Modern machines impose virtually no penalty for calling a routine.
+
+### 26.6 Recoding in a low-level language
+
+1. Write 100 percent of an application in a high-level language.
+2. Fully test the application, and verify that it's correct.
+3. If performance improvements are needed after that, profile the application to identify hot spots.
+4. Recode a few small pieces in a low-level language to improve overall performance.
+
+### 26.7 The More Things Change, the More they Stay the Same.
+
+* Computeers have become so powerful that for many common kinds of programs, the level of performance optimization discusses in this chapter has become irrelevant.
+
+* If an optimization isn't important-enough to haul out the profiling machinary, it isn't important enough to degrade readability, maintainability and other code characteristics.
 
 ## 27. How Program Size Affects Construction
 
