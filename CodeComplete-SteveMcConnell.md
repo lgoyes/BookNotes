@@ -2500,6 +2500,57 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 27. How Program Size Affects Construction
 
+### 27.1 Communication and Size
+
+* The typical approach taken to streamlining communication is to formalize it in documents.
+
+### 27.3 Effect of Project Size of Errors
+
+* As project size increases, a larger percentage of errors can usually be attributed to mistakes in requirements and designs.
+* On small projects, construction error make up about 75 percent of all the errors found.
+* Project size and typical error density:
+    * Smaller than `2K` LOC - `[0,25]` errors per thousand lines of code (KLOC).
+    * `[2K,16K]` LOC - `[0, 40]` errors / KLOC.
+    * `[16K,64K]` LOC - `[0.5, 50]` errors / KLOC.
+    * `[64K,512K]` LOC - `[2, 70]` errors / KLOC.
+    * More than `512K` LOC - `[4, 100]` errors / KLOC.
+
+### 27.4 Effect of Project Size on Productivity
+
+* At small sizes, the single biggest influence on productivity is the skill of the individual programmer.
+* As project size increases, team size and organization become greater influences on productivity.
+
+### 27.5 Effect of Project Size on Development Activities
+
+* If you are working on a one-person project, the biggest influence on the project's success or failure is you.
+* If you're working on a 25-person project, your organization will be a stronger influence on the project success or failure.
+
+#### Activity Proportioins and Size
+
+* On small/medium projects, construction (detailed design, coding, debuggin, unit-testing) is the most prominent activity by far.
+* On very large projects, architecture, integration, and system testing take up more time and construction becomes less dominant.
+* Proportions of activities vary because different activities become critical at different project sizes.
+* Regardless of the size of a project, a few techniques are always valuable: disciplined coding practices, design and code inspections, good tool support and use of high-level languages.
+
+#### Programs, Products, Systems and System Products
+
+* The quality and the complexity of the final software influence on a project's size.
+* Kinds of software:
+    * **Program:** Used by the person who developed it.
+    * **Product:** Used by people other than the original developer.
+    * **System:** Group of programs that work together.
+    * **System Product:** Polish of a product and multiple parts of a system.
+* Programmers used to work on "programs" underestimate "system products" by a factor of almost 10.
+* As you scale up, construction becomes a smaller part of the total effort in a project. If you base your estimates on construction experience, the estimation error increases.
+* The estimation error would be completely attributable to you non understanding the effect of size on developing larger projects.
+
+#### Methodology and Size
+
+* In software development, the more formal the project, the more paper you have to generate to make sure you've done your homework.
+* Paperwork is created as a direct result of the communication-overhead: the more people's breains you have to coordinate, the more formal documentation you need to coordinate them.
+* The point of your writing a configuration-management plan is to force you to think carefullly about configuration management and to explain your plan to everyone else.
+* You'll usually do better if you start you methods small and scale up for a large project.
+
 ## 28. Managing Construction
 
 ## 29. Integration
