@@ -2553,6 +2553,168 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 28. Managing Construction
 
+### 28.1 Encouraging Good Coding
+
+* If someone on a project is going to define standards, have a respected architect define the standards rather than the manager. Software projects operate as much on an "expertise hierarchy" as on an "authority hierarchy".
+
+#### Techniques for Encouraging Good Coding
+
+* Assign two people to every part of the project
+    * Pair programming
+    * Mentor-trainee pairs
+* Review every line of code
+    * A code review involves the programmer and at least two reviewers.
+    * Decisions are made by the group during reviews, and over time the group derives its own standards.
+* Require code sign-offs.
+    * Before code is considered to be complete, senior technical personnel must sign the code listing.
+* Route good code examples for review.
+    * Provide a clear example of the code quality you're aiming for.
+* Emphasize that code listings are public assets.
+    * Programmers sometimes feel that the code they've written is "their code", as if it were private property. Although it is the result of their work, code is part of the project and should be freely available to anyone else on the project who needs it.
+* Reward good code
+    * Use the organization's reward system to reinforce good coding practices.
+    * The reward should be something that the programmer wants.
+    * Code that receives an award should be exceptionally good.
+* If you have a programming backgorund, an effective technique for eliciting good work is to say "I must be able to read and understand any code written for the project".
+
+### 28.2 Configuration Management
+
+#### What is Configuration Management?
+
+* Configuration management is the practice of identifying project artifacts and handling changes systematically so that a system can maintain its integrity over tiime. Anotoher name for it is "change control".
+* If you odon't control changes to requirements, you can end up writing code for parts of the system that are eventually eliminated.
+* If chages to code aren't controller, you might change a routine that someone else is changing at the same time.
+* Software Configuration Management (SCM) focuses on program's requirements, source code, documentation and test data.
+* The systemic problem with SCM is overcontrol. The surest way to prevent software development problems is to stop all software development.
+* On a large project, you'll probably need a full-blown SCM cheme, including faily formal procedures for backups, change control for requirements and design, and control over documents, source code, content, test cases, and other project artifacts.
+
+#### Requirements and Design Changes.
+
+* Follow a systematic change-control procedure.
+* Handle change requrests in groups.
+    * Write down all ideas and suggestions, no matter how easy they would be to implement, and save them until you have time to work on them. Then, viewing them as a group choose the ones that will be the most beneficial.
+* Whenever your customer, your boss, or youo are tempted to change the system, estimate the time it would take to make the change, including review of the code for the change and retesting the whole system.
+    * Regardless of how optimistic you ofeel when the change is first suggested, refrain from getting an off-the-cut estimate. Such estimates are often mistaken by a factor of 2 or more.
+* A high volume of change requrest is a key warning sign that requirements, architecture or top-level designs weren't done well enough to support effective construction.
+* Anyone who wants to propose a change submits the change request to the change-control board: An idea for a new feature, a change to an existing feature, and "error report" that might or might not be reporting a real error.
+* Change control ltends to drift toward bureaucracy, so it's important to look for ways to streamline the change-control process. If you'd rather not use traditional change requests, set up a simple "change board" email alias and have people email change requests to the address.
+
+#### Software Code Changes.
+
+* If you happen to find an error after you've modified some code, you will compare the new version of the code to the old, by means of version-control tools that keep track of multiple versions of source code.
+* Version control software.
+    * You don't step on anyone's toes by working on a file while some one else is working on it.
+    * You can update your copies of all the projects files to the current versions, by issuing a single command.
+    * You can backtrack to any version.
+    * You can get a list of the changes to any version of any file.
+    * You don't have to worry about personal backups because the version control copy is a safely net.
+
+#### Tool versions
+
+* It may be necesasry to reconstruct the exact environment used to create each specific version of the software, including compilers, linkers, code libraries, and so on.
+
+#### Machine Configurations
+
+* A standarized development machine configuration can be created, as a disk image, including all the common developer tools, office applications and so on.
+    * That image helps to avoid a raft of problems associated with slightly different configuration settings.
+
+#### Backup Plan
+
+* You should have a backup plan, including backups on a periodic basis and periodic transfer of backups to off-site storage, and it should encompass all the important materials on your project - documents, graphics, and notes- in addition to source code.
+* Test your backup plan by doing a restore at some point to make sure that the backup contains everything youo need and recovery works.
+
+### 28.3 Estimating a Construction Schedule
+
+* Developers' estimates tend to have an optimism factor of 20 to 30 percent.
+
+#### Estimate Approaches
+
+* Several ways to estimate:
+    1. Use estimating software.
+    2. Use an algorithmic approach, such as `Cocomo II`.
+    3. Have outside estimation experts estimate the project.
+    4. Have a walk-through meeting for estimates
+    5. Estimate pieces of the project, and then add the pieces tohether.
+    6. Have people estimate their own tasks, and then add the task estimates together.
+    7. Refer to experience on previous projects.
+    8. Keep previous estimates and see how accurate they were.
+
+* Establish Objectives.
+* Allow time for the estimate, and plan it
+    * Rushed estimates are inaccurate estimates.
+* It's unreasonable for anyone to expect you to be able to estimate the amount of work required to build something when "something" has not yet been defined. Define requirements or plan a preliminary exploration phase before making an estimate.
+* Estimate at a low level of detail.
+* Use several different techniques, and compare the results.
+* Reestimate periodically.
+
+#### Estimating the Amount of COnstruction
+
+* The best answer to the question of how much construction a project will call for is that the proportion will vary from project to project and organization to organization.
+
+#### What to do if you're behind
+
+* Hope that you'll catch up
+    * Delays and overviews generally increase toward the end of a project.
+* Expand the team
+    * Adding people to a late software project makes it later. New people need time to familiarize themselves with a project before they can become productive. Their training takes up the time of the people who have already been trained. And merely increasing the number of people increases the compmlexity and amount of project communication.
+    * If tasks are partitionable, you ocan divide them further and assign them to different people, even to people who are added late in the project.
+* Reduce the scope of the project.
+    * If you eliminate a feature, you eliminate the design, coding, debugging, testing, and documentatioin of that feature.
+    * When you plan the product initially, partiion the product's capabilities into "must-have", "nice-to-have" and "optionals". If you fall behind, prioritize the "optionals" and "nice to have" and drop the ones that are the least important.
+    * You might provide a version of a feature that's on time but that hasn't been tuned for performance.
+    * Reestimate development time for the least important features.
+
+### 28.4 Measurement
+
+* For any project attribute, it's possible to measure that attribute in a way that's superior to not measuring it at all.
+    * Measurement might not be precise, it might be difficult to make, and it might need to be refined over time, but measurement will give you a handle on your software development process that you don't have without it.
+* Be aware of measurements side effects
+    * People tend to focus on work that's measured and to ignore work that isn't.
+* To argue against measurement is to argue that is better not to know what's really happening on your project.
+    * Most measurements are useful meainlyl for identifying routines that are "outliers"; abnormal measurements in a routine are a warning sign that you should reexamine that routine, checking for unusually low quality.
+    * Make sure you're collecting data for a reason. Set goals, determine the questions you need to ask to meed the goals and then measure to answer the questions.
+
+### 28.5 Treating Programmers as People
+
+#### How Do Programmers Spend Their Time?
+
+* About 30 percent of a programmer's time is pent in nontechnical activities that don't directly help the project: walking, personal business, and so on.
+
+#### Variation in Performance and Quality
+
+* One study found that in a variety of professions, the top 20 percent of the people produced about 50 percent of the output.
+
+#### Individual Variation
+
+* "There are order-of-magnitude differences among programmers"
+* The ratio of initial coding time between the best and worst programmers was about 20 to 1, the ratio of debuggin times over 25 to 1, of program size 5 to 1, and of program execution speed about 10 to 1.
+
+#### Team Variation
+
+* Good Programmers tend to cluster, as do bad programmers.
+* 5-to-1 difference in program size and a 2.6-to-1 variation in the time required for a team to complete the same project.
+* Develping a program with a team in the 15th percentile of programmers ranked by ability typically requires about 3.5 times as many work months as developing a program with a team in the 90th percentile.
+*The implication for recruiting and hiring is clear. If you have to pay more to get a top-10 percent programmer rather than a bottom-10-percent programmer, jump at the chance.
+
+#### Religious Issues
+
+* Aa programmer's position on each religious issue is a reflection of personal style.
+* Use "suggestions" or "guidelines" with respect to the area
+    * Avoid setting rigid "rules" or "standards".
+* Finesse the issues you can by sidestepping explicit mandates
+    * Require source doe to be run through a pretty-printer formatter before it's declared finished. Let the pretty printer do the formatting.
+* Have your programmers develop their own standards.
+
+#### Physical Environment
+
+* The programmers who performed in the top 25 percent had bigger, quieter, more private offices, and fewer interruptions from people and phone calls.
+
+### 28.6 Managing your manager
+
+* In software development, nontechnical managers are common, as are managers who have technical experience but who are 10 years behind the imes. Technically competent, technically current managers are rare.
+* "Managing your manager" means that you need to tell your manager what to do, rather than the other way around, in a way that allows your manager to continue believing that you are the one being managed.
+    * Focus on your manager's interest, doing what he or she really wants you oto do and don't distrct your manager with unnecessary implementation details.
+
 ## 29. Integration
 
 ## 30. Programming Tools
