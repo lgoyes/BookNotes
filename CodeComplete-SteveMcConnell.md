@@ -2717,6 +2717,118 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 29. Integration
 
+* The term "integration" refers to the software-development activity in which you combine separate software components into a single system.
+    * It might consist of a morning spend hooking a handful of classes together, on small projects.
+    * Ono large projects, it might consist of weeks or months of hooking sets of programs together.
+* The order in which you build classes or components affects the order in which you can integrate them.
+
+### 29.1 Importance of the Integration Approach
+
+* If you construct and integrate software in the wrong order, it's harder to code, harder to test, and harder to debug. If none of it will work until all of it works, it can seem as though it will never be finished.
+
+### 29.2 Integration Frequency - Pashed or Incremental?
+
+#### Phased Integration
+
+* Steps:
+    1. Design, code, test and debug each class ("Unit development")
+    2. Combine the classes into one whopping-big system (system integration)
+    3. Test and debug the whole system (System dis-integration)
+* Since you have a large number of classes that have never worked together before, when they are put together the first time, new problems inevitably surface and the causes of the problems could be anywhere.
+
+#### Incremental Integration
+
+* You write and test a program in small pieces and then combine the pieces one at a time.
+* Steps:
+    1. Develop a small, functional part of the system. Thorougly test and debug it. It will serve as a skeleton on which to hand the remaining parts of the system.
+    2. Design, code, test and debug a class.
+    3. Integrate the new class with the skeleton. Test and debug the combination of the skeleton and new class.
+
+##### Benefits of Incremental Integration
+
+* When new problems surface during increemental integration, the new class is obviously involved. Either its interface to the rest of the program contains an error or its interaction with a previously integrated class produces an error. Either way, you know exactly where to look.
+* WHen the code is integrated and running, even if the system isn't usable, it's apparent that it soon will be.
+* When you integrate frequently, the features that are present and not present are obvious.
+* You'll improve customer relations.
+* The units of the system are tested more fully.
+* If integration is planned carefully, you can design part of the system while another part is being coded.
+
+### 29.3 Incremental Integration Strategies
+
+* With incremental integration, most systems will call for the integration of some components before the integation of others.* Planning for integration thus affects planning for construction; the order in which components are constructed has to support the order in which they will be integrated.
+
+#### Top-Down Integration
+
+* The class at the top of the hierarchy is written and integrated first. Stubs have to be written to exercise the top class. Then, as classes are integrated from the top down, stub classes are replaced with real ones.
+* Interfaces between classes must be carefully specified. The most troublesome errors to debug are not the ones that affect single classes but those that arise from subtle integrations between classes. Careful interface specification can reduce the problem.
+* All the classes at the top of the hierarchy are exercised a lot so that big conceptual, design problems are exposed quickly.
+* A good alternative to pure top-down integration is the vertical slice approach, in which the system is implemented top-down in sections pehaps fleshing out areas of functionality one by one, and then moving to the next area.
+
+#### Bottom-Up Integration
+
+* You write and integrate the classes at the bottom of the hierarchy first.
+* The main problem with bottom-up integration is that it leaves integrations of the major, high-level system interfaces until last. If the system has conceptual design problems at the higher levels, construction won't find them until all the detailed work has been done. If the design must be changed significantly, some of the low-level work might have to be discarded.
+
+#### Sandwich Integration
+
+* You first integrate the high-level business-object classes at the top of the hierarchy. Then you integrate the device-interface classes and widely used utility classes at the bottom.
+
+#### Risk Oriented Integration
+
+* Tends to integrate the classes at the top and the bottom first, saving the middle-level classes for last.
+* You identify the level of rist associated with each class. You decide which will be the most challenging parts to implement, and you implement them first. The remainder of the code, the easy stuff, can wait until later.
+
+#### Feature Oriented Integration
+
+* Integrate one feature (on identifiable function of the system you're integrating) at a time.
+* You'll usually want to start with a skeleton you've chosen for its ability to support the other features. You hang the rest of the features on the feature that you integrated first.
+* Components are added in "feature trees", hierarchical collections of classes that make up a feature.
+* Integration is easier if each feature is relatively independent, perhaps calling the same low-level library code as the classes for other features but having no calls to middle level code in common with other features.
+* The skeleton might need a little scaffolding, or some parts of the skeleton might simplme not be operational until particual features have been added.
+* Each feature bring an incremental addition in functionality.
+
+#### T-Shaped Integration
+
+* One specific vertical slice is selected for early development and integration. That slice should exercise the system end-to-end and should be capable of flushing out any major problems in the systems design assumptions.
+
+### 29.4 Daily Build and Smoke Test
+
+* A "Smoke test" is a relatively simple check to see whether the product "smokes" when it runs.
+* By smoke testing, you bring the system to a known good state, and then you keep it there. You odon't allow it to deteriorate.
+* Teams that haven't used the daily build process sometimes feel that daily builds slow their progress to a snail's crawl. What's really happening is that daily builds amortize work more steadily throughout the project.
+* Treat the daily build as the heartbeat of the project.
+* At a minimum a good build should
+    * Compile all files, libraries and other components successfully.
+    * Link all files, libraries, and other components successfully.
+    * Not contain any showstopper bugs that prevents the program bfrom being launched or that makes it hazardous to operate (should pass the smoke test).
+* The smoke test should exercise the entire system from end to end. If the smoke test passes, you can assume that the build is stable enough to be tested more thoroughly.
+* The smoke test must evolve as the system evolves.
+* Automate the daily build and smoke test.
+* Tending the daily build and keeping the smoke test up to date becomes a big enough task to be an excplicit part of someone's job.
+* Add revisions to the build only when there are meaningful increments to the system.
+* Don't wait too long to add a set of revisions
+    * If a develpoer goes more than a couple of days without checking in a set of changes, consider that developer's work to be at rist.
+    * Frequent integration sometimes forces you to break the construction of a single feature into multiple episodes.
+* The developer must be sure that the new code passes the smoke test before it's allowed to influence other parts of the system.
+* Developers need to be able to rely on a known good system. Most groups solve this problem by creating a holding area for code that developers think is ready to be added to the build.
+    * New code goes into the holding area, the new build is build, and if the build is acceptable, the new code is migrated into the master sources.
+* Create a penality for breaking the build.
+    * Make it clear from the beginning that keeping the build healthy is one of the project's top priorities.
+    * A broken build should be the exception, not the rule.
+* Release builds in the morning
+    * Smoke test in the early morning and release new builds in the morning rather than the afternoon.
+* Build and smoke test even under pressure.
+    * Under stress, developers lose some of their discipline.
+
+#### What Kind of Projects Can Use the Daily Build Process?
+
+* The larger the project, the more important incremental integration becomes.
+
+##### Continuous Integration
+
+* "Continuous" means "at least daily".
+* None of top technical executives from important companies think that continuous integration is superior to daily integration.
+
 ## 30. Programming Tools
 
 ## 31. Layout and Style
