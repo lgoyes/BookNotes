@@ -2833,6 +2833,219 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 31. Layout and Style
 
+* The techniques in this chapter don't affect execution speed, memory use, or other aspects of a program that are visible from outside the program. They affect how easy it is to understand the code, review it, and reuse it months after you write it.
+
+### 31.1 Layout Fundamentals
+
+#### Layout Extremes
+
+* The layout should not be crowded and should offer some clue to the routine's logical organization.
+* Routines have to be readable, and the effort put into documentation and good variable names should be evident.
+
+#### The Fundamental Theorem of Formatting.
+
+* Good visual layout shows the logical structure of a program.
+* If one technique shows the structure better and another looks better, use the one that shows the structure better.
+
+#### Human and Computer Interpretations of a Program
+
+* A good layout scheme would make the usual structure of a program match the logical structure, or tell the same story to the human that it tells to the computer.
+* When program statements were arranged in a sensible order, experts were able to remember them better than novices. WHen statements were suffled, the experts' superiority was reduced.
+
+#### Layout as Religion
+
+* Layout might harm an expert's ability to read a program if the layout is different from the scheme the expert uses.
+
+#### Objectives of Good Layout
+
+* Explicitly, a good layout scheme should do the following:
+    * Accurately represent the logical structure of the code.
+    * Consistently represent the logical structure of the code.
+    * Improve readability.
+    * Withstand modifications.
+
+### 31.2 Layout Techniques
+
+#### White Space.
+
+* White space is grouping, making sure that related statements are grouped together.
+* Just as it's important to group related statements, it's important to separate unrelated statements from each other.
+    * Use blank lines to indicate how a program is organized.
+* Use indentation to show the logical structure of a program. As a note, you should indent statements under the statement to which they are logically subordinate.
+    * Two-to-four space indentation is optimal.
+    * Six-space indentation looks pretty, but turn out to be less readable.
+
+#### Parentheses
+
+* You should use parentheses whenever there's any doubt about how an expression is evaluated.
+
+### 31.3 Layout Styles
+
+#### Pure blocks
+
+* A control construct in Visual Basic always has a `Begin` statement and it always has a corresponding `End` statement. Indenting the inside of the structure isn't a controversial practice, and the options for aligning the other keywords are somewhat limited.
+
+#### Emulating Pure Blocks
+
+* View the begin and end keywords (`{` and `}` tokens) as extensions of the control construct they've used with.
+* The control structure opens the block in the first statement, implying that the "begin" should be at the end of the first statement.
+
+#### Using begin-end Pairs to Designate BLock Boundaries.
+
+* View the begin and the end as statements that follow the control construct rather than as fragments that are part of it.
+* To treat the begin and the end as parts of the block structure rather than the control statement, you have to put the begin at the beginning of the block (rather than at the end of the control statement) and the end at the end of the block (rather than terminating the control statement).
+
+#### Endline Layout
+
+* The code is indented to the middle or end of the line.
+* The endline indentation is used to align a block with the keyword that began it, to make a routine's subsequent parameters line up under its first parameter.
+* Endline layout is inaccurate, hard to apply consistently and hard to maintain.
+
+#### Which Style is Best?
+
+* Choose the style you like or the one that is preferred by the majority of people on your team. There is no statistically significat difference between either pure-block emulation or begin-end block boundaries.
+
+### 31.4 Laying out control structures
+
+#### Fine Points of Formatting Control-Structure Blocks
+
+* Avoid unindented begin-end pairs.
+    * Unindented begin-end pairs aren't part of the control construct, and they aren't part of the statements after it either.
+* Avoid double indentation with begin and end.
+    * Prevent from indenting begin and end, and then indenting again the statements they enclose.
+
+#### Other Considerations
+
+* A logical block - a group of statements that belong together - should be treated the way paragraphs in English are: separete them from one another with blank lines.
+    * The discipline of putting blank lines throughout a program makes you think harder about which statements really belong together.
+* Format single-statement blocks consistently
+    * Using the begin-end pair reduces the chance that you'll add statements after the if test and forget to add begin and end.
+* For complicated expresions, put separate conditions on separate lines.
+* Avoid gotos
+    * Use a name in all caps for the label the code goes to.
+    * Put the statement containing the goto on a line by itself.
+    * Put the label the goto goes to on a line by itself. Surround it with blank lines.
+* For the ability to accomodate longer lines, consistency, and maintainability, prefer pure blocks instead of endline indentation.
+
+### 31.5 Laying out individual statements
+
+#### Statement Length
+
+* Try to limit statement line length to 80-90 characters.
+
+#### Using spaces for clarity
+
+* Use spaces to make logical expressions readable
+    * You should separte identifiers from other identifiers with spaces.
+* Use spaces to make array references readable
+    * Use spaces around each index in the array to make the indexes readable.
+* Use spaces to make routine arguments readable.
+
+#### Formatting Countinuation Lines
+
+* Make the incompleteness of a statement obvious.
+    * Break the statement so that the part on the first line is systactically incorrect if it stands alone.
+    * This break helps prevent incorrect modifications.
+* An alternative approach is to put the continuation character at the beginning of the continuation line.
+    * It makes it easier to scan for the operator at the left edge of the column, where the text is aligned, rather than at the right edge, where it's ragged.
+    * It has the additional advantage of iluminating the structure of the operations.
+* Keep closely related elements together.
+* Indent routine-call continuation lines the standard amount
+    * If you normally indent three spaces for statements in a loop, indent the continuation lines for a routine by three spaces.
+* Make it easy to find the end of a continuation line.
+    * Put each argument in a line of its own and indicate the line end of the group with a closing parentheses.
+    * In practice, usually only a few routines needs to be broken into multiple lines. Any formatting style is OK, as long as you use it consistently.
+* If you run out of room for a for loop, a while loop, or an if statement, indent the continuation line by the same amount of space that you indent statements in a loop or after an if statement.
+* Do not align right sides of assignment statements.
+    * If becomes a headache to maintain the alignment of equal signs as variable names change.
+* Indent assignment-statement continuation lines the standard amount.
+
+#### Using Only one statement per line
+
+* Putting each statment on a line of its own provides an accurate view of a program's complexity.
+* Putting several statements on one line doesn't provide optimization clues to modern compilers.
+* With statements on their own lines, the code reads from top to bottom, instead of top to bottom and left to right.
+* It's easier to find syntax error when your compiler provides only the line numbers of the errors.
+* It's easy to step through the code with line-oriented debuggers.
+* It's easier to edit individual statements.
+* Avoid using multiple operations per line (side effects).
+    * The code that you overlook because you "recognize" it rather than read it can contain the error that's harder to find than it needs to be.
+* Improved performance doesn't justify putting multiple operations on the same line either.
+* Even if you read statements with side-effects easily, take pity on other people who will read your code. Most good programmers need to think twice to understand expressions with side effects. Let them use their brain cells to understand the larger questions of how your code works rather than the syntactic defaults of a specific expression.
+
+#### Laying Out Data Declarations
+
+* Use only one data declaration per line
+    * It's easier to put a comment next to each declaraction
+    * It's easier to modify declarations
+    * It's easier to find specific variables.
+    * It's easier to find and fix syntax errors.
+* Declare variables close to where they're first used.
+* Order declartions sensibly.
+    * If your list of variables is so long that alphabetical ordering helps, your routine is probably too big. Break it up so that you have smaller routines with fewer variables.
+* In C++, put the asterisk next to the variablee name in pointer declarations or declare pointer types.
+
+### 31.6 Laying Out Comments
+
+* Indent a comment with its corresponding code.
+    * Comments should not interfere with the program's logical structure.
+* Set off each comments with at least one blank line.
+
+#### 31.7 Laying out Routines
+
+* Use blank lines to separte parts of a routine
+* Use standard indentation for routine arguments
+    * The options with routine-header layout are about the same no conscious layout, endline layout, or standard indentation.
+    * The main problem with endline layout is that it takes a lot of work to maintain, and styles that are hard to maintain aren't maintained.
+    * Standard indentation has an aesthetical appeal and take less work to maintain. In this case, each parameter take one line. As a result, if parameters are added or deleted, only one line has to be modified.
+
+### 31.8 Laying out classes.
+
+#### Laying out class interface
+
+* The convention is to present the class memebers in the following order:
+    1. Header comment that describes the class
+    2. Constructors and destructors.
+    3. Public routines.
+    4. Protected routines.
+    5. Private routines and member data.
+
+#### Laying Out class Implementation
+
+* Class implementation should layout in this order.
+    1. Header comment describing the contents of the file.
+    2. Class data
+    3. Public routines
+    4. Protected routines
+    5. Private routines
+
+* If you have more than one class in a file, identify each class clearly.
+    * Avoid over emphasizing comments within classes.
+    * Avoid using rows of asterisks. Less is moroe.
+    * If you must separate parts of a program with long lines of special characters, develop a hierarchy of characters (from densest to lightest) instead of relying exclusively on asterisks.
+    * If you're using a language that support multiple source files, put only one class in each file unless you have a compelling reason to do otherwise (such as including a few small classes that make up a single pattern).
+
+#### laying Out Files and Programs
+
+* Put one class in one file.
+    * A file should hold a collection of routines that support one and only one purpose.
+    * A file reinforces the idea that a collection of routines are in the same class.
+* Give the file a name related to the class name.
+* Separte routines withing a file clearly.
+    * Separte each rutine from other routines with at least two blank lines.
+* Sequence routines alphabetically may help.
+* Order the source file carefully.
+    1. File-description comment.
+    2. `#include` files.
+    3. Constant definitions that apply to more than one class.
+    4. Enums that appy to moore than one class.
+    5. Macro function definitions.
+    6. Type definitions that apply to more than one class.
+    7. Global variables and functions imported.
+    8. Global variables and functions exported.
+    9. Variables and functions that are private to the file.
+    10. Classes, including constant definitions, enums, and type definitions within each class.
+
 ## 32. Self-Documenting Code
 
 ## 33. Personal Character
