@@ -3141,6 +3141,86 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 * Most comments in a well-documented program are one-sentence comment that describe paragraphs of code.
     * The comment doesn't repeat the code, it describes the code's intent.
 * Write comments at the level of the code's intent.
+* Focus your documentation efforts on the code itself.
+    * Use named constants, add a variable to contain the result of the search.
+    * If the code is good enough, it begins to read at close to the level of intent, encroaching on the comment's explanation of the code's intent.
+* Focus comments on the why rather than the how.
+    * It's nearly impossible for a comment that focuses on how and operation is done to explain the intent of the operation.
+    * Comments that tell `how` are often redundant.
+* A reader should be able to scan only the comments and get a good idea of what the code does and where to look for a specific activity.
+* Make every comment count.
+    * Rather than writing more comments, put the extra effort into making the code itself more readable.
+* Document surprises.
+    * If you have used a tricky technique instead of a straight forward one to improve performance, use comments to point out what the straight forward technique would be and quantify the performance gain achieved by using the tricky technique.
+* Comments should be unambiguous, readable without the work of figuring out abbreviations.
+* Comment an error or undocumented features.
+* Don't comment tricky code; rewrite it.
+    * If something seems tricky to you, it will be incomprehensible to someone else.
+    * Make your code so good that you don't need comments, and then comment it to make it even better.
+
+#### Commenting Data Declarations.
+
+* Comments for variable declarations describe aspects of the variable that the variable name can't describe.
+* Comment the units of numeric data
+    * Don't assume that the units are obvious.
+    * Alternative, in many cases you should embed the units in the variable names rather than in comments.
+* If your language supports enumerated types, use them to express coded meaning. If it doesn't, use comments to indicate what each value represents, and use a named constant rather than a literal for each of the values.
+* Comment limitations on input data (expected and unexpected data). You can also use assertions to document valid ranges, and make the code more self-checking.
+* If a variable is used as a bit field, document the meaning of each bit.
+* If you have comments that refer to a specific variable, make sure the comment is updated whenever the variable is updated.
+* If global data is used, annotate each piece well at the point at which it's declared. The annotation should indicate the purpose of the data and why it needs to be global.
+
+#### Commenting Control Structures
+
+* Put a coment before each `if`, `case`, `loop`, or block statement.
+    * You can provide the reason for a decision and a summary of the outcome.
+* Comment the end of each control structure.
+    * You don't need to use the technique for short loops that aren't nested. When the nesting is deep or the loops are long, however, the technique pays off.
+* Treat end-of-loop comments as a warning indicating complicated code.
+
+#### Commenting Routines
+
+* Heavy routine headers are a recipe for inaccurate comments and maintenance failure.
+* Keep comments close to the code they describe.
+    * During maintenance, comments that are far from the code tend not to be maintained with the code. The comments and the code start to disagree, and suddenly the comments are worthless.
+* Create a boilerplate documentation prolog. Fill out the parts that matter and delete the rest.
+* Describe each routine in one or two sentences at the top of the routine. Difficulty in creating a short description is a sign that the design isn't as good as it should be.
+* Put comments next to the parameter declarations.
+    * If your variable names are good enough, you might be able to skip commenting them.
+* Take advantage of code documentation utilities such as Javadoc.
+    * If you're not working in an environment that supports document extraction, like Javadoc, you're usually better off keeping the comments closer to the parameter names to avoid inconsistent edits and duplication of the names themselves.
+* Differentiate between input and output data.
+    * If your language doesn't support input and output data differentiation automatically, put it into comments.
+* Documet interface assumptions.
+    * If you have made any assumptions about the state of variables you receive -legal and illegal values, arrays being in sorted order, member data being initialized or containing only good data- document them either in the routine prolog or where the data is declared.
+* Comment on the routine's limitations.
+    * Indicate the accuracy of a numeric result.
+    * Document the conditions under which the computations are undefined.
+    * Document any default behaviour when a routine gets into trouble.
+    * Document any expected size of data.
+* If the routine modifies global data, describe exactly what it does to the global data.
+* Document the source algorithms that are used (volume, page number, book name, and so on).
+
+#### Commenting Classes, Files and Programs.
+
+##### General Guidelines for Class Documentation
+
+* Describe the class's design philosophy, overall design approach, design alternatives that were considered and discarded and so on.
+* Descrbie any limitations by the class's design. Also describe assumptions about input and output data, error-handling responsibilities, global effects, sourcs of algorithms, and so on.
+* Can another programmer understand how to use a class without looking at the class's implementation? If not, class encapsulation is seriously at risk.
+    * The class's interface should contain all the information anyone needs to use the class.
+* Don't document implementation details in the class interface.
+
+#### General Guidelines for File Documentation.
+
+* Describe the purpose, and content of each file.
+    * Describe the classes or routines contained in a file.
+    * If the purpose of a file is obvious, e.g. contain one specific class, the comment is not necessary.
+    * If the file contains more than one class, explain why the classes need to be combined into a single file.
+* Authorship and primary responsiblity for specific areas of souce code becomes important on large projects.
+    * Let some contact info (name, email address) on the code, so other programmers will be able to contact you.
+* Include legal notices in the block comment.
+* Give the file a name related to its contents.
 
 ## 33. Personal Character
 
