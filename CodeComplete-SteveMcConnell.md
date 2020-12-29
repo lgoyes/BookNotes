@@ -3048,6 +3048,100 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 32. Self-Documenting Code
 
+* Good documentation is a sign of the professional pride a programmer puts into a program.
+
+### 32.1 External Documentation
+
+* External construction documentation tends to be at a high lend compared to the code, at a low level compared to the documentation from the problem definition requirements and architecture activities.
+* Unit-Development Folder (UDF)
+    * Informal document containing notes used by a developer during construction.
+    * Provides a trail of design decisions that aren't documented else where.
+    * Has some copies of relevant requirements.
+    * Parts of the top level design the unit implements.
+    * A copy of the development standards.
+    * A current code listing.
+* Detailed-design documents.
+    * Describes the class-level or routine level design decisions, the alternatives that were considered and the reasons for selecting the approaches that were selected.
+
+### 32.2 Programming Style as Documentation
+
+* Internal documentation is very likely to remain correct as the code is modified because it's most closely associated with the code.
+* The main contributor to code level documentation is good programming style:
+    * Good program structure.
+    * Use of straght forward and easily understandable approaches.
+    * Good variable names.
+    * Good routine names.
+    * Use of named constants instead of literals.
+    * Clear layout.
+    * Minimization of control-flow and data structure complexity.
+
+### 32.3 To comment or Not to Comment.
+* Comments are easier to write poorlly than well, and commenting can be more damaging than helpful.
+
+### 32.4 Keys to Effective Comments
+
+* Bad comments:
+    1. Incorrect comments
+    2. Accurate comments that add nothing to the code. Commenting merely repeats the code.
+
+#### Kinds of Comments
+
+* Repeat of the Code
+    * The comment restates what the code does in different words.
+* Explanation of the Code
+    * Explain complicated, tricky or sensitive pieces of code.
+    * It is usually useful when the code is confusing.
+    * If the code is so complicated that it needs to be explained it's nearly always better to improve the code than it is to add comments.
+* Marker in the Code
+    * A comment that is not intended to be left in the code, it's a note to the developer that the work isn't done yet.
+* Summary of the Code.
+    * It distills a few lines of code into one or two sentences.
+* Description of the code's Intent.
+    * Explains the purpose of a section of code.
+    * Operate at the level of the problem (business) than at the level of the solution.
+* Information that cannot possibly be expressed by the code itself.
+
+#### Commenting Efficiently
+
+* Commenting might be difficultl because the words to describe what the program is doing don't come easily. That's usually a sign that you don't understand what the program does.
+* The time you spend "commenting" is really time spent understanding the program better.
+* Use styles that don't break down or discourage modification.
+    * Any style that's too fancy is annoying to mantain.
+    * If you spend a lot of time entering and deleting dashes to make plus signs line up, you're not programming; you're wasting your time.
+* Use the pseudocode programming process to reduce commenting time.
+* Integrate commenting into your development style.
+    * Leaving commenting until the end becomes a task in its own right, which makes it seem like more work than when it's done a little bit at a time.
+    * If you have to concentrate so hard on writing code that commenting interrupts your thinking, you need to design in pseudocode first and then convert the pseudo-code to comments.
+
+#### Optimum Number of Comments.
+
+* One comment rougly every 10 statements was the desity at which clarity seemed to peak. Fewer comments made the code hard to understand. More comments reduced code understandability.
+* Rather than focusing on the number of comments, focus on whether each comment is efficient. If the comments describe why the code was written, and meet the other criteria established in this chapter, you'll have enough comments.
+
+### 32.5 Commenting Techniques
+
+#### Commenting Individual Lines
+
+* In good code, the need to comment individual lines of code is rare. It might be a sign of that line being complicated enough to need an explanation.
+* Avoid self-indulgent comments
+
+#### Endline comments and their problems
+
+* Endline comments appear at the end of lines of code.
+* Endline comments are hard to maintain. If the code on any line containing an endline comment grows, it bumps the comment further outand all the other endline comments will have to be bumped out to match.
+* Avoid endline comments on single lines.
+    * The comments might merely repeat the code.
+* Avoid endline comments for multiple lines of code.
+* Use endline comments to annotate data declaration
+* Avoid using endlines comments for maintenance notes.
+    * Comments should explain why the code works now, not why the code didn't work at some point in the past.
+
+#### Commenting Paragraphs of Code.
+
+* Most comments in a well-documented program are one-sentence comment that describe paragraphs of code.
+    * The comment doesn't repeat the code, it describes the code's intent.
+* Write comments at the level of the code's intent.
+
 ## 33. Personal Character
 
 ## 34. Themes in Software Craftsmanship
