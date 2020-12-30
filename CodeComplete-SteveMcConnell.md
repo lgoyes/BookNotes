@@ -3224,6 +3224,80 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 33. Personal Character
 
+### 33.1 Isn't Personal Character Off the Topic?
+
+* If you want to be great, you're responsible for making yourself great. It's a matter of your personal character.
+
+### 33.2 Intelligence and Humility
+
+* Great intelligence is only loosely connected to being a good programmer.
+* The way you focus your intelligence is more important than how much intelligence you have.
+* Most of programming is an attempt to compensate for the strictly limited size of our skulls. The people who are best at programming are the people who realize how small their brains are.
+
+### 33.3 Curiosity
+
+* Programmers are so busy working they often don't have time to be curious about how they might do their jobs better.
+* The more aware you are of the development process, whether from reading or from your own observations about software development, the better position you're in to understand changes and to move your group in a good direction.
+* If you can't learn at your job, find a new one.
+* One effective way to learn about programming is to experiment with programming and the development process.
+* Read about problem solving.
+    * Problem solving is the core activity in building computer software.
+* Analyze and plan before you act.
+* One especially good way to learn about programming is to study the work of the great programmers.
+* Ask to look at the code of programmers you respect. Ask to look at the code of programmers you don't. Compare their code, and compare their code to your own. What are the differences? Why are they different? Which way is better? Why?
+* Read!
+    * Documentation contains the keys to the castle, and it's worth spending time reading it. Overlooking information that's readily available is such a common oversight that a familiar acronym on newsgroups and bulletin boards is "RTFM!" which stand for "Read the Fucking Manual!".
+* Read other books and periodicals.
+* Affiliate with other professionals.
+* Make a commitmet to professional development.
+    * It's no sin to be a beginner or an intermediate. It's no sin to be a competent programmer instead of a leader. The sin is in how long you remain a beginner or intermediate after you know what you have to do to improve.
+
+### 33.4 Intellectual Honesty
+
+* Intellectual honesty commonly manifests itself in several ways:
+    * Refusing to pretend you're an expert when you're not.
+    * Readily admitting your mistakes.
+    * Trying to understand a compiler warning rather than supressing the message.
+    * Providing realistic status reports.
+    * Clearlly understanding your program -not compiling it to see if it works.
+    * Providing realistic schedule estimates and holding your ground when management asks you to adjust them.
+
+### 33.5 Communication and Cooperation
+
+* Keep the person who has to modify your code in mind. Programming is communicating with another programmer first and communicating with the computer second.
+
+### 33.6 Creativity and Discipline
+
+* Without standards and conventions on large projects, project completion itself is impossible.
+* A programming masterpiece requires just as much discipline. If you don't try to analyze requirements and design before you begin coding, much of your learning about the project will occur during coding and the result of your labors will look like a mess.
+
+### 33.7 Laziness
+
+* Laziness manifests itself in several ways.
+    * Deferring an unpleasant task.
+    * Doing an unpleasant task quickly to get it out of the way.
+    * Writing a tool to do the unpleasant task so that you never have to do the task again.
+
+### 33.8 Characteristics That Don't Matter as Much as you Think
+
+#### Persitence
+
+* If you want to identify persistence as a bad quality, you say it's "stubbornness". If you want it to be a good quality, you ocall it "tenacity".
+* Most of the time, persistence in software development is pigheadedness - it has little value. Persistence when you're stuck on a piece of new code is hardly ever a virtue. Try redesigning the class, try an alternative coding approach, or try coming back to it later. When one approach isn't working, that's a good time to try an alternative.
+* "If I don't solve the problem using this approach within the neset 30 minutes, I'll take 10 minutes to brainstorm about different approaches and try the best one for the next hour".
+
+#### Experience
+
+* The value of hands-on experience as compared to book learning is smaller in software development than in many other fields.
+* If you work for 10 years, do you get 10 years of experience or do you oget 1 year of experience 10 times? You have to reflect on your activities to get true experience. If you make learning a continuous commitment, you'll get experience. If you don't, you won't. No matter how many years you have under your belt.
+
+### 33.9 Habits
+
+* Good habits matter because most of what you do as programmer you do without consciously thinking about it.
+* You're always looking for ways to make code readable or fast, or you're not. If you have to choose between making code fast and making it readable, and you make the same choice every time, you're not really choosing - you're responding out of habit.
+* What you do becomes habit, and over time, your good and bad habits determine whether you're a good or a bad programmer.
+* When you first learn something, learn it the right way. When you first do it, you're actively thinking about it and you still have an easy choice between doing it in a good way and doing it in a bad way.
+* It's easier to replace an old habit with a new one than it is to eliminate one altogether. In programming, try to develop new habits that work. Develop the habits of writing a class in pseudocode before coding it and carefully reading the code before compiling it, for instance. You won't have to worry about losing the bad habits; they'll naturally drop by the wayside as new habits take their places.
+
 ## 34. Themes in Software Craftsmanship
 
-## 35. Where to Find More Information
