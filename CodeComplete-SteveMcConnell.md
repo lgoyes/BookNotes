@@ -6,7 +6,7 @@
 
 **Start date**: Jul 28th, 2020
 
-**End date**: Dec 27th, 2020.
+**End date**: Dec 31st, 2020.
 
 ## Index:
 
@@ -3301,3 +3301,107 @@ In defensive programming, the main idea is that if a routine is passed ba data, 
 
 ## 34. Themes in Software Craftsmanship
 
+### 34.1 Conquer Complexity
+
+* Dividing a system into subsystems at the architecture level so that your brain can focus on a smaller amount of the system at one fime.
+* Carefully defining class interfaces so that you can ignore the internal workings of the class.
+* Preserving the abstraction represented by the class interface so that your brain doesn't have to remember arbitrary details.
+* Avoid global data, because global data vastly increases the percentage of the code you need to juggle in your brain at any one time.
+* Avoid deep inheritance hierarchies because they are intellectually demanding.
+* Avoid deep nesting of loops and conditionals.
+* Avoid gotos because they introduce nonlinearity that is difficult for most people to follow.
+* Carefully defining your approach to error handling rather than using an arbitrary proliferation of different error-handling techniques.
+* Being systematic about the use of the built-int exception mechanism.
+* Not allowing classes to grow into monster classes.
+* Keep routines short.
+* Using clear, self-explanatory variable names.
+* Minimizing the number of parameters passed to a routine, or, more important, passing only the parameters needed to preserve the routine interfaces abstraction.
+* Using conventions to spare your brain the challenge of remembering arbitrary, accidental differences between different sections of code.
+* Put a complicated test into a boolean function and obstract the purpose of the test.
+* Substitute a table lookup for a complicated chain of logic.
+* Create a well-defined consistent class interface to eliminate the need to worry about implementation details of the class.
+* Conventions are the most useful when they spare you othe trouble of making and defending arbitrary decisions. They're less valuable when they impose restrictions in more meaningful areas.
+* Naming variables functionally for the what of the problem rather than the "how" of the implementation-level solution, increases the level of abstraction.
+* Using named constants rather than literals also increases the level of abstraction.
+* A primary goal lof software design and construction is conquering complexity.
+
+### 34.2 Pick your Process
+
+* On small projects, the talents of the individual programmer are the biggest influence on the quality of the software.
+* On projects with more than one programmer, the way in which people work together determines whether their abilities are added to each other or substracted from each other.
+    * One example of the way in which process matters is the consequence of not making requirements stable before you begin designing and coding.
+* You have to lay a solid foundation of the design before you can begin building on it.
+* Testing merely tells you the specific ways in which your software is defective. Testing won't make your program more usable, faster, smaller, more readable, or more extensible.
+* Premature optimization wastes time because you spend time polishing sections of code that don't need to be polished.
+    * Youo might polish sections that are small enough and fast enough as they are, you might polish code that you later throw away, and you might fail to throw away bad code because you've already spent time polishing it.
+
+### 34.3 Write Programs for People First, Computer Second.
+
+* Readable code doesn't take any longer to write than confusing code does, at least not in the long run.
+* Favoring write time convenience over read time convenience is a false economy.
+* Be sure that what you're doing is something you want to become a habit.
+
+### 34.4 Program into Your Language, Not in It.
+
+* Don't limit your programming thinking only to the concepts that are supported automatically by your language. The best programmers think of what they want to do, and then they assess how to accomplish their objectives with programming tools at their disposal.
+
+### 34.5 Focus Your Attention with the Help of Conventions
+
+* Conventions save programmers the trouble of answering the same questions again and again. On projects with many programmers, using conventions prevents the confusion that results when different programmers make the arbitrary decisions differently.
+* You can establish conventions to eliminate the use of dangerous practices, to restrict such practices to cases in which they're needed, or to compensate for their known hazards.
+* Having conventional ways of handling memory requests, error processing, input/output, and class interfaces adds a meaningful structure to your code and makes it easier to another programmer to figure out - as long as the programmer knows your convention.
+* Conventions can compensate for language weakness.
+
+### 34.6 Program in Terms of the Problem Domain
+
+* One way of working at a high level of abstraction is to work in terms of the programming problem rather than the computer-science solution.
+* Information at the level of detail should be hidden. At the highest level, you shouldn't have any idea how the data is stored.
+
+#### Separating a Program into levels of Abstraction
+
+* The part of the program that works in implementation-level terms must be isolated from the part that works in problem-domain terms.
+
+#### Low level techniques for working in the problem domain.
+
+* Use classes to implement structures that are meaningful in problem domain term.
+* Hide information about the low level data types and their implementation.
+* Use named constants to document the meanings of strings and of numeric literals.
+* Assign intermediate variables to ducment the results of intermediate calculations.
+* Use boolean functions to clarify complex boolean tests.
+
+### 34.7 Watich for Falling Rocks.
+
+* Programming is a craft somewhere between art and science.
+* Warning signs in programming alert youo to the possibility of problems: "Watch for Fallling rocks".
+* "Tricky code" is a code phrase for "bad code".
+* A good process wouldn't allow error-prone code to be developed.
+* The fact that a class contains more than seven members doesn't necessarily mean that it's poorly designed, but it's a warning that the class is complicated.
+    * More than about 10 decision points in a routine, more than three levels of logical nesting, an unusual number of variables, high coupling to other classes or low class or routine cohesion should raise a warning flag.
+* Difficulties in writting comments, naming variables and decomposing the problem into cohesive classes with clear interfaces all indicate that you need to think harder about the design before coding.
+* Paying attention to warnings about the quality of thinking directly affects the final product.
+
+### 34.8 Iterate, Repeatedlyl, Again and Again
+
+* Iterating on requirements is perhaps as important as any other aspect of the software-development process.
+* Projects fail because they commit themselves to a solution before exploring alternatives. Iterations provides a way to learn about a product before you build it.
+* A first attempt might produce a solution that works, but it's unlikely to produce the best solution. Taking several repeated and different approaches produces insight into the problem that's unlikely with a single approach.
+* Once the software is operational, you can rewrite smalls parts of it to greatly improve overall system performance.
+
+### 34.9 Thou Shat Rend Software and Religion Asunder.
+
+#### Software Oracles.
+
+* Experiment with the exciting, recent methods, but bank on the old and dependable onees.
+
+#### Eclecticism
+
+* Rigid processes are inappropriate and have little hope of success in software development.
+* You have to be willing to try several approaches, knowing that some will fail and some will succeed, but not knowing which ones will work until after you try them all.
+* If you decide on the solution method before you fully understand the problem, you act prematurely.
+* You have to treat the techniques as tools in a toolbox and use your own judgment to select the best tool for the job.
+* A dogmatic stance conflicts with the eclectic toolbox approach to software construction.
+
+#### Experimentation
+
+* You need to experiment throughout the development process.
+* Open minded experimentation and religious adherence to a predefined approach don't mix.
