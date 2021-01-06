@@ -138,3 +138,61 @@
 
 ### Break up pages into clearly defined areas
 
+* Dividing the page into clearly defined areas is important because it allows users to decide quickly which areas of the page to focus on, and which areas they can safely ignore.
+
+### Make it obvious what's clickable
+
+* As we scan a page, we're looking for a variety of visual cues that identify things as clickable (or "tapable" on touch screens) - things like shape (buttons, tabs, etc), location (in ia menu bar, for instance) and formatting (color and underlining).
+
+### Keep the noise down to a dull roar
+
+* One of the great enemies of easy-to-grasp pages is visual noise.
+* There are three kinds of noise:
+    * **Shouting:** When everything on the page is clamoring for your attention, the effect can be overwhelming. Shouting is the result of a failure to make tough decisions about which elements are really the most important and then create a visual hierarchy that guides users to them first.
+    * **Disorganization:** The designer doesn't understand the importance of using grids to align the elements on a page.
+    * **Clutter:** We've seem pages (especially home pages) that just have too much stuff. Assume that everything is visual noise and get rid of anything that's not making a real contribution.
+
+### Format Text to Support Scanning
+
+* Use plenty of headings
+    * Headings work as a table of contents for a page. They tell you what each section is about and help you dcide which parts to read, scan or skip.
+    * Make sure your heading are closer to the section they introduce than to the section they follow.
+* Keep paragraphs short.
+* Use bulleted lists.
+    * There should be a small amount of additional space between the items in the list.
+* Highlight key terms.
+    * Formatting the most important key words in bold makes them easier to find.
+    * Don't highlight too  many things, though, or the technique will lose its effectiveness.
+
+## 4. Animal, Vegetable, or mineral? Why users like mindless choices.
+
+* What really counts is not the number of clicks it takes me to get to what I want (although there are limits), but rather how hard each click is - the amount of thought required and the amount of uncertainty about whether I'm making the right choice.
+* Users don't mind a lot of clicks as long as each click is painless and they have continued confidence that they're on the right track.
+
+### Some assistance may be required
+
+* When you can't avoid giving me a difficult choice, you need to go out your way to give me as much guidance as I need - but no more.
+    * **Brief:** The smallest amount of information that will help me.
+    * **Timely:** Placed so I encounter it exactly when I need it.
+    * **Unavoidable:** Formatted in a way that ensures that I'll notice it.
+
+## 5. Omit needless words. The art of not writing for the web.
+
+* I have no trouble getting rid of half the words on most web pages without losing anything of value.
+* Getting rid of the unnecessary words has several beneficial effects:
+    * It reduces the noise level of the page
+    * It makes the useful content more prominent
+    * It makes the pages shorter, allowing users to see more of each page at a glance without scrolling..
+
+### Happy talk must die
+
+* Happy talk conveys no useful information, and focuses on saying how great we are, as opposed to explaining what makes us great.
+* Most web users don't have time for small talk; they want to get right to the point. You should eliminate as much happy talk as possible.
+
+### Instructions must die
+
+* Your objective should always be to eliminate instructions entirely by making everything self explanatory, or as close to it as possible.
+* When instructions are absolutely necessary, cut them back to the bare minimum.
+
+## 6. Street signs and Bread crumbs. Designing Navigation.
+
