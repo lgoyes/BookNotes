@@ -196,3 +196,73 @@
 
 ## 6. Street signs and Bread crumbs. Designing Navigation.
 
+* People won't use your Web site if they can't find their way around it.
+
+### Web Navigation 101
+
+* You're usually trying to find something.
+* You decide whether to ask first or browse first.
+    * On a web site there's no one standing around who can tell you where things are.
+    * The web equivalent of asking directions is searching.
+* If you choose to browse, you make your way through a hierarchy using signs to guide you.
+    * Look around on the Home Page for a list of the site's main sections and click on the one that seems right.
+* Eventually, if you can't find what you're looking for, you'll leave.
+
+### The unbearable lightness of browsing.
+
+* We teng to have very little sense of how big a website is.
+    * It's hard to know whether you've seen everything of interest to you in a site.
+    * It's hard to know when to stop looking.
+* In a web site, there's no left and right, no up and down.
+* In physical spaces, as we move around, we accumulate knowledge about the space. We develop a sense of where things are and can take shortcuts to get to them.
+    * On the web we are teleported. When we want to return, instead of relying on the physical sense of where it is, we have to remember the conceptual hierarchy and retrace our steps.
+    * Web navigation compensates for the missing sense of place by embodying the sites hierarchy, creating a sense of "there".
+
+### The overlooked purposes of navigation
+
+* Navigation help us find whatever it is we're looking for.
+* Navigation tells us where we are.
+* It tells us what's here.
+    * Navigation reveals content.
+* It tells us how to use the site.
+    * Where to begin and what your options are.
+* It gives us confidence in the people who built it.
+
+### Web navigation conventions
+
+* Conventions specify (loosely) the appearance and location of navigation elements so we know what to look for and where to look when we need them.
+    * Putting them in a standard place lets us locate them quickly.
+    * Standardizing their appearance makes it easy to distinguish them from everything else.
+* Some basic navigation conventions for the web.
+    * SiteID: Top left corner.
+    * Utilities: Top right corner.
+    * Sections in a top bar.
+    * Selected section in a different color.
+    * Footer navigation.
+    * Local navigation (things at the current level) at the left side.
+
+### Don't look now, but I think it's following us.
+
+* Persistent navigation: Set of Navigationo elements that appear on every page of a site.
+* "The navigation is over here. Some parts will change a little depending on where you are, but it will always be here, and it will always work the same way".
+* Persistent navigation should include the four elements you most need to have on hand at all times:
+    1. SiteID
+    2. Utilities
+    3. Sections.
+    4. Search.
+
+### Did I say every page?
+
+* Forms is the one exception to the "follow me everywhere" rule.
+* Where a form needs to be filled in, the persistent navigation can sometimes be an unnecessary distraction.
+* When I'm paying for my purchase on an i-commer site, you don't really want me to do anything but finish filling in the form.
+* It's usuful to have a minimal ersion of the persistent navigation.
+
+### Now I know we're not in Kansas
+
+* I need to see the siteId on every page, at the top of the page - usually in the upper left corner.
+* To get the siteID prominent across in the visual hierarchy of the page, it must frame everything else.
+* It should have a distinctive typeface and a graphic that's recognizable at any size from a button to a billboard.
+
+### The Sections
+
