@@ -266,3 +266,81 @@
 
 ### The Sections
 
+* Primary navigation: Links to the main sections of the site.
+* Secondary navigation: List of subsections in the current section.
+
+### The Utilities
+
+* Utilities are the links to important elements of the site that aren't really part of the content hierarchy.
+* Utilities list should be slightly less prominent than the sections.
+* The persistent navigation can accomodate only four or five utilities - the ones that users are likely to need most often.
+* The less frequently used leftovers belong in the footer.
+
+### Just click your heels three times and say: "There's no place like home"
+
+* Web users expect the siteId to be a button that can take you to the Home Page.
+* Home hsould be included with the main sections of the site.
+
+### A way to search
+
+* Unless your site is very small and very well organized, every page should have either a search box or a link to a search page.
+* Avoid
+    * **Fancy wording:** Users will look for the word "search", so use that word instead of "Find".
+    * **Instructions:** Is not necessary to write "Type a keyword".
+    * **Options:** If there is any possibility of confusion about the scope of search (what's being searched, the site, a book, an author, the section), by all mleans spell it our.
+
+### Secondary, tertrary, and whatever comes after tertrary.
+
+* It's acutally hard to find good examples of third-level navigations.
+* Users end up spending as much time on lower level pages as they do at the top. And, unless you've worked out top-to-bottom navigation from the beginning, it's very hard to fragg it on later and come up with something consistent.
+* It's vital to have sample pages that show the navigation for all the potential levels of the site before you start arguing about the color scheme.
+
+### Page Names, or Why I love to drive in L.A.
+
+* Every page needs a name
+    * Despite having highlighted the name in the navigation, you need to write the name of the page in the page, too.
+* The name needs to be in the right place.
+    * It should appear framing the content that's unique to the page: it's naming the page, not the navigation or the adds.
+* The name needs to be prominent.
+* The name needs to match what I clicked.
+
+### You are here.
+
+* One way to counteract the web's intent "lost in space" feeling is by showing me where I am in the scheme of things, by highlighting my current location in whatever navigation bars, list or menus appear on the pageg.
+* "You are here" indicators need to stand out; if they don't, they lose their value and just add more noise to the page.
+* Web users are generally in such a hurry that they routinely miss subtle cues.
+
+### Bread crumbs.
+
+* Breadcrumbs show you the bath from the Home page to where you are and make it easy to move back up to higher levels in the hierarchy of a site.
+* Done right, Breadcrumbs are a self-explanatory, consistent way to back up a level or go Home.
+* Put them at the top.
+* Use `>` between levels.
+* Boldface the last item.
+    * Because it's the page that you're on, naturally it's not a link.
+
+### Three reasons why I still love tabs.
+
+* Tabs divide whatever they're sticking out of into sections, and they make it easy to open a section by reaching for its tab.
+* They are self-evident.
+* They are hard to miss
+    * They create the kind of obvious-at-a-glance division you want between navigation and content.
+* Tabs are slick.
+    * Tabs can add polish and can make pages more visual interesting.
+* For tabs to work to ffull effect, the graphics have to create the visual illusion othat the active tab is in front of the other tabs.
+* The active tab needs to be a different color, and it has to physically connect with the space below it.
+
+### Try the trunk test
+
+* If the page is well designed, you should be able to answer these questions.
+    * What site is this? (siteId)
+    * What page am I on? (page name)
+    * What are the major sections of this site? (sections)
+    * What are my options at this level? (local navigation)
+    * Where am I in the scheme of things? (You are here).
+    * How can I seach?
+* Users are often dropped down in the middle of a site with no idea where we are because we've followed a link from a searching engine, a social networking site, etc.
+
+## 7. The Big Bang theory of web design.
+
+
