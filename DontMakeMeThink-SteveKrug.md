@@ -343,4 +343,58 @@
 
 ## 7. The Big Bang theory of web design.
 
+* Things that Home Page has to accomodate:
+    * Site identity and mission:
+        * What is this site?
+        * What is it for?
+        * Why should I be here and not at some other site?
+    * Site hierarchy: (Handled by the persistent navigation)
+        * What can I find here? (content)
+        * What can I do here? (features)
+    * Search box
+    * Teases: Hints of the good stuff inside
+        * Content promos: Spotlight the newest, best or most popular pieces of content.
+        * Feature promos: Invite me to explore sections of the site.
+    * Deals:
+        * Home Page has to allocate some advertisement for co-branding deals ever made.
+    * Shortcuts: The most frequently requested pieces of content may deserve their own links on the Home Page.
+    * Registration: The home page needs links for new users to register, and old users to sign in, and a way to let me know that I'm signed in.
+    * The Home Page has to meet a few abstract objectives:
+        * Show me what I'm looking for: Make it obvious how to get whatever I want.
+        * Show me where to start.
+        * Establish credibility and trust: For some visitors, the HomePage is the only chance to create a good impression.
+
+### And you have to do it Blind Folded
+
+* Some usual constraints:
+    * Everybody wants a piece of it: since it's likely to be the page seen by most visitors, things that are prominently promoted on the Home Page tend to get significantly greated traffic.
+    * Too many cooks: Everybody has an opinion about the HomePage.
+    * One size fits all: Home Page has to appeal to everyone who visits the site.
+
+### The First Casualty of War
+
+* Whenever someone hands me a Home Page design to look at, there's one thing I can almost always count on: They haven't made it clear enough what the site is.
+    * What is this site?
+    * What do they have here?
+    * What can I do here?
+    * Why should I be here and not somewhere else?
+* The first 5 seconds you spend on a new web site or web page are critical.
+    * If I get it, I'm likely to correctly interpret everything I see, which improves my chances of having a satisfying experience.
+* The first 5 seconds, initial impressions tend to be very similar to the impressions people have after they actually have a chance to spend time on the page.
+    * If their first assumptions are wrong ("This is a site for `X`"), they begin to try to force-fit that explanation on to everything they encounter. If it's wrong, they'll end up creating more miss-interpretations.
+* Top 4 plausible excuses for not spelling out the big picture on the HomePage.
+    * When you're too involved in building a website, you think that what you're offering is obvious to everybody.
+    * Most of the people will not get annoyed when they see the same explantion of something everytime they go there.
+    * It's tempting to think that people who don't "get" your site right away probably aren't your real audience, but it's not true.
+    * People must get the big picture by getting caught by the big picture itself, not by the advertisement.
+
+### But... the Home Page? Really?
+
+* Since every body are likely to enter to your site by clickiing on a link in an email, a blog, or something from a social network; every page of your site should do as much as it can do to orient them properly.
+    * Who you are.
+    * What you do.
+    * What your site has to offer.
+
+### How to get the message accross.
+
 
