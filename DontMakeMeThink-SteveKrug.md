@@ -397,4 +397,66 @@
 
 ### How to get the message accross.
 
+* If people can't guess what your site is, from the overall content of the Home Page, you want to have some place on the page where they can go to find out:
+    1. **The tagline:** The text that's visually connected to the ID, we read it as a description of the whole site.
+    2. **The welcome blurb:** Terse description of the site, displayed in a prominent block on the Home Page.
+    3. **Learn more:** A short explanatory video.
+* How to get the message accross
+    1. Use as much space as necessary
+    2. But don't use any more space than necessary.
+    3. Don't use a mission statement as a welcome blurb: nobody reads the mission.
+    4. You can't trust your own judgment about this. You need to show the Home page to people from outside your organization to tell you whether the design is getting this job done; because the "main point" is the one thing nobody inside the organization will notice is missing.
+
+### Nothing beats a good tagline!
+
+* A tagline is a pithy phrase that characterizes the whole enterprise, summing up what it is and what makes it great.
+* Good taglines are clear and informative and explain exactly what your site or your organization does.
+* Good taglines are just long enough, but not too long. Six to eight words is long enough.
+* Good taglines convey differentiation: No one else in the world could use your tagline except you.
+* Bad taglines sound generic.
+* Good taglines are personable, lively and sometimes clever.
+
+### Tagline? We don't need no stinking tagline.
+
+* Some sites can get by without a tagline.
+    * Sites that have achieved household world status.
+    * Sites that are very well known from their offline origins.
+
+### The fifth Question
+
+* I should be able to say:
+    * Here's where to start if I want to search.
+    * Here's where to start if I want to browse.
+    * Here's where to start if I want to sample their best stuff.
+* On sites where I have to register or sign in, the places where I register or sign in should be prominent.
+* The need to promote everything obscures these entry points. It can be hard to find them when the page is full of promos.
+* You have to make the entry points look like entry points. It also helps to label them clearly.
+
+### Why golden geese make such tempting targets
+
+* Anything with a prominent home page link is virtually guaranteed to get more traffic.
+* Any shared resource will inevitably be destroyed by overuse.
+* Preserving the Home Page from promotional overload requires constant vigilance since it usually happens gradually, with the slow, inexorable addition of "just one more thing".
+
+## 8. The Farmer and the Cowman should be friends: WHy most arguments about usability are a waste of time, and how to avoid them.
+
+* Religious debates: Rguments that consist largely of people expressing strongly held personal beliefs about things that can't be proven.
+
+### Everybody likes...
+
+* We really enjoy using sites with `X`, or we find `Y` to be a royal pain.
+* It's common to think that most users like the same things we like. We tend to think that most users are like us.
+* There's some people who hate the thinks we love.
+
+### Farmer vs Cowmen.
+
+* On top of the personal passion, there's the professional passion.
+* The players on a web team have very different perspectives on what constitutes good web design based on what they do for a living.
+* Designers want to build sites that look great, and developers want to build sites with interesting, original, ingenious features.
+    * Their differences in perspective often lead to conflict when it comes times to establish design priorities.
+* While the upper management and marketing is focused on attracting venture capital by making promises, those promises land on the shoulders of the artisans like the designers and developers.
+    * There are apparently arbitrary edicts from the management side.
+
+### The myth of the Average User.
+
 
