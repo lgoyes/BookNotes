@@ -459,4 +459,50 @@
 
 ### The myth of the Average User.
 
+* As soon as the clash of personal and professional opinions results in a stalemate, the conversation usually turn to finding some way to determine what most users like or don't like - to figure out what the Average User is really like.
+* The problem is, there is no average user. All users are unique and all web use is basicallly idiosyncratic.
+* There are no simple right answers for most web design questions. What works is good, integrated design that fills a need - carefully thought out, well executed, and tested.
 
+### The antidote for religious debates
+
+* Instead of asking questions like "Do most people like pull-down menus?", you should be testing: You should build some version of the thing and then watch some people carefully as they try to figure out what it is and how to use it.
+* Testing makes it hard to keep thinkg that all uses are like us.
+
+## 9. Usability testing on 10 cents a day. Keeping testing simple so you do enough of it.
+
+* People often test to decide which color drapes are best, only to learn that they forgot to put windows in the room.
+* They might discover that it doesn't make much difference whether you go with cascading menus or mega menus if nobody understands the value proposition of your site.
+
+### Focus groups are not usability tests
+
+* Marketing asks for a focus group testing.
+* Focus grouops are good for quickly getting a sampmle of users' feelings and opinions about things.
+* Usability test are about watching one person at a time try to use something, to do typical tasks so you can detect and fix the things that confuse or frustrate them.
+* In usability tests, you watch people use things. In a focus group, you listen to their feelings.
+* Focus groups are good for testing whether the idea behind your site makes sense and your value proposition is attractive.
+* The kinds of things you learn from focus groups - like whether you're building the right product - are things you should know *before* you begin designing or building anything.
+
+### Several true things about usability testing
+
+* After you've worked on a site for even a few weeks, you can't see it freshly anymore. You know too much. The only way to find out if it really works, it to watch other people try to use it.
+* Tests are very easy to do and it always produces valuable insights. Testing one user is 100 percent better that testing none.
+* Testing one user early in the project is better than testing 100 near the end.
+
+### How often should you test?
+
+* Every web development team should spend one morning a month doing usability testing.
+* Why one morning a month?
+    * It keeps it simple so you'll keep doing it.
+    * You will identify enough problems to keep you busy fixing things for the next month.
+    * It frees you from deciding when to test.
+    * It makes it more likely that people will attend.
+
+### How many users do you need?
+
+* The ideal number of participants for each round of testing is three.
+* The purpose of this kind of testing isn't to prove anything. It's a qualitative method whose purpose is to improve what you're building.
+* You don't need to find all the problems. You can find more problems in half a day that you can fix in a month.
+
+### How do you choose the participants?
+
+* It's good to do your testing with participants who are like the people who will use your site, but the truth is that recruiting people who are from your target audience isn't very important.
