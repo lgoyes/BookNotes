@@ -506,3 +506,57 @@
 ### How do you choose the participants?
 
 * It's good to do your testing with participants who are like the people who will use your site, but the truth is that recruiting people who are from your target audience isn't very important.
+* If you're starting to do testing, your site probably has a number of usability flaws that will cause real problems for almost anyone you recruit.
+* Recruit loosely and grade on a curve. Loosen up your requirements and then make allowances for the differences between your participants. When somebody has a problem, ask yourself: "Would our users have that problem or was it only a problem because they didn't know what our users know?"
+* Many of the most serious usasbility problems are things that anybody will encounter.
+* It's usually not a good idea to design a site so that only your target audience can use it.
+* We're all beginners under the skin.
+* Experts are rarely insulted by something that is clear enough for beginners.
+
+### How do you find participants?
+
+* Typical participant incentives for a one-hour session range from 50 USD to 100 USD for "Average" Web users to several hunded dollars for busy, highly paid professionals, like cardiologists for instance.
+
+### Who should do the teting?
+
+* The person who sits with the participant and leads them through the test is called the facilitator.
+* A facilitator is someone who tends to be patient, calm, empathetic, and a good listener.
+* The facilitator keeps the participant comfortable and focused on doing the task, and he encourages the participant to think out loud as much as possible.
+
+### Who should observe?
+
+* As many people as possible.
+* During the break after each test session, observers need to write down the three most serious usability problems they noticed so they can share them in the debriefing.
+* It's important to identify the most serious problems so they get fixed first.
+
+### What do you test, and when do you test it?
+
+* It's important to start testing as early as possible and to keep testing through the entire development process.
+* Even before you begin designing your site, for instance, it's a good idea to do a test of competitive sites.
+
+### How do you choose the tasks to test?
+
+* For each round of testing you need to come up with the things the participants will try to do.
+* Make a list of the tasks people need to be able to do with whatever you're testing.
+* Choose enough tasks to fill the available time, keeping in mind that some participants will finish them faster than you expect.
+* Word each task carefully, so the participants will understand exactly what you want them to do.
+* You can get more revealing results if you allow the participant to choose some of the details of the task.
+
+### What happens during the test?
+
+* (4 minutes) Explain how the test works.
+* (2 minutes) Ask the participant a few questions about themselves.
+* (3 minutes) Open the Home Page and ask the participant to look around and tell you what they make of it.
+* (35 minutes) Watch the participant try to perform a series of tasks. Make sure the participant stays focues on the tasks and keeps thinking aloud. Don't do or say anything to influence them.
+* (5 minutes) Ask the participant questions about anything that happened during the test.
+* (5 minutes) Thank for their help, pay them, and show them to the door.
+
+### Typical Problems
+
+* Users are unclear on the concept: They look at the site or a page and either they don't know what to make of it, or they think they do but they're wrong.
+* You failed to anticipate what they'd be looking for or the words you're using to describe something aren't the words they'd use.
+* Sometimes what they're looking for is right there on the page, but they're just not seeing it.
+
+### The debriefing: Deciding what to fix
+
+
