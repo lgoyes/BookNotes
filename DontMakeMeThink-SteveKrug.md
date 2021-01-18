@@ -559,4 +559,48 @@
 
 ### The debriefing: Deciding what to fix
 
+* After each round of tests, you should make time as soon as possible for the team to share their observations and decide which problems to fix and what you're going to do to fix them.
+* Focus ruthlessly on fixing the most serious problems first.
+* Ask everyone what the three most important problems were, while having the entire team together. Keep track of the most voted problems.
+    * THe problems have to be *observed*: things that happend during the session.
+* Choose the ten most serious problems.
+* Rate/Sort them. Which is the worst?
+* Write doen a roughh idea of how you're going to fix each problem in the next month, who's going to do it, and any resources it will require.
+    * You don't have to fix each problem completly. You just have to do something.
+* How to decide what to fix?
+    * Keep a list of things that aren't serious problems but are very easy to fix. Things that one person can fix in less than an hour.
+    * Rather than adding yet another distraction, very often the solution is to take something away that is obscuring the meaning.
+    * Participant will often request some new features. Be suspicious of the requests for new features. Participants are designers. If they come up with a great idea, you'll think "why didn't we think of that?!".
+    * As long as (a) everyone who has the problem notices that they're no longer headed in the right direction quickly and (b) they manage to recover without help and (c) it doesn't seem to faze them, you can ignore the problem.
+        * If the second guess is right, that's good enough.
 
+### Alternative life styles.
+
+* Remote testing: Participants can do the teste from home.
+* Unmoderated remote testing: Services like *UserTesting.com* provide people who will record themselves doing a usability test.
+
+## 10. Mobile: It's not just a city in Alabama anymore
+
+### What's the difference
+
+* People are moving faster and reading even less on small screens.
+
+### It's all about tradeoffs
+
+* Design is about constraints (things you have to do and things you can't do) and trade offs (the less-than-ideal choices that you make to live within the constraints).
+* The best you can do is please some people, some of the time.
+* Having something pinned down can have a focuing effect where a blank canvas with it's unlimited options can have a paralyzing effect.
+* Where there are constraints, there are tradeoffs to be made.
+* Many usability problems are the result of a poor decision about a tradeoff.
+
+### The tyranny of the itty-bitty living space.
+
+* Create a mobile site that is a subset of the fullsite. Which parts do you leave out?
+* Mobile first: You design the mobile version first, based on the features and content that are most important to your users. Then, you add on more features and content to create the desktop/full version.
+    * Here, you work hard to determine what was really essential.
+* It's wrong to assume that the mobile version is used "on the move". People are just as likely to be using their mobile devices while sitting on the couch at home, and they want (and expect) to be able to do everything.
+* If you're going to include everything, you have to pay attention to prioritizing.
+* Things I want to use in a hurry, or frequently, should be close at hand. Everything else can be a few taps away, but there should be an obvious path to get to them.
+* On mobile is OK that people will be tapping more, as long as the user continues to feel confident that what they want is further doen the screen or behind that link or button they'll keep going.
+
+### Breeding Chameleons.
