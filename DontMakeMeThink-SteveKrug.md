@@ -604,3 +604,58 @@
 * On mobile is OK that people will be tapping more, as long as the user continues to feel confident that what they want is further doen the screen or behind that link or button they'll keep going.
 
 ### Breeding Chameleons.
+
+* About scalable design (a/k/a responsive design):
+    * It tends to be a lot of work.
+    * It's very hard to do it well.
+* If you have a website, you have to make it usable on any size screen.
+* Creating separate versions of anything is a surefire path to madness. It doubles the effort (at least) and guarantees that either things won't be updated as frequently, or the versions will be out of sync.
+* Allowing zooming
+* Don't leave the user at the home page (asking to download the mobile app), after she tapped on a link in an email or social media site.
+* If there's a full website version, with some features and information that aren't available in the mobile version, you have to provide a link to the full web site.
+
+### Don't hide your affordances under a bushel
+
+* A three-dimensional style of some buttons makes it clear they're meant to be clicked.
+* A rectangular box with a border around it suggests that you can click in it and type something.
+* For affordances to work, they need to be noticeable.
+
+### No cursor = no hover = no clue
+
+* Many useful interface features that depend on hover are no longer available, like tool tips, buttons that change shape or color to indicate that they're clickable, and menus that drop down to reveal their content without forcing you to make a choice.
+* You need to be aware that these elements don't exist for mobile users and try to find ways to replace them.
+
+### Flat design: Friend or foe?
+
+* Flat design takes the potentially distracting decoration away, as well as the useful information that the more textured elements were conveying.
+* The distinctions required to draw attention to an affordance often need to be multi-dimensional.
+
+### You actually can be too rich or too thin.
+
+* We're all used to very fast connections nowadays, but we have to remember that mobile download speeds are unreliable. If people are at home or sitting at starbucks, download speeds are probably good, but once they leave the comfort of WiFi and revert to 4G or 3G or worse, performance can vary.
+* Be careful that your responsive design solutions aren't loading up pages with huge amounts of code and images that are larger than necessary for the user's screen.
+
+### Mobile apps, usability attributes of
+
+* A person of average ability and experience can figure out how to use the thing (i.e. it's learnable) to accomplish something (effective) without it being more trouble that it's worth (efficient).
+
+#### Delightful is the new black
+
+* "Delight" is one of those "I'll know it when I feel it" kind of things.
+* A delight product is "fun", "surprising", "impressive", "captivating", "clever" and "ever magical".
+* Delightful apps are the mix of an idea about something people would really enjoy being able to do, with the idea about how to use some new technology to accomplish it.
+
+#### Apps need to be learnable
+
+* If an app has more than a few features, they may not be very easy to learn.
+* With most apps, ifyou get any instructions at all, it's usally one or two screens when you first launch the app, that give a few essential hints about how the thing works.
+* If you build something that has a lot of functionalities - and particularly any functions that don't follow familiar conventions or interface guidelines - it's often necessary more than two screens of help.
+
+#### Apps need to be memorable, too
+
+* Once you've figured out how to use an app, will you remember how to use it the next time you try, or will you have to start over again from scratch?
+* The best way to make things easy to relearn, is to make them increadibly easy and clear to learn in the first place.
+* Memorability can be a big factor in whether people adopt an app for regular use. Usually, when you purchase one app, you'll be willing to spend some time right away, figuring out how to use it; but if you have to invest the same effort the next time, it's unlikely to feel like a satisfying experience. Unless you're very impressed by what it does, there's a good chance you'll abandon it - which is the fate of most apps.
+
+### Usability testing on mobile devices
+
