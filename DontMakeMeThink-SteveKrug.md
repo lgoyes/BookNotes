@@ -659,3 +659,53 @@
 
 ### Usability testing on mobile devices
 
+* Almost everything that's different when you're doing mobile testing isn't about the process; it's about logistics.
+
+#### The logistics of mobile testing
+
+* Some issues you have to deal with:
+    * Do you need to let the participants use their own devices?
+    * Do they need to hold the device naturally, or can it be sitting on a table or propped up on a stand?
+    * What do the observer need to need (e.g. just the screen, or both the screen and the participants fingers so they can see their gestures).
+    * How do you create a recording.
+
+#### My recommendations
+
+* Use a camera pointed at the screen instead of mirroring
+    * Mirroring isn't a good way to watch tests done on touch screen devices because you can't see the gestures and taps the participant is making.
+* Attach the camera to the device so the user can hold it naturally
+    * If you attach the camera to the device, the participant can move it freely and the screen will stay in view and in focus.
+* Don't bother with a camera pointed at the participant.
+
+## 11. Usability as common courtesy
+
+* There's another important component to usability, in addition to clarity: doing the right thing - being considerate of the user.
+
+### The reservoir of goodwill
+
+* The reservoir is limited, and if you treat users badly enough and exhaust it there's a good chance that they'll leave. But leaving is not the only negative outcome; they may not be eager to use your site in the future, or they may think less of your organization.
+* The reservoir is idiosyncratic
+    * People are different. Some are more patient than others. You can't count on a very large reserve.
+* The reservoir is situational
+    * If I'm in a huge hurry, my expendable goodwill may already be low when I enter your site.
+* You can refill the reservoir
+    * Even if you've made mistakes, you can replenish my goodwill by doing things that make me feel like you're looking out for my best interests.
+* Sometimes, a singlel mistake can empty the reservoir.
+
+### Things that diminish goodwill
+
+* Hiding information that I want
+    * The most common things to hide are customer support phone numbers, shipping rates, and prices.
+* Punishing me for not doing things your way.
+    * I should never have to think about formatting data (e.g. whether or not to put dashed in my birthdate).
+* Asking me for information you odon't really need.
+    * Most users are very skeptical of requests for personal information and find it annoying if a site asks for more than what's needed for the task at hand.
+* Shucking and jiving me.
+    * Disingenuous attempts to convice me that you care about can be particularly annoying.
+* Putting sizzle in my way
+    * Putting "feel-good" marketing photos makes it clear that you don't understand that I'm in a hurry.
+* Your site looks amateurish.
+* Sometimes you'll choose to have your site do some of these user unfriendly things deliberately (like using pop-ups for advertisements). Just be sure to do it in an informed way, rather than inadvertently.
+
+### Things that increase goodwill
+
