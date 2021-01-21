@@ -6,7 +6,7 @@
 
 **Start date**: Jan 1st, 2021
 
-**End date**: Feb 1st, 2021.
+**End date**: Jan 21st, 2021.
 
 # Summary
 
@@ -797,3 +797,38 @@
     * Information architecture
 * UCD focused on designing the right product and making sure that it was usable. UX sees its role as taking the users needs into account at every stage of the product life cycle, from the time they see an add on TV, through purchasing it.
 * Ask questions about how they're learning about users, how they're testing whether people can use what they're building and how they get changes to happen. If they do know, learn from them. If they don't, they need your help.
+
+### The usual advice
+
+* Here are two suggestions for convicing management to support usability work:
+    1. Gather and analyze data to prove that a usability change you've made resulted in cost savings or additional revenue
+        * Cost-justifying usability: an update for the internet age.
+    2. Instead of talking about the benefits for users, describe your efforts in a way that makes it clear that they are part of the solution of the current vexing corporate problems.
+
+### If I were you
+
+1. Get your boss (and her boss) to watch a usability test
+    * It's important to get them to come in person.
+    * Live games create memorable experiences; the evening news not so much.
+    * Include clips of highlights from tests in your presentations
+2. Do the first usability test on your own time
+    * Don't ask for permission; just keep it incredibly simple and informal, and find volunteers for participants so it doesn't cost anything.
+    * If you can measure the improvement, do so.
+3. Do a test of the competition
+4. Empathize with management
+    * Understand the position they find themselves in, having real, emotioinal empathy for them.
+5. Your primary role should be to share what you know, not to tell people how things should be done.
+
+* Some books:
+    1. It's our research: Getting stakeholders buy-in for User Experience research projects by Tomer Sharon
+    2. The user experience team of one: A research and design survival guide, by Leah Buley.
+
+### A few definite answers
+
+* Don't use small, low-contrast type: it can't be read.
+* Don't put labels inside form fields
+    * The label should disappear when youo ostart typing and reappear if empty.
+    * The label can not be confused with answers.
+    * There is no way you'll end up submitting the labels.
+* Preserve the distinction obetween visited and unvisited text link.
+* Headings should be closer to the text that follows them than the text that precedes them.
