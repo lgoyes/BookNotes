@@ -709,3 +709,91 @@
 
 ### Things that increase goodwill
 
+* Know the main things that people want to do on your site and make them obvious and easy.
+    * WHat are the three main things your users want to do? Make those things a priority
+* Tell me what I want to know.
+    * Be upfront about things like shipping costs, hotel daily parking fees, service outages.
+* Save me steps wherever you can
+    * Instead of giving me the shipping company's tracking number for my purchase, put a link in my email receipt that opens the site and submits the tracking number when I click it.
+* Put effort into it.
+    * Generate informatin I need to solve my problems
+    * Make sure the information is accurate and useful.
+    * Persent the information clearly.
+    * Organize the information so I can find it.
+* Know what questions I'm likely to have, and answer them (frequently asked questions).
+* Provide me with creature comforts like printer - friendly pages.
+* Where the potential for errors is unavoidable, always provide a graceful obvious way for me to recover.
+* If you can't do what they want, at least let them know that you know you're inconveniencing them.
+
+## 12. Accessibility and you
+
+* Unless you're making the decision that people with disabilities aren't part of your audience, you really can't say your site is usable unless it's accessible.
+
+### What developers and designers hear.
+
+* What makes people skeptical about accessiblity
+    * X% of the population has a disability.
+    * Making things more accessible benefits everyone.
+* Skepticism obscures the one reason that is important.
+    * It's profoundly the right thing to do.
+
+### What designers and developers fear
+
+* More work.
+* Compromised design
+    * Designers are worried that they're going to be forced to design sites that are less appealing - and less useful - for the majority of their audience.
+
+### The truth is: it can be complicated
+
+* When they run their site through a validator, it turns out to be more like a grammar checker than a spell checker. It turns up a serires of vague warnings which may not be problems at all.
+
+### The four things you can do right now
+
+#### 1. Fix the usability problems that confuse everyone
+
+* Making sites more usable for "the rest of us" is one of the most effective ways to make them more effective for people with disabilities.
+* The single best thing you can do to improve your site's accessibility is to test it often, and continually smooth out the parts that confuse everyone.
+
+#### 2. Read an article
+
+* Read the article: "Guidelines for Accessible and Usable web Sites: observing users who work with screen readers"
+* Screen-reader users scan with their ears.
+    * listening to just enough to decide whether to listen further.
+    * Many set the voice to speak at an amazingly rapid rate.
+* Where a signted user might find a keyword by scanning over the entire page, a blind user may not hear that keyword if it is not at the beginning of a link or a line of text.
+
+#### 3. Read a book
+
+1. A web for everyone: Designing accessible user experience by sarah horton and whitney quesenbery.
+2. Web accessibility: web standards and regulatory compliance by Jim thatcher.
+
+#### 4. Go for the low-hanging fruit
+
+* Add an empty alt attribute for images that screen readers should ignore, and add helpful, descriptive text for the rest.
+* The standard HTML heading elements convey useful information  about the logical organization of your content to people using screen readers.
+    * Use h1 for the page title or main content heading
+    * H2 for major sections
+    * H3 for subheadings
+* Make your forms work with screen readers.
+    * Use the HTML label element to associate the fields with their text labels.
+* Put a "skip to main content" link at the beginning of each page.
+* Make all content accessible by keywords: not everyone can use a mouse.
+* Create significant contrast between your text and background.
+* Use an accessible template.
+
+## 13. Guide for the perplexed
+
+### You've got to know the territory
+
+* User centered design (UCD)
+    * Usability: Making sure things are designed in a way that enable people to use them successfully.
+    * Information architecture: Making sure the content is organized in a way that allows people to find what they need.
+* User experience design (UXD or UX):
+    * Interaction design
+    * Interface design
+    * Visual design
+    * Content management
+    * Usability
+    * Information architecture
+* UCD focused on designing the right product and making sure that it was usable. UX sees its role as taking the users needs into account at every stage of the product life cycle, from the time they see an add on TV, through purchasing it.
+* Ask questions about how they're learning about users, how they're testing whether people can use what they're building and how they get changes to happen. If they do know, learn from them. If they don't, they need your help.
