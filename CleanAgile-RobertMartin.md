@@ -88,5 +88,30 @@
 
 * The size of an iteration is typicallly one or two weeks. I prefer one week because too much can go wrong in two weeks.
 
+### Iteration Zero
+
+* The first iteration is used to generate a short list of featuures called stories.
+* Iteration zero is also used to set up the development environment, estimate the stories and lay out the initial plan.
+* The plan is simply a tentative allocation of stories to the first few iterations.
+* Iteration zero is used by developers and architecturs to conjure up an initial tentative design for the system based on the tentative list of stories.
+* Every iteration in the project will have some analysis and design and implementation in it.
+
+### Agile Produces Data
+
+* Iteration one begins with an estimate of how many stories will be completed. The odds that the team will finish all the stories that they planned to finish is zero. That's because software is not a reliably estimable process.
+* There is no way to know how complicated a task is going to be until the task if finished.
+* At the end of the iteration, some fraction of the stories will be done. This gives us our first measurement of how much can be completed in an iteration. This is real data.
+* We can use real data to adjust our original plan and calculate a new date for the project.
+
+### Hope versus management
+
+* Agile is not about goinog fast. Agile is about knowing, as early as possible, just how screwed we are.
+* Agile produces data. Managers use that data to drive the project to the best possible outcome.
+* The best possible outcome is not often the originally desired outcome.
+
+### Managing the Iron Cross
+
+* Given the data produced by the project, it's time for the managers of that project to determine just how good, how fast, how cheap, and how done the project should be.
+* Managers do this by making chanes to the scope, the schedule, the staff and the quality.
 
 
