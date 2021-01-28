@@ -114,4 +114,58 @@
 * Given the data produced by the project, it's time for the managers of that project to determine just how good, how fast, how cheap, and how done the project should be.
 * Managers do this by making chanes to the scope, the schedule, the staff and the quality.
 
+#### Changing the Schedule
+
+* The date was chosen for good business reasons. A delay often means that the business is going to take a significant hit of some kind.
+* There are times when the business simply choosed the date for convenience. Remember, it's still early.
+
+#### Adding staff
+
+* Adding manpower to a late project makes it later.
+* The teams is working along at a certain productivity. The new staff is added. Productivity plummets for a few weeks as the new people suck the life out of the old people. Then, hopefully, the new people start to get smart enough to actually contribute.
+* Another factor is that adding staff is expensive.
+
+#### Decreasing Quality
+
+* Producing crap does not make you go faster, it makes you go slower. There is no such thing as quick and dirty.
+* If we want to shorten our schedule, the only option is to increase quality.
+
+#### Changing scope
+
+* Some of the planned features don't really need to be done by *The Date*. Let's ask the stakeholders.
+* Stakeholders will want all the features. Although they have the moral high ground in this argument, programmers have the data. And in any rational organization, the data will win.
+* If the organization is rational, then the stakeholders eventually will scrutinize the plan, and identify the features that they don't absolutely need.
+* So the plan is adjusted and some features are delayed.
+
+#### Business value order
+
+* Stake-holders will find a feature that we have already implemented, but was not realy needed.
+* At the beginning of each iteration we are going to ask the stake holders which features to implement.
+
+#### Here endeth the Overview
+
+* Agile is a process wherein a project in subdivided into iterations. The output of each iteration is measured and used to continuosly evaluate the scope schedule. Features are implemented in the order of business value so that most valuable things are impmlemented first. Quality is kept as high as possible. The schedule is primarily managed by manipulating scope.
+
+### Circle of Life
+
+* All other agile processes are a subset of or a variation of XP
+* The circle of life is subdivided into three rings:
+    1. The software development team communicates with the business, and how they manage the project.
+        * **The planning game:** Break doen a project into features, stories and tasks. Guidance for estimation, prioritization and scheduling of those features, stories and tasks.
+        * **Small releases:** Work in bite-size chunks.
+        * **Acceptance tests:** Provide the definition of "done" for features.
+        * **Whole Team:** A software development team is composed of many different functions
+    2. Practices by which the development team manages and communicates with itself.
+        * **Sustainable pace**
+        * **Collective ownership:** Do not divide the project into knowledge silos.
+        * **Continuous integration:** Close the feedback loop frequently enough.
+        * **Metaphor:** Creates the vocabulary to communicate about the system.
+    3. Practices that constrain the programmers to ensure the highest technical quality
+        * **Paring:** Sharing knowledge.
+        * **Simple Design:** Prevent wasted effort.
+        * **Refatoring:** Continual improvement and refinement.
+        * **Test Driven Development:**
+
+## 2. The reasons for agile
+
 
