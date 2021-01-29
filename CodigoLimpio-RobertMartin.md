@@ -104,3 +104,106 @@
 
 * Si todos entregamos el código más limpio de lo que lo hemos recibido, no se corremperá. No hace falta que la limpieza sea masiva
     * Cambie el nombre de una variable, divida una función demasiada extensa, elimine elementos duplicados, simplifique un condicional.
+
+## 2. Nombres con Sentido
+
+### Introducción
+
+* En el software, los nombres son omnipresentes. Aparecen en variables, funciones, argumentos, clases y paquetes. Usamos nombres constantemente. Por ello, debemos hacerlo bien.
+
+### Usar nombres que revelen las intenciones.
+
+* Los nombres deben revelar nuestras intenciones.
+* Elegir nombres correctos lleva tiempo, pero también ahorra trabajo.
+* Preste atención a los nombres y cámbielos cuando encuentre otros mejores.
+* Debe indicar por qué existe, qué hace y cómo se usa. 
+* El problema no es la simplicidad del código sino su carácter implícito: el grado en que el contexto no es explícito en el propio código.
+
+### Evitar la desinformación
+
+* Evite dejar pistas falsas que dificulten el significado del código.
+* No haga referencia a un grupo de cuentas como `acountList` a menos que realmente sea una lista.
+* Evite usar nombres con variaciones mínimas.
+* El uso de ortografía incoherente es desinformación.
+    * Es muy útil si los nombres de los elementos similares se ordenan alfabéticamente y si las diferencias son muy evidentes.
+
+### Realizar distinciones con sentido
+
+* Si los nombres tienen que se distintos, también deben tener un significado diferente.
+* Los nombres de series numéricas (a1, a2, ..., aN) no ofrecen información.
+* Las palabras adicionales son redundantes y no aportan información. ¿Cuál es la diferencia entre `ProductInfo` y `ProductData`? ¿Es mejor `NameString` que `Name`? La palabra `table` no debe incluirse en el nombre de una tabla.
+
+### Usar nombres que se pueden pronunciar
+
+* Cree nombres pronunciables. Si no lo puede pronunciar, no podrá explicarlo sin parecer tonto.
+
+### Usar nombres que se pueden buscar
+
+* Si una variable o constante se usa en varios puntos del código, debe asignarle un nombre que se pueda buscar.
+* Se puede buscar `MAX_CLASSES_PER_STUDENT` pero no el número `7`.
+* Es mucho más fácil buscar `WORK_DAYS_PER_WEEK`, que todas las instancias de `5`.
+
+### Evitar codificaiones
+
+* Los nombres codificados resultan impronunciables y suelen escribirse de forma incorrecta.
+
+### Notación húngara.
+
+* El compilador no comprobaba los tipos, de modo que los programadores tenían que recordarlos.
+* El tipado es fuerte ey los entornos de edición han avanzado tanto que detectan un error de tipo antes de ejecutar la compilación.
+* La notación húngara hace más complicado cambiar el nombre o tipo de una variable o clase. Dificultan la legibilidad del código y pueden hacer que el sistema de codificaci´øn confunda al lector.
+
+### Prefijos de miembros
+
+* Tampoco es necesario añadir `m_` como prefijo a los nombres de variables. Use un entorno de edición que resalte o coloree los miembros para distinguirlos.
+
+### Interfaces e implementaciones
+
+* ¿Qué nombres asigno a la interfaz y a la implementación? ¿`IShapeFactory` y `ShapeFactory`? Prefiero que las interfaces no tengan adornos. Es mejor usar `ShapeFactoryImpl`.
+
+### Evitar asignaciones mentales
+
+* Los lectores no tienen que traducir mentalmente sus nombres en otros que ya conocen. Ete problema suele aparecer al elegir entre no usar términos de dominio de problema o de soluciones.
+* Si puede recordar que `r` es la versión en minúscula de una URL sin el host y el sistema, debe ser muy inteligente.
+* Una diferencia entre un programador inteligente y uno profesional, es que este último sabe que la claridad es lo que importa.
+
+### Nombre de clases
+
+* Las clases y objetos deben tener nombres de sustantivos
+
+### Nombres de métodos
+
+* Los métodos deben tener nombres de verbos
+
+### No se exceda con el atractivo
+
+* Opte por la claridad antes que por el entretenimiento
+* No use nombres divertidos. No recurra a bromas.
+
+### Una palabra por concepto
+
+* resulta confuso usar `fetch`, `retrieve` y `get` como métodos equivalentes de clases distintas. Elija una palabra por cada concepto abstracto y mantengala.
+
+### No haga juegos de palabras
+
+* Evite usar la misma palabra con dos fines distintos.
+* Imagine que hay varias clases en las que `add` crea un nuevo valor sumando o concatenando dos valores existentes. Imagine ahora que crea una clase nueeva con un método que agrega un parámetro a una colección. Parece coherente usar `add`, pero en este caso hay una diferencia semántica, de modo que se debe usar nombres como `insert` o `append`.
+
+### Usar nombres de dominios de soluciones
+
+* El nombre `AccountVisitor` tiene mucho significado para un programador familiarizado con el patrón VISITOR. ¿Qué programador no sable lo que es `JobQueue`? Hay cientos de cosas técnicas que los programadores tienen que hacer y elegir nombres técnicos para dichas cosas suele ser lo más adecuado.
+
+### Usar nombres de dominios de problemas
+
+* Si usa nombres sde dominio de problemas, al menos el programador que mantenga el código podrá preguntar su significado a un experto en el dominio.
+
+### Anadir contexto con sentido
+
+* Algunos nombres tienen significado por sí mismos, pero la mayoría no. Para ello, debe incluirlos en un contexto, en clases y funciones con nombres adecuados.
+* Puede añadir contexto por medio de prefijos, permitiendo al lector entender que las variables forman parte de una estructura mayor. Evidentemente, es mejor crear una clase.
+
+### No añadir contextos innecesarios
+
+* En la aplicación `Gas Station Delux`, no es aconsejable usar el prefijo `GSD` en todas las clases.
+* Los nombres breves suelen ser más adecuados que los extensos, siempre que sean claros. No añada más contexto del necesario a un nombre.
+
