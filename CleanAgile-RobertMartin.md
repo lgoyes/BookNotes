@@ -168,4 +168,49 @@
 
 ## 2. The reasons for agile
 
+### Professionalism
+
+* High commitment to discipline over ceremony.
+* To do Agile right, you had to work in pairs, write tests first, refactor, and commit to simple designs. You had to work in short cycles, producing executable output in each.
+* We in this industry need to increase our professionalism. We fail too often. We ship too much crap. We accept to many defects. We make terrible trade-offs.
+
+#### Software is everything
+
+* Nowadays, in our society, virtually nothing of significance can be done without interacting with a software system.
+
+#### We rule the world
+
+* Our society has become utterly and wholly dependent on software.
+* And who writes all that software? We, programmers, rule the world.
+* How much of that software do you think is properly tested? How many programmers can say that they have a test suite that proves, with a high degree of certainty, that the sofware they have written works?
+* Our actions are putting lives and fortunes at stake.
+
+#### The disaster
+
+* When some poor programmer is going to do some dumb thing and kill ten thousand people in a single moment of carelessness, the politicians of the world will rise up in righteous indignation (as they should) and point their fingers squarely at us.
+
+### Reasonable Expectations
+
+* The behaviours below are what any good chief technology officer (CTO) should expect from their staff.
+
+#### We will not ship shit!
+
+* Any system that requires its users to think like programmers in order to enter data in the expected format is crap.
+* Managers, customers, and users expect that we will provide systems for them that are high in quality and low in defect.
+* Note that Agile's emphasis on Testing, Refactoring, Simple Design and Customer feedback is the obvious remedy for shipping bad code.
+
+#### Continuous Techincal Readiness
+
+* The last thing that customers and managers expect is that we, programmers, will create artificial delays to shipping the system.
+* As long as there are features that are half done, or half tested, or half documented, the system cannot be deployed
+* The system should be technically deployable at the end of every iteratioin. The work completed in the interation includes all the coding, all the testing, all the documentation, and all the stabilization for the stories implemented in that iteration.
+* If the system is tecnically ready to deploy at the end of every iteration then deployment is a business decision, not a technical decision.
+
+#### Stable Productivity
+
+* Customers and managers don't expect software teams to slow down with time. Rather, they expect that a feature similar to one that took two weeks at the start of the project will take two weeks a year later. They expect productivity to be stable over time.
+* Developers should expect no less. By continuosly keeping the architecture, design, and code as clean as possible, they can keep their productivity high, and prevent the otherwise inevitable spiral into low productivity and redesign.
+
+#### Inexpecsive Adaptability
+
 
