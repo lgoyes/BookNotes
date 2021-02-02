@@ -211,6 +211,80 @@
 * Customers and managers don't expect software teams to slow down with time. Rather, they expect that a feature similar to one that took two weeks at the start of the project will take two weeks a year later. They expect productivity to be stable over time.
 * Developers should expect no less. By continuosly keeping the architecture, design, and code as clean as possible, they can keep their productivity high, and prevent the otherwise inevitable spiral into low productivity and redesign.
 
-#### Inexpecsive Adaptability
+#### Inexpensive Adaptability
 
+* If a change to the requirements breaks your architecture, then your architecture sucks.
+* Our jobs depend on our ability to accept and engineer changing requirements and to make those changes relatively inexpensive.
+* Customer, users and managers expect that software systems will be easy to change, and that the cost of such changes will be small and proportionate.
+
+#### Continuous improvement
+
+* The design and architecture of a software system should get better with time.
+* THe fact that we developers expect our systems to get messier and fragile is the most irresponsible attitude possible.
+* Users, customers and managers expect that early problems will fade away and that the system will get better and better with time.
+
+#### Fearless competence
+
+* Imagine you are looking at some old code on your screen. Your first thought is: "This is ugly code, I should clean it". Your next thought is: "I'm not touching it!" Because you know if you touch it, you will break it.
+* You fear the code, and this fear forces you to behave incompetently.
+* Customers, users and managers expect fearless competency. They expect that if you see something wrong or dirty, you will fix and clean it.
+* If you follow the agile practice of TDD with discipline and determination, you will be fearlessly competent.
+
+#### QA Should find nothing
+
+* QA should fin no faults with the system. When QA runs their tests, they should come back saying that everything works as required.
+* QA should wonder why they are stuck at the back end of the process checking systems that always work.
+
+#### Test automation
+
+* The QA manager is holding this document (the table of contents for a manual test plan) out to me, asking me which half of these tests he shouldn't run. - I told him that no matter how he decided to cut the tests he wouldn't know if half of his system was working.
+* Manual tests are expensive and so are always a target for reduction.
+* Every test that can feasibly be automated must be automated. Manual testing should be limited to those things that cannot be automatically validated and to the creative discipline of "Exploratory Testing".
+
+#### We cover for each other
+
+* If Bob gets sick, Jill steps in to finish Bob's tasks. This means that Jill had better know what Bob was working on oand where Bob keeps all the source files, and scripts, etc.
+* I expect that the members of each software team will cover for each other. I expect that each individual member of a software team makes sure that there is someone who can cover him if he goes down.
+
+#### Hones estimates
+
+* You may not know how long it will take to build the "Login" page, but you might be able to tell me that the "Change Password" page will take about half the time as "Login". Relative estimates like that are immensely valuable.
+* Or, instead of estimating in relative terms, you may be able to give me a range of probabilities.
+
+#### You need to say "No"
+
+* I expect you to say "no" when no such solution can be found.
+
+#### Continuous aggressive learning
+
+* I expect you to keep learning. Our industry changes quickly. We must be able to change with it. So learn, learn, learn!
+* You must find ways to continue learning without the company's help.
+
+##### Mentoring
+
+* I expect you to teach.
+
+### The Bill of Rights
+
+* THe goal of Agile was to heal the divide between business and development
+
+#### Customer Bill of Rights
+
+* You have the right to be informed of schedule, and estimate changes in time, to choose how to reduce the scope to meet a required date. You can cancel at any time and be left with a useful working system reflecting investment to date.
+
+#### Developer Bill of Right
+
+* You have the right to know what is needed with clear declarations of priority.
+* You have the right to make and update your own estimates.
+
+#### Customers
+
+* BUsiness needs a plan. Of couse, that plan must include schedule and cost. And, of course, that plan should be as accurate and precise as practical.
+* We, developers, have to make sure that our plan, estimates, and schedules properly describe the level of our uncertainty and define the means by which that uncertainty can be mitigated.
+* The business has the right to expect that the developers will work on the most important things at any given time, and that each iteration will provide them the maximum possible usable business value.
+* The business has the right to see incremental progress. THey have the right to specify the criteria for accepting that progress.
+* The customer has the right to change the requirements
+* The customers do not have the right to demand conformance to the schedule. Their right is limited to managing the schedule by changing the scope.
+
+#### Developers
 
