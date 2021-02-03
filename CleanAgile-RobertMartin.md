@@ -288,3 +288,46 @@
 
 #### Developers
 
+* Developers have the right to know what is needed with clear declarations of priority
+    * This right only applies within the context of an interation. Outside of an iteration, requirements and priorities qill shift and change. But within an iteration, the developers have the right to consider them immutable.
+* The business has no right to tell developers to cut corners or do low-quality work. The business has no right to force developers to run their professional reputations or violate their professional ethics.
+* Developers have the right to ask for an receive help from peers, managers and customers.
+* Estimates are intelligent guesses. They are guesses that get better with time. Estimates are never commitments.
+* Professionals accept work, they are not assigned work. A professional developer has every right to say "no" to a particular task or job.
+    * The accepting developer becomes responsible for the quality and execution of the task for continually updating the estimate so that the schedule can be managed, for communicating status to the whole team, and for asking for help when help is needed.
+
+## 3. BUsiness Practices
+
+### Planning
+
+* How do you estimate a project? You break it down, recursively, into smaller pieces, and then estimate those pieces.
+* An estimate is a guess, we want some idea of how long the project will take without actually building the project. We want the cost of estimation to be low.
+* Estimates should be as accurate as possible, but only as precise as necessary to keep the cost of the estimation low.
+
+#### Trivariate Analysis
+
+* Estimates composed of three numbers: best-case, nominal-case, and worst-case. These numbers are confident estimates. The `worst-case` number is the amount of time within which you feel 95% confident that the task will be completed. The `nominal-case` has only 50% and `best-case` only 5%.
+* As powerful as trivariate analysis is for long-term estimation of a whole project, this technique is too imprecise for the day-to-day management that we need within a project.
+
+#### Stories and Points
+
+* A user story is an abbreviated description of a feature of the system, told from the point of view of a user.
+* We want to delay the specification of the details as long as possible, right up to the point where the store is developed. So leave the story in abbreviated form as a promise for a future conversation.
+
+#### ATM Stories
+
+* Writing the stories for an automated teller machine (ATM), what are these stories? Withdrawal, Deposit, Transfer, Login and Logout.
+* Resist the urge to capture all the details discussed in each story.
+* The stories had so much detail on them, that they could not be estimated. They could not be scheduled. They were useless. There was so much effort invested into each story card that they could not be discarded.
+* What makes a story manageable, schedulable and estimable is the temporary lack of detail.
+
+#### Estimating the Stories
+
+* We pick a story from the batch that we consider to be of average complexity.
+* We choose a number of points for the story. The Login story will cost 3 points of development effort. Login is an average story, and so we give it an average cost of 3, if stories range in cost from 1 to 6.
+* Login is our `Golden Story`. It is the standard against which all other stories will be compared.
+* What is the development effort measuring? Hours, days, weeks? They are a unit of estimated effort, not real time.
+* Effort estimates are vague, fuzzy, imprecise things that do not relate directly to real time.
+    * There is a beautiful thing about vague, fuzzy numbers: The Law of Large numbers. When taken in quantity, the fuzziness integrates out.
+
+#### Planning Iteration One
