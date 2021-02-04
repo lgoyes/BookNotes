@@ -331,3 +331,71 @@
     * There is a beautiful thing about vague, fuzzy numbers: The Law of Large numbers. When taken in quantity, the fuzziness integrates out.
 
 #### Planning Iteration One
+
+* The iteratioin begins with the Iteration Planning Meeting (IPM). THe IPM for a two-week iteration should require about a half a day.
+* Stakeholders will have previously read the estimated stories and sort them in the order of business value. To do this, they need to know how many story points the programmers think they can complete. This number is called the velocity.
+* It's important to realize that velocity is not a commitment.
+
+#### Return of Investment
+
+* The stories that are valuable but cheap will be done right away. Those that are valuable but expensive will be done later. Those that are naither valuable nor expensive might got done one day. Those that are not valuable but are expensive will never get done.
+
+#### The midpoint check
+
+* At the midpoint of the iteration, many stories should be done. What should the point total of those stories add up to? - 15.
+* At the midpoint review meeting, the stakeholds remove enough stories from the plan to reduce the remaining points to 10.
+* By the end of the iteration, there is a demo. It turns out that only 18 points out of 20 were completed. Has this iteration failed? No! **Iterations do not fail** The purpose of an iteration is to generate data for managers. It would be nice if the iteration also generated working code, but even when it doesn't, it has still generated data.
+
+#### Yesterday's Weather.
+
+* How many points should the stakeholders plan for the next iteration? The number of points that we could do on the last iteration. That is yesterday's weather.
+* The best predictor of the progress of an iteration is the previous iteration.
+
+#### The End of the Project
+
+* As each iteration completes, the completed velocity is added to the velocity chart, so that everyone can see how fast the team is going.
+* The project is not over when all the stories are implemented. The project is over when there are no more stories in the deck worth implementing.
+
+#### Stories
+
+* User stories are simple statements that we use as reminders of features. They have to follow the INVEST principles.
+* I: Independent
+    * User stories are independt of each other. They do not need to be implemented in any particular order.
+    * We try to separate the stories so that there is as little dependence as possible, allowing us to implement the stories in the order of business value.
+* N: Negotiable
+    * Details are negotiable between the developers and the business.
+    * Developers might recommend simpler designs that could be much less expensive to develop.
+* V: Valuable
+    * The story must have clear and quantifiable value to the business.
+    * Refactoring is **never** a story. Architecture is **never** a story.
+* E: Estimable
+    * A user story must be concrete enough to allow the developers to estimate it.
+* S: Small
+    * A story should not be bigger than one or two developers can implement it in a single iteration.
+* T: Testable
+    * Business should be able to articulate tests that will prove that the story has been completed.
+    * Even though I don't know all the details of the login story, I know that it is testable because Login is a concrete operation.
+
+#### Story Estimation
+
+* Flying Fingers
+    * Every one hold up the number of fingers that correspond to the number of points they think the story deserves.
+    * If there is substantial disagreement between fingers, the developers discuss the reasons why, and then repeat the process until agreement is reached.
+* Planning Poker
+    * Zero (0) means "too trivial to estimate". You may wich to merge a few of them into a bigger story.
+    * Infinite representes "too long to estimate", and therefore the story should be split.
+    * Question mark (?) means you simply don't know.
+
+#### Splitting, Merging and Spiking
+
+* Merging stories: Clip the cards together.
+* Splitting stories: You need to maintain INVEST. Consider _Login_, we could create _Login with No Password_, _Login with Single Password Attempt_, _Allow Multiple Password Attempts_ and _Forgot Password_.
+* A spike is a story for estimating another story. We have to develop a long but very thin slice through all the layers of the system.
+* Let's say there's a story that you cannot estimate. So you write a new story called "Estimate X". Now you oestimate that story, which is easier to estimate.
+
+#### Managing the iteration
+
+* Focus on driving the stories to completion
+* As soon as the planning meeting ends, the programmers should choose the stories for which they will each individually be responsible.
+
+#### QA and Acceptance Tests
