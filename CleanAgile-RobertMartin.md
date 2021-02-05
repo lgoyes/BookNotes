@@ -399,3 +399,4 @@
 * As soon as the planning meeting ends, the programmers should choose the stories for which they will each individually be responsible.
 
 #### QA and Acceptance Tests
+

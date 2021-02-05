@@ -207,3 +207,117 @@
 * En la aplicación `Gas Station Delux`, no es aconsejable usar el prefijo `GSD` en todas las clases.
 * Los nombres breves suelen ser más adecuados que los extensos, siempre que sean claros. No añada más contexto del necesario a un nombre.
 
+## 3. Funciones
+
+* ¿Entiende la función? Seguramente no. Pasan demasiadas cosas y hay demasiados niveles de abstracción diferentes. Hay cadenas extrañas e invocaciones de funciones mezcladas e instrucciones `if` doblemente anidadas, controladas por banderas.
+
+### Tamaño Reducido
+
+* La primera regla de las funciones es que deben ser de tamaño reducido.
+* Las funciones deben tener una longitud aproximada de 20 líneas.
+* Toda slas funciones deben ser obvias, contar una historia y cada una llevar a la siguiente en un orden atractivo.
+
+### Bloques y Sangrado
+
+* Los bloques en las instrucciones `if`, `else` y `while` deben tener una línea de longitud que, seguramente sea la invocación de una función.
+* El nivel de sangrado de una función no debe ser mayor de uno o dos.
+
+### Hacer una sola cosa
+
+* Las funciones solo deben hacer una cosa, deben hacerlo bien y debe ser lo único que hagan.
+* Si una función solo realiza los pasos situados un nivel por debajo del nombre de la función, entonces hace una cosa.
+* Creamos funciones para descomponer conceptos más amplios en un conjunto de pasos en el siguiente nivel de abstracción.
+
+### Secciones en funciones
+
+* Las funciones que hacen una sola cosa no se pueden dividir en secciones.
+
+### Niveles de abstracción por función
+
+* Las instrucciones de una función deben esetar en el mismo nivel de abstracción.
+* La mezcla de niveles de abstracción es conofusa. No se sabe si una determinada expresión es un concepto esencial o un detalle.
+
+### Leer código de arriba a abajo: la regla descendente.
+
+* Tras todas las funciones, deben aparecer las del siguiente nivel de abstracción, para poder leer el programa.
+
+### Instrucciones Switch
+
+* Es complicado hacer una instrucción switch hque haga una sola cosa.
+* No siempre podemos evitar los switch, pero podemos incluirlos en un nivel inferior y no repetirlo. Para ello, recurrimos al polimorfismo.
+* Las instrucciones switch se pueden tolerar si solo aparecen una vez, se usan para crear objetos polimórficos y se ocultan tras una relación de herencia para que el resto del sistema no pueda verlas.
+
+### Usar nombres descriptivos
+
+* Cuanto más reducida y concreta sea la función, más sencillo será elegir un nombre descriptivo.
+* No tema los nombres extensos. Un nombre extenso descriptivo es mejor que uno breve y enigmático.
+* La elección de nombres descriptivos clarifica el diseño de los módulos y le permite mejorarlos.
+
+### Argumentos de funciones
+
+* El número ideal de argumentos para una función es cero. Después uno y dos. Siempre que sea posible, evite la preesencia de tres argumentos, require una justificación especial.
+* El argumento podría estar a un nivel distinto de abstracción que el nombre de la función y nos obliga a conocer un detalle de implementación que no es importante.
+* Los argumentos son todavía más complicados desde un punto de vista de pruebas. Hay que hacer todos los casos de prueba para garantizar el funcionamiento de las distintas combinaciones de argumentos.
+
+### Formas monádicas habituales
+
+* Hay dos motivos principales para pasar un solo argumento a una función.
+    1. Puede que realice una pregunta sobre el argumento
+    2. Puede que procese el argumento, lo transforme en otra cosa, y lo devuelva.
+* Otra forma de un argumento es un evento
+    * El programa debe interpretar la invocación de la función como evento, y alterar el estado del sistema.
+
+### Argumentos bandera (booleanos)
+
+* Los argumentos bandera complican la firma del método e indica que la función hace más de una cosa. Tendría que dividir la función en dos.
+
+### Funciones diádicas
+
+* Puede convertir una función diádica en un miembro de uno de los argumentos para convertirla en monádica.
+
+### Objeto de argumento
+
+* Cuando una función parece necesitar dos o más argumentos, es probable que algunos de ellos se incluyan en una clase propia.
+
+### Verbos y Palabras clave
+
+* La selección de nombres correctos para una función mejora la explicación de su cometido así como el orden y el cometido de los argumentos.
+
+### Sin efectos secundarios
+
+* Los Los efectos secundarios son mentiras. Su función promete hacer una cosa, pero también hace otras cosas ocultas. En ocasiones realiza cambios inesperados en las variables de su propia clase.
+* Los efectos secundarios general acomplamientos temporales. Es decir, solo se puede invocar la función en determinados momentos. Si no se invoca en orden, se pueden tener efectos inesperados.
+
+### Argumentos de salida
+
+* Por lo general, los argumentos de salida deben evitarse. Si su función tiene que cambiar el estado de un elemento, haga que cambie el estado de su objeto contenedor.
+
+### Separación de consultas de comando
+
+* Las funciones deben hacer algo, o responder a algo. No ambas cosas.
+* La función debe cambiar algo del objeto, o devolver información del mismo, pero no ambas cosas.
+
+### Mejor excepciones que devoler códigos de error
+
+* Al devolver un código de error, el invocador debe procesar el error de forma inmediata. Esto genera estructuras anidadas.
+* Si uso excepciones, el código de procesamiento se separa del código de ruta y se puede simplificar
+
+### Extraer bloques try/catch
+
+* Extraiga el cuerpo de los bloques try y catch en funciones individuales.
+
+### El procesamiento de errores es una cosa
+
+* Una función que procese errores no debe hacer nada más
+
+### No repetirse
+
+### Programación estructurada
+
+* Si sus funciones son de tamaño reducido, una instrucción return, break o continue no harán daño y pueden resultar más expresiva que la regla de una entrada y una salida.
+
+### Como crear este tipo de funciones
+
+* Cuando se crean las funciones, se suele empezar con funciones extensas y complicadas, con abundancia de sagrados y bucles anidados. Con extensas listas de argumentos, nombres arbitrarios y código duplicado.
+* Siempre y cuando se tenga una serie de pruebas unitarias que abarquen todas las líneas de código, siempre se puede refactorizar.
+
