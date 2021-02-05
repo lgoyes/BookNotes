@@ -400,3 +400,58 @@
 
 #### QA and Acceptance Tests
 
+* If QA has not already begun to write the automated acceptance tests, they should start as soon as the IPM end. We don't want completed stories waiting for acceptance tests to be written.
+* We expect acceptance tests to all be written before the midpoint of the iteration.
+* Be sure that the programmers working on a story are not also writing the acceptance tests for that story.
+* After the midpoint, if all the acceptance tests are done, QA should be working on the tests for the next iteration.
+* The definition of "done" is this: acceptance tests pass.
+* When the acceptance tests for a story pass, that story is done. However, when a programmer says that a story is 90% done, we really don't know how close to done it is. So, the only thing we ever want to report on our velocity chart is stories that have passed their acceptance tests.
+
+#### The demo
+
+* The demo should include showing that all the accepted tests run, and all the unit tests. It should also show off the newly added features.
+
+#### Velocity
+
+* The burn down slope predicts the date for the next major milestone. The velocity slope tells us how well the team is being managed.
+* The velocity slope will be pretty noise, but after the first few iterations, the noise should reduce to a level that allows an average velocity to become apparent.
+
+##### Rising Velocity
+
+* If we see a positive slope, it probably means that the project manager is putting pressure on the team to go faster. As that pressure builds, the team will unconsciuosly shift the value of their estimates to make it appear that they are going faster.
+* Velocity is a measurement, not an objective. It's control theory 101: don't put pressure on the thing you are measuring.
+
+#### Falling velocity
+
+* A consistent negative slope might be because of the quality of the coee. The team is likely not refactoring enough. One reason that teams fail to refactor enough is that they don't write unit tests, so they fear that refactoring will break something that used to work.
+
+#### Small Releases
+
+* If you are releasing every six months, try every three months, then try every month, then try every week.
+* To do this, the organization will need to break the coupling between release and deployment. The term "release" means that the software is technically ready to be deployed. The decision to deploy debomes solelly a business decision.
+
+### Acceptance Tests
+
+* Requirements should be specified by the business.
+* A specification is, by its very nature, a test.
+* The test has to be automated
+* Acceptance Tests: The requirements of the system should be written as automated tests
+
+#### Tools and methodologies
+
+* In an attept to make it easier for business people to write automated tests, programmers have written some tools, like Cucumber, to create a formalism that attempts to separate the technical and business sides of an automated test.
+* The business can write the business side of the automated tests, and the programmers can write the glue code that binds those tests to the system being tested.
+
+##### Behavior-Driven Development
+
+* Businesses can derive great value by specifying their systems in a formal scenario-based language like _Given-When-Then_, regardless of whether they actually automate those requirements as tests.
+
+#### The practice
+
+* The business writes format tests describing the behaviour of each user story, and developers automate those tests.
+
+#### Business Analysts and QA
+
+* Business Analysts specify the happy paths
+* QA's role is to write the unhappy paths.
+    * QA are deeply technical people who can foresee all the strange and bizarre things that users are going to do to the system.
