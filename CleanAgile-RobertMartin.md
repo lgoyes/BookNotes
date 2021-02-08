@@ -455,3 +455,61 @@
 * Business Analysts specify the happy paths
 * QA's role is to write the unhappy paths.
     * QA are deeply technical people who can foresee all the strange and bizarre things that users are going to do to the system.
+
+#### QA
+
+* QA are not testers on the back end of the project. They are specifiers, operating at the front end of the project.
+* QA provide early input to the development team to prevent errors and omissions, instead of supplying late feedback.
+* QA must inject quality into the start of each iteration, rather than measuring lack of compliance at the end.
+
+#### Losing the Tests at the End
+
+* Under pressure, QA simply bypasses all the regression tests. QA only tests the new features.
+
+#### The QA Disease
+
+* If QA is finding lots of defects, they are clearly doing their job well. Thus, defects are considered a good thing.
+* Who else benefits from defects? Developers who need to meet the schedule deadlines.
+
+#### Developers are the testers
+
+* QA writes the acceptance tests for the stories in an iteration. But QA does not run those tests. It's the programmer'sjob to verify that the system passes the tests.
+
+#### Continuous Build
+
+* The programmers will automate that process by setting up a Continuos Build server. this server will simply run all the tests in the system, including unit tests and all acceptance tests, every thime any programmer checks in a module.
+
+### Whole Team
+
+* The customer is a metaphor for someone who understand the needs of the users.
+* In scrum, the customer is called the Product Owner. This is the person who chooses stories, sets priorities, and provides immediate feedback.
+* When the Whole Team (managers, testers, technical writers, programmers, etc) sits together in the same space, magic can happen. Some accidental synergy occurs.
+
+#### Co-Location
+
+#### Co-location alternatives
+
+* The ability to send megabits of source-code around the world is not quite the same as having a team of co-located customers and programmers
+
+#### Working Remotely from Home
+
+* No matter how electronically connected the team is, they are still not together in the same space. This puts the people working from home at a distinct disadvantage.
+* A team that is mostly co-located but has a member or two who work from home, one or two days per week, will likely not notice any significant impediment.
+
+## 3. Team Practices.
+
+### Metaphor
+
+* In order for the team to communicate effectively, they require a constrained and disciplineed vocabulary of terms and concepts.
+* A metaphor relates a project to something else about which the teams have common knowledge.
+* We called those buffers garbage trucks, running back and forth between the producer of the garbage and the dum. We were saying that our customers were garbage merchants.
+* A metaphor can provide a vocabulary that allows the team to communicate efficiently. On the other hand, some metaphor are silly to the points of being offensive to the customer.
+
+#### Domain-Driven Design
+
+* Ubiquitous Language is the name that should be given to the Metaphor practice.
+* What the team needs is a model of the problem domain, which is described by a vocabulary that everyone (programmers, QA, customers, managers, users) agrees on.
+* Data Disctionaries: simple representation of the data manipulated by the application and the process that manipulated that data.
+* The ubiquitous language is used in all parts of the project. The business uses it. The developers use it. QA uses it. Devops use it. It is a thread of consistency that interconnects the entire project during every phase of its lifecycle.
+
+### Sustainable Pace
