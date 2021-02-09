@@ -513,3 +513,75 @@
 * The ubiquitous language is used in all parts of the project. The business uses it. The developers use it. QA uses it. Devops use it. It is a thread of consistency that interconnects the entire project during every phase of its lifecycle.
 
 ### Sustainable Pace
+
+#### Overtime
+
+* All-nighters became pretty rate.
+* As I matured, I realized that my worst technical mistakes were made during those periods of frenetic late-night energy. I realizeed that those mistakes were huge impediments that I had to constantly work around during my truly wakeful hours.
+
+#### Marathon
+
+* A software project is a marathon, not a sprint. In order to win, you must pace yourself. If you run at full speed, you'll run out of energy long before you cross the finish line.
+
+#### Dedication
+
+* Working overtime is not a way to show your dedication to your employer. What is should is that you are a bad planner, that you agree to deadlines to which you shouldn't agree, that you make promises you shouldn't make, that you are a manipulable laborer and not a professional.
+
+#### Sleep
+
+* The most precious ingredient in the life of a programmer is sufficient sleep.
+
+### Collective Ownership
+
+* No one owns the code in an Agile project. The code is owned by the team as a whole. Any member of the team can check out and improve any module in the project at any time. The team owns the code collectively.
+* Collective ownership does not mean that you cannot specialize. As systems grow in complexity, specialization becomes an absolute necessity. There are systems that simply cannot be understood in both entirety and detail. However, even as you specialize, you must also generalize. Divide your work between your specialty and other areas of the code. Maintain your ability to work outside of your specialty.
+* Each member gains a better understanding of the boundaries between modules and of the overall way that the system works. This drastically improves the ability of the team to communicate and make decisions.
+
+#### The X Files
+
+* The developers writing the stacker code were politically impotent, but if a printer developer spoke in a meeting, everyone else listed closely. Because of this political division, no one shared their code.
+
+### Continuous Integration
+
+* The practice of Continuous Integration meant that developers checked in their source code changes and merged them with the main line every "couple of hours". All unit tests and acceptance tests kept passing. No feature branches remained unintegrated. Any changes that should not be active when deployed were dealt with by using toggles.
+* Continuous Integration only works if you integrate continuously.
+
+#### Then came continuous build
+
+* Continuous build tools (like Jenkins) allow the time between integrations to shrink to a minimum.
+
+#### The continuous Build Discipline
+
+* The continuous build should never break. Each programmer runs all the acceptance tests and all unit tests before they check in their code. So if the build breaks, something very strange has happened.
+
+#### Stop the Presses
+
+* A broken build is a "stop the press" event. All the programmers will stop what they are doing and rally around the build to get it passing again.
+
+#### The cost of cheating
+
+* Removing the failing tests with the promise that you will go back and fix them later is a suicidal move. A broken system gets deployed.
+
+### Standup meetings
+
+* Standup meetings:
+    * are optional.
+    * Can be less often than daily.
+    * Should take about 10 min.
+* Team members stand in a circle and answer three questions:
+    1. what did I do since the last meeting?
+    2. What will I do until the next meeting?
+    3. What is in my way?
+* No discussion. No posturing. No deep explations. No complaints. THen the meeting is over and everyone returns to work.
+
+#### Pigs and chickens?
+
+* Only developers should speak at the standup. Managers and other folks may listen in but should not interject.
+
+#### Shout-out
+
+* just a quick acknowledgement of someone who helped you:
+    * Whom do you what to thank?
+
+## 5. Technical Practices
+
