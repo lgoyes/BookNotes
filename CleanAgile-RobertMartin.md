@@ -585,3 +585,50 @@
 
 ## 5. Technical Practices
 
+* Without TDD, refactoring, simple design, and pair programming, Agile becomes an ineffective flaccid shell of what it was inteded to be.
+
+### Test Driven Development
+
+#### Double-entry Bookkeeping
+
+* Every required behavior is entered twice: once as a test, and then again as production code that makes the test pass. The two entries are complementary. When executed together, the two entries produce a zero result: zero test failed.
+* Programmers enter every behaviour one at a time. This allows them to catch errors quickly.
+
+#### The three rules of TDD
+
+1. Write the test that fails, before writing the production code.
+2. Do not write more of a test than is sufficient to fail.
+3. Do not write more production code than is sufficient to pass the currently failing test.
+
+#### Debugging
+
+* If everything worked a minute ago, then almost any failure you encounter will be less than a minute old. Debugging a feature that was added in the last minute is often trivial. Indeed, using a debugger to find the problem is probably overkill.
+
+#### Documentation
+
+* The tests you end up writing become the code examples for the whole system. If you want to know how to call an API funtion, there are tests that call that function every way it can be called.
+* The tests are a form of documentation that describe the system being tested. This documentation is written in a language that the programmers know fluently. It is utterly unambiguous, it is so formal it executes, and it cannot get out of sync with the application code. The tests are the perfect kind of documentation of programmers: code.
+
+#### Fun
+
+* Every time you make a test pass, it's a small success. It doesn't feel like busy work - it feels like getting stuff working.
+
+#### Completeness
+
+* When you write after-the-fact tests, the only information that the passing tests give you is that nothing tested is broken. The incompleteness of the test suite leaves you with no options. However, if you follow TDD, then every line of production code was written in order to make a test pass. The test suite is very complete. When it passes, you can deploy.
+* The goal is to create a suite of automated testes that tells us that it is safe to deploy the system.
+* Coverage in the high 90s is likely all that is required for the deployment decision.
+
+#### Design
+
+* When you write the test first, you cannot write a function that is hard to test. How do you keep functions easy to test? You decouple them. Indeed, testability is just a synonym for decoupling.
+* The whole system will be testable; therefore, the whole system will be decoupled.
+
+#### Courage
+
+* TDD provides a number of powerful benefits: less debuggin, good low-level ldocumentation, fun, completeness and decoupling.
+* The driving reason for practicing TDD is courage.
+* When you have a complete test suite, you lose your fear of changing the code. You lose your fear of cleaning the code. So, you will clean the code. You will keep the system neat and orderly. You will keep the design of the system intact.
+
+### Refactoring
+
