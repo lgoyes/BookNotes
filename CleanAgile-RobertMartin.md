@@ -632,3 +632,91 @@
 
 ### Refactoring
 
+* Refactoring is the pracatice of improving the structure of the code without altering the behaviour, as defined by the tests. In other words, we make changes to the names, the classes, the functions, and the expressions without breaking any of the tests.
+* To fearlessly refactor the code, we need a test suite that give us very high confidence that we aren't breaking anything.
+* The kinds of changes made during refactoring range from trivial cosmetics to deep restructurings.
+
+#### Red/Green/Refactor
+
+* Red/green/refactor cycle
+    1. We create a test that fails
+    2. Then we make the test pass
+    3. Then we clean up the code
+
+* Writing code that works and writing code that is clean are two separate dimensions of programming so we first focus on getting the code working by whatever messy means. Then, once working, with tests passing, we clean up the mess we made.
+* Refactoring is a continuous process, not one that is performed on a schedule bases. We make a very small mess, over one or two minutes and then, we clean up that small mess.
+* The word "refactoring" should never appear on a schedule.
+
+#### Bigger Refactorings
+
+* Sometimes the requirements change in such a way that you realize the current design and architecture of the system is suboptimal, and you need to make a significant change.
+* Such changes are made within the red/green/refactor cycle. We do not create a project specifically to change the design. We do not reserve time in the schedule for such large refactoring. Instead, we migrate the code one small step at a time, while continuing to add new features during the normal Agile cycle.
+
+### Simple Design
+
+* Simple Design is the practice of writing only the coee that is required with a structure that keeps it simplest, smalles and most expressive.
+* Rules of simple design
+    1. Pass all the tests
+    2. Reveal the intent
+    3. Remove duplication
+    4. Decrease elements
+* The goal of simple design is to keep the design weight of the code as small as practical.
+
+#### Design weight
+
+* The more complex the design, the greater the cognitive load praced on the programmers. That cognitive load is Design weight. The greater the weight of that design, the more time and effort are required for the programmers to understand and manipulate the system.
+* Complex requirements can be simplified by empmloying a more complex design. Often the tradeoff is favorable.
+
+### Pair programming
+
+* Pairing is optional: no one should be forced to pair.
+* Pairing is intermittent: There are many reasons to code alone.
+
+#### What is Pairing?
+
+* Pairing is the act of two people working together on a single programming problem. The pair may work together at the same workstation, or they may work on two connected workstations so long as they see and manipulate the same code.
+* One programmer may be the driver and the other, the navigator. The driver has the keyboard and mouse; the navigator takes a longer view and makes recommendations.
+* Another role option is for one programmer to write a test, and the other to make it pass and write the test for the first programmer to pass.
+* Most often, however, there are no roles at all.
+* The goal is to spread and exchange knowledge, not concentrate it.
+
+#### Why pair?
+
+* Pairing is the best way, by far, to share knowledge between team members and prevent knowledge silos from forming. It is the best way to make sure that nobody on the team is indispensable.
+
+#### What about the cost?
+
+* The direct cost of pairing might be about 15%
+* A team that pairs 505 of the time would suffer something less than 8% in productivity.
+* If the practice of pairing replaces code reviews, then there is likely no reduction in productivity at all.
+
+#### Management
+
+* Generally, managers are please to see programmers collaborating, and working together. It creates the impression that work is being done.
+
+## 6. Becoming Agile
+
+### Agile Values
+
+#### Courage
+
+* The members of an Agile team are not so focused upon political safety that they sacrifice quality and opportunity.
+* The belief that quality and discipline increase speed is a courageous belief because it will constantly be challenged by powerful but naivve folks who are in a hurry.
+
+#### Communication
+
+* We value direct and frequent communication that crosses channels.
+* A team that sits together and communicates frequently can work miracles.
+
+#### Feedback
+
+* Determine when things are going wrong early enough to correct
+
+#### Simplicity
+
+* When you recognize a problem but silently allow it to pass to someone else, you are engaging in indirection.
+* SImplicity is directness - directness in the code, and directness in communicatioin and behaviour.
+* On the team, most of the time, you want to be as direct as possible.
+
+### The menagerie
+
