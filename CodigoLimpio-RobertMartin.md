@@ -8,6 +8,13 @@
 
 **End date**: May 21st, 2021.
 
+## Índice
+
+1. [Código Limpio](#1-código-limpio)
+2. [Nombres con Sentido](2-nombres-con-sentido)
+3. [Funciones](#3-funciones)
+4. [Formato](#4-formato)
+
 ## 1. Código Limpio
 
 ### Hágase el código
@@ -321,3 +328,128 @@
 * Cuando se crean las funciones, se suele empezar con funciones extensas y complicadas, con abundancia de sagrados y bucles anidados. Con extensas listas de argumentos, nombres arbitrarios y código duplicado.
 * Siempre y cuando se tenga una serie de pruebas unitarias que abarquen todas las líneas de código, siempre se puede refactorizar.
 
+## 3. Comentarios
+
+* No hay nada más útil que un comentario bien colocado. No hay nada que colapse más un módulo que comentarios dogmáticos innecesarios. no hay nada más dañino que un comentario antiguo que propague mentiras y desinformación.
+* El uso correcto de comntarios permite compensar nuestra incapacidad para para expresarnos en el código.
+* Los comentarios mienten. No siempre y no siempre intencionadamente, pero lo hacen. Cuando más antiguo es un comentario y más se aleja del código que describe, mayor es la probabilidad de que sea equivocado.
+* Se prodría afirmar que los programadores deben ser lo bastante disciplinados como para mantener los comentarios actualizados, relevantes y precisos. De acuerdo, debería, pero esa energía debería invertirse en crear código claro y expresivo que no necesite comentario alguno.
+
+### Los comentarios no compensar el código incorrecto.
+
+* En lugar de comentar un módulo confuso y desorganizado, límpielo.
+* El código claro y expresivo sin apenas comentarios es muy superior al código entrevesado y complejo con multitud de comentarios.
+
+### Explicarse en el código
+
+* En muchos casos, basta con crear una funcióno que diga lo mismo que el comentario que pensaba escribir.
+
+### Comentarios de calidad
+
+#### Comentarios legales
+
+* Algunos estándares corporativos de creación de código nos obligan a crear determinados comentarios por motivos legales.
+
+#### Comentarios informativos
+
+* En ocasiones es útil proporcional información básica con un comentario.
+
+#### Explicar la intención
+
+* En ocasiones, un comentario es algo más que información útil sobre la implementación y proporciona la intención de una decisión.
+
+#### Clarificación
+
+* En ocasiones, basta con traducir el significado de un argumento o valor devuelto, en algo más legible.
+
+#### Advertir de las consecuencias
+
+#### Comentarios TODO
+
+* TODO son tareas que el programador piensa que debería haber hecho, pero que no es así. Puede ser un recordatorio para eliminar una función obsoleta o una petición para resolver un problema.
+
+#### Amplificación
+
+* Se amplía la importancia de algo que, en caso contrario, parecería irrelevante.
+
+#### Javadoc en API públicas.
+
+### Comentarios incorrectos
+
+* Excusas de código pobre o justificaciones de decisioines insuficientes
+
+#### Balbucear
+
+* Cualquier comentario que le obligue a buscar su significado en otro módulo, ha fallado en su intento de comunicación.
+
+#### Comentarios redundantes
+
+* ¿Para qué sirve este comentario? No es más informativo que el código. No lo justifica, ni transmite la intención, ni la lógica. No es más fácil de leer que el código. De hecho, es menos preciso y obliga al lector a aceptar la faclta de precisión en lugar de a entenderlo.
+* Estos comentarios solo ensucian y oscurecen el código. No tienen función documental.
+
+#### Comentarios confusos
+
+* Un comentario confuso puede hacer que un programador invoque una función de forma equivocada.
+
+#### Comentarios Obligatorios
+
+* Los javadoc obligatorios para todas las funciones, crean abominaciones que no sirven de nada, complican el código y constituyen posibles engaños y desorientaciones.
+
+#### Comentarios periódicos.
+
+* Gracias a los sistemas de control de versiones, no se necesita llevar registro de las modificaciones al código.
+
+#### Comentarios sobrantes
+
+* Algunos comentarios restan importancia a lo evidente y no ofrecen información nueva
+* En lugar de crear elementos sobrantes, debe limpiar su código
+
+#### Comentarios sobrantes espeluznantes
+
+* Si el autor de un comentario no presta atención al escribir sus comentarios (copiarlos y pegarlos), ¿Por qué se espera que sean de utilidad para los lectores?
+
+#### No usar comentarios si se puede usar una función o una variable
+
+#### Marcadores de posición
+
+* Los maracores de posición son atractivos si no los usa demasiados. Por ello, úselos esporádicamente y solo cuando el beneficio sea significativo.
+
+#### Comentarios en llave de cierre
+
+* Aunque pueda tener sentido en funciones extensas con estructuras anidadas, únicamente estorba a las funciones encapsuladas y de pequeño tamaño.
+* Si siente el deseo de marcar sus llaves de cierre, pruebe a reducir el tamaño de sus funciones.
+
+#### Asignaciones y menciones
+
+* Los sitemas de control de versiones recuerdan a la perfección quién ha añadido qué y cuando. No es necesario plagar el código con pequeñas menciones.
+
+#### Código comentado
+
+* Los lectores que vean código comentado no tendrán el valor de borrarlo. Pensarán que está ahí por algo y que es demasiado importante para borrarlo.
+* Elimine el código comentado. El sistema de control de versiones recuerda el código fuente por nosotros.
+
+#### Comentarios HTML
+
+* Los comentarios no deberían estar adornados con etiquetas HTML. Eso dificulta la lectura d elos comentarios.
+
+#### Información no local
+
+* Describa el código que le rodea. No ofrezca ninguna información global del sistema en el contexto de un comentario local. El comentario debe describir la función y no una parte distinta del sistema.
+
+#### Demasiada información
+
+* No incluya en sus comentarios relfexiones históricas ni irrelevantes descripciones de detalles.
+
+#### Conexiones no evidentes
+
+* Se espera que el lector que vea el comentario entienda a qué se refiere.
+
+#### Encabezados de función
+
+* Un nombre bien elegido para una función que hace una sola cosa, suele ser mejor que un encabezado de comentario
+
+#### Javados en código no público
+
+* La formalidad de javadoc en código no dirigido a consumo público no es más que una distracción.
+
+## 4. Formato
