@@ -8,6 +8,21 @@
 
 **End date**: Feb 22st, 2021.
 
+## Index
+
+1. [Introduction to Agile](#1-introduction-to-agile)
+2. [The reasons for agile](#2-the-reasons-for-agile)
+3. [Business Practices](#3-business-practices)
+4. [Team Practices](#4-team-practices)
+5. [Technical Practices](#5-technical-practices)
+    1. [Test Driven Development](#test-driven-development)
+    2. [Refactoring](#refactoring)
+    3. [Simple Design](#simple-design)
+    4. [Pair programming](#pair-programming)
+6. [Becoming Agile](#6-becoming-agile)
+    1. [Agile Values](#agile-values)
+    2. [The menagerie](#the-menagerie)
+
 ## 1. Introduction to Agile
 
 * In febreuary 2001, a group of 17 software experts gathered in Snowbird, Utah, to create a manifesto that introduced a more effective, lighter-weight, approach to develop software.
@@ -496,7 +511,7 @@
 * No matter how electronically connected the team is, they are still not together in the same space. This puts the people working from home at a distinct disadvantage.
 * A team that is mostly co-located but has a member or two who work from home, one or two days per week, will likely not notice any significant impediment.
 
-## 3. Team Practices.
+## 4. Team Practices.
 
 ### Metaphor
 
