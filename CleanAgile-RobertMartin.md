@@ -735,3 +735,50 @@
 
 ### The menagerie
 
+* The symptoms of "Flaccid Scrum" are a slow decline from high productivity in the early days of a project to very low productivity as the project wears on. The reason for this loss of productivity is the corruption and degradation of the code itself.
+* Pick on of the agile methods (XP, scrum, etc). Ensure that you address all the disciplines in the circle of lie. Get the team to agree. Then, begin. Remember courage, communication, feedback, and simplicity, and regularly adjust the disciplines and behaviors.
+
+### Transformation
+
+* The transformation from non-Agile to Agile is a transition in values. The values of Agile development include risk-taking, rapid feedback, intense, high-bandwidth communication beween people that ignores barriers and command structures.
+* Agile values are diametricaly opposed to the values of large organizations who have invested heavily in middle-management structures that value safety, consistency, comand-and-control, and plan execution.
+
+#### Faking it
+
+* Some software development teams quietly use Agile values to drive their development, while also conforming to the rigors imposed upon them by middle managements.
+* So long as middle management is satisfied that their procedures and standards are being followed, they may leave the development team to their own devices.
+
+#### Success in smaller organizations
+
+* Some medium-sized organizations have no middle management, and the values of the executives and developers are strongly aligned.
+
+#### Individual Success and migration
+
+* Sometimes only certain individuals within an organization adopt the Agile values. Individuals who make this transition do not fare well within organizations or teams who do not.
+
+#### Creating Agile Organizations
+
+* We will see larger companies create new divisions that use Agile for their software development.
+* Agile consulting companies will be used more by larger organizations that have been unable to transform their existing development staff.
+
+### Coaching
+
+* Agile trainer: Their goal is to inculcate the Agile values and teach the Agile disciplines. Each team should require no more than one or two weeks of training.
+* AGile coaches: members of the teams who defend the process within the team. In the heat of development, developers may be tempted to go off process (stop pairing, stop refactoring, ignoring failures in the continuous build).
+
+#### SCRUM masters
+
+* The role of the coach is conflated with the role of the project manager.
+
+#### Certification
+
+* The training that accompanies an Agile certification program is often worthwhile, however, the training should be for everyone on the team.
+
+#### Agile in the large
+
+* Agile is about small software teams
+* There is no agile for large teams. Organizing large teams is a matter of organizing them into small teams.
+* The problem of large teams is the problem of getting many diverse kinds of teams to cooperate.
+* Agile was a necessary innovation for organizing small software teams. But, once organized, those teams fit into the structure that large organizations have used for millennia.
+
+### Agile tools
