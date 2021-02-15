@@ -22,6 +22,10 @@
 6. [Becoming Agile](#6-becoming-agile)
     1. [Agile Values](#agile-values)
     2. [The menagerie](#the-menagerie)
+    3. [Transformation](#transformation)
+    4. [Coaching](#coaching)
+    5. [Agile tools](#agile-tools)
+    6. [Coaching - An alternative view](#coaching---an-alternative-view)
 
 ## 1. Introduction to Agile
 
