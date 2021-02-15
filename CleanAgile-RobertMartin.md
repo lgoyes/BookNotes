@@ -782,3 +782,68 @@
 * Agile was a necessary innovation for organizing small software teams. But, once organized, those teams fit into the structure that large organizations have used for millennia.
 
 ### Agile tools
+
+* We carpenters master their hand tools before moving on to tools that are more sophisticated. They learn the limits of the hand tools so that they know when to reach for a power tool.
+
+#### Software tools
+
+* Software developers must master some hand tools:
+    1. At least one programming language
+    2. An integrated development environment
+    3. Various data formats (JSON, SML, etc) and markup languages
+    4. .Command-line and script-base interaction with the operating system.
+    5. Source repository tools.
+    6. Continuous integration / build tools (Jenkins)
+    7. Deployment tools (Docker)
+    8. Communication tools (slack).
+    9. Testing tools.
+
+#### What makes for an effective tool?
+
+* The tool landscape changes rapidly because we are always learning more effective ways to accomplish our goals.
+* A good tool should feel comfortable in you hands and not make you queasy with the dread of having to use it.
+* The tool has become transparent.
+* A small fraction of Git's capabilities (20%) gets you well over 80% of the day-to-day needs you'll have for source management.
+* The tool is exapted (used effectively in ways the originators hadn't intended).
+* Great tools do the following:
+    * Help people accomplish their objectives.
+    * Can be learned "well enough" quickly.
+    * Become transparent to users
+    * Allow adaptation and exaptation
+    * Are affordable.
+
+#### Physical Agile Tools
+
+* Agilists are known for using whiteboards, tape, index cards, markers, and various sizes of sticky notes for visual management of their work.
+* Every tool has its limitations. One key limitation of physical tools is that they are not very effective for distributed teams, only for people withing visual range. The phpysical tools also don't automatically maintain history.
+
+#### Pressure to automate
+
+* There is a growing interest in automated software tools. Some reasons for thir are:
+    1. Software tools provide a good way to help ensure data is captured in a consistent form.
+    2. With consistently captured data, you cana readily cerive professional looking reports, charts and graphs.
+    3. Providng history and safe storage is easy.
+    4. You can instantly share the information with everyone.
+    5. You can have a completely distributed team collaborate in real time.
+* One you own a tool, the path of least resistance is to do whatever the tool provides regardless of whether it meets the team's needs.
+* Your team should establish the pattern of work compatible with their specific context first and then consider using tools that support their workflow.
+
+#### Agile Lifecycle Management (ALM) systems for the not-poor.
+
+* Great tools can be learned "well enough" quickly.
+    * ALMs tend to be complicateed, usually demanding up-front-training.
+* Great tools become transparent to users.
+    * We constantly see team members watching the designated driver trying to figure out the tool.
+* Great tools allow adaptation and exaptation.
+    * A five-second turn around for low-tech tools turn into a five-day or five-week delay with an ALM.
+* Great tools are affordable.
+    * Licensing fees can be very expensive.
+* Great tools help people accomplish their objectives.
+    * ALM tools rarely work the way your team does.
+* Some ALM tools become a weapon used to shame programmers into working harder and longer.
+* Where teams would gather for their morning standup, they now gather to update their ALM.
+
+### Coaching - An alternative view
+
+#### The many paths to Agile
+
