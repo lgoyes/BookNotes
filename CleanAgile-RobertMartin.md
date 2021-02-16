@@ -851,3 +851,58 @@
 
 #### The many paths to Agile
 
+#### From Process Expert to Agile Expert
+
+* Agile is an algorithm for finding the highest value-producing features in the market and then turning them into revenue faster.
+
+#### The need for agile coaching
+
+* Becoming agile involves revisiting entrenched beliefs, culture, process, thinking, and ways of working.
+* The key to lasting change is to find problems or opportunities that people are aware of and have a desire to invest in and help them achieve their goals, offering expertise only as requested and needed. Everything else will fail.
+
+#### Putting the Coach into Agile Coach
+
+* People get a tremendous amount of value out of the process of coaching itself.
+* ICAgile's Certified Agile Coach (ICP-ACC).
+
+#### Going Beyond the ICP-ACC
+
+* Coaching skills of active listening, emotional intelligence, presence, providing clear and direct feedback, asking open-ended and non-leading questions, and remaining neutral.
+
+#### Coaching tools
+
+* Powerful questioning. Asking questions that evoke discovery, insight, commitment, or action.
+* There is a growing body of coaching tools. Many of them can be found at `tastycupcakes.org`, `retromat.org` and `liberatingstructure.com`.
+
+#### Progressional Coaching Skills are not enough
+
+* An agile coach may switch to a mode of offering potentially useful expertise.
+* If the team is interested, the Agile coach then provides their expertise, teaching, and mentoring the team with the intention of moving back to pure coaching as soon as the team has mastered the new knowledge.
+* Areas of expertise that Agile coaches draw from:
+    1. Agile frameworks
+    2. Agile transformations
+    3. Agile product management
+    4. Agile technical practices.
+    5. Facilitation
+    6. Coaching
+
+#### Coaching in a multi-team environment
+
+* Most agile coaching happens within the context of multiple teams, sometimes tens or hundred of teams. And it frequently starts with resources (people) siloed and allocated to three or more unrelated projects.
+
+#### Agile in the large
+
+* Just as it is best to grow your software based on frequent customer interaction, the only process changes that will stick are those that are directly connected to what people affected understand and desire based on their unique circumstances.
+
+#### Using Agile and Coaching to Become Agile
+
+* Rather than implementing one of these recipes (the Agile Manifesto) consider using Agile and coaching to discover and implement a custom recipe that is tailor-made to your specific circumstances.
+
+#### Growing your agile adoption
+
+* Rather than adopting scrum, kanban, xp, or one of the scaling frameworks, consider adopting one of the practices from the list below;
+    1. The practices of Kanban: making the work visible (via a card wall), limiting work in progress, pulling work through the system.
+    2. The practices of SCRUM and XP: short daily team meetings, a product owner, a proess facilitator, retrospectives, a cross-functional team, user stories, small releases, refactoring, TDD and pair programming.
+    3. Aligh team events. Align iterationi start and stop times as well ass iteration length, from multiple teams.
+    4. Escalation trees: Escalate impediments immediately via a well defined escalation path.
+    
