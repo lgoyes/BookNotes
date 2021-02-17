@@ -6,7 +6,7 @@
 
 **Start date**: Jan 22nd, 2021.
 
-**End date**: Feb 22st, 2021.
+**End date**: Feb 17th, 2021.
 
 ## Index
 
@@ -966,3 +966,48 @@
 
 ### Ideology vs Methodology
 
+* An ideology is a system of ideas and ideals.
+* A methodology is a sysmtem of methods and practices.
+* An ideology defines ideals to be aimed at. One or more methodologies can be used to reach those ideals.
+* The main goal of Agile is to provide business agility and customer satisfaction, and that is achieved via close collaboration, iterative development, short feedback loops and technical excellence.
+* The obsessive focus ono a methodology or set of practices distracts teams and organizations from their real goals.
+* Principles guide practices. Practices instantiate principles.
+* We cannot claim to have certain principles and values when our ways of working (methods and practices) are not aligned to them.
+
+### Does software Craftsmanship have practices.
+
+* Software craftsmanship promotes a perpetual search for better practices and ways of working.
+* The software craftmanship community considers XP the best set of agile development practices currently available.
+* Craftsmanship is not only about technical practices, engineering, and self improvement. It is also about professionalism and enabling clients to achieve their business goals.
+
+### Focus on the value, not the practice.
+
+* How do I convice my manager/colleague/team to do TDD? That is the wrong question. The problem here is that we are offering a solution before agreeing on the problem.
+* Instead of pushing TDD, maybe we could start agreeing on the value of reducing the time it takes to test our entire system. What if we could reduce it to 20 minutes? 2 seconds? What if we could do that at any time just by pressing a button?
+* If we agree on the problem, we could start talking about practices which could help up achieve that.
+
+### Discussing Practices
+
+* If developers are discussing practices that would enable them to build systems in a better way, there is no reason to involve businesspeople. Business should only be involved when there is a significant impact in the cost or duration of the project.
+* Developers should not ask authorization for writing tests. They should not have separate tasks for unit tests or refactoring.
+* Everytime developers volunteer details of how they work, they are inviting managers to micromanage them.
+* Developers should not let other people decide how they work.
+
+### Craftsmanship impact on individuals
+
+* Craftsmanship promotes software development as a profession. A job is a thing we do but it is not part of who we are. A profession, on the other hand, is part of who we are.
+* A profession is something we invest in. It's something we want to get better at. We want to gain more skills and have a long lasting and fulfilling career.
+
+### Caftsmanship Impact on our Industry
+
+* Craftsmanship communities have been promoting XP, and many other technical practices to many developers and companies around the world.
+
+### Craftsmanship impact on Companies
+
+* Managers understand scrum, iterations, demos, retrospectives, collaboration and fast feedback loops. But they are not so interested in programming related techniques.
+* Agile coaches in the early 2000s had strong technical background. Most agile coaches today cannot teach XP practices.
+* Software craftsmanship promotes a culture of learning, making companies more innovative and responsive.
+
+### Craftsmanship and Agile
+
+* Agile and Craftsmanship want to achieve very similar things. They both want customer satisfactio, desire close collaboration, and value short feedback loops. Both want to deliver high-quality, valuable work, and both want professionalism. In order to achieve business agility, companies need not only collaborative and iterative process, but also good engineering skills.
