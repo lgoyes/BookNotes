@@ -26,6 +26,11 @@
     4. [Coaching](#coaching)
     5. [Agile tools](#agile-tools)
     6. [Coaching - An alternative view](#coaching---an-alternative-view)
+7. [Craftsmanship](7-craftsmanship)
+    1. [The Agile Hangover](#the-agile-hangover)
+    2. [Expectation Mismatch](#expectation-mismatch)
+    3. [Moving apart](#moving-apart)
+    4. [Ideology vs Methodology](#ideology-vs-methodology)
 
 ## 1. Introduction to Agile
 
@@ -902,7 +907,62 @@
 
 * Rather than adopting scrum, kanban, xp, or one of the scaling frameworks, consider adopting one of the practices from the list below;
     1. The practices of Kanban: making the work visible (via a card wall), limiting work in progress, pulling work through the system.
-    2. The practices of SCRUM and XP: short daily team meetings, a product owner, a proess facilitator, retrospectives, a cross-functional team, user stories, small releases, refactoring, TDD and pair programming.
-    3. Aligh team events. Align iterationi start and stop times as well ass iteration length, from multiple teams.
+    2. The practices of SCRUM and XP: short daily team meetings, a product owner, a process facilitator, retrospectives, a cross-functional team, user stories, small releases, refactoring, TDD and pair programming.
+    3. Align team events. Align iteration start and stop times as well as iteration length, from multiple teams.
     4. Escalation trees: Escalate impediments immediately via a well defined escalation path.
-    
+    5. Regular interteam interaction. REgular interaction between the Scrum master, product owner and team members who are working together toward a common deliverable.
+    6. Portfolio kanban - set work in progress limits to ensure that the organization is focused on the highest-value work at all times. Having fewer projects at a time also vastly simplifies multiteam coordination.
+    7. Minimum Viable Increments - What is the shortest path to producing the highest value in the shortest time.
+
+#### Going big by focusing on the small
+
+* Some of the practics associated with team-level Agile that do double duty as enablers of multiteam coordination:
+    * The SOLID principles - Dramatically reduce dependencies
+    * Small, valuable user stories - Small stories limit the scope of dependencies
+    * Small, frequent releases - "The increment must be in useable condition regardless of whether the Product Owner decides to release it".
+    * Continuous integration - Integration across the entire product after every checkin.
+    * Simple Design - When coordinating the work of multiple teams, monolithic, centralized, preplanned architectures create massive dependencies between teams.
+
+#### The future of AGile coaching
+
+* The scum alliance's advanced certified scrum master (ACSM)
+
+## 7. Craftsmanship
+
+### The Agile Hangover
+
+* Managers willing to push developers to work faster are using the full transparency of the process to micromanage them.
+* Roadmaps and milestones are being defined by managers and forced upon development teams - developers can estimate the work, but they are pushed hard to fit their estimates into the imposed milestones.
+* Failing to deliver all story points in a sprint means developers must work harder in the next sprint to make up for the delay.
+* Focusing on the highest-priority item in the backlog and getting it done as fast as possible results in a long sequence of tactical work and accumulation of technical debt.
+* Monoliths become the norm.
+* Managers blame developers for not moving quickly. Developers blame managers for not allowing them to do the technical and strategic work needed. Product owners do not consider themselves as part of the team, and do not share the responsibility when things go wrong.
+
+### Expectation Mismatch
+
+* Development teams should deliver production-ready software at the end of each iteration.
+* Rarely is there a buget for up-skilling developers during Agile transformations. Business doesn't even know developers have to learn new practices.
+* Developers need strategic thinking. They need a modular design that supports parallel work. They need to continuously embrace change while making sure the system can always be deployed to production. They need to build software that is both flexible and robust.
+
+### Moving apart
+
+* Most modern agile coaches do not have enough tecnical skills to coach developers on technical practices, and they rarely talk about engineering.
+* Developers started seeing Agile coaches as another layer of management people telling them what to do instead of helping them to get better at what they do.
+
+#### Software Craftsmanship
+
+* We have come to value:
+    * Not only working software, but also well-crafted software.
+    * Not only responding to change, but also steadily adding value.
+    * Not only individuals and interations, but also a community of professionals.
+    * Not only customer collaboration, but also productive partnerships.
+* Well-crafted software: code that is well designed and well tested.
+* Steadily adding value: committed to continuosly provide increasing value to our clients.
+* Community of professionals: we are expected to share and learn with each other, raising the bar of our industry. We are responsible for preparing the next generation of developers.
+* Productive partnerships: We will have a professional and respectful relationship with our clients and employers.
+* We look at our work not as part of our job, but as a professional service we provide.
+* We take ownership of our careers, investing our time and money to get better at what we do.
+* Craftspeople strive to do the best job they can, not because someone is paying, but based on a desire to do things well.
+
+### Ideology vs Methodology
+
