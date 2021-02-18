@@ -31,3 +31,18 @@
     * Resolverse de forma óptima (maximizar el resultado).
     * Resolverse por satisfacción (no maximiza el resultado).
     * Disolverse.
+* Los filósofos de la antigua Grecia dividían las búsquedas del hombre en cuatro categorías principales:
+    1. La científica - La búsqueda de la verdad
+    2. La politicoeconómica - la búsqueda del poder y la abundancia
+    3. La ético-moral - La búsqueda de la bondad y la virtud.
+    4. La estética - La búsqueda de la belleza
+* El trabajo se toma como necesario y al mismo timepo como necesariamente desagradable.
+* La facultad de satisfacer todos los deseos es un ideal que comparten necesaariamente todos los hombres en todo momento, se llama omnipotencia.
+* Existen cuatro requisitos necesarios y suficientes para llegar a la omnipotencia
+    1. Aumento en la información y conocimiento que se poseen.
+    2. Aumento en la disponibilidad del acceso a esos recursos.
+    3. Reducción del conflicto dentro y entre los individuos.
+    4. El hombre ha de perseguir continuamente el ideal de omnipotencia, nunca debe estar dispuesto a contentarse con algo menos; nunca debe sentirse ni permanentemente desanimado ni completamente satisfecho.
+* Es función del arte proveer dichas visiones e _inspirarnos_ para su persecución.
+* El arte es tanto creativo, como recreativo. La recreación es la extracción de un placer en el momento, una recompensa por esfuerzos del pasado.
+* El arte produce también una renuncia a contentarse con lo que se tiene. Lo saca a uno del pasado y lo empuja hacia el futuro.
