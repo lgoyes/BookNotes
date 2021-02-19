@@ -11,6 +11,7 @@
 ## Índice
 
 1. [Creatividad y restricciones](#1-creatividad-y-restricciones)
+2. [Objetivos](#2-objetivos)
 
 ## 1. Creatividad y restricciones
 
@@ -46,3 +47,24 @@
 * Es función del arte proveer dichas visiones e _inspirarnos_ para su persecución.
 * El arte es tanto creativo, como recreativo. La recreación es la extracción de un placer en el momento, una recompensa por esfuerzos del pasado.
 * El arte produce también una renuncia a contentarse con lo que se tiene. Lo saca a uno del pasado y lo empuja hacia el futuro.
+
+## 2. Objetivos
+
+* La solución de problemas implica la selección de uno o más cursos de acción en la persecución de uno o más objetivos. Un objetivo es un resultado que se desea.
+
+### Objetivos propios
+
+* Los problemas son de dos tipos: 
+    1. aquellos que implican la destrucción, eliminación o moderación de algo que está presente, pero indeseado,
+    2. y aquellos que implican la adquisición o el logro de algo ausente pero que se desea.
+* Un objetivo positivo puede implicar el logro de uno negativo, cosa que no sucede en el caso contrario. En la mayoría de los casos, eliminar lo que no se quiere no es equivalente a obtener lo que se quiere.
+* Cada medio también se puede considerar como un fin y cada fin como un medio.
+* La eficiencia de un medio es la medida de su valor _instrumental_ o _extrínseco_; su utilidad.
+* Si los medios (cursos de acción) y los instrumentos que se utilizan junto con ellos, tuvieran solamente un valor extrínseco, a los que deben decidir no les importaría cuál de estos medios se seleccione cuando todos son igualmente eficientes para el mismo fin, pero éste no es un caso frecuente.
+* El valor intrínseco se deriva de la satisfacción inmediata, el valor extrínseco de las consecuencias anticipadas.
+* Los valores intrínsecos d elos medios, son valores muy personales, difíciles o imposibles de defender.
+* La diversión es un objetivo recreativo, estético. Se deriva del valor intrínseco de los medios empleados. Nada tiene que ver con la eficiencia, ni con la economía.
+* Las decisiones importantes, aún en los negocios, tienen poco o nada que ver con la eficiencia o la economía.
+* Reducir la calidad del producto hubiera disminuído significativamente la satisfacción que los gerentes derivaban de su tarea; esto estaba relacionado con el valor intrínseco de la obra; un medio.
+* La preferencia por ciertos medios, según el valor intrínseco, es aspecto de un estilo indivual o de grupo. Las preferencias de estilo persistentes se llaman _rasgos_. La combinación de rasgos que nos distingue a cada uno, constituye nuestro estilo; la individualidad propia, la singularidad depende tanto del estilo propio como de los medios que se persiguen.
+* El estilo tiene que ver con la satisfacción que se deriva de lo que se hace, más que de aquello para quién se hace.
