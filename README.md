@@ -25,3 +25,4 @@ In this repo, I will take some notes of the books I've read.
 3. [_Código Limpio_ - Robert Martin.](CodigoLimpio-RobertMartin.md)
 4. [_The Clean Coder_ - Robert Martin.](TheCleanCoder-RobertMartin.md)
 5. [_El Arte de Resolver Problemas_ - Russell Ackoff](ElArteDeResolverProblemas-RussellAckoff.md)
+6. [_Head First Design Patterns_ - Freeman & Robson](HeadFirstDesignPatterns-FreemanRobson)
