@@ -68,3 +68,26 @@
 * Reducir la calidad del producto hubiera disminuído significativamente la satisfacción que los gerentes derivaban de su tarea; esto estaba relacionado con el valor intrínseco de la obra; un medio.
 * La preferencia por ciertos medios, según el valor intrínseco, es aspecto de un estilo indivual o de grupo. Las preferencias de estilo persistentes se llaman _rasgos_. La combinación de rasgos que nos distingue a cada uno, constituye nuestro estilo; la individualidad propia, la singularidad depende tanto del estilo propio como de los medios que se persiguen.
 * El estilo tiene que ver con la satisfacción que se deriva de lo que se hace, más que de aquello para quién se hace.
+
+> El fin de un problema puede ser el comienzo de otro
+
+* El resultado de la solución de un problema siempre se puede considerar como el medio para consecuencias definitivas.
+* Para determinar el valor extrínseco de un resultado intermedio, se debe saber cuál es el resultado final que se desea y qué tan aproximado a este es el resultado intermedio.
+* Los resultados definitivos que se dean son los únicos que pueden tener valor intrínseco porque no tienen consecuencias. Deben ser inalcanzables pero aproximables.
+* El ser aproximables hace que el progreso hacia ellos sea la medida apropiada del valor extrínseco de cualquier resultado intermedio.
+* Al resultado final o definitivo se le llama ideal.
+* La creencia de que el futuro dependerá de lo que se hace entre hoy y mañana, acrecienta el interés.
+* La concepción que se tiene de los posibles resultados, afecta a aquellos resultados que se desean.
+* La habilidad para resolver problemas está por lo tanto, limitada por el concepto de lo que es factible.
+* A menudo estas limitaciones han sido autoimpuestos.
+* Muchas de las formulaciones de nuestros problemas se dirigen a eliminar lo que no se desea. Se tiene tendencia a perturbarse más por lo que desagrada que por lo que agrada.
+* El esfuerzo por deshacerse de lo que no se quiere es una resolución reactiva de los problemas.
+* El afán por obtener lo que se quiere es proactivo.
+* Cuando uno se concentra en las deficiencias del estado actual, tiende a considerar independientemente cada una de las deficiencias.
+* CUando uno se concentra en un ideal, descubre las relaciones entre los diferentes aspectos que se pueden llevar a cabo en el futuro, lo que contribuye a abordar simultáneamente diferentes combinaciones de amenazas y oportunidades, abordarlas como _un sistema de problemas_.
+* La resolución proactiva de problemas está implícita en el proceso de planificación. Ningún problema se aborda aisladamente, sino que cada uno se formula como parte de una combinación d eproblemas interrelaionados, que se trata como un todo.
+* El diseño de un futuro deseable se lleva a cabo mejor cuando se incluye en un rediseño idealizado de cualquier cosa que se planee. Este rediseño es una manifestación explícita de lo que los diseñadores tendrían, si pudieran obtener todo lo que quisieran.
+* Dicho diseño debe someterse a dos restricciones:
+    1. El diseño debe ser tecnológicamente factible. Las restricciones impuestas externamente (e.g. económicas, políticas y legales) deben omitirse.
+    2. La cosa que se diseña, debe de haerse de manera tal que si llega a existir, sobreviva. El diseño debe ser viable operativamente.
+* Un diseño idealizado no es precisamente utópico, puesto que es susceptible de que se lo mejore. Su diseño, a diferencia de una utopía, se basa en el reconocimiento de que _ningún diseño idealizado puede seguir siéndolo por mucho tiempo_.
