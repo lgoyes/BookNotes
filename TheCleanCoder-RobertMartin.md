@@ -93,9 +93,46 @@
     * **Methods** - You should understand XP, Scrum, Lean, Kanban.
     * **Dissciplines** - You should practice TDD, Object Oriented Design, Conotinuous Integration, and Pair Programming.
     * **Artifacts** - You should know how to use UML, DEFDs, State Transition Diagrams and Tables, flow charts and decision tables.
+#### Continuous Learning
+* The frenetic rate of change in our industry means that software developers must continue to leaern copius quantities to keep up.
+* Why should employers hire developers who don't keep current?
 
+#### Practice
+* Professionals practice. True professionals work hard to keep their skills sharp and ready. It is not enough to simply do your daily job and call that practice. Doing your daily job is performance, not practice. Practice is when you specifically exercise your skills outside of the performance of your job the sole purpose of refining and enhancing those skills.
+* I'll use a kata to sharpen a particular skill, such as keeping my fingers used to hitting shortcut keys, or using certain refactorings.
+
+#### Collaboration
+* Professional software developers make a special effort to collaborate with other people (programming, practice, designing, planing).
+
+#### Mentoring
+* The best way to learn is to teach.
+
+#### Know your domain
+* It is the responsibility of every software professional to understand the domain of the solutions they are programming.
+* You don't have to be a domain expert, but there is a reasonable amount of due diligence that you ought to engage in.
+* You should know enough about the domain to be able to recognize and challenge specification errors.
+
+#### Identify with your employer/customer
+* As you develop a system you need to put yourself in your employer's shoes and make sure that the ffeatures you are developing are really going to address your employer's needs.
+
+#### Humility
+
+* When a professional finds himself the butt of a joke, he'll be the first to laugh. He will never ridicule others, but will accept ridicule when it is deserved and laugh it off when it's not. he will not demean another for making a mistake, because he knows he may be the next to fail.
 
 ## 2. Saying No
+
+* Professionals speak truth to power. Professionals have the courage to say no to their managers.
+* Slaves are not allowed to say no. Laborers may be  hesitant to say no. But professionals are expected to say no.
+
+### Adversarial Roles
+
+* My own experience has been that the hard decisions are best made through the confrontation of adversarial roles.
+* Managers are people with a job to do. Part of that job is to persue and defect their objectives as aggressively as they can.
+* By the same token, programmers are also people with a job to do, if they are professionals, they will persue and defend their objectives as aggressively as they can.
+* If you know full well that getting the login page done by tomorrow is impossible, then you are not doing your job if you say "OK, I'll try". The only way to do your job at that point is to say "No, that's impossible".
+* Instead of asking whether two week would be OK, Paula should have been more assertive: "It's going to take me two weeks". Mike, on the other hand, just accepted the date without questioning, as though his own objectives didn't matter.
+* The conversation was a bit adversarial, and there were a few uncomfortable moments, but that's to be expected when two people assertively persue goals that aren't in perfect alignment.
+
 ## 3. Saying Yes
 ## 4. Coding
 ## 5. Test Driven Development
