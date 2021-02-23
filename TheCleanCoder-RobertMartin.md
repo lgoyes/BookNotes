@@ -133,6 +133,38 @@
 * Instead of asking whether two week would be OK, Paula should have been more assertive: "It's going to take me two weeks". Mike, on the other hand, just accepted the date without questioning, as though his own objectives didn't matter.
 * The conversation was a bit adversarial, and there were a few uncomfortable moments, but that's to be expected when two people assertively persue goals that aren't in perfect alignment.
 
+#### What about the why?
+
+* The why is a lot less important than the fact.
+* Still, knowing why might help mike to understand and therefore to accept the fact.
+* In situations where Mike has the technical expertise and temperament to understand, such explanations might be useful.
+* Providing too much detail can be an invitation for micro-management.
+
+### High Stakes
+
+* When the cost of failure is so high that the survival of your company depends upon it, you MUST be absolutely determined to give your managers the best information you can. And that often means saying no.
+
+### Being a "Team Player"
+
+* A team-player communicates frequently, keeps an eye out for his or her team mate, and executes his or her own responsabilities as well as possible.
+* Mike wanted Don to see him as a team player, and he has faith in his ability to wheedle and manipulate Paula into trying for the six-week deadline.
+
+#### Trying
+
+* The worst thing Paula could do in response to Mike's manipulations is saying "OK, well. I'll try".
+* If there is some extra effort she could apply, then she and her team must not have been applying all their effort before.
+* By promising to try, you are committing to succeed. If your "trying" does not lead to the desired outcome, you will have failed.
+* If you are NOT holding back some energy in reserve, if you don't have a new plan, if you aren't going to change your behavior, and if you're reasonably confident in your original estimate, then promising to try is fundamentally dishonest. You are lying. And you are probablly doing it to save face and to avoid a confrontation.
+
+#### Passive Aggression
+
+* Paula could just left Mike walk off the end of the cliff. This is passive agression. She'd just left Mike hang himself.
+* Or, she could try to head off the disaster by communicating directly with Don. It's what being a team player is really about.
+
+### The cost of saying yes
+
+* Managers and developers in well-run teams will negotiate with each other util they come to mutually agreed upon plan of action.
+
 ## 3. Saying Yes
 ## 4. Coding
 ## 5. Test Driven Development
