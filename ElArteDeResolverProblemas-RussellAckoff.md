@@ -91,3 +91,12 @@
     1. El diseño debe ser tecnológicamente factible. Las restricciones impuestas externamente (e.g. económicas, políticas y legales) deben omitirse.
     2. La cosa que se diseña, debe de haerse de manera tal que si llega a existir, sobreviva. El diseño debe ser viable operativamente.
 * Un diseño idealizado no es precisamente utópico, puesto que es susceptible de que se lo mejore. Su diseño, a diferencia de una utopía, se basa en el reconocimiento de que _ningún diseño idealizado puede seguir siéndolo por mucho tiempo_.
+* Para convertir en posible lo aparentemente imposible, es necesario eliminar o aliviar las restricciones que se derivan de considerar lo practicable. El diseño idealizado puede ser extremadamente efectivo para eliminar y aliviar dichas restricciones.
+* Un sistema posee propiedades que sus partes constituyentes carecen.
+* El principal obstáculo entre el hombre y el futuro que desea, es el propio hombre.
+* Este diseño es un poderoso medio para convertir en posible lo aparentemente imposible.
+    1. El diseño idealizado facilita la amplia participación de todos aquellos que se ven potencialmente afectados por el producto del diseño.
+    2. La idealización tiende a crear un consenso general entre aquellos que están comprometidos.
+* Cuando se llega a un acuerdo explícito sobre valores finales, es más fácil eliminar las diferencias de los objetivos a corto plazo, y los medios. Además, cuando no se puedan eliminar las diferencias, se pueden y se deben diseñar experimentos dentro del sistema para poder resolverlas.
+
+### Los objetivos de los otros
