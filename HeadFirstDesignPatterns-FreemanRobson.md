@@ -26,6 +26,20 @@
 > Favor composition over inheritance
 * Not only does it let you encapsulate a family of algorithms into their own set of classes, but it also lets you **change behaviour at runtime** as long as the object you're composing with implements the correct behaviour interface.
 
+> The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+* Design patterns give you a shared vocabulary with other developers. Once you've got the vocabulary, you can more easily communicate with other developers and inspire those who don't know patterns to start learning them.
+
+* When you communicate using patterns, you oare communicating not just a pattern name, but a whole set of qualities, characteristics, and constraints that the pattern represents.
+
+* When you use a pattern in a description, other developers wuickly know precisely the design you have in mind.
+
+* Talking about software systems using patterns allows you to keep the discussion at the design level.
+* A team well versed in design patterns can move more quickly.
+* Design patterns are higher level than libraries. Design patterns tell us how to structure classes and objects to solve ceratin problems, an it is our job to adapt those designs to fit our particular application.
+* On of the true misunderstanding of object-oriented development: that by knowing the OO basics we are automatically going to be good at building flexible, reusable, and maintainable systems.
+
+
 ## 2. Keeping your Objects in the Know: the Observer Pattern
 ## 3. Decorating Objects: the Decorator Pattern
 ## 4. Baking with OO Goodness: the Factory Pattern
