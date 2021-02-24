@@ -164,6 +164,54 @@
 ### The cost of saying yes
 
 * Managers and developers in well-run teams will negotiate with each other util they come to mutually agreed upon plan of action.
+* Sometimes, the only way to get to the _right_ yes is to be unafraid to say no.
+
+### Code Impossible
+
+* Instead of "is good code impossible?", the real question is "is professionalism impossible?".
+* Why did John do this? John was trying to be a hero.
+* Professionals are often heroes, but not because they try to be one. Professionals become heroes when they get a job done well, on time, and on budget.
+* By trying to become the man of the hour, John was not acting like a professional.
+* John accepted that the only way to succeed was to behave unprofessionally, so he reaped the appropriate reward.
+* Saying yes to dropping our professional disciplines is not the way to solve problems.
+
+## Saying yes
+
+### A Language of Commitment
+
+* There are three parts to making a commitment
+    1. You _say_ you'll do it
+    2. You _mean_ it.
+    3. You _actually_ do it.
+* There are very few people who, when they say something, they mean it and then actually get it done.
+
+#### Recognize lack of commitment
+
+* Here are some examples of words and phrases to look for, that are signs of noncommitment:
+    1. **need/should**: "We need to get this done"
+    2. **hope/wish** "I hope we can meet again some day"
+    3. **Let's** "Let's meet sometime"
+* We tend to be very busy not taking responsibility for things. And that's _not_ ok when you or someone else relised on those promises as part of the job.
+
+#### What does commitment sound like?
+
+* The phrases of the previous section assume things are out of my hards, or they don't take personal responsibility.
+* People behave as if they were victims of a situation instead of in control of it.
+* You, personally, always have something that's under your control.
+* Look for sentences that sould like "I will... by..."
+* You are stating a fact about something you owill do with a clear end time.
+* If you don't get it done, people can hold you up to your promises.
+* The start of commitment: putting yourself in the situation that forces you to do something.
+
+#### It wouldn't work because I rely on person X to get this done.
+
+* You can only commit to things that you have full control of.
+* If the end goald depends on someone else, you should commit to specific actions that bring you closer to the end goal.
+
+#### It wouldn't work because I don't really know if it can be done.
+
+
+
 
 ## 3. Saying Yes
 ## 4. Coding
