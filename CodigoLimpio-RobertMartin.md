@@ -13,6 +13,7 @@
 1. [Código Limpio](#1-código-limpio)
 2. [Nombres con Sentido](2-nombres-con-sentido)
 3. [Funciones](#3-funciones)
+4. [Comentarios](#4-comentarios)
 4. [Formato](#4-formato)
 
 ## 1. Código Limpio
@@ -328,7 +329,7 @@
 * Cuando se crean las funciones, se suele empezar con funciones extensas y complicadas, con abundancia de sagrados y bucles anidados. Con extensas listas de argumentos, nombres arbitrarios y código duplicado.
 * Siempre y cuando se tenga una serie de pruebas unitarias que abarquen todas las líneas de código, siempre se puede refactorizar.
 
-## 3. Comentarios
+## 4. Comentarios
 
 * No hay nada más útil que un comentario bien colocado. No hay nada que colapse más un módulo que comentarios dogmáticos innecesarios. no hay nada más dañino que un comentario antiguo que propague mentiras y desinformación.
 * El uso correcto de comntarios permite compensar nuestra incapacidad para para expresarnos en el código.
@@ -452,4 +453,90 @@
 
 * La formalidad de javadoc en código no dirigido a consumo público no es más que una distracción.
 
-## 4. Formato
+## 5. Formato
+
+* Debe preocuparse por el formato de su código. Debe elegir una serie de reglas sencillas que controlen el formato del código y, después, aplicarlas de forma coherente.
+* Si trabaja en equipo, debe acordar una serie de reglas que todos debem cumplir.
+
+### La función del formato
+
+* La funcionalidad que cree hoy es muy probable que cambie en la siguiente versión, pero la legibilidad del código establece los precedentes que afectan la capacidad de mantenimiento del mismo.
+
+### Formato vertical
+
+* Aparentemente se pueden crear sistemas a partir de archivos de unas 200 lineas de longitud con un límite máximo de 500.
+* Los archivos pequeños se entienden mejor que los grandes.
+
+#### La metáfora del periódico
+
+* Un archivo de código odebe ser como un artículo de periódico. El nombre debe ser sencillo, pero claro. Los elementos superiores del archivo deben proporcionar conceptos y algoritmos de nivel superior. Los detalles deben aumentar según avanzamos.
+
+#### Apertura vertical entre conceptos
+
+* Cada grupo de líneas representa un pensamiento completo. Estos pensamientos deben separarse mediante líneas en blanco.
+
+#### Densidad vertical
+
+* Si la apertura separa los conceptos, la densidad vertical implica asociaciones. Por tanto, las líneas de código con una relación odirecta, deben aparecer verticalmente densas.
+
+#### Distancia vertical
+
+* Los conceptos relacionados entre sí deben mantenerse juntos verticalmente.
+* No debe separar conceptos relacionados en archivos independientes, a menos que tenga un motivo de peso. Por esta razón, deben evitarse las variables protegidas.
+
+#### Declaraciones de variables
+
+* Las variables deben declararse de la forma más aproximada a su uso.
+
+#### Variables de instancia
+
+* Las variables de instancia deben declararse en la parte superior de la clase. Lo importante es declararlas en un punto conocido para que todos sepan dónde buscarlas
+* La variable de instancia debería usarse en muchos, sino en todos, los métodos.
+
+#### Funciones dependientes
+
+* Si una función oinvoca otra, deben estar verticalmente próxiimas, y la función de invocación deben estar por encima de la invocada, siempre que sea posible.
+
+#### Afinidad conceptual
+
+* Cuanto mayor sea la afinidad entre dos conceptos, menor distancia vertical debe existir entre ellos.
+* Hay afinidad cuando una función invoca otra. Pero también la hay cuando un grupo de funciones realiza una operación similar.
+
+#### Orden vertical
+
+* La función invocada debe situarse por debajo de la que realiza la invocación.
+
+#### Formato horizontal
+
+* No debería tener líneas de más de 120 caracteres.
+
+#### Apertura y densidad horizontal
+
+* Las instrucciones de asignación tienen dos elementos principales: el lado izquierdo y el derecho. Los espacios acentúan esta separación.
+* No se incluyen espacios entre el nombre de la función y el paréntesis de aperttura, porque el nombre y los argumentos están estrechamente relacionados.
+
+#### Alineación horizontal
+
+* La alineaación horizontal no es útil.
+* Si hay una lista extensa de declaraciones, se debe dividir la clase.
+
+#### Sangrado
+
+* Un archivo de código es una jerarquía. Cada nivel de la jerarquía es un ámbito en el que se pueden declarar nombres y en el que se interpretan declaraciones e instrucciones ejecutables.
+* Las líneas a la izquierda se alinean para ver el ámbito al que pertenecen.
+* Los programadores dependen de este sistema de sangrado.
+
+#### Romper el sangrado
+
+* En lugar de escribir todo en una línea, prefiero desplegar y sangrar los ámbitos.
+
+#### Ámbitos ficticios
+
+* Evitar instrucciones `while` y `for` con cuerpo ficticio
+
+### Reglas de equipo
+
+* Todo programador tiene sus reglas de formato preferidas, pero si forma parte de un equipo, el equipo manda.
+* El estilo debe ser coherente y dinámico.
+
+## 6.
