@@ -210,8 +210,58 @@
 
 #### It wouldn't work because I don't really know if it can be done.
 
+* If it can't be done, you can still commit to actions that will bring you closer to the target.
 
+#### It wouldn't work because sometimes I just won't make it
 
+* If you can't make your commitment, the most important thing is to raise a red flag as soon as possible, to whoever you committed to.
+* The earlier you raise the flag, the more likely there will be time to decide if something can be done or changed.
+
+### Learning How to Say "Yes"
+
+#### The other side of "try"
+
+* Instead of fuzzy responses (with) try, you should be clear, even describing your own uncertainty.
+
+#### Commiting with Disciplilne
+
+* He could do a few hours of work on Saturday too if things take longer than he hopes.
+    * Peter: "look, marge, there's a good chance that I can get everything done by monday morning if I put in a few extra hours on Saturday."
+    * Marge: "Can I count on Monday morning then?"
+    * Peter: "Probably, but not definetely"
+* Peter might be tempted to break discipline at this point. This is where the professional draws the line.
+* Peter starts to think about working some significant overtime, and probably most of the weekend. He needs to be very honest with himself about his stamina and reserves.
+* Peter knows that he can get the modifications and documentations done if he works the overtime. He also know he will be useless for a couple of days after that.
+
+## 4. Coding
+
+### Preparedness
+
+* Coding requires you to juggle many factors at once:
+    1. You must understand the problem. You must ensure that the code you write is a faithful representation of that solution.
+    2. Often, the customer's requirements do not actually solve the customer's problems. You have to negotiate with the him/her.
+    3. Your code must fit well into the existing systems, following the SOLID principles.
+    4. Your code must be readable by other programmers. Craft your code in such a way that it reveals your intent.
+* If you are tired or distracted, do not code. You will only wind up redoing what you did.
+
+#### 3am code
+
+* Don't write code when you are tired. Dedication and professionalism are more about discipline that hours. Make sure that your sleep, health, and lifestyle are tuned so that you can put in _eight good hours per day_.
+
+#### Worry code
+
+* When I am worried about an argument, I can't maintain focus. My concentration wavers. I find myself with my eyes on the screen and my fingers on the keyboard, doing nothing.
+* Instead of coding, I need to resolve the worry.
+* The trick is to learn how to shut down the background process, or at least reduce its priority so that it's not a continuous distraction.
+* You should specifically set aside time at home to settle your snxieties so that you don't bring them to the office.
+* If you find yourself at the office and the background anxieties are sapping your productivity, then it is better to spend an hour quieting them than to use brute force to write code.
+
+### The flow zone
+
+* You will write more code in the zone. The problem is that you lose some of the big picture while you are in the zone, so you will likely make decisiones that you will later have to go back and reverse.
+* There are times when the zone is exactly where you want to be when you are practicing.
+
+#### Music
 
 ## 3. Saying Yes
 ## 4. Coding
