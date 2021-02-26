@@ -100,3 +100,23 @@
 * Cuando se llega a un acuerdo explícito sobre valores finales, es más fácil eliminar las diferencias de los objetivos a corto plazo, y los medios. Además, cuando no se puedan eliminar las diferencias, se pueden y se deben diseñar experimentos dentro del sistema para poder resolverlas.
 
 ### Los objetivos de los otros
+
+* Las soluciones parar la mayoría de los problemas personales, afectan a otras personas, así como al que los resuelve.
+* Las otras personas reaccionan generalmente ante cualquier solución que se pone en práctica. Sus reacciones se determinan por la manera en que la solución afecta la prosecuión de sus propios objetivos.
+* Quienes tienen autoridad sobre otros, suponen que los comprenden y que conocen sus objetivos. Con frecuencia están equivocados. Cuando consecuencias imprevistas siguen a la puesta en práctica de una solución, los que lo cometen, rara vez dudan de su comprensión de los otros.
+* La racionalidad está generalmente en la mente de los que miran y no en la mente de aquellos a quienes se mira.
+* La comprensión equivocada de los objetivos de otros es normal donde existe una brecha cultural que separa al que resuelve los problemas de aquellos que se ven afectados por la solución.
+* La razón por la cual una persona da, puede no ser la razón por la que otra recibe.
+* En los problemas, cuyas soluciones implican las reacciones de otras personas, la mejor protección contra reacciones inesperadas, es _la participación_ que dichas personas tengan en el proceso de resolución del problema.
+* No consultar a otros que tienen algo que ver con las decisiones que se tomen, a menudo se toma como un acto de agresión.
+* Una invitación a participar en la toma de decisiones es un acto de conciliación, una demostración de cuidado y preocupación.
+
+### Relación entre los objetivos de dos o más grupos
+
+* Un grupo está en _conflicto_ con otro, si la acción del primero tiene un efecto sobre el resultado de la acción del segundo, y si este efecto ha de reducir el valor del resultado para el segundo grupo.
+* Si, por otra parte, el efecto de la acción del primer grupo resulta en un aumento en el resultado del comportamiento del segundo, el primero _coopera_ con el segundo.
+* Si el comportamiento del primer grupo no tiene efecto alguno sobre el del segundo, este último es _independiente_ del primero.
+* Cuando el conficto o la cooperación no es simétrica, se dice que aquel que se beneficia más o sufre menos, que _explota_ al otro.
+* En la competencia, dos o más grupos están en conflicto unos con otros, en relación con uno o más objetivos que cada uno tiene, pero este conflicto sirve eficientemente a otro objetivo, ya se ade las partes en conflicto o de un tercer grupo.
+* Las leyes, las regulaciones y las reglas que rigen la competencia, se establecen para asegurar la efectividad del conflicto comprometido para llegar al objetivo "cooperativo".
+* Hay tres formas de resolver un conflicto: _solución_, _resolución_ y _disolución_.
