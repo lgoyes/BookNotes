@@ -263,6 +263,88 @@
 
 #### Music
 
+* The music does not help me focus.
+* Maybe the music helps you to write some code.
+
+#### Interruptions
+
+* You may resent being dragged out of the Zone, or you may resent someone interfering with your attempt to enter the Zone.
+* When interruptions happen, remember that next time you may be the one who needs to interrupt someone else. So the professional attitude is a polite willingness to be helpful.
+
+### Writer's Block
+
+* What causes such blockages? A major factor is sleep. Others are worry, fear and depression.
+* The solution: find a pair partner.
+* The typical reaction to pairing is a recovery of my momentum.
+
+#### Creative Input
+
+* Creative output depends on creative input. I read a lot, and I read all kinds of material. Science fiction best primes the pump of creative output.
+* Creativity breeds creativiy.
+
+### Debugging
+
+#### Debugging Time
+
+* Debugging time is just as expensive to the business as coding time is, and therefore, anything we can do to avoid or diminish it is good.
+* I achieved this truly radical reduction in debugging time by adopting the practice of TDD.
+
+### Pacing yourself
+
+* Software development is a marathon, not a sprint. You win by conserving your resources and pacing yourself.
+
+#### Know when to walk away.
+
+* Can't go home till you solve this problem? You should
+* When you are stuck, when you are tired, disengage for a while.
+
+#### Driving Home
+
+* Driving requires a lot of noncreative mental resources. You must dedicate your eyes, hand and portions of your mind to the task. That disengagement allows your mind to hunt for solutions in a different and more creative way.
+
+#### The shower
+
+* You miss elegant solutions because the creative part of your mind is suppressed by the intensity of your focus.
+
+### Being late
+
+* You will be late. Sometimees we just blow our estimates and wind up.
+* The trick to managing lateness is early detection and transparency.
+* Do not incorporate hope into your estimates! Regularly measure your progress against your goal.
+* What are the best, nominal and worst case scenarios?
+
+#### Hope
+
+* Hope is the project killer. Hope destroys schedules and ruins reputations. Hope will get you into deep trouble.
+* If the trade show is in ten days, and your nominal estimate is 12, you are not going to make it, even though your best case estimate is 8.
+
+#### Rushing
+
+* What if the manager asks you to make the deadline? Hold your estimates. Tell your boss that you've already considered the options and that the only way to improve the schedule is to reduce scope.
+* There is no way to rush. You can't make yourself code faster. If you try, you will just make a mess that slows everyone else down, too.
+
+#### Overtime
+
+* Overtime can work, and sometimes it's necessary. Sometimes you can make an otherwise impossible date by putting in some ten-hour days and a Saturday or two.
+* You should not agree to work overtime unless:
+    1. You can personally afford it.
+    2. It is short term, two weeks or less.
+    3. Your boss has a fall-back plan in case the overtime effort fails.
+
+#### False Delivery
+
+* The worst behavior is saying you are done when you know you aren't. We convince ourselves that we are done "enough", and move onto the next task. We rationalize that any work that remains can be dealth with later, when we have more time.
+
+#### Define "done"
+
+* Avoid false deliviery by creating an independent definition of "done".
+* Have your business analysts and testers create automated acceptance tests that must pass before you can say that you are done. These tests should be written in cucumber, so they are understandable by the business people.
+
+### Help
+
+
+
+
 ## 3. Saying Yes
 ## 4. Coding
 ## 5. Test Driven Development
