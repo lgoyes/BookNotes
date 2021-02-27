@@ -342,12 +342,73 @@
 
 ### Help
 
+* Programming is so hard, in fact, that is beyond the capability of one person to do it well. No matter how skilled you are, you will certainly benefit from another programmer's thoughts and ideas.
 
+#### Helping others
 
+* Be available to help your teammates.
+* You can let it be known that between the hours of 10 am and noon you should not be bothered, but from 1pm to 3pm your door is open.
+* It is not that you are so much smarter than the other person, it's just that a fresh perspective can be very useful.
 
-## 3. Saying Yes
-## 4. Coding
+#### Being helped
+
+* Just as you oare honor bound to offer help, you are honor bound to accept help.
+* When you are stuck, or just can't wrap your mind around a problem, ask someone for help. It is unprofessional to remain stuck when help is easily accessible.
+* Programmers tend to be arrogant, self-absorbed introverts.
+
+#### Mentoring
+
+* The training of less experienced programmers is the responsibility of those who have more experience.
+* Nothing can bring a young software developer to high performance quicker than his own drive and effective mentoring by his seniors.
+* Young programmers have a professional duty to seek out such mentoring from their seniors.
+
 ## 5. Test Driven Development
+
+### The jury is in
+
+* How can you consider yourself to be a professional if you do not know that all your code works?
+* How can you know all your code works if you don't test it every time you make a change?
+
+### The tree laws of TDD
+
+1. You are not allowed to write any production code until you ohave first written a failing unit test.
+2. You are not allowed to write more of a unit test than is sufficient to fail - and not compiling is failing.
+3. You are not allowed to write more production code that is sufficient to pass the currently failing unit test.
+
+#### The letany of benefits
+
+##### Certainty
+
+* Whenever I make a change to any part of the project, I simply run the unit tests. If they pass, I am nearly certain that the change I made didn't break anything. How certain is "nearly certain"? Certain enough to ship!
+
+##### Defect Injection Rate
+
+* There is a defect reduction of 2X, 5X, and even 10X.
+
+##### Courage
+
+* Why don't you fix bad code when you osee it? Because you know that if you touch it you risk breaking it; and if you break it, it becomes yours.
+* What if you could click a button and know within 90 seconds that your changes had broken nothing, and had only done good?
+* When programmers lose the fear of cleaning, they clean!
+
+##### Documentation
+
+* Where's the first place you go in that manual? If you are a programmer, you go to the code examples. You know the code will tell you the truth.
+* Each of the unit tests you write is an example, written in code, describing how the system should be used.
+* For anything you need to know how to do, there will be a unit test that describes it in detail.
+* Tests are unambiguous, accurate, written in a language that the audience understands, and are so formal that they execute.
+
+#### Design
+
+* To write a test for a function, you've got to figure out some way to decouple the function from all the others. In other words, the need to test first forces you to think about good design.
+* If you owrite your tests later, you may be able to test the inputs and the outputs of the total mass, but it will probably be quite difficult to test individual functions.
+* The tests you write after the fact are defense. The tests you write first are offense.
+
+#### The professional option
+
+
+
+
 ## 6. Practicing
 ## 7. Acceptance Testing
 ## 8. Testing Strategies
