@@ -406,11 +406,71 @@
 
 #### The professional option
 
+* TDD is a discipline that enhances certainty, courage, defect reduction, documentation and design.
 
+### What TDD is not?
 
+* You can still write bad code even if you write your tests first. Indeed, you can write bad tests.
 
 ## 6. Practicing
+
+* When performance matters, professionals practice.
+
+### Some background on Practicing
+
+#### Twenty-two zeros
+
+* What am I doing with this increase in power of 22 factors of ten? I'm writing `if` statements, `while` loops, and assignments.
+* I've got better tools and better languages to write these statements with. But the nature of the statements hasn't changes in all that time.
+
+#### Turnaround time
+
+* The way we work has changed dramatically.
+* Programmers today don't wait for compiles. You can spin around the red-green-refactor cycle in seconds.
+* Doing anything quickly requires practice. Spinning around the code/test loop quickly requires you to make very quick decisions. Making decisions quickly means being able to recognize a vast number of situations and problems and simply know how to address them.
+
+### The coding Dojo
+
+* Many programmers have adopted a martial arts mataphor for their practice sessions.
+
+#### Kata
+
+* A kata is a precise set of choreographed movements that simulates one side of a combat. The goal is perfection.
+* The purpose is to train our mind and body how to react in a particular combat situation.
+* A programming kata is a precise set of choreographed key strokes and mouse movements that simulates the solving of some programming problem. You aren't solving the problem because you already know the solution. Rather, you are practicing the movements and decisions involved in solving the problem.
+* Many katas are recorded at `katas.softwarecraftsmanship.org`, and `codekata.pragprog.com`.
+
+#### Wasa
+
+* `ping-pong`. The two partners choose a kata, or a simple problem. One programmer writes a unit test and then the other must make it pass. Then, they reverse roles.
+
+#### Randori
+
+* Randori is free-form combat.
+* With the screen projected on the wall, one person writes a test and then sits down. The next person makes the test pass and then writes the next test.
+
+#### Broadening your experience
+
+#### Open source
+
+* one way to stay ahead of the curve is to contribute to an open source project.
+
+#### Practice Ethics
+
+* Professional programmers practice on their own time.
+* Since your practice time is your own time, you don't have to use the same language or platforms that you use with your employer.
+
 ## 7. Acceptance Testing
+
+### Communicating Requirements
+
+* It was clear that his emphasis had changed from learning how to do it himself to making sure that what I did wasa what he wanted.
+* It became very clear to me that he was the sculptor and I was the tool he was wielding.
+* The customer's vision of the features does not often survive actual contact with the computer.
+
+#### Premature precision
+
+
 ## 8. Testing Strategies
 ## 9. Time Management
 ## 10. Estimation
