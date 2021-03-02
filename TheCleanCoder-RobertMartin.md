@@ -470,6 +470,64 @@
 
 #### Premature precision
 
+* Business people want to know exactly what they are going to get before they authorize a project.
+* Developers want to know exactly what they are supposed to deliver before they estimate the project.
+* Both sides want a precision that simply cannot be achieved.
+
+#### The uncertainty principle
+
+* When you demonstrate a feature to the business, it gives them more information than they had before, and that new information impacts how they see the whole system.
+* The more precisee you make your requirements, the less relevant they become as the system is implemented.
+
+#### Estimation Anxiety
+
+* Professional developers understand that estimates can, and should, be made based on low precision requirements and recognize that those estimates _are estimates_. To reinforce this, professional developers include error bars with their estimates so that the business understands the uncertainty.
+
+#### Late ambiguity
+
+* It is responsibility of professional developers (and stakeholders) to make sure that all ambiguity is removed from the requirements
+
+### Acceptance tests
+
+* An acceptance test is a test written by a collaboration of the stakeholders and the programmers in order to define when a requirement is done.
+
+#### The definition of "Done".
+
+* Professional developers have a single definition of done: "Done" means all code written, all tests passed, QA ant the stakeholders have accepted.
+* Professional developers drive the definition of their requirements all the way to automated acceptance tests. They work with stakeholders and QA to ensure that these automated tests are a complete specification of done.
+
+#### Communication
+
+* The purpose of acceptance tests is communication, clarity, and precision. By agreeing to them, the developers, stakeholders, and testers will understand what the plan for the system behavior is.
+
+#### Automation
+
+* Acceptance tests should always be automated
+* Cucumber and Selenium are some open-source tools that facilitate the automation of acceptance tests. Those tools allow you to specify automated tests in a form that non programmers can read, understand and even author.
+
+#### Extra work
+
+* Writing acceptance tests is simply the work of specifying the system.
+* Specifying at this level of detail is the only way that the stakeholds can ensure that the system they are paying for really does what they need.
+
+#### Who writes acceptance tests, and when?
+
+* Take care that the developer who writes the tests is not the same as the developer who implements the tested feature.
+* Typically business analysts write the "happy path" versions of the tests, because those tests describe the feature that have business value. QA typically writes the "unhappy path" testes. This is because QA's job is to ohelp think about what can go wrong.
+* Acceptance tests should be written as late as possible, typically a few days before the feature is implemented.
+
+#### The developer's role
+
+* The developer's job is to connect the acceptance tests to the system, and then to make those tests pass.
+
+#### Test negotiation and passive aggression
+
+* Test authors are human and make mistakes. It is your job to negotiate with the test author for a better test.
+* You should never take the passive-aggressive option: "Well, that's what the test says, so that's what I'm going to do".
+
+#### Acceptance tests and Unit Tests
+
+
 
 ## 8. Testing Strategies
 ## 9. Time Management
