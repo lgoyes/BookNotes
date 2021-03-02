@@ -39,8 +39,24 @@
 * Design patterns are higher level than libraries. Design patterns tell us how to structure classes and objects to solve ceratin problems, an it is our job to adapt those designs to fit our particular application.
 * On of the true misunderstanding of object-oriented development: that by knowing the OO basics we are automatically going to be good at building flexible, reusable, and maintainable systems.
 
-
 ## 2. Keeping your Objects in the Know: the Observer Pattern
+
+> The Observer Patterns degines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+* The subject is the object that contains the state and controls it. The observers, on the other hand, use the state, even if they don't own it. There are many observers, and they rely on the Subject to tell them when its state changes.
+* The observers are dependent on the subject ot update them when the data changes. Many objects control the same data.
+> An object is tighly couple to another object when it is **too** dependent on that object.
+* All objects depend on other objects. But a loosly coupled object doesn't know or care too much about the details of another object.
+* WHen two objects are _loosely coupled_ they can interact, but they typically have very little knowledge of each other. Let's walk through all the ways the patternn achieves loose coupling:
+    1. The only thing the subject knows about an observer is that it implements a certain interface (the Observer interface).
+    2. We can add new observers at any time.
+    3. We never need to modify the subject to add new types of observers.
+    4. We can reuse subjects or observers independently of each other.
+    5. Changes to either the subject or an observer will not affect the other. As long as the objects still meet their obligations to implement the Subject or Observer interfaces
+> Strive for loosely coupled designs between objects that interact.
+* With a lambda expression, we create a function object instead, and the function object is the observer.
+* Whether we pull or push the data to the Observer is an implementation detail, but in a lot of cases it makes more sense to let Observers retrieve the data they need rather than passing more and more data to them through the `update()` method.
+
+
 ## 3. Decorating Objects: the Decorator Pattern
 ## 4. Baking with OO Goodness: the Factory Pattern
 ## 5. One-of-a-Kind Objects: the Singleton Pattern
