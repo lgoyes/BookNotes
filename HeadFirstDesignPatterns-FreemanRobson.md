@@ -11,6 +11,8 @@
 ## Index
 
 1. [Welcome to Design Patterns: intro to Design Patterns](#1-welcome-to-design-patterns-intro-to-design-patterns)
+2. [Keeping your Objects in the Know: the Observer Pattern](#2-keeping-your-objects-in-the-know-the-observer-pattern)
+3. [Decorating Objects: the Decorator Pattern](#3-decorating-objects-the-decorator-pattern)
 
 ## 1. Welcome to Design Patterns: intro to Design Patterns
 
