@@ -527,6 +527,87 @@
 
 #### Acceptance tests and Unit Tests
 
+* Unit tests are written by programmers for programmers. They are formal design documents that describe the lowest level structure and behavior of the code.
+* Acceptance tests are written by the business for the business. They are formal requirements developments that specify how the system should behave from the business point of view.
+* Unit and acceptance tests are not redundant. Their primary purpose is to formally document the design, structure and behavior of the system.
+
+#### GUIs and Other complications
+
+* GUIs are constantly in flux.
+* Rather than creating tests that click on those buttons based on their positions on the page, you may be able to click on them based on their names or any other unique `ID` that you can use.
+
+##### Testing through the Right Interface
+
+* Write your business rule tests to go through an API below the GUI.
+* It is a good idea to decouple the GUI and the business rules and replace the business rules with stubs while testing the GUI itself.
+* Keep the GUI tests to a minimum. They are fragile, because the GUI is volatile. The more GUI tests you have, the less likely you are to keep them.
+
+#### Continuous Integration
+
+* Make sure that all your unit tests and acceptance tests are run in a continuous integration system, every time some one commits a module.
+
+#### Stop the Presses
+
+* If the CI fails, then the whole team should stop what they are doing and focus on getting the broken tests to pass again.
+
+## 8. Testing Strategies
+
+* Every professional team needs a good testing strategy.
+
+### QA should find nothing
+
+* It should be the goal of the development group that QA find nothing wrong.
+
+#### QA is part of the team
+
+* QA and development should be working together to ensure the quality of the system. The best role for the QA part of the team is to act as specifiers and characterizers.
+
+##### QA as specifiers
+
+* QA should work with business to create the automated acceptance tests that become the true specification and requirements documents for the system. Business writes the happy-path tests, while QA writes the unhappy-path tests.
+
+##### QA as Characterizers
+
+* QA uses exploratory testing to identify the actual behavior of the system.
+
+### The test automation pyramid
+
+#### Unit tests
+
+* The intent of these tests is to specify the system at the lowest level.
+* Developers write these tests before writing production code as a way to specify what they are about to write.
+* Unit tests provide as close to 100% coverage as is practical.
+
+#### Component tests
+
+* The components of the system encapsulate the business rules, so the tests for those components are the acceptance tests for those business rules.
+* Any other system components are decoupled from the test using appropriate mocking and test-doubling techniques.
+* The intent is that the business should be able to read and interpret these tests, if not author them.
+* Component tests cover rougly half the system. They are directed more towards happy-path situations and very obvious alternate-path cases. The vast majority of unhappy-path cases are covered by unit tests and are meaningless at the level of component tests.
+
+#### Integration tests
+
+* These tests only have meaning for larger systems that have many components.
+* Integration tests assemble groups of components and tests how well they communicate with each other.
+* Integration tests are choreography tests that make sure that the components are properly connected and can clearly communicate with each other.
+* These tests are typically not executed as part of the continuous integration suite, because they often have longer runtimes. Instead, these test are run periodically.
+
+#### System tests
+
+* Their intent is not to ensure correct system behaviour, but correct system construction.
+* They test that the system has been wired together correctly and its parts interoperate according to plan.
+
+#### Manual Exploratory Tests
+
+* These tests are not automated, nor are they scripted.
+* Explore the system for unexpected behaviours while confirming expected behaviors.
+* We are not going to prove out every business rule and every execution pathway with these tests. Rather, the goal is to ensure that the system behaves well under human operation and to creatively find as many "pecularities" as possible.
+
+## 9. Time management
+
+### Meetings
+
+
 
 
 ## 8. Testing Strategies
