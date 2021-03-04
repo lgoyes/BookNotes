@@ -607,6 +607,98 @@
 
 ### Meetings
 
+* Meetings cost about 200 USD per hour per attendee.
+* Meetings are necessary and they are huge time wasters.
+* Professionals are aware of the high cost of meetings, therefore, they actively resist attending meetings that don't have an immediate and significant benefit.
+
+#### Declining
+
+* You need to use you time wisely. So be very careful about which meetings you attend and which you politely refuse.
+* Don't accept a meeting invitation, unless it is a meeting for which your participation is immediately and significantly necessary to the job you are doing now.
+* Your reponsibility is to your project first.
+* Sometimes your presence at a meeting will be requested by someone in authority. You will have to choose whether that authority outweights your work schedule. Your team and your supervisor can be of help in making that decision.
+
+#### Leaning
+
+* If you find yourself stuck in a meeting that is not a good use of your time, you need to find a way to politely exist that meeting.
+* Remaining in a meeting that has become a waste of time for you, and to which you can no longer significantly contribute is unprofessional. You have an obligation to wisely spend your employer's time and money.
+
+#### Have an agenda and a goal
+
+* Make sure you know what discussions are on the table, how much time is allocated for them, and what goal is to be achieved. If you can't get a clear answer on these things, then politely decline to attend.
+
+#### Stand-up meetings
+
+* Answer three questions
+    1. What did I do yesterday?
+    2. What am I going to do today?
+    3. What's in my way?
+* Wach question should require no more than twenty seconds.
+
+#### Iteration planing meetings
+
+* These meetings are meant to select the backlog items that will be executed in the next iteration. Estimates should already be done for the candidate items. Assessment of business value should already be done. Acceptance tests will already be done.
+* Each candidate backlog item will be briefly discussed and then either selected or rejected. No more than five or ten minutes should be spent on any given item.
+* For a one week iteration (40 hours) the meeting should be over within 2 hours.
+
+#### Iteration retrospective and demo
+
+* Those meetings are conducted at the end of each iteration
+* Team members duscuss what went wrong and what went right.
+* Stakeholders see a demo of the newly working features.
+* 20 minutes for retrospective and 25 minutes for the demo.
+
+#### Arguments and disagreements
+
+* Any argument that can't be settled in five minutes can't be settled by arguing. The reason it goes on so long is probablly religious, as opossed to factual.
+* Without data, any argument that doesn't forge agreement within a few minutes simply won't ever forge agreement. The only thing to do is to go get some data.
+
+### Focus-manna
+
+* Programming is an intellectual exercise that requires extended periods of concentration and focus. Focus is a scarce resouce.
+* Professional developers learn to manage their time to take advantage of their focus.
+* Focus is a decaying resource. If you don't use it when it's there, you are likely to lose it.
+
+#### Sleep
+
+#### Caffeine
+
+#### Recharging
+
+* Focus can be partially recharged by de-focussing. A good long walk, a conversation with friends.
+* Once the focus is gone, you can't force it.
+
+#### Muscle focus
+
+* Muscle focus helps to recharge mental focus
+* Whatever the activity, there is something about activities that focus on muscles that enhances the ability to work with your mind.
+
+#### Input vs Output
+
+* I am most creative when I am exposed to other people's creativity.
+
+### Time boxing and tomatoes
+
+* Pomodoro technique: 25-minute window of productive time that you aggressively defend against all interruptions.
+
+### Avoidance
+
+#### Priority inversion
+
+* You convice yourself that something else is more urgent, and you do that instead. This is called priority inversion.
+* Professionals evaluate the priority of each task, disregarding their professional fears and desires, and execute those tasks in priority order.
+
+### Blind alleys
+
+* When you are in a hole, stop digging.
+* You need to quickly realize when you are in a blind alley and have the courage to back out.
+
+### Marshes, bogs, swamps, and other messes
+
+* Starting a mess in unavoidable
+* At some point you realize that you made a wrong decision choice when you started, and that your code doesn't scale well in the direction that the requirements are moving - This is the inflexion point where you can go back and fix the design.
+
+## 10. Estimation
 
 
 
