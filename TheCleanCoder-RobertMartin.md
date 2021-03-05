@@ -700,6 +700,50 @@
 
 ## 10. Estimation
 
+### What is an estimate?
+
+* Business views estimates as commitmets
+* Developers view estimates as guesses
+
+#### A commitment
+
+* A commitment is something you must achieve
+* Professionals don't make commitments unless they know they can achieve them. If you aren't certain, then you have to decline.
+* Other people will accept your commitments and make plans upon them.
+
+#### An estimate
+
+* An estimate is a guess. No commitment is implied. The reason we make estimates is because we don't know how long something will take.
+* An estimate is not a number. An estimate is a probability distribution.
+* Peter's estimate is a probability distribution.
+* Peter's original estimate of three days is the highest bar on the chart, so on Peter's mind it is the most likely duration for the task.
+
+#### Implied commitments
+
+* Professionals do not commit unless they know for certain they will succeed. They are careful not to make any implied commitments. They communicate the probability distribution of their estimates as clearly as possible, so that managers can make appropriate plans.
+
+### Program Evaluation and Review Technique (PERT)
+
+* When you estimate a task, you provide three numbers
+    1. O: optimistic estimate. Absolutely everything went right.
+    2. N: Nominal estimate. Estimate with the greatest chance of success.
+    3. P: Pessimistic estimate. Widely pessimistic
+* Expected duration of the task, &mu; = (O+4N+P)/6
+* For most tasks, this will be a somewhat pessimistic number because of the right-hand tail.
+* The standard deviation of the probability distribution for the task, &sigma; = (P-O)/6
+* Then, we can combine all of the tasks and come up with a probability distribution for the entire set of tasks
+&mu;<sub>sequence</sub> = &sum; &mu;<sub>task</sub>
+* The standard deviation of the sequene is the square root of the sum of squares of the standard deviations of the task
+&sigma;<sub>sequence</sub> = &radic;(&sum; (&sigma;<sub>task</sub>)<sup>2</sup>)
+* If you are a programmer of more than a few years' experience, you've likely seen projects that were estimated optimistically, and that took three to five times longer than hoped.
+
+### Estimating Tasks
+
+#### Wideband delphi
+
+* A team of people assemble, discuss a task, estimate the task, and iterate the discussion and estimation until they reach agreement.
+
+
 
 
 ## 8. Testing Strategies
