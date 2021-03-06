@@ -743,14 +743,79 @@
 
 * A team of people assemble, discuss a task, estimate the task, and iterate the discussion and estimation until they reach agreement.
 
+#### Flying Fingers
 
+* Tasks are discussed one at a time. The participants put their hards below the table and raise 0 to 5 fingers based on how long they think the task will take. The moderator counts 1-2-3, and all the participants show their hands at one.
+* The simultaneity of displaying the fingers is important. We don't want people changing their estimates based on what they see other people do.
 
+#### Planning Poker
 
-## 8. Testing Strategies
-## 9. Time Management
-## 10. Estimation
+* Planning Poker is like flying finger, but using cards instead.
+* Cards for infinity and quation mark are also included.
+
+#### Affinity Estimation
+
+* All the tasks are written onto cards, without any estimates showing.
+* The team members do not talk, they simply start sorting the cards relative to one another. Tasks that take longer are moved to the right. Smaller taks are moved to the left.
+* Any card moved more than X times is set aside for discussion.
+* Eventually, the silent sorting is over, and discussion can begin.
+* Next step is to draw lines between cards that represent bucket sizes. These buckets might be days, weeks or points.
+
+#### Trivariate Estimates
+
+* Wideband delphi techniques are good for choosing a single nominal estimate for a task. But most of the time, we need three estimates so that we can create a probability distribution.
+
+### The law of large numbers
+
+* If you break a large task into many smaller taks, and estimate them independently, the sum of the estimates of the small tasks will be more accurate than a single estimate of the larger task.
+* Errors in the small tasks tend to integrate out.
+* This is optimistic. Errors in estimates tend toward underestimation and not overestimation, so integration is hardly perfect.
+
 ## 11. Pressure
+
+* The professional developer is calm and decisive under pressure. As the pressure grows, he adheres to his training and disciplines, knowing that they are the best way to meet the deadline and commitments that are pressing on him.
+
+### Avoiding pressure
+
+#### Commitments
+
+* Avoid commiting to deadlines that we aren't sure we can meet.
+* We have to quantify the risk, and present it to the business so that they can manage it appropriately.
+* Sometimes we find that our business has made promises to customers without consulting us. When this happens, we have to find a way to meet those commitments. However, we are not forced to accept the commitments.
+* When your business is failing, and your paycheck is delayed because of missed commitments, it's hard not to feel the pressure.
+
+#### Staying clean
+
+* Dirty always means slow!
+* We don't tolerate messes. We know that messes will slow us down.
+
+#### Crisis discipline
+
+* You know what you believe by observing yourself in a crisis.
+* If in a crisis you follow your disciplines, then you truly believe in those disciplines.
+* If your disciplines are the best way to work, then they should be followed even in the depths of a crisis.
+
+### Handling Pressure
+
+#### Don't Panic
+
+* Manage your stress. Sleepless nights won't help you get done any faster.
+* Calm down. Plot a course to the best possible outcome, and then drive towards that outcome at a reasonable and steady pace.
+
+#### Communicate
+
+* let your team and your superiors know that you are in trouble.
+
+#### Rely on your disciplines
+
+#### Get Help
+
+*  Pair! You will get done faster, with fewer defects.
+
 ## 12. Collaboration
+
+
+
 ## 13. Teams and Projects
 ## 14. Mentoring, Apprenticeship, and Craftsmanship
 ## Appendix A. Tooling
