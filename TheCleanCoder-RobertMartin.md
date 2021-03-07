@@ -6,7 +6,7 @@
 
 **Start date**: Feb 17th, 2021.
 
-**End date**: Mar 26th, 2021.
+**End date**: Mar 7th, 2021.
 
 ## Index
 
@@ -875,6 +875,48 @@
 
 ## 14. Mentoring, Apprenticeship, and Craftsmanship
 
+### Degrees of failure
 
+* What you learn in school, and what you find on the job are often very different things.
+
+### Mentoring
+
+#### Unconventional Mentoring
+
+* I learned from the authors of a very well-written manual.
+* I leaerned by observing people who were actively trying to ignore me.
+* Beging a sernior is helping others figure out what true professional programmis is, and teach others how to behave or what to value.
+
+#### Hard knowcks
+
+* A mentor: Someone I could have observed while I helped him with small task, and who would review and guide my early work. Someone to act as a role model and teach me appropriate values and reflexes.
+
+### Apprenticeship
+
+* The medical profession oversees the universities and makes sure the graduates have the best education. That education involves roughly equal amounts of classroom study and clinical activity in hospitals, working with professionals.
+* It is not uncommon for companies to hire kids right out of the school, form them into "teams", and ask them to build the most critical systems.
+* I suggest that a reasonable perior of training and supervised practice is not inappropriate.
+
+#### Software Apprenticeship
+
+#### Masters
+
+* Have taken the lead on more than one significant software project. Typically they will have 10+ years of experience.
+
+##### Journeymen
+
+* Trained, compotent and energetic programmer. They tend to know one language, one system, one platform.
+
+##### Aprrentices/Interns
+
+* Simply provide assitance to the journeymen
+
+### Craftsmanship
+
+* A craftsman is someone who works uickly but without rushing, who provides reasonable estimates and meets commitments. A craftsman knows when to ssay no, but tries hard to say yes.
+
+#### Convincing people
+
+* Craftsmanship is contaious, but only if it can be observed. You act as a role model.
 
 ## Appendix A. Tooling
