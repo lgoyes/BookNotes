@@ -814,8 +814,67 @@
 
 ## 12. Collaboration
 
+### Programmers vs People
 
+* We didn't become programmers because we like working with people.
+
+#### Programmers vs Employers
+
+* It's good to be passionate about what we do. But it's also good to keep your eye on the goals of the prople who pay you.
+* The first responsibility of the professional programmer is to meet the needs of his or her employer. That means collaborating with your managers, business analysts, testers, and other team mebers to deeply understand the bussines goals.
+* In short, professional programmers pay attention to the ship they are sailing on.
+
+#### Programmers vs Programmers
+
+##### Owned Code
+
+* one of the worst symptoms of a dysfunctional team is when each programmer builds a wall around his code and refuses to let other pogrammer touch it.
+
+##### Collective Ownership
+
+* Any team member can check and any module and make any change they think are appropriate.
+
+##### Pairing
+
+* Professionals pair because it is the best way to share knowledge with each other. Professionals learn the different parts of the system and business by pairing with each other.
+
+### Cerebellums
+
+* Professionals work together. You can't work together while you are sitting in corners wearing headphones. So I want you sitting around tables facing eaach other.
+* The team does not work better when you work alone. There are times when working alone is the right thing to do, but, in general, it is best to collaborate with others and to pair with the team a large fraction of time.
 
 ## 13. Teams and Projects
+
+### Does it blend?
+
+* The project is so small that no individual can be assigned to it on a full-time basis. Everybody is working on the project at 50 percent. - There is no such thing as half a person.
+
+#### The gelled team
+
+* It takes time for a team to form. The team members start to form relationships. They learn how to collaborate with each other. They learn each other's quirks, strengths, and weaknesses. Eventually, the team begins to gel.
+
+##### Fermentation
+
+* It takes time for a team to workout their differences, come to terms with each other, and really gel. It might take six months, but once it happens, it's magic. A gelled team will plan together, solve problems together, face issues together, and get things done.
+* It's best to keep that team together and just keep feeding it projects.
+
+##### Which came first, the team or the project?
+
+* If the individuals are only on the project for a short time, they never learn how to deal with each other.
+* The gelled team can accept many projects simultaneously.
+
+##### But how do you manage that?
+
+* Teams have velocities: the amount of work it can get done in a fixed period of time.
+* If the average velocity of a team is 50, and they have three projects they are working on, the management can ask the team to split their effort into 15, 15 and 20.
+* The team can reallocate priorities very quickly: "Project B is in crisis, put 100% of your effort on that project, for 3 weeks".
+
+#### The project owner dilemma
+
+* If the business decides that one project is higher priority than another, it should be able to reallocate resources quickly.
+
 ## 14. Mentoring, Apprenticeship, and Craftsmanship
+
+
+
 ## Appendix A. Tooling
