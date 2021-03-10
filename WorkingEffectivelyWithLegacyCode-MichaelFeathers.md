@@ -82,8 +82,52 @@
 
 * In unit testing, we are concerned with the most atomic behavioural units of a sytem. In procedural code, the units are functions, in object-oriented code, the units are classes.
 * Testing in isolation is an important part of a unit test. We have to test one only class, and one only function.
+* Problems with large tests:
+    1. **Error localization** - As tests get further, you have to look at the test inputs, look at the failure, and determine where along the path from inputs to outputs the failure occurred.
+    2. **Execution time** - Large tests tend to take longer to execute.
+    3. **Coverage** - We can have a piece of code exercised by a test, but when we add new code, we might have to do considerable work to create high-level tests that exercise the new code.
+* Here are qualities of good unit tests:
+    1. They run fast.
+    2. They help us localize problems.
+* When you have a test that exercises  class along with several of its collaborators, it tends to grow. How easy will it be when you add more code? It never gets easy. People put it off.
+* A unit test that takes 1/10th of a second to run is a slow unit test.
+* When tests take that long (1/10th of a second), I make sure that I use a subset to work with, but I don't mind running them all every couple of hours.
+* A test is not a unit test if:
+    1. It talks to a database
+    2. It communicates accross a network
+    3. It touches the file system
+    4. You have to do special things to your environment (such as editing configuration files) to run it.
+
+### Higher level testing
+
+* Higher level tests cover scenarios and interactions in an application.
+
+### Test coverings
+
+* When we cover our code with tests before we change it, we're more likely to catch any mistakes that we make.
+* When classes depened directly on things that are hard to use in a test, they are hard to modify and hard to work with.
+* Much legacy code work involves breaking dependencies so that change can be easier.
+* When we change code, we should have tests in place. To put tests in place, we often have to change code.
+* Is this safe to do these refactorings without tests? It can be. When we break dependencies, we can often write tests that make more invasive changes safer. The trick is to do those initial refactorings very conservatively.
+* When you break dependencies in legacy code, you often have to suspend your sense of aesthetics a bit. Some dependencies break cleanly; others end up looking less than ideal from a design point of view. They are like the incision points in surgery: There might be a scar left in your code after your work, but anything beneath it can get better.
+
+### The legacy code change algorithm
+
+* When you hoave to make a change in a legacy code base
+    1. Identify change points
+    2. Find test points
+    3. Break dependencies
+    4. Write tests
+    5. Make changes and refactor
 
 ## 3. Sensing and Separation
+
+* We break dependencies to **separate**.
+    * Dependencies among classes can make it very difficult to get particular clusters of objects under tests.
+* We break dependencies to **sense**.
+    * Sometimes the class we want to test has effects on other classes, and out tests need to know about them. We have to impersonate the other class so that we can sense the effects directly.
+
+
 ## 4. The Seam Model
 ## 5. Tools
 ## 6. I don't have much time and I have to change it
