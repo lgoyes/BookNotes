@@ -127,6 +127,48 @@
 * We break dependencies to **sense**.
     * Sometimes the class we want to test has effects on other classes, and out tests need to know about them. We have to impersonate the other class so that we can sense the effects directly.
 
+### Faking Collaborators
+
+#### Fake Objects
+
+* A fake objects is an object that impesonates some collaborator of your class when it is being tested.
+* When we write tests, we have to devide and conquer. If we discover a bug, running this test might help us see that the problem isn't in `Sale`. If we can use information like that to help us localize errors, we can save an incredible amount of time.
+
+#### The two sides of a Fake Object
+
+* The `Sale` class will see the `Fake` display as a simple `Display` (abstraction) but in the test, we need to hold on to the object as `FakeDisplay` (implementation). If we don't, we won't be able to call `getLastLine()` to find out what the `Sale` displays.
+
+#### Fakes Distrilled
+
+* In OO languages, fakes are implemented as fake objects. In non-OO languages, we can implement a fake by defining an alternative function - one which records values in some global data structure that we can access in tests.
+
+#### Mock objectss
+
+* Mock objects are fakes that perform assertions internally.
+* We can tell mocks what calls to expect, and then we tell them to check and see if they received those calls. After the expectation has been set, we just go ahead and use the object inside the test.
+
+## 4. The Seam Model
+
+* Programming languages don't seem to support testing very well. The only way to end up with an easily testable program is to write tests as you develop it.
+
+### A huge sheet of text
+
+* We are told it is better to write programs that are made of small reusable pieces, but how often are small pieces reused independently? Not very often.
+
+### Seams
+
+* A seam is a place where you can alter behavior in your program without editing in that place.
+* We can create a test version of a class that inherits from the original one, but nuls out some of the behavior from the parent class.
+* If we can replace behavior at seams, we can selectively exclude dependencies in our tests. We can also run other code where those dependencies were if we want to sense conditions in the code and write tests against those conditions.
+
+### Seam Types
+
+#### Preprocessing Seams
+
+* It's not a good idea to use excessive preprocessing in production code because it tends to decrease code clarity
+* The conditional compilation directives (`#ifdef`, `#ifndef`, `#if`, and so on) pretty much force you to maintain several different programs in the same source code.
+* Macros can hide terribly obscure bugs.
+
 
 ## 4. The Seam Model
 ## 5. Tools
