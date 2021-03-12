@@ -168,10 +168,31 @@
 * It's not a good idea to use excessive preprocessing in production code because it tends to decrease code clarity
 * The conditional compilation directives (`#ifdef`, `#ifndef`, `#if`, and so on) pretty much force you to maintain several different programs in the same source code.
 * Macros can hide terribly obscure bugs.
+* Every seam has an enabling poiont: A place where you can make the decision to use one behaviour or another.
+* When you ohave a seam, you have a place where behavior can change. We can't go to that place and change the code just to test it. The source code should be the same in both production and test.
 
+#### Link seams
 
-## 4. The Seam Model
+* The compiler produces an intermediate representation of the code, and that representation contains calls to code in other files. Linkers combine these representations. They resolve each of the calls so that you can have a complete program at runtime.
+* When a source file contain an import statement, the compiler checks to see if the imported class really has been compiled. If the class hasn't been compiled, it compiles it, if necessary, and then checks to see if all of its calls will really resolve correctly at runtime.
+* The only way to verify what the draw code is doing, is looking at the computer screen when figures are redrawn. In complicated code, that is error prone. An alternative is to use link seams. You can create sutb versions that link to the rest of the application. They can be empty functions, or they can return something if you need it.
+
+#### Object seams
+
+* If we can change which method is called in a line of code without changing the code around it, that call is a seam.
+* Not all mehotd calls are seams. If the choice depend on the implementation, rather than on the abstraction, there is no enabling point. The class is decided when the object is created, and we can't change it without modifying the method.
+* By injecting dependencies, the enabling point is the argument list of a method.
+* not all the object seams are straighforward. Sometimes a method invokes another method of the same class. In that case, we can subclass and override the invoked method during tests.
+
 ## 5. Tools
+
+### Automated Refactoring Tools
+
+* Refactoring: A change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its existing behavior.
+* A change is a refactoring only if it doesn't change behavior.
+
+### Mock Objects
+
 ## 6. I don't have much time and I have to change it
 ## 7. It takes forever to make a change
 ## 8. How do I add a feature?
