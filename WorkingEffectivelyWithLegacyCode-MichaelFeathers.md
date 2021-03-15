@@ -193,7 +193,48 @@
 
 ### Mock Objects
 
+* If we remove the other code, we need to have something in its place that supplies the right values when we are testing, so that we can exercise our piece of code thoroughly. These are often called mocked objects.
+
+### Unit Testing Harnesses
+
+* xUnit testing framework:
+    * It lets programmers write tests in the language that they are developing in.
+    * All tests run in isolation.
+    * Tests can be grouped into suites so that they can be run and rerun on demand.
+
+#### JUnit
+
+* You write tesets by subclassing a class named TestCase.
+* Each method in a test class defines a test if it has a signature of this form: `void testXXX()`, where `XXX` is the name you want to give the test. Each test method can contain code and assertions.
+* JUnit test runner loads a test class, and then it uses reflection to find all the methods. Then, it created a complete separate object of each on of those test methods. There is no way that they can affect each other.
+* The method `setup` is defined in `TestCase` and is run in each test object before the method is run. The setup method allows us to create a set of objects that we'll use in a test.
+* If you need to do anything special after a test finishes executing, you can override another method named `tearDown`, defined in `TestCase`. It runs after the test method for each object.
+
+### General Test Harness
+
+* xUnit frameworks were designed to be used for unit testing. To test several classes at a time, it is more appropriate to use FIT and Fitnesse.
+
+#### Framework for Integrated Tests (FIT)
+
+* You can write documents about your system and embed tables within them that describe inputs and outputs for your system.
+* The only thing you have to do to make this work is to customize some table-handling code so that it knows how to run chunks of your code and retrieve results from them.
+* FIT is capable to foster communication between people who write software and people who need to specify what it should do.
+
+#### Fitnesse
+
+* Fitnesse is essentially FIT hosted in a wiki.
+
 ## 6. I don't have much time and I have to change it
+
+* The work that you do to break dependencies and write tests for your changes is going to take sometime, but in most cases, you are going to end up saving time - and a lot of frustration.
+
+### Sprout Method
+
+* When you need to add a feature to a system and it can be formulated completely as new code, write the code in a new method. Call it from the places where the new functionality need to be. you might not be able to get those call points under test easily, but at the very least you can write tests for the new code.
+* When we need to add some functionality, we might be tempted to modify the current behavior. This is not correct, since there will be no separation between the new code we've added and the old code. We can create a new method to encapsulate the new functionality, using TDD. When we have the method, we can go back to the original code and add the call. If we need to add more code, we can make a method for that code also and call it from here.
+* Steps to apply sprout method:
+    1. Identify where you need to make your code change.
+
 ## 7. It takes forever to make a change
 ## 8. How do I add a feature?
 ## 9. I can't get this class into a test harness
