@@ -58,9 +58,35 @@
 * With a lambda expression, we create a function object instead, and the function object is the observer.
 * Whether we pull or push the data to the Observer is an implementation detail, but in a lot of cases it makes more sense to let Observers retrieve the data they need rather than passing more and more data to them through the `update()` method.
 
-
 ## 3. Decorating Objects: the Decorator Pattern
+
+* Once you know the techniques of decorating, you'll be able to give your (or someone else's) objects new responsibilities without making any changes to the underlying classes.
+* By dynamically composing objects, I can add new functionality by writing new code rather than altering existing code. Because I'm not changing existing code, the changes of introducing bugs or causing unintended side effects in pre-existing code are much reduced.
+> Classes should be open for extension, but closed for modification
+* Feel free to extend our classes with any new behaviour you like. If your needs or requirements change, just go ahead and make your own extensions. On the other hand, we've spent a lot of time getting this code correct and bug free, so we can't let you alter the existing code. It must remain closed to modification.
+* Following the Open-Closed Principle usually introdeces new levels of abstraction, which adds complexity to our code. You want to concentrate on those areas that are most likely to change in your designs and apply the principles there.
+* Applying the Open-Closed Principle EVERYWHERE is wasteful and unnecessary, and can lead to complex, hard-to-understand code.
+* Here's what we know about Decorators:
+    * Decorators have the same supertype as the objects they decorate.
+    * You can use one or more decorators to wrap an object.
+    * Given that the decorator has the same supertype as the object it decorates, we can pass around a decorated object in place of the original (wrapped) object.
+    * The decorator adds its own behavior before and/or after delegating to the object it decorates to do the rest of the job.
+    * Objects can be decorated at any time, so we can decorate objects dynamicallyl at runtime with as many decorators as we like.
+
+> **The Decorator Pattern** attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+* It's vital that the decorators have the same type as the objects they are going to decorate. So here we're using inheritance to achieve the _type matching_, but we aren't using inheritance to get _behavior_.
+* When we compose a decorator with a component, we are adding new behavior. We are acquiring new behavior not by _inheriting_ it from a superclass, but by _composing_ objects together.
+* If we rely on inheritance, then our behavior can only be determined statically at compile time. With composition, we can mix and match decorators any way we like... _at runtime_.
+* If you have code that relies on the concrete component's type, decorators will break that code. As long as you only write code against the abstract component type, the use of decorators will remain transparent to your code. However, once you start writing code against concrete components, you'll want to rethink your application design and your use of decorators.
+* We typically create decorators by using other patterns like Factory and Builder.
+* Decorators are meant to add behavior to the object they wrap. When you need to peek at multiple layers into the decorator chain, you are staring to push the decorator beyond its true intent. Iimage a `CondimentPrettyPrint` decorator that parses the final description and can print "Mocha, Whip, Mocha" as "Whip, Double Mocha".
+* Designs using this pattern often result in a large number of small classes that can be overwhelming to a developer trying to use the Decorator-based API.
+
 ## 4. Baking with OO Goodness: the Factory Pattern
+
+
+
 ## 5. One-of-a-Kind Objects: the Singleton Pattern
 ## 6. Encapsulating Invocation: the Command Pattern
 ## 7. Being Adaptive: the Adapter and Facade Patterns
