@@ -234,6 +234,44 @@
 * When we need to add some functionality, we might be tempted to modify the current behavior. This is not correct, since there will be no separation between the new code we've added and the old code. We can create a new method to encapsulate the new functionality, using TDD. When we have the method, we can go back to the original code and add the call. If we need to add more code, we can make a method for that code also and call it from here.
 * Steps to apply sprout method:
     1. Identify where you need to make your code change.
+    2. Write down a call for a new method that will do the work, and them comment it out.
+    3. Determne what local variables are needed from the source method, and make them arguments to the call.
+    4. Determine whether the sprouted method will need to return values to source method. If so, assign the returned value to a variable.
+    5. Develop the sprout method using TDD.
+    6. Remove the comment in the source method to enable the call.
+
+#### Advantages and Disadvantages
+
+* When you use it, you are saying that you are giving up on the source method. You aren't going to get it under test - you are just going to add some new functionality in a method.
+* You have a clean interface between the new code and the old code.
+
+### Sprout Class
+
+* Maybe you have a large set of creational dependencies, things that make it hard to instantiate your class. In that case, you can create another class to hold your changes and use it from the source class.
+* The way that you look at a sprouted class when you first create it and the way that you look at it after a few months are often significantly different. When youo need to make a change close to the new odd class, you start to think about whether the change is part of a new concept of whether the concept need to change a little.
+* Two cases lead us to sprout classes:
+    1. You have to add an entire new responsibility to one of your classes.
+    2. We have a small bit of functionality that we could place into an existing class, but we can't get the class into test harness.
+
+### Wrap method
+
+* Chances are, you are adding behavior to a method because it has to execute at the same time as the code you are adding it to. This was named "temporal coupling".
+* Steps:
+    1. Identify the method you need to change
+    2. Rename the method and then create a new method with the same name and signature as the old method.
+    3. Place a call to the old method in the new method.
+    4. Develop a method for the new feature using TDD, and call it from the new feature.
+* If we don't care to use the same name as the old method:
+    1. Identify the method you need to change
+    2. Develop a new method using TDD
+    3. Create another method that calls the new method and the old method.
+
+#### Advantages and Disadvantages
+
+* Wrap method makes the new functionality independent of existing functionality
+* The primary disadvantage of wrap method is that it can lead to poor names.
+
+
 
 ## 7. It takes forever to make a change
 ## 8. How do I add a feature?
