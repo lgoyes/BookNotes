@@ -271,9 +271,42 @@
 * Wrap method makes the new functionality independent of existing functionality
 * The primary disadvantage of wrap method is that it can lead to poor names.
 
+### Wrap Class
 
+* We can add new behavior to a class, which calls the existing functionality.
+* Decorator pattern: We create objects of a class that wraps another class and pass them around. The class that wraps should have the same interface as the class it is wrapping, so that clients don't know that they are working with a wrapper.
+* When you are using the decorator patter, you need to have at least one of these "basic" classes that you wrap around.
+* Decorator is a nice pattern, but it is good to it sparingly.
+* When you use the decorator pattern, you can transparently add new behavior to a set of existing calls, all at one. On the other hand, if the new behavior only has to happen in a couple of places, creating a wrapper that isn't decorator-ish can be very useful.
+* There are two cases to use _WrapClass_:
+    1. The new behavior is completely independent, and I don't want to pullute the existing class with unrelated behavior.
+    2. The class has grown so large that I can't stand to make it worse.
+* The biggest obstacle to improvement in large code bases is the existing code. When you see ugly code, it's easy to believe that it will always be ugly and that any little thing that you do to make it better is simply not worth it.
 
-## 7. It takes forever to make a change
+## 7. It takes forever to make a change.
+
+### Understanding
+
+* In a well-maintained system, it might take a while to figure out how to make a change, but once you do, the change is usually easy and you feel much more comfortable with the system. In a legacy system, it can take a long time to figure out what to do, and the change is difficult also.
+
+#### Lag Time
+
+* _Lag Time_: time that passes between a change that you make and the moment that you oget real feedback about the change.
+* You should be able to compile every class or module in your system separately from the others and in its own test harness. When you have that, you can get very rapid feedback and that just helps developement go faster.
+
+### Breaking Dependencies
+
+* People working in legacy code are stopped dead in their tracks by the first step: attempting to get a class into a test harness.
+* Some classes are very huge; others have so many dependencies that they seem to overwhelm the functionality that you want to work on entirely. In cases like these, it pays to see if you can cut out a larger chunk of the code and put it under test.
+
+#### Build Dependencies
+
+* Nearly every problem that you run into will be the result of some dependency that you should break.
+* The way to handle this is to extract interfaces for the classes in your cluster that are used by classes outside the cluster.
+* Moving classes into new packages, grows the overall cost of a rebuild of the entire system, but the average time for a build can decrease dramatically.
+> Depedency Inversion Principle: When your code depends on an interface, that dependency is usually very minor and unobtrusive. Your code doesn't have to change unless the interface changes, and interfaces typically change far less often than the code behind them.
+* At times, it can take a little longer to find things when you have more packages and interfaces, but when you do, you can work with them very easiily.
+
 ## 8. How do I add a feature?
 ## 9. I can't get this class into a test harness
 ## 10. I can't run this method in a test harness
