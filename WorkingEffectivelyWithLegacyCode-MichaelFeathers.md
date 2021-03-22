@@ -308,6 +308,36 @@
 * At times, it can take a little longer to find things when you have more packages and interfaces, but when you do, you can work with them very easiily.
 
 ## 8. How do I add a feature?
+
+* In legacy code, one of the most important considerations is that we don't have tests around much of our code.
+* Possible hazzards of using sprout or wrap:
+    1. When we sprout or wrap, we don't significantly modify the existing code, so it isn't going to get any getter for a while.
+    2. **Duplication:** The code that we add might duplicate code that exist in untested areas.
+    3. **Fear:** We can't change a particular piece of code.
+    4. **Resignation:** A whole area of the code just isn't getting any better.
+* Once we have tests in place we have a solid foundation.
+
+### Test Driven Development (TDD)
+
+* If we can write a test for a mehotd that doesn't exist yet, we've solidified our understanding of what the code we are about to write should do.
+* One of the most valuable things about TDD is that it lets us concentrate on one thing at a time. We are either writing code or refactoring.
+* After we have written some new code, we can refactor to removoe any duplication between it and the old code.
+* TDD algorithm for legacy code:
+    0. Get the class you want to change under test.
+    1. Write a failing test case.
+    2. Get it to compile.
+    3. Make it pass (try not to change existing code as you do this).
+    4. Remove duplication.
+    5. Repeat.
+
+### Programming by Difference
+
+* In OO, we have another option. We can use inheritance to introduce features without modifying a class directly. After we've added the feature, we can figure out exactly how we really want the feature integrated.
+* We can create a new class `B` by inheriting class `A`. Then, make the test pass on `B` by overriding any behavior. If we can comment the overriden behavior on `B`, and the tests still pass, then we have finished the refactor.
+* We can have multiple behaviors in a class by temporarily checking the value of a configuration property. Then, we could refactor this configuration checking (which is a passive behavior) by moving it to another class.
+* Programming by difference allows us to make changes quickly, but we have to take care not to violate the Liskov Substitution Principle.
+
+
 ## 9. I can't get this class into a test harness
 ## 10. I can't run this method in a test harness
 ## 11. I need to make a change. What methods should I test?
