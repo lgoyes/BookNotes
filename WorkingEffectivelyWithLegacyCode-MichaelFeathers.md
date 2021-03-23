@@ -336,9 +336,35 @@
 * We can create a new class `B` by inheriting class `A`. Then, make the test pass on `B` by overriding any behavior. If we can comment the overriden behavior on `B`, and the tests still pass, then we have finished the refactor.
 * We can have multiple behaviors in a class by temporarily checking the value of a configuration property. Then, we could refactor this configuration checking (which is a passive behavior) by moving it to another class.
 * Programming by difference allows us to make changes quickly, but we have to take care not to violate the Liskov Substitution Principle.
-
+* According to the Liskov Substitution Principle (LSP), objects of subclasses should be substitutable for objects of their superclasses throughout or code. If they aren't, we could have silent errors in our code. Take as an example, the scenario where `Square` inherits from `Rectagle`, and you want to get the area from the square using the rectangle's interface.
+* LSP implies that clients of a class should be able to use objects of a subclass without having to know that they are objects of a subclass.
+* Rules of thumb:
+    1. Whenever possible, avoid overriding concrete methods.
+    2. If you do, see if you can call the method you are overriding in the the overriding method.
+* When we override concrete methods, we could be changing the behavior of some of the code that uses the `super` class. People who are using the super class would think it's like the super class without knowing they are using a child class, instead.
+* In general, code gets confusing when we override concrete methods too often.
+* In a normalized hierarchy, we can make the super class abstract, and let the subclasses provide concrete bodies. None of the subclasses has a method that override a concrete method it inherit from a superclass.
+* A few concrete overrides every once in a while don't hurt, as long as it doesn't cause a Liskov Substitution Principle violation. However, it's good to think about how far classes are from normalized form, every once in a while.
 
 ## 9. I can't get this class into a test harness
+
+* Most common problems:
+    1. Objects of the class can't be created easily.
+    2. The test harness won't easily build with the class in it.
+    3. The constructor we need to use has bad side effects.
+    4. Significant work happens in the constructor, and we need to sense it.
+
+### The case of the irritating parameter
+
+* In a construction test, we just attempt to create an object in it. Later, when we are finally able to construct the object in the test harness, we can get rid of the test.
+* Establishing a connection to the server in a test is not a good idea. It takes a long time, and the server isn't always up. The connection to the server is an irritating parameter. We have to create some sort of a fake server-connection object and make the test class believe it's talking to a real one.
+* We can extract the interface from the server connection class, and then create a fake class using that same interface.
+* The rules are edifferent for classes that we use to make testing possible. The code in `FakeConnection` isn't production code. It won't ever run in our full working application.
+* Test code doesn't have to live up to the same standards as production code. In general, I don't mind breaking encapsulation by making variables public, if it make it easier to write tests. However, test code should be clean.
+* When you are writing tests and an object requires a parameter that is hard to construct, consider just passing null instead. If the parameter is used in the course of your test execution, the code will throw an exception and the test harness will catch the exception.
+* Don't pass null in production code unless you have no other choice. If you are tempted to use null in production code, consider using the `Null Object Pattern` instead.
+
+
 ## 10. I can't run this method in a test harness
 ## 11. I need to make a change. What methods should I test?
 ## 12. I need to make many changes in one area
