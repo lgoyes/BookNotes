@@ -363,6 +363,42 @@
 * Test code doesn't have to live up to the same standards as production code. In general, I don't mind breaking encapsulation by making variables public, if it make it easier to write tests. However, test code should be clean.
 * When you are writing tests and an object requires a parameter that is hard to construct, consider just passing null instead. If the parameter is used in the course of your test execution, the code will throw an exception and the test harness will catch the exception.
 * Don't pass null in production code unless you have no other choice. If you are tempted to use null in production code, consider using the `Null Object Pattern` instead.
+* `Null Object` can shield clients from explicit error checking. They just do nothing. Be careful when you use them. For instance, imagine that you count objects, and one of them is the null object - The count will be wrong. `Null objects` are useful when a client doesn't have to care whether an operation is successful.
+* `Pass null` and `Extract Interface` are two ways of approaching to irritating parameters. We can also subclass and override method to get rid of the dependency. You have to make sure, you aren't altering the behavior you want to test when you use it.
+
+### The case of the hidden dependency.
+
+* The constructor uses some resource that we just can't access nicely in our test harness.
+* Some times, there are some dependencies created in the constructor. We can externalize a dependency that we have in a constructor by passing it into the constructor (`Parameterize Constructor`).
+* We can go back to the original implementation by first creating another method to initialize the object by preserving signatures as we do it. Now, we can supply a constructor that has the original signature. Tests can call the constructor parameterized, and clients can call the constructor with the original signature.
+
+### The case of the constructor blob
+
+* SOmetimes, a constructor creates a few objects and then uses them to create other objects. If we cannot parameerize constructor, we can use another option: `Supersede instance variable`. We write a setter on the class that allows us to swap in another instance after we construct the object.
+* In C++ we have to be very careful with this refactoring. When we replace an object, we have to get rid of the old one. Often, that means that we have to use the delete operator to call its destructor and destroy its memory.
+* We should be very careful not to use the superseding method in production code. If the objects that are superseding manage other resources, we can cause some serious resource problems.
+* Supersede instance variable is very dangerous. The potential for resouce-management problems is too great.
+
+### The case of the Irritating Global Dependency
+
+* Frameworks often manage the lifecycle of an application, and we write code to fill in the holes. The xUnit frameworks behave this way. We write test classes; xUnit calls them and displays their results.
+* Global variable usage is one of the hardest kind of dependency to deal with. We can usee `Parameterize Constructor`, `Parameterize method` and `Extract and override call` to get past these dependencies.
+* `getInstance` is a static method whose job is to return the only instance of a class that can exist in our application. The field that hold that instance is static also. You can recognize the `getInstance` method as an example of the _Singleton Design Pattern_.
+* The singleton pattern is one of the mechanisms people use to make global variables.
+* In general, global variables are a bad idea because of its lack of _opacity_:
+    1. **Opacity:** when we look at a  piece of code, it is nice to be able to know what it can affect.
+* When we use global variables, we look at the use of a class, and we do not have a clue whether it is accessing or modifying variables declared someplace else in the program. This can make it harder to understand programs.
+* The tough part in a testing situation is that we have to figure which globals are being used by a class and set them up with the proper state for a test. And we have to do that before each test if the setup is different.
+* To run code containing singletons in a test harness, we have to relax the singleton property:
+    1. Add a new static method to the singleton class. The method allows us to replace the static instance in the singleton. We'll call it `setTestingInstance`.
+    2. We can create a testing instance of the singleton class and set it in our test setup.
+* Introduce static setter is not the only way of handling this situation. We can add a `resetForTesting()` method to the singleton. If we call this method in our test `setUp` and `tearDown`, we can create fresh singleton for every test. The singleton will reinitialize itself for every test.
+* Reasons to have singletons:
+    1. We are modeling the real world, and there is only one of these things in the real world.
+    2. If two of these things are created, we could have a serios problem.
+    3. If someone creates two of these things, we'll be using too many resouces.
+* People can enforce a singleton instance for some of the provious reasons.
+* Sometimes, they create singletons because they want to have a global variable. In that case, there really isn't any reason to keep the singleton property.
 
 
 ## 10. I can't run this method in a test harness
