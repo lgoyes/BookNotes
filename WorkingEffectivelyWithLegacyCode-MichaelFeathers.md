@@ -399,6 +399,25 @@
     3. If someone creates two of these things, we'll be using too many resouces.
 * People can enforce a singleton instance for some of the provious reasons.
 * Sometimes, they create singletons because they want to have a global variable. In that case, there really isn't any reason to keep the singleton property.
+* To relax the singleton property, we can make the constructor public.
+* At times, the singleton might be doing things that we would not want to have happen in a test harness, such as talk to a database in the background. In this case, we can "subclass and override mehotd" and make derived classes that make teseting easier.
+* At other times, the dependencies are so extensive that it is easier to use "Extract Interface" on the singleton and change all of the references in the application so that they use the interface name.
+* When we make a concerted effort to separate responsibilities in an application, dependencies become localized; we might not need a reference to a database in every object. Some classes store and retrieve data, while other do other things.
+* In most cases, variables that are global are not globally used. They are used in a relatively small number of places. How can we get that object to the objects that need it, if it couldn't be a global variable?
+* If there is a global variable that is being used everywhere, it means that there isn't any layering in your code.
+
+### The case of the Horrible Include Dependencies
+
+* There was much more leverage in making languages easier to work with.
+* If we want to create a test for a class that has many imports, the easiest thing that we can do is try to build them in the same directory, in another file. In the presence of the preprocessor, it is often just easier.
+* In simple cases, the header file includes everything we need to be able to create the implementation class, but in some cases, it doesn't.
+* We can get some reuse for the fakes that we create. Instead of putting the definitions of classes inline in the test file, we can put them in a separate include file that can be used accross a set of test files.
+
+### The case of the onion parameter
+
+* Sometimes, we have objects to create objects, which in turn create a parameter for the constructor of the class we want to test.
+* We need to write tests, but what do we really need from the parameters passed into the constructor? If we don't need anything from them in the test, we can pass null. If we just need some rudimentary behavior we can use "Extract Interface" or "Extract Implementer", and use the interface to create a fake object.
+
 
 
 ## 10. I can't run this method in a test harness
