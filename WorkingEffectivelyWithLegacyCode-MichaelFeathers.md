@@ -417,10 +417,33 @@
 
 * Sometimes, we have objects to create objects, which in turn create a parameter for the constructor of the class we want to test.
 * We need to write tests, but what do we really need from the parameters passed into the constructor? If we don't need anything from them in the test, we can pass null. If we just need some rudimentary behavior we can use "Extract Interface" or "Extract Implementer", and use the interface to create a fake object.
+* We can create an interface for the object we want to test, that includes methods from the class from which it is inheriting.
 
+### The case of the Aliased Parameter
 
+* If only pieces of a class are problems, we can take another approach and just sever the connection to them. We can use "subclass and override method" to make a fake class that supplies methods that make it easy to change the validation flag. Then, in subclasses, we can override the validate method, and set the validation flag any way that we need to while we are testing the initial class.
+* We can create classes "on the fly" in methods, when we are testing.
 
 ## 10. I can't run this method in a test harness
+
+* Sometimes we can test a method without instantiating the class. If the method doesn't use much instance data, we can use "expose static method" to get access to the code. If the method is very long, we can use "Break Out method object" to move the code to a class that we can instantiate more easily.
+    * When we are breaking dependencies without tests, "Preserve Signatures" of methods whenever possible. If you cut/copy and paste whole method signatures you have less of a chance of introducing errors.
+    * When na method is static, you know that it doesn't access any of the private data of the class; it is just a utility method.
+* Some problems that we can run into:
+    * The method could be private or have some other accessibility problem.
+    * It is hard to construct the parameters we need to call the method.
+    * The method has bad side effects.
+    * We might need to sense through some object that the method uses.
+
+### The case of the hidden method
+
+* If we need to test a private method, we should make it public. If making it public bothers us, in most cases, it means that our class is doing too much, and we ought to fix it.
+* Reasons to have a private method:
+    1. The method is just a utility; it isn't something clients would care about.
+    2. If clients use the method, they could affect results from other methods of a class.
+* Private methods can be moved to a new class. They can be public on that class, and our first class can create an internal instance of it. That makes the methods testable and the design better.
+
+
 ## 11. I need to make a change. What methods should I test?
 ## 12. I need to make many changes in one area
 ## 13. I need to make a change, but I don't know what tests to write
