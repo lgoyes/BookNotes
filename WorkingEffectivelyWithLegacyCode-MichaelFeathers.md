@@ -442,6 +442,32 @@
     1. The method is just a utility; it isn't something clients would care about.
     2. If clients use the method, they could affect results from other methods of a class.
 * Private methods can be moved to a new class. They can be public on that class, and our first class can create an internal instance of it. That makes the methods testable and the design better.
+* One of the reasons of not being able to test a huge class is that is has too many responsibilities. It would be great to break it down into smaller classes. If we can't afford to separate the responsibilities we can make a private method, protected, and then we can subclass that class to get access to that method.
+
+### The case of the "helpful" language feature
+
+* The "final" keyword is used to mak a class that is particularly sensitive when it comes to security. If anyone could create a subclass of a final class, they could write some malicious code and pass it around in code that uses those classes.
+* We can extract an interface and write a wrapper to some API class.
+* When we depend directly on libraries that are out of our control, we are just asking for trouble.
+* Adapt Parameter: we can create an adapter for a class, which can return some values of the adapted object.
+
+### The case of the undetected side effect
+
+* Sometimes we call some object's methods, they do some work, but we (the calling code) never get to know about it. The object calls methods on other objects and we never have a clue how things turned out.
+* We have to separate work that is independent of the GUI from work that is really dependent on the GUI.
+* A method should be a command or a query. A command is a method that can modify the state of the object but that doesn't return a value. A query is a method that returns a value but that doesn't modify the object.
+    * If a method is a query we are certain about not causing any side effect.
+* After those extractions, we can subclass and override method and test whatever code is left in the `performCommand` method.
+
+## 11. I need to make a change. What methods should I test?
+
+### Reasoning about effects
+
+* If your code is well structured, most of the methods in your software have simple effect structures.
+* When we are working with legacy code, we often have to ask a different question: if we make a particular change, how could it possibly affect the rest of the results of the program?
+
+### Reasoning forward
+
 
 
 ## 11. I need to make a change. What methods should I test?
