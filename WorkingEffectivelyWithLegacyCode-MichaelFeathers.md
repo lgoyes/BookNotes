@@ -21,7 +21,7 @@
 9. [I can't get this class into a test harness](#9-i-cant-get-this-class-into-a-test-harness)
 10. [I can't run this method in a test harness](#10-i-cant-run-this-method-in-a-test-harness)
 11. [I need to make a change. What methods should I test?](#11-i-need-to-make-a-change-what-methods-should-I-test)
-12. [I need to make many changes in one area](#12-i-need-to-make-many-changes-in-one-area)
+12. [I need to make many changes in one area](#12-i-need-to-make-many-changes-in-one-area-do-i-have-to-break-dependencies-for-all-the-classes-involved)
 13. [I need to make a change, but I don't know what tests to write](#13-i-need-to-make-a-change-but-i-dont-know-what-tests-to-write)
 14. [Dependencies on libraries are killing me](#14-dependencies-on-libraries-are-killing-me)
 15. [My application is all api calls](#15-my-application-is-all-api-calls)
