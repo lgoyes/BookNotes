@@ -468,10 +468,50 @@
 
 ### Reasoning forward
 
+* In characterization tests, we look at a set of objects and try to figure out what will change downstream if they stop working.
+* The tests are just a description of how we expect to use the class. We could probably write them without even looking at the code, because we have a good idea of what the class is supposed to do.
+* We need to figure out where we are going to make our changes. Once we've identified the points of change, we can start to sketch effects.
+* We have to writee tests at the methods that can sense effects of what we modify.
+* If your class has a superclass or subclasses, there might be other clients that you haven't considered. If everything is private, there is nothing to worry about.
+* Not only we have to look for changes and effects on the class itself, but we have to check what other classes the class we want to modify, can affect.
+
+### Effect Propagation
+
+* Unless method's return values aren't being used, they propagate effects to code that calls them.
+* Effects can also propagate in silent ways. If we have an object that accepts some objects as parameter, it can modify its state.
+* Some languages have keywords that you can use to make it impossible to modify the state of an object that is passed to them (like the keyword `const` in C++).
+* The sneakiest way that a piece of code can affect other code is through global or static data. Information hiding is great, unless it is information that we need to know.
+* Effects propagate in code in three basic ways:
+    1. Return values that are used by callers.
+    2. Modification of objects passed as parameters.
+    3. Modification of static or global data.
+* Heuristic to look for effects:
+    1. Identify a method that will change
+    2. If the method has a return value, look at its callers.
+    3. See if the method modifies any values. Look at the methods that use those values, and the methods that use those methods.
+    4. Look for superclasses and subclasses that might be users of those instante variables.
+    5. Look at parameters to the methods.
+    6. Look for static data or global variables.
+
+### Tools for Effect Reasoning
+
+* In every language there are things that prevent event propagation.
+* If variables are private, we don't neeed to look for the effect of a variable outside a class.
+* The `const` keyword after a method declaration means that the method can't modify the instance ariables of the object. However, this can be circumvented by means of the `mutable` keyword. So, take care of language constructs that can be circumvented.
+
+### Learning from Effect Analysis
+
+* Programming gets easier as we narrow effects in a program. If we are given a list that won't change, our reasoning is made easier.
+
+### Simplifying Effect Sketches
+
+* When we remove tiny pieces of duplication, we often end up getting effect sketches with a smaller set of endpoints. This often translates into easier testing decisions.
+* Encapsulation isn't an end in itself, it is a tool for understanding. Breaking encapsulation can make reasoning about our code harder, but it can make it easier if we end up with good explanatory tests afterward. Some dependency-breaking techniques can break encapsulation.
+
+## 12. I need to make many changes in one area. Do I have to break dependencies for all the classes involved?
 
 
-## 11. I need to make a change. What methods should I test?
-## 12. I need to make many changes in one area
+
 ## 13. I need to make a change, but I don't know what tests to write
 ## 14. Dependencies on libraries are killing me
 ## 15. My application is all api calls
