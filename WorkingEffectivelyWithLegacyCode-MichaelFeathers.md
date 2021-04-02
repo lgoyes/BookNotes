@@ -510,6 +510,32 @@
 
 ## 12. I need to make many changes in one area. Do I have to break dependencies for all the classes involved?
 
+* Higher-level tests are important during refactoring. However, they are not a substitute for unit tests.
+
+### Interception Points
+
+* Interception point: A point in your program where you can detect the effects of a particular change.
+* Identify where you need to make changes, and start tracing effects outward from those change points. Each place where you can detect effect is an interception point.
+
+#### The simple case
+
+* In general, it is good idea to pick interception points that are very close to your change points.
+    * The more steps betwen a change point and an interception point you have, the harder it is know that the test is right.
+
+#### Higher-level interception points
+
+* We can write test on every class and method before making a change. However, it can be more efficient to start out by trying to find a higher-level interception point that we can use to characterize this area of code. We could have less dependency breaking to do.
+    * You could define an interception point where you can detect effects from changes in a cluster of classes.
+* **Pinch point:** A narrowing in an effect sketch, where it is possible to write tests to cover a wide set of changes. A pinch point is determined by change points. A set of changes to a class might have a good pinch point, even if the class has multiple clients.
+* Sometimes a pinch point can be set on a couple of methods. The important thing is that setting that pinch point can detect changes in many more methods.
+* If you can't find any pinch point for only one or two changes at a time, just try to write tests for individual changes as close as you can.
+* A method might have three users, but that doesn't mean that it is being used in three distinct ways.
+    * Would it be okay to write tests at only one of those classes and not the other?
+    * If I break this method, will I be able to sense it in this place?
+    * If the method is used the same way on objects that have comparable values, it could be okay to test in one place and not the other.
+
+### Judging Design with Pinch Points
+
 
 
 ## 13. I need to make a change, but I don't know what tests to write
