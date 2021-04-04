@@ -536,9 +536,49 @@
 
 ### Judging Design with Pinch Points
 
+* A pinch point is a natural encapsulation boundary. We don't have to care about the internals, but when we do, we don't have to look at the externals to understand them.
+* When you find a natural encapsulation boundary, you ocan extract the internal methods to another class.
+* After youo write your characterization tests, you ocan make changes with impunity.
+
+### Pinch Point Traps
+
+* Do not let unit tests slowly grow into mini-integration tests. We have to test classes as independently as possible: when you start to notice that your tests are too large, you should break down the class you oare testing, to make smaller independent pieces that can be tested more easily.
+* WHen we have tests at the pinch point, we can more easily write narrower unit tests for each of the classes we are touching as we do our work. Eventually, the tests at the pinch point can go away.
+
+## 13. I need to make a change but I don't know what tests to write
+
+* If you have some way of exercising legacy code manually, you can usually find bugs very quickly. The downside is that you have to do that manual work over and over again whenever you change the code. And people just don't do that. 
+* Finding bugs in legacy code isn't a problem. It is better to do something that helps your team start to write correct code consistently.
+* Automated tests should specify a goal that we would like attempt to preserve behavior that is already there. Tests that specify become tests that preserve.
+
+### Characterization tests
+
+* In legacy systems, what the system does is more important that what it is supposed to do.
+
+* The tests that we need when we want to preserve behavior are "characterization tests". A **characterization test** is a test that characterizes the actual behavior of a piece of code. There is no "it should do this".
+
+* When we write characterization tests we are not trying to find bugs. We are trying to put in a mechanism to find bugs later, bugs that show up as differences from the system's current behavior> They don't have any moral authority; they just sit there documenting what pieces of the system really do.
+
+* We aren't writing black box tests here. We are allowed to look at the code we are characterizing.
+
+* We just write tests until we are satisfiedthat we understand it. It might not cover everything in the code, but then we think about the changes that we want to make in the code and try to figure out whether the tests that we have will sense any problems that we can cause.
+
+### Characterizing classes.
+
+* Some heuristics:
+    1. Look for tangled pieces of logic. Consider introducing some sensing variables to characterize it.
+    2. As you discover the responsibilities of a class, stop to make a list of the things that can go wrong, and formulate tests that trigger them.
+    3. What happens at the extreme values of the inputs you are supplying under tests?
+    4. Test the class invariants (conditions that should be true at all times during the lifetime of the class).
+* If the legacy system has a bug you should fix it, if it has never been deployed.
+
+### Targeted testing
+
+* We have to look at the things we want to change, and see if our characterization testes really cover them.
 
 
-## 13. I need to make a change, but I don't know what tests to write
+
+
 ## 14. Dependencies on libraries are killing me
 ## 15. My application is all api calls
 ## 16. I don't understand the code well enough to change it
