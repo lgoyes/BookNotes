@@ -575,13 +575,37 @@
 ### Targeted testing
 
 * We have to look at the things we want to change, and see if our characterization testes really cover them.
+* When we refactor, we generally have to check for two things: Does the behavior exist after the refactoring, and is it connected correctly? Many characterization tests don't test many special conditions.
+    * Check for truncation issues.
+* The most valuable characterization tests exercise a specific path and exercise each conversion along the path.
 
+### A heuristic for writing characterization tests
 
-
+1. Write testes for the area where you will make your changes.
+2. Write tests for the specific things you are going to change.
+3. Write tests to verify the existance and connection of those behaviors on a case-by-case basis.
 
 ## 14. Dependencies on libraries are killing me
-## 15. My application is all api calls
+
+* It is very easy to become over-reliant on a library.
+* Avoid direct calls to library classes in your code.
+* When you have concrete classes declared final or sealed, the best thing you can do is write a thin wrapper over the classes that you need to separate out.
+
+## 15. My Application is all API calls
+
+* When we finally decide to use someone else's code, we often end up with applications that look like they are nothing but repeated calls to someone else's library.
+* If we owned the API, we could rename interfaces, and methods to make things clearer for us.
+* It is hard to see any lines of code that don't touch and API. We have to identify the computational core of code: what is this chunk of code doing for us?
+* Nearly every system has some core logic that can be peeled away from API calls.
+* When we have a system that looks llike it is nothing but API calls, it helps to imagina that it is just one big objectss and then apply some responsibility-separation heuristics.
+* How do we move forward with the API?
+    1. **Skin and wrap the API:** We make interfaces that mirror the API as close as possible, and then create wrappers around that API. We can have our wrappers delegate to the real API in production code, and we can use fakes during testing.
+    2. **Responbility-based extraction:** We identify responsibilities in the code and start extracting methods for them.
+
 ## 16. I don't understand the code well enough to change it
+
+
+
 ## 17. My application has no structure
 ## 18. My test code is in the way
 ## 19. My project is not object oriented. How do I make safe changes?
