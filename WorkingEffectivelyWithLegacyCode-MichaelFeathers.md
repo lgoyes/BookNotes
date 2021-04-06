@@ -604,6 +604,44 @@
 
 ## 16. I don't understand the code well enough to change it
 
+### Notes / Sketching
+
+* When reading through code gets confusing, it pays to start drawing pictures and making notes. WRite down the name of the last important thing that you saw, and then write down the name of the next one. If you see any relationship between them, draw a line.
+* UML is fine, but so are blobs and lines and shapes that would be indecipherable to anyone who wasn't there when we drew them.
+
+### Listing Markup
+
+* Print the code that you want to work with. After you have, you can use listing markup as you try to do any of the following activities:
+    1. **Separating responsabilities:** Use a marker to group things.
+    2. **Understanding method structure:** Draw some lines from the beginning of blocks to the end.
+    3. **Extract methods:** circle code that you'd like to extract.
+    4. **Understand the effects of a change:** Put a mark next to the code lines that you are going to change. Then put a mark next to ach variable whose value can change as a result of that change, and everyt method that could be affected.
+
+### Scratch Refactoring
+
+* One of the best techniques for learning about code is refactoring. If you don't have tests, this can be very hazardous.
+* Check out the code from your version control system. Do some refactoring and don't check it in again.
+* These are some risks:
+    1. We might think that the system is doing something that it isn't. When that happens, we have a false view of the system, and that can cause some anxiety later when we start to really refactor.
+    2. We could get so attached to the way that the code turns out, that we start to think about it in those terms all the time. If we are too attached to the end point of a scratch refactoring, we'll miss out on those insights.
+
+### Delete unused code
+
+
+* If the coe you are looking at is cofusing and you can determine that some of it isn't used, delete it.
+
+## 17. My Application has no structure
+
+* Some applications might have started out with a well-thought-out architecture, but under schedule pressure, they can get to the point where nobody really understands their complete structure.
+* Nobody know how much better it could be or how much money is being lost because of poor structure.
+* Architects are usually charged with the task of working out the big picture and making decisions that preserve the big picture for the team.
+* Sometimes, the architecture of a group has a completely different view of the system than programmers. Often this happens because the architect has other responsibilities and can't get into the code or can't communicate with the rest of the team often enough to really know what is there.
+* every person who is touching the code should know the architecture.
+
+### Telling the Story of the System
+
+* "What is the architecture of the system?", Then someone else tries to explain the architecture of the system using only a few concepts, pretending that the other person knows nothing about the system. Next, you pick the most important things about the system.
+* As you consider changes to the system, you'll notice that some changes fall in line with the story. They make the briefer story feel like less of a lie.
 
 
 ## 17. My application has no structure
