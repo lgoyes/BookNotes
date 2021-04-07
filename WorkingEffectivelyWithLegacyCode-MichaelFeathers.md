@@ -643,10 +643,42 @@
 * "What is the architecture of the system?", Then someone else tries to explain the architecture of the system using only a few concepts, pretending that the other person knows nothing about the system. Next, you pick the most important things about the system.
 * As you consider changes to the system, you'll notice that some changes fall in line with the story. They make the briefer story feel like less of a lie.
 
+### Naked CRC
 
-## 17. My application has no structure
+* CRC: Class, Responsibility and Collaborators
+
+* If you think that a responsibility doesn't belong on a particular class, cross it out and write it on another class card, or create another class card altogether.
+
+* Two guidelines in naked CRC:
+    1. Cards represent instances, not classes.
+    2. Overlap card to show a collection of them.
+
+### Conversation scrunity
+
+* Listen to conversations about your design. Are the concepts you are using in conversation the same as the concepts in the code? If there isn't a strong overlap between conversation and code, it's important to ask why.
+
 ## 18. My test code is in the way
+
+### Class naming conventions
+
+* It makes sense to make the unit test class name a variation of the class name.
+* It's useful to fake classes for some collaborators. The convention I use for those is to use the prefix `Fake`.
+* A testing subclass is a class that you write when you want to test a class, but it has some dependencies that you want to separate out. The naming convention for testing subclasses is the name of the class prefixed by the word `Testing`.
+
+### Test location
+
+
+* I've made the assumption that you'll place the testing code and your production code in the same directories.
+* If the software is a commercial product and runs on someone else's computer, the size of the deployment could be a problem. You can attempt to keep all of the testing code separate from the production code.
+
 ## 19. My project is not object oriented. How do I make safe changes?
+
+* We put all the pure logic into one set of functions so we can keep them free of problematic dependencies. When we do this, we end up with little wrapper functions, which bind our logic and our dependencies.
+* In other cases, we need to write functions that will be littered with external calls. There isn't much computation in these functions, but the sequencing of the calls that they make is very important. 
+* We can create a struct that contains pointers to functions. Iin production code, the functions can point to the real database access functions. We can have them point at fakes when we are testing.
+
+### Taking advantage of object orientation
+
 ## 20. This class is too big and I don't want it to get any bigger
 ## 21. I'm changing the same code all over the place
 ## 22. I need to change a monster method and I can't write tests for it
