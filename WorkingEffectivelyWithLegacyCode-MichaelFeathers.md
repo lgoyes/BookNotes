@@ -679,7 +679,25 @@
 
 ### Taking advantage of object orientation
 
+* All procedural programs are object orientes that only contain one object.
+* When we start using `Encapsulate global references`, we're making new objects, and subdividing the system in ways which make it easier to work with.
+* Besides extracting dependencies to classes, we can incrementaly move it toward a better object design: You have to group related functions in classes and extract plenty of methods so that you can break apart tangled responsibilities.
+
 ## 20. This class is too big and I don't want it to get any bigger
+
+* When we keep adding code to existing classes, we end up with long methods and large classes. Each of the classes could be broken out into about 10 or so.
+* Big classes can have 50 or 60 methods. They can have an incredible number of instance variables. When a class has 20 responsibilities, you'll have an incredible number of reasons to change it.
+* Classes that are too big, often hide too much. When we encapsulate too much, the stuff inside rots and festers. There isn't any easy way to sense the effects of change.
+* The key tactics we can use with big classes are `sprout classes` and `sprout method`. The key remedy for big classes is refactoring. It helps to break down classes into sets of smaller classes.
+* Single-responsibility principle: every class should have a single purpose in the system, and there should be only one reason to change it.
+
+### Seeing responsibilities
+
+* Why is this method here? What is it doing for the class? Then grouped methods into lists, putting together methods that had a similar reason for being there.
+* There really is little difference between discovering responsibilities in existing code and formulating them for code that you have written yet.
+* Legacy code offers far more possibilities for the application of design skill than new features do. It is easier to talk about design tradeoffs when you can see the code that will be affected, and it is also easier to see whether stucture is appropriate in a given context because the context is real and right in front of us.
+
+
 ## 21. I'm changing the same code all over the place
 ## 22. I need to change a monster method and I can't write tests for it
 ## 23. How do I know that I'm not breaking anything?
