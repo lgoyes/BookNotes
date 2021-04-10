@@ -693,9 +693,53 @@
 
 ### Seeing responsibilities
 
-* Why is this method here? What is it doing for the class? Then grouped methods into lists, putting together methods that had a similar reason for being there.
+* Why is this method here? What is it doing for the class? Then I grouped methods into lists, putting together methods that had a similar reason for being there.
 * There really is little difference between discovering responsibilities in existing code and formulating them for code that you have written yet.
 * Legacy code offers far more possibilities for the application of design skill than new features do. It is easier to talk about design tradeoffs when you can see the code that will be affected, and it is also easier to see whether stucture is appropriate in a given context because the context is real and right in front of us.
+
+#### Heuristic #1: Group methods
+
+* Look for similar method names. Write down all of the methods on a class, along with their access type (public, private, etc) and try to find ones that seem to go together.
+* You don't need to move methods into new classes. Just try to identify some of the responsibilities. Wait until you have to modify one of the methods you've categorized, and then decide whether you want to extract a class at that point.
+
+#### Heuristic #2: Look at hidden methods
+
+* If there is a lot of private methods, it often indicates that there is another class in the class dying to get out.
+* If you have the urge to test a private method, the method should not be private. If making the method public bothers you, it is because it is part of a separate responsibility.
+* It would be odd to have those methods public on the `RuleParser` class, but it is perfectly fine to make them public methods on a `TermTokenizer` class. These public methods on `TermTokenizer` can be accessed privately in a parser.
+
+#### Heuristic #3: Look for Decisions that can change
+
+* Look for decisions that you've already made. Is there some way of doing something that seems hardcoded? Can you image changing it?
+* Often big classes house methods that do many things at many different levels of abstraction. Looking at the method name alone, you'd have no idea how much work is going on and how many responsibilities are nested in that code.
+* You should do a little method refactoring before really settling on classes to extract. You might find that you completly encapsulated some resources behind a set of methods. When you extract a class for them, you'll have broken some dependencies on low level details.
+
+#### Heuristic #4: Looking for Internal Relationships
+
+* Look for relationships between instance variables and methods. Are certains instance variables used by some methods and not others?
+* It's really hard to find classes in which all the methods use all of the instance variables.
+* Usually there is some sort of "lumping" in a class. Some methods use some variables.
+* To find these "lumps" you can create a "feature sketch" to sketch the relationships inside a class.
+    1. Draw circles for each of the variables
+    2. Draw a circle for each method, and draw a line from each method to the circles for any instance variables and methods that it accesses or modifies.
+* What can we learn from this sketch? There is going to be a little bit of clustering in the class. What would the system look like if we made each cluster into its own class?
+* Can we come up with a name for the new class? If not, we could flip things around. We can extract part of a different cluster.
+* Feature sketches allow us to see the dependency structure inside classes.
+* Pinch points are a small set of lines connecting larger clusters.
+* As you circle, try to come up with a class name for each group.
+
+#### heuristic #5: Look for the Primary Responsibility
+
+* Try to describe the responsibility of the class in a single sentence.
+* Add clauses to the sentence, based on what the clients need and expect from the class.
+* SRP can be violated at the interface level, and at the implementation level.
+    * At **interface level**, a class presents an interface that makes it appear that it is responsbile for a very large number of things.
+    * At **implementation level**, we care whether the class really does all of that stuff, or whether it just delegates to a couple of other classes.
+* If a class delegates, we don't have a large monolithic class; we just have a class that is a facade, a front end for a bunch of little classes and that can be easier to manage.
+    * The SRP is still violated at the interface level, but at the implementation level things are a bit better. How would we solve the problem at interface level? The general approach is to see if some of the classes we delegate to can actually be used directly by clients.
+* Making an interface for a particular set of clients keeps the design in line with the interface segregation principle.
+
+
 
 
 ## 21. I'm changing the same code all over the place
