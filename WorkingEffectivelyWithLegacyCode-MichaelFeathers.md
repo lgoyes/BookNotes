@@ -739,6 +739,54 @@
     * The SRP is still violated at the interface level, but at the implementation level things are a bit better. How would we solve the problem at interface level? The general approach is to see if some of the classes we delegate to can actually be used directly by clients.
 * Making an interface for a particular set of clients keeps the design in line with the interface segregation principle.
 
+* Clients rarely use all of the methods of a large class. Often, a class can have different grouping of methods. If we create an interface for each of those groupings and have a large class implement those interfaces, each client can see the big class through that particular interface.
+
+#### Heuristic #6: When all else fails, do some scratch refactoring
+
+#### Heuristic #7: Focus on the current work
+
+* It is easy to become overwhelmed by the number of distinct responsibilities of a class. Often just recognizing the way that the software can change is enough to see the new code you write as a separate responsibility.
+
+### Other techniques
+
+* The way to really get better at identification is to read more.
+    * Read books
+    * Read other people's code
+
+### Moving Forward
+
+#### Strategy
+
+* What should we do when we've identified all of these separate responsibilities?
+* If you have time, it would be great to break them all down into little bits. Don't let the bugs dissuade you from other refactoring.
+* Break down the class on a as-needed basis.
+
+#### Tactics
+
+* Start to apply the SRP at the implementation level: Extract classes from your big class and delegate to them. Introducing SRP at the implementation level makes it easier to introduce it at the interface level later.
+* How easily can you get tests around the methods that could be affected?
+* If you are able to get tests in place, you can start to stract a class in a very straight forward way. However, if you aren't able to get tests in place, youo ocan still move forward, albeit in a slightly riskier way.
+    1. Identify the responsibilities you want to separate into another class.
+    2. Identify which instance variables will be moved to the new class. Move them to a separate part of the class declaration, away from the other instance variables.
+    3. Extract the bodies of each of the methods you want to move, to new methods. User the same name but with a common prefix (`MOVING`). Remember to "Preserve Signatures" when you extract the methods.
+    4. Do a text search to make sure that none of the variables that you are going to move is used outside of the methods you are going to move. Do not lean on the compiler since variables can be shadowed on subclasses.
+    5. Move all of the instance variables and methods you've separated to the new class. Create an instance of that class in the old class, and lean on the compiler to find the places where the moved methods have to be called on the instance.
+    6. After the code compiles, you can start removing the `MOVING` prefix.
+* When you extract classes without tests, we can inject some bugs related to inheritance.
+* To get past these problems, we don't remove the original methods. We just extract their bodies. Regarding the instance variables, we have that manual step of searching for uses of variables before we use them.
+
+#### After extract class
+
+* Sometimes you have to be sensitive to what is there and move not necessarily toward the ideal design, but at least in a better direction.
+
+## 21. I'm changing the same code all over the place.
+
+* What do we get when we zealously squeeze duplication out of an area of code?
+* It looks like there is a lot of duplication, but so what? The amount of code is pretty small. We could refactor it, cutting out duplication and making it smaller, but is that going to make lives easier?
+
+### First steps
+
+* Removing small pieces of duplication helps, and it makes it easier to see larger areas of duplication later.
 
 
 
