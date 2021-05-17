@@ -788,6 +788,39 @@
 
 * Removing small pieces of duplication helps, and it makes it easier to see larger areas of duplication later.
 
+* If we have a sequence of method calls, say `a()`, `a()`, `b()`, `a()`, `b()`, `b()`; we could refactor it in different ways:
+    1. `aa()`, `b()`, `a()`, `bb()`.
+    2. `a()`, `ab()`, `ab()`, `b()`.
+
+* If two classes are very similar abstractions of the same concepts but they are just specializations, we can create a super class they can inherit from.
+* When two methods look roughly the same, extract the differences to other methods. When you do that, you can often make them exactly the same and get rid of one.
+* Before refactoring two classes to move some data towards the superclass, to adapt the template method pattern, we have to make sure the subclasses share the same data.
+    * If the subclasses don't share the same data, we can introduce an abstract getter on the superclass, so the subclasses can override it with their own values.
+* Take a look at the differences between the two subclasses. What is the same and what is different? Try to move the part that is the same to the superclass, and the part that is different can become an abstract function which can be overriden by the subclasses.
+* We can try to find ways to generalize the uncommon implementations in the subclasses. What if we use lists and iterators to create a form in the superclass?
+* If some class was refactored to remove some duplication, and at the end it is just a shell, we can make the system dependent on the superclass and use instances or make static method calls.
+    * However, that would force all of our client code to change. Does it hurt anybody leaving the classes the way that they are now? not really.
+* Do not use abbreviations in class and method names. They are problematic.
+* If we make a change of the code without removing the duplicatin, we will introduce more duplication, and it would be error prone.
+* When you remove duplication across classes, you end up with very small focused methods. Each of them does something that no other method does, and that give us an incredible advantage: orthogonality.
+    * Orthogonality is a fancy word for independence.
+* When behavior is localized in single methods, it's easy to replace it or add to it.
+* When you start removing duplication zealously is that design emerge. You don't have to plan most of the knobs in your application; they just happen.
+* Open/Closed Principle: when we have goood design, we just don't have to change code much to add new features.
+
+## 22. I need to change a monster method and I can't write tests for it
+
+### Varieties of monsters
+
+#### Bulleted Methods
+
+* A bulleted method is a method with nearly no indentation.
+* If you are lucky, someone will have put extra lines between the sections or comments to show you that they do somewhat distinct things.
+    * In an ideal world, you'd be able to just extract a method for each of the sections.
+    * Often, temporary variables are declared in one section and used in the next.
+
+#### Snarled Methods
+
 
 
 ## 21. I'm changing the same code all over the place
