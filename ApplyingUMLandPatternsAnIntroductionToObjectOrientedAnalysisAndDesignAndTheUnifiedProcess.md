@@ -72,3 +72,35 @@
 * The Unified Modeling Language (UML) is a language for specifying, visualizing, constructing, and documenting the artifacts of software systems, as well as for business modeling and other non-software systems.
 
 ## 2. Iterative development and the unified process
+
+* Software development process: An approach to building, deploying, and possibly maintaining software.
+
+### 2.1. The most important UP idea: Iterative development
+
+* Development is organized into a series of short, fixed-length mini-projects, called interations; the outcome of each is a tested, integrated and executable system. Each iteration includes its own requirements analysis, design, implementation, and testing activities.
+* The reasult of each iteration is an executable but incomplete system; it is not ready for deliver into production. The system may not be eligible for production deployment until after many iterations; for example, 10 or 15 iterations.
+* The output of an iteration is not a throw-away prototype. Rather, the output is a production-grade subset of the final system.
+* An iteration may occasionally revisit existing software and improve it.
+
+#### Embracing change: feedback and adaption
+
+* UP balances the need to agree upon and stabilize a set of requirements, with the reality of changing requirements, as stakeholders clarify their vision or the marketplace changes.
+* "Yes...buts" are a skillful way to make progress and discover what is of real value to the stakeholders, instead of being a sign of failure.
+* Activities such as load testing will prove if the partial design is on the right path, or if in the next iteration, a change in the core architecture is required.
+
+#### Iteration length and timeboxing
+
+* The OPrecommends an iteration length between two and six weeks.
+    * Long iterations increase project risk.
+    * ess than two weeks and it is difficult to complete sufficient work to get meaningful throughput and feedback.
+
+### 2.3 The UP phases and schedule-oriented terms.
+
+* There are 4 phases in a UP project.
+    1. **Inception** - approximate vision, vague estimates.
+    2. **Elaboration** - Refined vision, iterative implementation of the core architecture, resolution of high risks, identification of most requirements and scopes, and more realistic estimates.
+    3. **Construction** - Iterative implementation of the remaining lower risk and easier elements.
+    4. **Transition** - Beta tests, deployments.
+* Inception is not a requirements phase; it's a phase where just enough investigation is done to support a decision to continue or stop.
+
+### 2.4 The OP Disciplines (was workflows)
