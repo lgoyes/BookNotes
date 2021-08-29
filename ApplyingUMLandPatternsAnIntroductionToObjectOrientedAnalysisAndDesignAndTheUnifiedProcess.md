@@ -104,3 +104,51 @@
 * Inception is not a requirements phase; it's a phase where just enough investigation is done to support a decision to continue or stop.
 
 ### 2.4 The OP Disciplines (was workflows)
+
+* A discipline is a set of activities (and related artifacts) in one subject area.
+* In UP, an artifact is the general term for any work product: code, web graphics, database schema, text document, diagrams, models and so on.
+* Artifacts this book focuses on:
+    1. **Business modeling** - Domain object model, and dynamic modeling of the business processes.
+    2. **Requirements** - Writing use cases and identifying non-functional requirements.
+    3. **Design** - Overall architecture, objects, databases, networking.
+
+#### Disciplines and Phases
+
+* During one iteration, work goes on in most or all disciplines. The relative effort across these disciplines change over time.
+
+### 2.5 Process Customization and the development case
+
+#### Optional Artifacts
+
+* Some UP practices and principles are invariant, such as iterative and risk driven development, and continuous verification of quality. 
+* All activities and artifacts are optional (except for the code). Focus on a small subset of artifacts that demonstrate high practical value.
+
+#### The development case
+
+* The choice of UP artifacts for a project may be written up in a short document called the "Development Case".
+
+### 2.6 The agile UP
+
+* A **predictive process** is one that attempts to plan and predict the activities and resouce (people) allocation in detail over a relative long time span.
+    1. Defining all the requirements.
+    2. Detail design
+    3. Implementing
+
+* An **adaptive process** is one that accepts change as an inevitable driver, and encourages flexible adaptation.
+* The UP is not supposed to be predictive. It is supposed to be adaptive, and encourages flexible adaptation.
+* There is a high-level plan (phase plan) that estimates the project end date and other major milestones. A detailed plan (iteration plan) only plans with great detail one iteration in advance.
+
+### 2.7 The sequential "waterfall" lifecycle
+
+### 2.8 You know you didn't understand the UP when
+
+* inception != requirements, elaboration != design, construction != implementation
+* You should not fully define and commit to an architecture before iterative programming and testing.
+* It shouldn't take long to finish the requirements before programming starts.
+
+## 3. Case Study: The nextgen POS system
+
+### 3.1 The nextgen POS system
+
+* A POS (Point of Sale) system is a computerized application to record sales and handle payments, typically used in a retail store.
+
