@@ -13,6 +13,10 @@
 0. [Foreward](#0-foreward)
 1. [Object Oriented Analysis and Design](#1-object-oriented-analysis-and-design)
 2. [Iterative development and the unified process](#2-iterative-development-and-the-unified-process)
+3. [Case Study: The nextgen POS system](#3-case-study-the-nextgen-pos-system)
+4. [Inception](4-inception)
+5. [Understanding requirements](#5-understanding-requirements)
+6. [Use-case model: writing requirements in context](#6-use-case-model-writing-requirements-in-context)
 
 ## 0. Foreward
 
@@ -151,4 +155,51 @@
 ### 3.1 The nextgen POS system
 
 * A POS (Point of Sale) system is a computerized application to record sales and handle payments, typically used in a retail store.
+* POS systems must still be capable of capturing sales and handling at least cash payments, even if remote services are temporarily unavailable.
+* We are creating a commercial POS system that we will still sell to different clients with disparate needs in terms of business rule processing. THerefore, we will need a mechanism to provide this flexibility and customization.
 
+### 3.2 Architectural layers and case study emphasis
+
+* A typical object-oriented information system is designed in terms of architectural layers or sybsystems:
+    1. **User interface**
+    2. **Application logic and domain objects** - Software objects representing domain concepts.
+    3. **Technical Services** - Database or error logging. These are application independent.
+* OOA/D is most relevant for modeling the domain and data layers.
+
+## 4. Inception
+
+* WHat is the vision and business case for this project?
+* Feaasible?
+* Buy and/or build?
+* Rough estimate of cost: Is it 10k-100k or in the millions?
+* Should we proceed or stop?
+* At the risk of over-simplication, the idea is to do just enough investigation to form a rational, justifiable opinion of the overall purpose and feasibility of the potential new system, and decide if it is worthwhile to invest in deeper exploration (the purspose of the elaboration phase).
+
+### 4.3 What artifacts may start in inception?
+
+* Artifacts are partially completed in this phase, will be refined in later iterations, and should not even be created unless it is deemed likely they will add real practice value.
+    1. **Vision and business case** - Describes high level goals and constraints.
+    2. **Use-case model** - Describes functional and non-functional requirements.
+    3. **Glossary**.
+    4. **Risk list and risk management plan**.
+    5. **Prototypes and poof-of-concepts**.
+    6. **Iteration plan for iteration 1**.
+* Perhaps only 10% of the use casses are described in detail.
+* Some programming work may occur in inception in order to create "proof of concept" prototypes and to clarify a few requirements.
+* The point of an artifact is not the document or diagram itself, but the thinking, analysis, and proactive readiness.
+
+## 5. Understanding requirements
+
+* Requirement should find, communicate and remember what is really needed, in a form that clearly speaks to the clients and the developers.
+
+### 5.1 Types of requirements
+
+* FURPS:
+    * **Functional** - Features, capabilities, security.
+    * **Usability** - Human factors, help, documentation.
+    * **Reliability** - Frequency of failure, recoverability, predictability.
+    * **Performance** - Response times, throughput, accuracy, availability, resource usage.
+    * **Supportability** - Adaptability, maintainability, internationalization, configurability.
+* Functional requirements are explored and recorded in the use-case model. Other requirements can be recorded in the use cases they relate to, or in the supplementary specifications artifact.
+
+## 6. Use-case model: writing requirements in context
