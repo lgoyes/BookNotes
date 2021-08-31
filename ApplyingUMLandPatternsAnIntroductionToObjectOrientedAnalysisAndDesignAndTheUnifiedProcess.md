@@ -245,3 +245,63 @@
 #### The usecases.org format
 #### The two column variation
 
+* The two-column format emphasizes the fact that there is an interaction going on between the actors and the system.
+
+#### Personal practice
+
+* Two-column format has a clear visual separation in the conversation.
+* One-column style is more compact and easier to format.
+
+### 6.7 Explaining the sections
+
+#### Preface elements
+
+* Only important to read elements should be placed before the main success scenario.
+
+#### Important: Stakeholders and Interests list
+
+* The use case, as the contract for behavior, captures all and only the behaviors related to satisfying the stakeholders' interests.
+* By writting what the stakeholders and their interests are before writing the remainder use case, we set a reminder for the responsibilities of the system.
+
+#### Preconditions and success guarantees (postconditions)
+
+* **Preconditions:** must always be true before beginning a scenario in the use case. Preconditions are not tested within the use case; rather, they are assumed to be true.
+* **Success guaranteed (postconditions):** must be true on successful completion of the use case.
+
+#### Main Success scenario and steps (or basic flow)
+
+* aka "happy path" scenario.
+* Typical success path that satisfies the interests of the stakeholders without any conditions or branching.
+* Three kinds of steps:
+    1. Interactions between actors.
+    2. Validation.
+    3. State change by the system.
+* Repetition idiom:
+    * *"actor repeats steps x1-x2 until indicates done"*
+
+#### Extensions (or alternate flows)
+
+* Extension scenarios are branches from the main success scenario, and so can be notated with respect to it.
+* Step "3" may have an alternate path. An extension is labeled "3a"; it first identifies the condition and then the response:
+    * 3.a. invalid identifier.
+        1. System signals error and rejects entry.
+* An extension has two parts: the condition and the handling.
+* Write the conditions as something that can be detected by the system or an actor, instead of being an interference.
+* At the end of the extension handling, by default the scenario merges back with the main success scenario, unless the extension indicates otherwise.
+* If a particular extension is quite complex, it can be expressed as a separate use case.
+* If an extension conditioin can occur during any step, the labels *a, *b, ..., can be used.
+
+#### Special requirements
+
+* Non functional requirements, quality attributes, or constraints related to the specific use case, can be recorded in the "'Special requirements" section.
+* Some people might prefer separating non functional requirements into the "supplementary specification" file, for content management.
+
+#### Technology and Data variation list
+
+* If there are technical variations in *how* something must be done, but not what, it has to be recorded.
+
+### 6.8 Goals and scope of a use case
+
+#### Use cases for elementary business processes
+
+* For requirements analysis for a computer application, focus on use cases at the level of elementary business processes (EBPs).
