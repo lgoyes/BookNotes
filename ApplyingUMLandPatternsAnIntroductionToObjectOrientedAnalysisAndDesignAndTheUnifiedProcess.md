@@ -203,3 +203,45 @@
 * Functional requirements are explored and recorded in the use-case model. Other requirements can be recorded in the use cases they relate to, or in the supplementary specifications artifact.
 
 ## 6. Use-case model: writing requirements in context
+
+* Use cases: Stories of using a system.
+
+### 6.1 Goals and stories
+
+* Use cases are a mechanism to help stakeholders to capture customers and end user goals (aka "needs"), in a simple and understandable way.
+* It is not necessary to create layers of sophistication over the simple definition of a use-case, by simply writing the story.
+* A use case can scale both up and down in terms of sophistication and formality, depending on need.
+
+### 6.3 Use cases and adding value
+
+* Definitions
+    * An **actor** is something with behavior, such as a person (identified by role), computer system or organization. e.g a cashier.
+    * A **scenario** is a sequence of actions and interactions between actors and the system under discussion. It's also called a use-case instance. It is one particular path through the use case.
+    * A **use case** is a collection of related success and failure scenarios that describe actors using a system to support a goal.
+* A key attitude in use case work is to focus on the question: *"how can using the system provide observable value to the user, or fulfill their goals?"* rather than merely thinking of system requirements in terms of a "laundry list" of features or functions.
+* Use cases place features and functions in a goal-oriented context.
+
+### 6.4 Use cases and functional requirements
+
+* Use cases define a promise or contract of how a system will behave.
+* Use cases are text documents, not diagrams.
+
+### 6.5 Use case types and formats.
+
+#### Black box use cases and system responsibilities
+
+* This kind of use case does not describe the internal workings of the system, its components or design. The system is described as having responsibilities.
+* By creating black-box use cases, it is possible to specify **what** the system must do without deciding **how** it will do it.
+
+#### Formality types
+
+* Degrees of formality
+    1. **brief:** one-paragraph summary, describing the main success scenario.
+    2. **casual:** multiple paragraphs covering various scenarios (success, and alternative).
+    3. **fully dressed:** most elaborate steps and variations are written in detail, and there are supporting sections, such as preconditions and success.
+
+### 6.6 Fully dressed example: process sale
+
+#### The usecases.org format
+#### The two column variation
+
