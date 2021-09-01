@@ -305,3 +305,57 @@
 #### Use cases for elementary business processes
 
 * For requirements analysis for a computer application, focus on use cases at the level of elementary business processes (EBPs).
+* EBP is a task performed by one person in one place at one time, in response to a business event, which adds measurable business value and leaves the data in a consistent state. e.g. Approve credit or price order.
+* It is not a single small step like "deleting a line item" or "print the document". Rather, the main success scenario is probably five or ten steps long. It doesn't take days and multiple sessions; it's a task done during one session.
+* There might be some use cases that can fail the EBP test and can exist at a lower level. The EBP guideline is used to find the dominant level of use cases in requirements analysis for an application.
+
+#### Use cases and goals
+
+* Actors have goals and use applications to help satisfy them. An EBP-level use case is a "user goal"-level use case, to emphasize that it serves to fulfill a goal of a user of the system.
+    1. Find the user goals.
+    2. Define a use case for each.
+* Answers to the question "what are your goals" open up the vision for new and improved solutions, focus on adding business value, and get to the heart of what the stakeholders want from the system under discussion.
+
+#### Example: Applying the EBP guideline.
+
+* "Prevent thef" is higher than a user goal; it might be an enterprise goal.
+* "Identify myself and be validated" appears closer to the user goal level, but it does not add observable or measurable business value. As a result, it is not at the EBP level.
+* "capture a sale" does fit the criteria of being an EBP.
+
+#### Subfunction goals and use cases
+
+* Although "login" has been eliminated as a user goal, it is a goal at a lower level, called subfunction goal.
+* It is not illegal to write use cases for subfunction goal, but it is not always helpful, as it adds complexity to a use-case model; there can be hundreds of subfunction goals.
+* The most common motivation to express a subfunction goal as a use case is when the subfunction is repeated in or is a precondition for multiple user-goal-level use cases.
+
+### 6.9 Finding primary actors, goals, and use cases.
+
+#### Step 1: Choosing the system boundary
+
+* What is outside the boundary?
+* Identify the external primary and supporting actors.
+
+#### Step 2 and 3: Finding primary actors and goals
+
+* In a requirements workshop, people brainstorm and generate a mixture of both actors and goals.
+* Emphasize brainstorming the primary actors first.
+
+##### Primary and Supporting actors.
+
+* Primary actors have user goals fulfilled through using services of the system.
+* Supporting actors provide services to the system under design.
+* Primary actors can be other computer systems, such as "watchdog" software processes.
+* Be suspicious if no primary actors are external computer systems.
+
+##### Primary actor and user goals depends on system boundary
+
+* From the viewpoint of just the POS system (which is the boundary), it services the goal of the cashier (and the store) to process the customer's sale.
+
+#### Step 4: Define use cases
+
+* Define one EBP-level use case for each user goal.
+* Collapse CRUD separate goals into one CRUD use case, idiomatically called **"Manage *X*"**.
+
+### 6.10 Congratulations: Use cases have been written, and are imperfect
+
+
