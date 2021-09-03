@@ -358,4 +358,45 @@
 
 ### 6.10 Congratulations: Use cases have been written, and are imperfect
 
+* The use cases are not going to be correct. Instead of trying harder to record requirements perfect at the start, just do the best you can in the time available.
+
+### 6.11 Write use cases in an essential UI-free style
+
+* By investigating up the goal hierarchy, you can find a mechanism-independent goal, like "identifying myself and get authenticated". As a result, novel solutions might appear, like having a keyboard with biometric readers.
+
+* "keep the user interface out; focus on intent".
+
+* Essential writing style.
+    * Avoid UI details and focus on othe real user intent.
+    * Narrative expressed at the level of the user's intentions and system's responsibilities, rather than their concrete actions.
+    * During the early requirements analysis work, keep the user interface out, focus on intent.
+
+### 6.12 Actors
+
+* **Actor:** Anything with behavior, including the system under discussion (SuD) itself when it calls upon the services of other systems.
+    * **Primary actor:** Has user goals fulfilled through using services of the SuD.
+    * **Supporting actor:** Provides a service to the SuD.
+    * **Offstage actor:** Has an interest in the behavior of the use case, but is not primary or supporting.
+
+### 6.13 Use case diagrams
+
+* Use case diagrams and use case relationships are secondary in use case work. Use cases are text documents.
+
+#### Diagramming suggestions
+
+* Primary actors on the left.
+* Supporting actors on the right.
+* Show computer system actors with an alternate notation to human actors.
+* Notice the actor box with the symbol <<actor>>. It's called a UML stereotype.
+
+### 6.15 Use cases are not object oriented
+
+* Use cases are a broadly applicable requirements analysis tool that can be applied to non-object-oriented projects, which increase their usefulness as a requirements method.
+
+### 6.16 Use cases within the UP
+
+* The work of an iteration is -in part- defined by choosing some use case scenarios, or entire use cases.
+* Use-case realizations drive the design.
+* Near the end of the first iteration of elaboration, there is a second requirement workshop, during which, perhaps 30% of the use cases are written in detail.
+
 
