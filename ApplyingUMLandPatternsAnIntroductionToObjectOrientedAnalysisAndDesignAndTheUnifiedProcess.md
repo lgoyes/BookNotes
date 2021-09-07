@@ -438,6 +438,70 @@
 
 * Provide some explanation of domains related to the new software system, to provide context and deeper insight for the development team. It may contain pointers to important literature or experts, formulas, laws, or other references.
 
+### 7.5 Commentary: Vision
+
+##### The problem statement
+
+* Define a terse problem statement, it will reduce the likelihood that stakeholders are trying to solve slightly different problems.
+
+##### The key high-level goals and problems of the stakeholders
+
+* Summarize the goals and problems at a higher level than task level use cases.
+
+##### What are the root problems and goals?
+
+* Some stakeholders express their goals in terms of solutions.
+    * Some solutions are perceptive, because they understand the domain.
+    * Some solutions do **not** address the root problems.
+
+#### System features - functional requirements
+
+* An alternative, a complementary way to express system functions is with features, or more specifically in this context, **system features**, which are high-level, terse statements simmarizing system functions.
+* Features are things a system can do
+    * The system shall do `<Feature X>`.
+* System features are a mechanism to summarize in the vission contract what the system will do. This is complementary to the use cases.
+* A feature is not a constraint.
+
+##### Notation and organization
+
+* Short high-level descriptions are important. One should be able to read the system features list quickly.
+* A vision document might present a two-level hierarchy of system features, but not more. Sometimes, these second level features are essentially equivalent to use case names.
+* A vision with less than 50 features is desirable.
+
+#### Other requirements in vision.
+
+* For other requirements, avoid their duplication or near-duplication in both the vision and supplementary specification (SS). Rather, record them only in the SS.
+
+### 7.7 Commentary: Glossary (Data Dictionary).
+
+* **Glossary:** list of noteworthy terms and their definitions.
+* The goal is not to record all possible terms, but those that are unclear, ambiguous or which require some kind of noteworthy elaboration, such as format information or validation rules.
+
+#### Glossary as Data Dictionary
+
+* Glossary can include data about data (metadata).
+    * Aliases
+    * Description
+    * Format (type, length, unit).
+    * Relationships to other elements.
+    * Range of values.
+    * Validation rules.
+
+#### Units
+
+* Prices cannot be just a raw number. It must be in a Money or Currency unit that captures the notion of varying currencies.
+
+### 7.8 Reliable specifications: an oxymoron?
+
+* What really matters is building software that passes the acceptance tests defined by the users and stakeholders, and that meets their true goals.
+* Writing a Vision and Supplementary Specification is worthwhile as an exercise in clarifying a first approximation of what is wanted.
+* Treat written requirements lightly and do not rush to code.
+
+### 7.9 Online artifacts at the project website
+
+### 7.10 Not much UML during inception?
+
+
 
 
 
