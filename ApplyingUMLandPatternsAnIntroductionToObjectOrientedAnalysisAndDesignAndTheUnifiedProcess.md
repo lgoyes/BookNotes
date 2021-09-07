@@ -398,5 +398,46 @@
 * The work of an iteration is -in part- defined by choosing some use case scenarios, or entire use cases.
 * Use-case realizations drive the design.
 * Near the end of the first iteration of elaboration, there is a second requirement workshop, during which, perhaps 30% of the use cases are written in detail.
+* The use-case model is started in inception, with perhaps only 10% of the use cases written in any detail. The majority are incrementally written over the iterations of the elaboration phase.
+
+## 7. Identifying other requirements
+
+* Documentation, packaging, supportability, licensing are captured in the supplementary specification.
+* Flossary captures terms and definitions.
+* Vision summarizes the vision of the project.
+    * Why the project was proposed.
+    * What the problems are.
+    * Who the stakeholders are, what they need.
+
+### Commentary: Supplementary specification.
+
+* Elements of the supplementary specification could include:
+    * FURPS+ requirements (functionality, usability, reliability, performance, and supportability).
+    * Reports
+    * Hardware and software constraints.
+    * Development constraints.
+    * Other design and implementation constraints.
+    * Internationalization.
+    * Documentation.
+    * Licensing.
+    * Packaging.
+    * Standards.
+    * Physical environment concerns.
+* Constraints:
+    * Must use oragle (we have a licensing arrangement with them).
+* Quality attributes refer to the qualities of the system.
+    1. Observable at execution (functionality, usability, reliability, performance).
+    2. Not observable at execution (supportability, testability).
+
+#### Domain rules
+
+* Company policies, physical laws, and government laws are common domain rules, commonly called business rules.
+* Rules are not application requirements. Do not record system features are rules. They describe the constraints and behaviors of how the domain works, not the application.
+
+#### Information in Domains of Interest.
+
+* Provide some explanation of domains related to the new software system, to provide context and deeper insight for the development team. It may contain pointers to important literature or experts, formulas, laws, or other references.
+
+
 
 
