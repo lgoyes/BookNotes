@@ -17,6 +17,9 @@
 4. [Inception](4-inception)
 5. [Understanding requirements](#5-understanding-requirements)
 6. [Use-case model: writing requirements in context](#6-use-case-model-writing-requirements-in-context)
+7. [Identifying other requirements](#7-identifying-other-requirements)
+8. [From inception to elaboration](#8-from-inception-to-elaboration)
+9. [Use case model: drawing system sequence diagrams](#9-use-case-model-drawing-system-sequence-diagrams)
 
 ## 0. Foreward
 
@@ -501,7 +504,45 @@
 
 ### 7.10 Not much UML during inception?
 
+* Moving forward is feasible and if the project is workth serior investigation in the elaboration phase.
 
+## 8. From inception to elaboration
 
+* The majority of requirements are discovered and stabilized
+* The major risks are mitigated or retired.
 
+### 8.1 Checkpoint: What happened in inception?
 
+* Some likely lactivities and artifacts in inception include
+    1. Most actors, goals and use cases named.
+    2. Most use cases written in brief format; 10-20% of the use cases are written in fully dressed detail.
+    * Version 1 of the vision and supplementary specification.
+    * Risk list.
+    * High level candidate architecture. (Not a detailed architectural description, not meant to be final or correct)
+
+### 8.2 On to elaboration
+
+* On is not creating throw-away prototypes; rather, the code and design are production-quality portions of the final system.
+* Build the core architecture, resolve the high-risk elements, deefine most requirements, and estimate the overall schedule and resources.
+
+#### What is architectural significant in elaboration?
+
+* Identify the separate processes, layers, packages, and subsystems, and their high-level responsabilities and interfaces. Partially implement these in order to connect them and clarify the interfaces.
+* Refine intermodule local and remote interfaces like the interface to the object which will wrap access to third-party accounting systems.
+* Integrating existing components.
+* Early testing is required:
+    * Usability tests.
+    * Recovery when remote services fall.
+    * High-load to remote services.
+
+### 8.3 Planning the next iteration
+
+* Organize requirements and iteration by risk, coverage and critially.
+    * **Risk:** Technical complexity and uncertainty of effort or usability.
+    * **Coverage:** All major parts of the system are at least touched on in early iterations.
+    * **Critically:** Functions at high business value.
+* This criteria is used to rank work across iterations. The plan is adaptive rather than speculatively frozen at the beginning of the project.
+
+## 9. Use case model: drawing system sequence diagrams
+
+* In the first iteration, many tasks related to establishing the environment (tools, processes, and setting) occur.
