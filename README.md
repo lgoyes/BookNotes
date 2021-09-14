@@ -27,3 +27,4 @@ In this repo, I will take some notes of the books I've read.
 5. [_El Arte de Resolver Problemas_ - Russell Ackoff](ElArteDeResolverProblemas-RussellAckoff.md)
 6. [_Head First Design Patterns_ - Freeman & Robson](HeadFirstDesignPatterns-FreemanRobson.md)
 7. [_Working Effectively with Legacy Code_ - Michael Feathers](WorkingEffectivelyWithLegacyCode-MichaelFeathers.md)
+8. [_Applying UML and Patterns: An Introduction To Object Oriented Analysis And Design, And The Unified Process._ - Craig Larman](ApplyingUMLandPatternsAnIntroductionToObjectOrientedAnalysisAndDesignAndTheUnifiedProcess.md)
