@@ -20,6 +20,7 @@
 7. [Identifying other requirements](#7-identifying-other-requirements)
 8. [From inception to elaboration](#8-from-inception-to-elaboration)
 9. [Use case model: drawing system sequence diagrams](#9-use-case-model-drawing-system-sequence-diagrams)
+10. [Domain model: visualizing concepts](#10-domain-model-visualizing-concepts)
 
 ## 0. Foreward
 
@@ -546,3 +547,83 @@
 ## 9. Use case model: drawing system sequence diagrams
 
 * In the first iteration, many tasks related to establishing the environment (tools, processes, and setting) occur.
+* A system sequence diagram illustrates inputs and output events related to the systems under discussion.
+
+### 9.1 System behavior
+
+* System behavior is a description of what a system does, without explaining how it does it (black box).
+
+### 9.2 System sequence diagrams
+
+* A system sequence diagram (SSD) is a picture that shows, for a particular scenario of a use case, the events that external actors generate, their order, and inter-system events. All systems are treated as a black-box; the emphasis of the diagram is events that cross the system boundary from actors to system.
+
+* An SSD should be done for the main success scenario of the use case, and frequent or complex alternative scenarios.
+
+### 9.3 Example of an SSD.
+
+* System events may include parameters.
+* The ":" and underline imply an instance.
+* Box may enclose an iteration area.
+
+### 9.6 System events and the system boundary
+
+* A system event is an external event that directly stimulated the software.
+
+### 9.7 Naming system events and operations
+
+* System event should be expressed at the level of intent rather than in terms of the physical input medium or interface widget level.
+* It also improves clarity to start the name of a system with a verb (add, enter, end, make) since it emphasizes the command orientation of these events.
+* "enterItem" is better than "scan" because it captures the intent of the operation while remaining abstract and noncommittal with respect to design choices.
+
+### 9.8 Shoing use case text
+
+* It is sometimes desirable to show at least fragments of use case text for the scenario, to clarify or enhance the two views.
+
+### 9.10 SSDs withing the UP
+
+* SSDs are part of the use-case model - a visualization of the interations implied in the use cases.
+* Create SSDs or only some chosen scenarios of the current iteration.
+
+## 10. Domain model: visualizing concepts.
+
+* A domain model is a representation of real-world conceptual classes not of software components. It is not a set of diagrams describing software classes or software objects with responsibilities.
+
+### 10.1 Domain models.
+
+* A domain model is a visual representation of conceptual classes or real world objects in a domain of interest.
+* A domain model is illustrated with a set of class diagrams in which no operations are defined. It may show:
+    1. Domain objects or conceptual classes.
+    2. Associations between conceptual classes.
+    3. Attributess of conceptual classes.
+* The details of the notation are not important at this time.
+
+#### Key idea: Domain model - a visual dictionary of abstraction
+
+* The domain model may be considered a visual dictionary of the noteworthy abstractions, domain vocabulary, and information content of the domain.
+
+#### Domain models are not models of software components
+
+* A domain model is not a visualization of software components such as Java or C++ classes. A domain model does not have software artifacts or responsibilities or methods.
+
+#### Conceptual classes.
+
+* A domain model illustrates conceptual classes, which are an idea, thing or object.
+    * **Symbol:** words or images representing a conceptual class.
+    * **Intension:** Definition of the conceptual class.
+    * **Extension:** Set of examples where the conceptual class applies.
+* The concept's symbol and intension are of most practical interest.
+
+#### Domain models and decompositioin.
+
+* Decomposition is common strategy to deal with the system complexity by the division of the problem space into comprehensible units.
+
+### 10.2 Conceptual class identification
+
+* In iterative development, one incrementally builds a domain model over several iterations in the elaboration phase.
+* The central task is to identify conceptual classes related to the scenarios under design.
+* It is better to overspecify a domain model with lots of fine-grained conceptual classes that to underspecify it.
+* Do not exclude a conceptual class simply because the requirements do not indicate any obvious need to remember information about it.
+* It is valid to have conceptual classes without attributes: they have a purely behavioral role in the domain.
+
+#### Use a conceptual class category list.
+
