@@ -627,3 +627,58 @@
 
 #### Use a conceptual class category list.
 
+* Start the creation of a domain model by making a list of candidate conceptual classes. List all of the categories worth considering.
+
+#### Finding conceptual classes with noun phrase identification
+
+* Identify the nouns and noun phrases in the use cases. Be careful since not all of nouns can be mapped to classes.
+* Due to the imprecision of natural language, noun phrases may represent the same conceptual classes or attributes.
+
+### 10.3 Candidate conceptual classes for the sales domain
+
+* There is not such thing as a "correct" list of candidate conceptual classes for the domain. It's a somewhat arbitrary collection of abstractions and domain vocabulary that the modelers consider noteworthy.
+
+#### Report objects - include receipt in the model?
+
+* A receipt is a record of a sale. Since item returns are not being considered, receipt are excluded.
+    * A receipt is a report of a sale, showing information derived from other sources, duplicating information found elsewhere. - One reason to exclude.
+    * A receipt confers the right to the bearer of the receipt to return bought items. - One reason to include it.
+
+### 10.4 Domain Modeling Guidelines
+
+#### How to make a domain model
+
+1. List the candidate conceptual classes.
+2. Draw them in a domain model.
+3. Add some associations to record relationships.
+4. Add some attributes to fulfill the information requirements.
+
+#### On naming and modeling things: The mapmaker
+
+* Use the existing names in the territory
+    * Use the vocabulary of the domain when naming conceptual classes and attributes. For example, if developing a model for a library, name the customer a "Borrower".
+* Exclude irrelevant features.
+    * A domain model may exclude conceptual classes in the problem domain.
+* Do not add things that are not there.
+    * The domain model should exclude things **not** in the problem domain under consideration.
+
+#### A common mistake in identifying conceptual classes.
+
+* If we do not think of an attribute `X` as a number or text in the real world, `X` is probably a conceptual class, not an attribute.
+* If in doubt, make it a separate concept. Attributes should be fairly rare in a domain model.
+
+### 10.5 Resolving similar conceptual classes - Register vs "POST"
+
+* **Terminal:** any endpoint device in a system, such as a client PC, a wireless networked PDA, and so forth.
+* A register is a thing that records sales and payments.
+* A domain model is not absolutely correct or wrong, but more or less useful; it is a tool of communication.
+
+### 10.6 Modeling the unreal world.
+
+* There are some domains that are unrealted to the real world (e.g. telecommunications). Create the domain model for these domains, using a high level of abstraction.
+
+### 10.7 Specification or description conceptual classes
+
+* If description, price and itemID are duplicated for every "Item" instance of same product, there will be some duplicated data, and the model implementation will be space inefficient.
+
+#### The need for specification or description conceptual classes
