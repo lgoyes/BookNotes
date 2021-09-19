@@ -682,3 +682,31 @@
 * If description, price and itemID are duplicated for every "Item" instance of same product, there will be some duplicated data, and the model implementation will be space inefficient.
 
 #### The need for specification or description conceptual classes
+
+* To solve the "Item" problem, what is needed is a `ProductSpeicification` (or `ItemSpecification`, `ProductDescription`, ...) conceptual class that records information about items. `Xspecification` describes `X`.
+
+#### Descriptions of Services
+
+* Descriptions of services or service plans are commonly needed. e.g mobile company selling packages such as "bronze", "gold" and so forth. The description of the plan is required.
+
+### 10.8 UML Notation, models and methods: multiple perspectives
+
+* The same diagramming notation may be used for three perspectives and types of models:
+    1. Essential or conceptual perspective: Describe things in the domain of interest.
+    2. Specification perspective: Describe software abstractions or components with specifications and interfaces.
+    3. Implementation perspective: Describe particular technology and language.
+
+#### Superimposing terminology: UML vs methods.
+
+* UML boxes in Domain Model are domain concepts or conceptual classes.
+* UML boxes in Design Model are design classes, offering a specification or implementation perspective.
+
+### 10.9 Lowering the representation gap
+
+* Choosing names that reflect the domain vocabulary (sale) enhances quick comprehension and provides a clue as to what to expect from the chunk of code in a `Sale` software class.
+* The closer one-to-one mapping between the domain vocabulary and our sofware vocabulary and its chunking reduces the representational gap. This speeds comprehension of existing code and suggests "natural" ways to extend the code in ways that similarly correspond to the domain, or appeal to our intuitions of the domain.
+
+## 11. Domain model: Adding associations
+
+### 11.1 Associations
+
