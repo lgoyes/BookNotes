@@ -21,6 +21,8 @@
 8. [From inception to elaboration](#8-from-inception-to-elaboration)
 9. [Use case model: drawing system sequence diagrams](#9-use-case-model-drawing-system-sequence-diagrams)
 10. [Domain model: visualizing concepts](#10-domain-model-visualizing-concepts)
+11. [Domain model: Adding associations](#11-domain-model-adding-associations)
+12. [Domain model: adding attributes](#12-domain-model-adding-attributes)
 
 ## 0. Foreward
 
@@ -709,4 +711,58 @@
 ## 11. Domain model: Adding associations
 
 ### 11.1 Associations
+
+* An association is a relationship between instances of some types that indicate some meaningful connection.
+
+#### Criteria for Useful Associations
+
+* What objects do we need to have some memory of a relationship? Some `SalesLineItem` are associated with a `Sale` instance. We need this association to reconstruct the `Sale`.
+
+### 11.2 The UML association notation
+
+* The UML association is inherently bidirectional: from instances of either class, logical traversal to the other is possible.
+* THe ends of an association may contain a multiplicity indicating the numerical relationship between the instances.
+* There can be a "reading direction arrow" indicating the direction to read the association; it does not indicate direction of visibility or navigation.
+
+### 11.5 Roles
+
+* Each end of an association is called a role. Roles may have:
+    * Name
+    * Navigability
+    * Multiplicity
+
+#### Multiplicity
+
+* Multiplicity defines how many instances of a class A can be associated with one instance of a class B, at a particular moment, rather than over a span of time.
+
+### 11.6 How detailed should associations be?
+
+* Finding conceptual classes is more important than finding associations.
+
+### 11.7 Naming associations
+
+* Since an association represents a classifier of links between instances; in the UML, classifiers should start with a capital letter.
+* The association name must be based on `<TypeName>-VerbPhrase-<AnotherTypeName>`.
+
+### 11.8 Multiple associations between two types.
+
+* Two types may have multiple associations between them. Different associations should be shown separately.
+
+### 11.9 Associations and implementation
+
+* The presence of an association in a conceptual view of a domain model does not require their implementation.
+* The domain model does not need to be updated with insights revealed during implementation work. Avoid making or updating any documentation or model unless there is a concrete justificatioin for future use.
+
+### 11.10 Nextgen POS domain model association
+
+* We should add those associations which the requirements suggest or imply a need to remember, or which otherwise are strongly suggeted in our perception of the problem domain.
+
+#### Associations for need-to-know vs. comprehension
+
+* Deleting some associations that are not strictly demanded on a need-to-know basis can create a model that misses the point - it does not communicate key ideas and relationships.
+* Emphasize need-to-know assocations, but add choice comprehension-only associations to enrich critical understanding of the domain.
+
+## 12. Domain model: adding attributes
+
+
 
