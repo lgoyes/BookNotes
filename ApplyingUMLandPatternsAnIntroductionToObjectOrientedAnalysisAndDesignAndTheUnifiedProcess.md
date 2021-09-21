@@ -764,5 +764,51 @@
 
 ## 12. Domain model: adding attributes
 
+### 12.1 Attributes
+
+* An attribute is a logical data value of an object.
+* Attributes are shown in the second compartment of the class box. Their type may optionally be shown.
+
+### 12.3 Valid attribute types
+
+#### Keep attributes simple
+
+* Most simple attribute types are primitive data types, such as boolean, date, dumber, string, time. Other common types include: Color, enumerated types, geometrics (Point, Rectangle).
+* An attribute should not be a complex domain concept, such as an `Airport` or a `Sale`. A more useful way to express the relationship with a complex concept is with an association.
+
+#### Conceptual vs Implementation perspective: What about attributes in code?
+
+* The associations between objects expressed in the domain model will often be implemented as attributes that reference other complex software objects.
+
+#### Data types
+
+* Attributes should generally be data types.
+* Data type is a UML term that implies a set of values for which unique identity is not meaningful.
+* Two instances of the number 5 might not habe a meaningful distinction; while two instances of a `Person` whose names are both "Jill Smith" might represent two different people with the same name.
+* All primitive types (number, string) are UML data types, but not all data types are primites.
+
+### 12.4 Non-primite data type classes
+
+* What may initially be considered a primite data type can be represented as a non-primite class if:
+    1. It is composed of several sections.
+    2. There are operations usually associated with it, such as parsing or validation.
+    3. It has other attributes.
+    4. It is a quantity with a unit.
+    5. It is an abstraction of one or more types with some of these qualities.
+
+### 12.5 Design creep: No attributes as foreign keys
+
+* Do not relate conceptual classes in the domain model by means of a foreign key attribute (e.g. `currentRegisterNumber`). Relate types with an association, not with an attribute.
+
+### 12.6 Modeling attribute quantities as units.
+
+* Most numeric quantities should not be represented as plain numbers. Consider price or velocity. These are quantities with associated units, and it is common to require knowing the unit, and to support conversion.
+
+### 12.8 Multiplicity from SalesLineItem to Item
+
+* An individual `SalesLineItem` can be associated with more than one instance of an `Item`. The quantity can be calculated from the actual multiplicity value of the relationship, so it may be characterized as a _derived attribute_ - one that may be derived from other information. In UML, a derived attribute is indicated with a `"/"` symbol (e.g. `/quantity`).
+
+## 13. Use-case model: Adding detail with opration contracts.
+
 
 
