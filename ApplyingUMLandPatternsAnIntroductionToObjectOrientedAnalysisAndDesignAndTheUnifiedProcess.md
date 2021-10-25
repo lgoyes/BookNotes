@@ -23,6 +23,7 @@
 10. [Domain model: visualizing concepts](#10-domain-model-visualizing-concepts)
 11. [Domain model: Adding associations](#11-domain-model-adding-associations)
 12. [Domain model: adding attributes](#12-domain-model-adding-attributes)
+13. [Use-case model: Adding detail with operation contracts.](#13-use-case-model-adding-detail-with-operation-contracts)
 
 ## 0. Foreward
 
@@ -808,7 +809,77 @@
 
 * An individual `SalesLineItem` can be associated with more than one instance of an `Item`. The quantity can be calculated from the actual multiplicity value of the relationship, so it may be characterized as a _derived attribute_ - one that may be derived from other information. In UML, a derived attribute is indicated with a `"/"` symbol (e.g. `/quantity`).
 
-## 13. Use-case model: Adding detail with opration contracts.
+## 13. Use-case model: Adding detail with operation contracts.
+
+### 13.1 Contracts
+
+* Contracts describe detailed system behavior in terms of a state change to objects in the domain model, after a system operation has executed.
+
+#### System operations and the system interface
+
+* System operation: Operation that the system as black box offers in its public interface to handle incoming system events.
+* Contracts may be defined for system operations.
+
+### 13.3 Contract sections.
+
+* **Operation**: Name of the operation, and parameters.
+* **Cross referene**: use cases this operation can occur within.
+* **Preconditions**: 
+    * Noteworthy assumptions about the state of the system or objects in the domain model before executing the operation.
+    * These preconditions will not be tested within the login of this operation.
+* **Postconditions**: State of the objects in the domain model after completion of the operations.
+
+### 13.4 Postconditions.
+
+* Postconditions describe changes in the state of objects in the Domain model.
+* Domain model changes include "instance creation/deletion", "associations broken or formed" and "attribute modification".
+* The important quality is to be declarative and state-change oriented rather than action-oriented, since post-conditions are declarations about state or outcomes rather than a description of actions to execute, or a design of a solution.
+
+#### Post conditions are related to the domain model
+
+* What instances can be created? Those from the domain model
+* What associations can be formed? Those from the domain model
+
+#### An advantage of postconditions: analytical detail
+
+* One can focus analytically on _what_ must happen, rather than _how_ it is to be accomplished.
+
+#### The spirit of postconditions: the stage and curatin
+
+* Express postconditions in the past tense, to emphasize they are declarations about a state change in the past.
+
+#### If constracts are used, how complete should postconditions be?
+
+* Treat the creation of the postconditions as an initial best guess, with the understanding that the contracts will not be completed.
+
+### 13.6 Writing contracts leads to domain model updates.
+
+* During the creation of the contracts some new conceptual classes, attributes or associations, might be discovered and should be added to the domain model.
+
+### 13.7 When are contracts useful? Contracts vs use cases?
+
+* Contracts will not be practically motivated very often, so if a team is making contracts for every system operation of every use case, it is a warning that either the use cases are poorly done, there is not enough ongoing collaboration or access to a subject matter expert, or the team is doing to much unnecessary documentation.
+
+### 13.8 Guidelines: Contracts.
+
+* Advice:
+    1. Identify system operations
+    2. For system operations that are complex and not clear in the use case, construct a contract.
+    3. To describe postconditions use the following categories:
+        1. Instance creation and deletion.
+        2. Attribute modification.
+        3. Associations formed and broken.
+
+* Remember to establish memory beween the existing objects or those newly created by defining the forming of an association. It is not enough to create the `SalesLineItem` instance, but it has to be associated to `Sale`.
+
+### 13.11 Contracts, operations and the UML
+
+* Operation (UML): Specification of a transformation or query that an object may be called to execute.
+* Method (UML): Implementation of an operation.
+
+#### Operation contracts expressed with the OCL.
+
+
 
 
 
