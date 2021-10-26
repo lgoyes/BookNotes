@@ -24,6 +24,8 @@
 11. [Domain model: Adding associations](#11-domain-model-adding-associations)
 12. [Domain model: adding attributes](#12-domain-model-adding-attributes)
 13. [Use-case model: Adding detail with operation contracts.](#13-use-case-model-adding-detail-with-operation-contracts)
+14. [From requirements to design in this iteration](#14-from-requirements-to-design-in-this-iteration)
+15. [Interaction diagram notation](#15-interaction-diagram-notation)
 
 ## 0. Foreward
 
@@ -877,8 +879,41 @@
 * Operation (UML): Specification of a transformation or query that an object may be called to execute.
 * Method (UML): Implementation of an operation.
 
-#### Operation contracts expressed with the OCL.
+### 13.12 Operation Contracts within the UP
 
+* Operation specification contracts for the system level are part of the Use-Case Model
+
+#### Phases
+
+* **Inception**: Contrcts are not motivated during inception.
+* **Elaboration**: When most use cases are written, only write contracts for the most complex and subtle system operations.
+
+## 14. From requirements to design in this iteration
+
+### 14.1 Iteratively do the right thing, do the thing right
+
+* Requirements and object analysis has focused on learning to do the right thing: understanding some of the outstanding goals, and constraints.
+
+* Do the thing right: skillfully design solutions to satisfy the requirements.
+
+* It is natural and healthy to discover and change some requirements during the design and implementation work of the **early** iterations.
+
+### 14.3 On the object design
+
+* Interaction diagrams to illustrate how objects collaborate to fulfill the requirements.
+* Interaction diagrams and class diagrams summarize the definition of the software classes and interfaces to be implemented.
+* There artifacts are part of the design model.
+
+## 15. Interaction diagram notation
+
+### 15.1 Sequence and collaboration diagrams.
+
+* "Interaction diagram" is a generalization of "collaboration diagrams" and "sequence diagrams".
+    * **Collaboration diagrams**: Illustrate object interactions in a graph in which objects can be placed anywhere.
+    * **Sequence diagrams**: Illustrate interactions in a kind of fence format, in which each new object is added to the right.
+* Sequence diagrams clearly show sequence or time ordering of messages, but it consumes horizontal space.
+
+### 15.2 Example collaboration diagram: makePayment
 
 
 
