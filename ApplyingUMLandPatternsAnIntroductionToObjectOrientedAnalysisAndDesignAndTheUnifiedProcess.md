@@ -915,6 +915,109 @@
 
 ### 15.2 Example collaboration diagram: makePayment
 
+1. The message `makePayment` is sent to an instance of a `Register`. The sender is not identified.
+2. The `Register` instance sends the `makePayment` message to a `Sale` instance.
+3. The `Sale` instance creates an instance of a `Payment`.
+
+### 15.3 Example sequence diagram: makePayment
+
+* Activation box shows the focus of control.
+* The instance box appears right when the instance is created.
+
+### 15.4 Interaction diagrams are valuable
+* If the length of the timeboxed iteration is two weeks, perhaps a half or full day near the start of the iteration should be spent on the creation of interaction diagrams and class diagrams, before proceeding with programming.
+    * The design might be modified during programming, but it will provide a thoughtful start point during programming.
+
+### 15.5 Common Interaction Diagram Notation
+
+#### Illustrating classes and instances
+
+* **Class:** represented by the name capitalized (`Sale`).
+* **Instance:** the name underlined with a `:` preceding (<u>`:Sale`</u>)
+* **Named instance:** name of instance followed by instance (<u>`s1 :Sale`</u>)
+
+### 15.6 Basic collaboration diagram notation
+
+#### Links
+
+* A link is a connection path between two objects; it indicates some form of navigation and visibility between objects is possible.
+
+#### Messages
+
+* A message is represented with a message expression and a small arrow indicating the direction of the message. A sequence number is added to show the sequencial order of messages.
+
+#### Messages to "self".
+
+* A message can be sent from an object to itself, illustrated by a link to itself, with messages flowing along the link.
+
+#### Creation of instances
+
+* Use a message named "create" to create an instance.
+
+#### Message number sequencing
+
+* Order of messages is illustrated with sequence numbers.
+* The first message is not numbered.
+* Nested messages have a number appended to them.
+
+#### Conditional messages
+
+* Conditional message: A sequence number, with a conditional clause in square brackets. The message is sent if the clause evaluates to true.
+
+#### Mutually exlusive conditional paths.
+
+* It is necessary to modify the sequence expresions with a conditioinal path letter.
+
+#### Iteration or looping
+
+* Define the iteration index, and the range in square brackets, after a `*`, e.g. `*[i:1..N]`.
+
+#### Iteration over a collection
+
+* The terms multiobject, in UML, is used to denote a set of instances.
+    * Double box indicates a multiobject (collection).
+    * Having a `*` in the message, and a multiobject together, imply iteration over the multiobject.
+
+#### Messages to a class object
+
+* To use static methods, send the message to a class box whose name is not underlined.
+
+### 15.7 Basic sequence diagram notation
+
+#### Links
+
+* Sequence diagrams do not have links
+
+#### Messages
+
+* Each message is represented by a line between objects. The time ordering is organized from top to bottom.
+
+#### Focus of control and activation boxes
+
+* An activation box represents an operation on the call stack.
+
+#### Illustrating returns
+
+* The return from a message is a dashed open-arrowed line at the end of the activation box.
+
+#### Creation of instances
+
+* The newly created objects are placed at their creation "height".
+
+#### Object lifelines and object destruction
+
+* Object lifelines - The vertical dashed lines underneath the objects.
+* If object destruction is explicit (as in C++, which does not have garbage collector), the `<<destroy>>` stereotyped message with the large `X` and short lifeline indicates explicit object destruction.
+
+#### Conditional message
+
+* A message with a square brackets condition.
+
+#### Mutually exclusive conditional message.
+
+* An angled messaged line emerging from a common point with a condition.
+
+#### Iteration for a single message
 
 
 
