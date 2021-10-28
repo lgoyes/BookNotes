@@ -26,6 +26,7 @@
 13. [Use-case model: Adding detail with operation contracts.](#13-use-case-model-adding-detail-with-operation-contracts)
 14. [From requirements to design in this iteration](#14-from-requirements-to-design-in-this-iteration)
 15. [Interaction diagram notation](#15-interaction-diagram-notation)
+16. [GRASP: Designing objects with responsibilities](16-grasp-designing-objects-with-responsibilities)
 
 ## 0. Foreward
 
@@ -1019,5 +1020,60 @@
 
 #### Iteration for a single message
 
+* A message line from one instance to another, with the iteration notation before the message expression (e.g. `*[i:1..N]: message()`).
 
+#### Iteration for a series of messages
 
+* Wrap all of the messages that should be iterated over, with a box and write the iteration notation at the bottom border of the box. (e.g `*[i:1..N]`).
+
+#### Iteration over a collection (multiobject)
+
+* Have a "*" at the start of the message, and let the destination of the message be a multiobject (two boxes).
+
+#### Messages to class objects
+
+* Static method calls are shown by not underlining the name of the classifier.
+
+## 16. GRASP: Designing objects with responsibilities
+
+GRASP: General Reponsibility Assignment Software Patterns
+
+### 16.1 Responsibilities and methods
+
+* A responsibility is a contract or obligation of a classifier
+* Responsibilities are of the following two types:
+    1. Doing:
+        * Doing something itself, such as creating an object or doing a calculation.
+        * Initiating action in other objects.
+        * Controlling and coordinating activities in other objects.
+    2. Knowing:
+        * Knowing about private encapsulated data.
+        * Knowing about related objects.
+        * Knowing about things it can derive or calculate.
+
+* Methods are implemented to fulfuill responsibilities. Responsibilities are implemented using methods that either act alone or collaborate with other methods and objects.
+
+### 16.3 Patterns.
+
+* A pattern is a named description of a problem and a solution that can be applied to new contexts, with advice on how to apply it in novel situations and discussion of its trade-offs.
+
+* A pattern is a vehicle for naming, presenting, learning, and remembering useful software engineering principles.
+
+#### Repeating patterns
+
+* Patterns attempt to codify existing tried-and-true knowledge, idioms, and principles; the more honed and widely used, the better.
+
+#### Patterns have names
+
+* Patterns have suggesting names
+    1. It supports chunking and incorporating that concept into our understanding and memory.
+    2. It facilitates communication.
+
+### 16.6 Information expert (or Expert)
+
+* **Solution:** Assign a responsibility to the information expert - The class that has the information necessary to fulfill the responsibility.
+* **Problem:** What is a general principle of assigning responsibilities to objects.
+* **Advice:** Start assigning responsibilities by clearly stating the responsibility.
+* **Example:** Who should be responsible for knowing the grand total of a sale? By information expert, we should look for that class of objects that has the information needed to determine the total.
+* Low representational gap: the software design of objects appeals to our concepts of how the real domain is organized.
+* Giving the responsibility of knowing the total is expressed with the method named `getTotal`.
