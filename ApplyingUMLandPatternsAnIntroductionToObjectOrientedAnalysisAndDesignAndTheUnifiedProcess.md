@@ -1074,6 +1074,35 @@ GRASP: General Reponsibility Assignment Software Patterns
 * **Solution:** Assign a responsibility to the information expert - The class that has the information necessary to fulfill the responsibility.
 * **Problem:** What is a general principle of assigning responsibilities to objects.
 * **Advice:** Start assigning responsibilities by clearly stating the responsibility.
-* **Example:** Who should be responsible for knowing the grand total of a sale? By information expert, we should look for that class of objects that has the information needed to determine the total.
+* **Example:** 
+    * Who should be responsible for knowing the grand total of a sale? By information expert, we should look for that class of objects that has the information needed to determine the total.
+    * Giving the responsibility of knowing the total is expressed with the method named `getTotal`.
 * Low representational gap: the software design of objects appeals to our concepts of how the real domain is organized.
-* Giving the responsibility of knowing the total is expressed with the method named `getTotal`.
+* **Discussion:**
+    * Objects do things related to the information they have.
+    * The fulfillment of a responsibility often requires information that is spread across different classes of objects. This implies that there are many "partial" information experts who collaborate in the task.
+* **Contraindications:**
+    * Some times, _Expert_ is undesirable, because of problems in couple and cohesion.
+    * Keep application logic in one place (such as domain software objects), keep database logic in another place (such as separate persistence services subsystems), rather than intermingling different system concerns in the same component.
+* **Benefits:**
+    * Information encapsulation is maintained, since objects use their own information to fulfill tasks.
+    * Behavior is distributed across the classes that have the information encouraging more cohesive "lightweight" class definitions.
+
+### 16.7 Creator
+
+* **Solution:** Assign class B the responsibility to create an instance of class A, if one or more of the following is true:
+    1. B aggregates A objects.
+    2. B contains A objects.
+    3. B records instances of A objects.
+    4. B has the initializing data that will be passed to A when it is created (thus B is an expert with respect of creating A).
+* **Problem:** Who should be responsible for creating a new instance of some class?
+* **Example:**
+    * Since a `Sale` contains (aggregates) many `SalesLineItem` objects, the creatos pattern suggests that `Sale` is a good candidate to have a responsibility of creating `SalesLineItem` instances.
+* **Discussion:**
+    * Aggregation involves thing that are in a strong Whole-Part of Assembly-Part relationship, such as `Body` aggregates `Leg` or `Paragraph` aggregates `Sentence`.
+    * Sometimes a creator is found by looking fot he class that has the initializing data that will be passed in during creation.
+* **Contraindications:**
+    * When the creation requires significant complexity, such as using recycled instances for performance reasons, conditionally creating an instance from one of a family of similar classes based upon some external property value, and so forth; it is advisable to delegate creation to a helper class called a `Factory` rather than use the class suggested by _Creator_.
+
+### 16.9 Low coupling
+
