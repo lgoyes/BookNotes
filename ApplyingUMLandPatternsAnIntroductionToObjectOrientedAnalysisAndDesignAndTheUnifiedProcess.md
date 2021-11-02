@@ -1106,3 +1106,59 @@ GRASP: General Reponsibility Assignment Software Patterns
 
 ### 16.9 Low coupling
 
+* **Solution:** Assign a responsibility so that coupling remains low.
+* **Problem:**
+    * How to support low dependency, low change impact, and increase reuse?
+    * _Coupling_ is a measure of how strongly one element is connected to, has knowlegde of, or relies on other elements.
+    * A class with high coupling relies on many other classes and may suffer from the following problems:
+        1. Changes in related classes force local changes.
+        2. Harder to understand in isolation.
+        3. Harder to reuse because it requires the additional presence of the classes on which it is dependent.
+
+* **Example**
+    * `Register` can create a `Payment`, and then could send an `addPayment` message to the `Sale`, passing along the new `Payment` as a parameter.
+    * We will assume the `Sale` must eventually be coupled to knowledge of a `Payment`. If the `Sale` does the creation of a `Payment`, it will not increase the coupling, while the previous design (`Register` creating a `Payment`) adds coupling of `Register` to `Payment`.
+    * The level of coupling alone can't be considered in isolation from other principles such as _Expert_ and _High Cohesion_.
+
+* **Discussion:**
+    * Common forms of couping from `X` to `Y` include:
+        1. `X` has an attribute that refers to `Y`.
+        2. `X` calls on services of `Y`.
+        3. `X` has a method that references an instance of `Y`.
+        4. `X` is a direct or indirect subclass of `Y`.
+        5. `Y` is an interface, which `X` implements.
+    * Low coupling supports the design of classes that are more independent, which reduces the impact of change.
+    * A subclass is strongly coupled to its superclass.
+    * Classes that are inherently very generic in nature, and with a high probability of reuse, should have especially low coupling.
+    * If low coupling is taken to excess, it yields a poor design because it leads to a few incohesive, bloated and complex active objects that do all the work with many very passive zero-coupled objects that act as simple data repositories.
+
+* **Contraindications:**
+    * High coupling to stable elements (such as the java libraries) is seldom a problem.
+    * If is not high coupling per se that is the problem; it is high coupling to elements that are unstable in some dimension, such as their interface, implementation or mere presence.
+
+### 16.9 High cohesion
+
+* **Solution:** Assign a responsibility so that cohesion remains high.
+* **Problem:**
+    * How to keep complexity manageable?
+    * _Cohesion_ is a measure of how strongly related and focused the responsibilities of an element are. An element with highly related responsibilities, and which does not do a tremendous amount of work, has high cohesion.
+    * A class with low cohesion does too much work, and suffer from the following problems:
+        1. Hard to comprehend.
+        2. Hard to reuse.
+        3. Hard to maintain.
+        4. Delicate; constantly effected by change.
+* **Example:**
+    * If we continue to make the `Register` class responsible for doing some or most of the work related to more and more system operations, it will become increasingly burdered with tasks and become incohesive.
+    * The level of cohesion must be considered along with other principles such as _Expert_ and _Low coupling_.
+* **Discussion:**
+    * High functional cohesion exists when the elements of a component all work together to provide some well-bounded behavior.
+    * Degrees of functional cohesion.
+        1. **Very low cohesion** _[A class is responsible for many things in very different areas]_ A class `RBD-RPC` is repsonsible for interacting with relational databases and for handling remote procedure calls.
+        2. **Low cohesion** _[A class has responsibility for a complex task in one area]_ A class `RBD` is responsible for interacting with relational database. There is a lot of methods. The class should split into a family of lightweight classes sharing the work.
+        3. **High cohesion** _[A class has moderate responsibilities in one area and collaborate with other classes to fulfill tasks]_ A class `RDB` is responsible for interacting with relational database. It interacts with a dozen other classes related to `RDB` access in order to retrieve and save objects.
+        4. **Moderate cohesion** [A class has light weight and sole responbilities in a few different areas that are logically related to the class concept, but not to each other] A class `Company` must (a) know its employees and (b) know its finantial information. Both are logically related to the concept of a company, but not stringly related to each other.
+    * A class with high cohesion has a relatively small number of methods, with highly related functionality, and does not do too much work. It collaborates with other objects to share the effort if the task is large.
+    * Modularity is the property of a system that has been decompsed into a set of cohesive and loosely coupled modules.
+    * Modularity is achieved by designing each method with a clear, single purpose, and grouping a related set of concerns into a class.
+* **Contraindications**
+
