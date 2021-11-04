@@ -26,7 +26,8 @@
 13. [Use-case model: Adding detail with operation contracts.](#13-use-case-model-adding-detail-with-operation-contracts)
 14. [From requirements to design in this iteration](#14-from-requirements-to-design-in-this-iteration)
 15. [Interaction diagram notation](#15-interaction-diagram-notation)
-16. [GRASP: Designing objects with responsibilities](16-grasp-designing-objects-with-responsibilities)
+16. [GRASP: Designing objects with responsibilities](#16-grasp-designing-objects-with-responsibilities)
+17. [Design model: use-case realization with GRASP patterns](#17-design-model-use-case-realization-with-grasp-patterns)
 
 ## 0. Foreward
 
@@ -1190,4 +1191,35 @@ GRASP: General Reponsibility Assignment Software Patterns
     * It is sometimes necessary to ensure that system operations occur in a legal sequence, or to be able to reason about the current state of an activity and operations within the use case that is underway. The state information needs to be captured somewhere; the controller is one reasonable choice, especially if the same controller is used throughout the use case.
 * **Issues and solutions**
     1. **Bloated controllers**
-        
+        * Signs of bloating include
+            * There is only a single controller class receiving all system events, and there are many of them (if a facade controller is chosen).
+            * The controller does not delegate the work.
+            * A controller maintains significant information about the system or domain, which should have been distributed to other objects.
+        * Cures to a bloated controller:
+            * Instead of facade controllers, use use-case controllers.
+            * The controller should primarily delegate the fulfillment of each system operation responsibility on to other objects.
+    2. **Interface layer does not handle system events**
+        * Interface objects and the interface layer should not have responsibility for handling system events. The UI does not get involed in processing any operation, it only delegates it to another layer.
+        * Placing system operation responsibilities in a domain object controller makes it easier to unplug the interface layer and use a different interface framework or technology, or to run the system in an offline batch mode.
+
+## 17. Design model: use-case realization with GRASP patterns
+
+### 17.1 Use-case realizations
+
+* A use-case realization describes how a particular use case is realized within the design model, in terms of collaborating objects.
+
+### 17.2 Artifact comments
+
+#### Interaction Diagrams and use-case realizations
+
+* In the current iteration we are considering various scenarios and system events.
+    * If collaboration diagrams are used to illustrate use-case realizations, a different collaboration diagram will be required to show the handling of each system event message.
+    * If sequence diagrams are used, it may be possible to fit all system event messages on the same diagram. However, if the sequence diagram gets too complex or long, one can use a sequence diagram for each system event message.
+
+#### Conceptual vs. design classes
+
+* The UP Domain Model does not illustrate software classes, but may be used to inspire the presence and names of some software classes in the Design Model. During interaction diagramming or programming, the developers may look to the Domain Model to name some design classes, thus creating a design with lower representational gap between the software design and our concepts of the real domain to which the software is related.
+* Design classes in the Design Model are not limited to classes with names insprired from the Domain Model. New software classes may appear whose names and purpose are completely unrelated to the Domain Model.
+
+### 17.4 Object design: makeNewSale
+
