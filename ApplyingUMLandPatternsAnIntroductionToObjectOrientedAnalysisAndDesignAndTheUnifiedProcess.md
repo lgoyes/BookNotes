@@ -1223,3 +1223,36 @@ GRASP: General Reponsibility Assignment Software Patterns
 
 ### 17.4 Object design: makeNewSale
 
+* Choosing a facade controller is satisfactory if there are only a few system operations and the facade controller is not taking on too many responsibilities. Choosing a use-case controller is suitable when there are many system operations and we wish to distribute responsibilities in order to keep each controller class lightweight and focused (cohesive).
+* The `Register` will record a `Sale`, thus `Register` will create a `Sale`. `Sale` will contain a collection of `SalesLineItem`, thus `Sale` will create the empty collection.
+
+### 17.5 Object design: enterItem
+
+* Because of a design principle called `Model-View` separation, it is not the responsibility of non-GUI objects (such as `Register` or `Sale`) to get involed in the output tasks.
+* A `Sale` creates a `SalesLineItem` using the quantity and the product specification. Then, the new instance `sli` is stored in the collection.
+* **Start assigning responsibilities by clearly stating the responsibility.**
+* Before considering "how" to acieve the lookup, it is useful to consider "who" should be responsible for it.
+* Who should be responsible for knowing a `ProductSpecification`, based on an `itemID` match? Analyzing the Domain Model reveals that the `ProductCatalog` logically contains all the `ProductSpecification`s. Then, `ProductCatalog` is responsible for this lookup, since it knows all the `ProductSpecification` objects.
+* Visibility is the ability of one object to see or have a reference to another object.
+
+### 17.6 Object design: endSale
+
+* Who should be responsible for setting the `isComplete` attribute of the sale to `true`? By Expert, it should be the `Sale` itself, since it owns and maintains the `isComplete` attribute. Thus, the `Register` will send a `becomeComplete` message to the `Sale` to set it to `true`.
+* A UML constraint is some semantically meaningful information attached to a model element. UML constraints are text enclosed in `{ }` braces.
+* A UML note is a comment that has no semantic impact. A note is always shown in a notebox (a dog-eared text box).
+
+#### Calculating the Sale total
+
+* Because of the Model-View separation principle, we should not concern ourselves with the design of how the sale total will be displayed.
+* Who should be responsible for knowing the sale total?
+    * Product description price - `ProductSpecification`.
+    * Sales Line Item quantity - `SalesLineItem`
+    * All the SalesLineItems in the current sale? - `Sale`.
+* Not every interaction diagram starts with a system event message; they can start with any message for which the designer wishes to show interactions.
+
+### 17.7 Object design: makePayment
+
+* When there are alternative design choices, take a closer look at the cohesion and coupling implications of the alternatives, and possibly at the future evolution pressures on the alternatives. Choose an alternative with good cohesion, coupling, and stability in the presence of likely future changes.
+
+
+
