@@ -28,6 +28,7 @@
 15. [Interaction diagram notation](#15-interaction-diagram-notation)
 16. [GRASP: Designing objects with responsibilities](#16-grasp-designing-objects-with-responsibilities)
 17. [Design model: use-case realization with GRASP patterns](#17-design-model-use-case-realization-with-grasp-patterns)
+18. [Design model: determining visibility](#-18-design-model-determining-visibility)
 
 ## 0. Foreward
 
@@ -1253,6 +1254,62 @@ GRASP: General Reponsibility Assignment Software Patterns
 ### 17.7 Object design: makePayment
 
 * When there are alternative design choices, take a closer look at the cohesion and coupling implications of the alternatives, and possibly at the future evolution pressures on the alternatives. Choose an alternative with good cohesion, coupling, and stability in the presence of likely future changes.
+* If the `Sale` is chosen to create the `Payment`, the work of the `Register` is lighter. Also, the `Register` does not need to know about the existence of a `Payment` instance, leading to lower coupling in the `Register`.
+
+#### Logging a Sale
+
+* Who is responsible for knowing all the logged sales, and doing the logging? Using a classic accounting concept like a `SalesLedger` makes sense as the design grows.
+* If we choose the `SalesLedger` instead of a `Store` to log `Sale` objects, `SalesLedger` would ideally be added to the Domain Model as well.
+
+#### Calculating the Balance
+
+* Who is responsible for knowing the balance?
+* To calculate the balance, the sale total and payment cash tendered are required. Therefore, `Sale` and `Payment` are partial Experts on solving this problem.
+* Since the `Sale` already has visibility to the `Payment`, `Sale` can compute the balance.
+
+### 17.8 Object design: startUp
+
+* Although the startUp system operation is the earliest one to execute, delay the development of an interaction diagram for it until after all other system operations have been considered. This ensures that information has been discovered concerning the initialization activities required to support the later system operation interaction diagrams.
+
+#### How applications start up
+
+* A common design idiom is to ultimately create an initial domain object, which is the first software "domain" object created. The initial domain object, once created, is responsible for the creation of its direct child domain objects.
+
+#### Interpretation of the startUp system operation
+
+* During design, there is variation in where the initial object is created, and whether or not it takes control of the process. The initial domain object does not usually take control if there is a GUI; otherwise, it often does.
+* Assume that the initial domain object is not responsible for taking control of the process; control will remain in the UI layer, after the initial domain object is created. Therefore, the interaction diagram for the startup operation may be reinterpreted solely as the `create()` message sent to create the initial object.
+
+#### Choosing the initial Domain Object
+
+* Choose as an initial domain object a class at or near the root of the containment or aggregation hierarchy of domain objects.
+
+#### Persistent objects: ProductSpecification
+
+* The product specification instances will reside in a persistent storage medium.  Individual instances will be loaded on demand into memory as they are required.
+
+#### Store--create() design
+
+* The following initialization work can be identified:
+    1. A `Store`, `Register`, `ProductCatalog` and `ProductSpecification`s need to be created.
+    2. The `ProductCatalog` need to be associated with `ProductSpecification`s.
+    3. `Store` needs to be associated with `ProductCatalog`.
+    4. `Store` needs to be associated with `Register`.
+    5. `Register` needs to be associated with `ProductCatalog`.
+* Multiplicity beween classes of objects in the Domain Model and Design Model may not be the same.
+
+### 17.9 Connecting the UI layer to the Domain Layer.
+
+* Common designs by which objects in the UI layer obtain visibility to objects in the domain layer include the following:
+    1. An initialization routine creates both a UI and a domain object, and passes the domain object to the UI.
+    2. A UI Object retrieves the domain object from a well-known source, such as a factory object that is responsible for creating domain objects.
+* Once the UI object has a connection to the `Register` instance (the facade controller), it can forward system event messages to it.
+* In order to have the window show the total:
+    1. It should ask for the total to the `Register`. It maintains a low couping on the UI (the UI only knows of the `Register` object), but it starts to expand the interface of the `Register` object, making it less cohesive.
+    2. The UI asks for a reference to the current `Sale` object, then it sends messages to the `Sale`. This design increases the coupling from the UI to the domain layer.
+        * Coupling to unstable things is a problem according to the low coupling GRASP patten. If `Sale` is stable enough, coupling to the `Sale` is not a problem.
+
+## 18. Design model: determining visibility
 
 
 
