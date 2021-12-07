@@ -29,6 +29,9 @@
 16. [GRASP: Designing objects with responsibilities](#16-grasp-designing-objects-with-responsibilities)
 17. [Design model: use-case realization with GRASP patterns](#17-design-model-use-case-realization-with-grasp-patterns)
 18. [Design model: determining visibility](#-18-design-model-determining-visibility)
+19. [Design model: Creating design class diagrams (DCD)](#-19-design-model-creating-design-class-diagrams-dcd)
+20. [Implementation model: Mapping design to code](#-20-implementation-model-mapping-design-to-code)
+21. [Iteration 2 and its requirements](#-21-iteration-2-and-its-requirements)
 
 ## 0. Foreward
 
@@ -1311,5 +1314,119 @@ GRASP: General Reponsibility Assignment Software Patterns
 
 ## 18. Design model: determining visibility
 
+### 18.1 Visibility between objects
 
+### 18.2 Visibility
 
+* Visibility is the ability of an object to "see" or have a reference to another object. Is one resource (such as an instance) within the scope of another?
+* Visibility can be achieved from object A to object B in 4 ways.
+    1. B is an attribute of A.
+    2. B is a parameter of a method of A.
+    3. B is a local object in a method of A.
+    4. B is in some way globally visible.
+
+#### Attribute visibility
+
+* B is an attribute of A.
+* It is a relatively permanent visibility because it persists as long as A and B exist.
+
+#### Parameter visibility
+
+* B is passed as a parameter to a method of A.
+* It is a relatively temporary visibility because it persists only within the scope of a method.
+* It is common to transform parameter visibility into attribute visibility.
+
+#### Local visibility
+
+* B is declared as a local object within a method of A.
+* It is a relatively temporary visibility because it persists only whitin the scope of the method.
+* Means to achieve local visibility:
+    1. Create a new local instance and assign it to a local variable.
+    2. Assign the returning object from a method invocation to a local variable.
+
+#### Global visibility
+
+* B is global to A.
+* It´s a relatively permanent visibility because it persists as long as A and B exist.
+* It is the least common form of visibility in object-oriented systems.
+* The preferred method to achieve global visibility is to use the _Singleton_ pattern.
+
+## 19. Design model: Creating design class diagrams (DCD)
+
+### 19.1 When to create DCD
+
+* Design class diagrams are created in parallel with the interaction diagrams.
+
+### 19.3 DCD and UP terminology
+
+* A design class diagram (DCD) illustrates the specifications for software classes and interfaces in an application. Typical information includes:
+    1. Classes, associations and attributes.
+    2. Interfaces with their operations and constants.
+    3. Methods.
+    4. Attribute type information.
+    5. Navigability.
+    6. Dependencies.
+
+### 19.4 Domain model vs Design model classes
+
+### 19.5 Creating a NextGen POS DCD
+
+#### Identify software classes and illustrate them.
+
+1. Identify those classes that participate in the software solution. These can be found by scanning all the interaction diagrams and listing the classes mentioned.
+2. Draw a class diagram for those classes and include the attributes previously identified in the Domain Model.
+
+#### Add method names
+
+* The set of all messages sent to a class X across all interaction diagrams indicates the majority of methods that class X must define.
+* Inspection of all interaction diagrams for the POS application yields the allocation of methods.
+
+#### Method names - Create
+
+* The create message is a possible UML language independent form to indicate instantiator and initialization. It must be expressed in terms of each programming language.
+
+#### Method names - Accessing methods.
+
+* Accessing methods retrieve (accessor method) or set (mutator method) attributes. These methods are usually excluded from depiction in the class diagram, because of the high noise-to-value ratio they generate.
+
+#### Method names - multiobjects.
+
+* A message to a multiobject is interpreted as a message to the container/collection object itself. These container/collection interfaces or classes (such as `java.util.map`) are usually predefined library delements, and should not be shown in the DCD.
+
+#### Method names - language independent sintax
+
+* It is recommended that the basic UML format be used, even if the planned implementation language uses a different sintax. The translation should take place during code generation time.
+
+#### Adding more type information
+
+* Types of the attributes, method paramters, and method return values may all optionally be shown.
+* Exhaustive low-lovel detail may affect the noise-to-value ratio.
+
+#### Adding associations and navegability
+
+* Each end of an association is called a role, and in the DCDs, the role may be decorated with a navigability arrow - Navigability is a property of the role that indicates that it is possible to navigate uni-directionally accross the association from objects of the source to target class.
+* Most, if not all, association in DCDs should be adorned with the necessary navigability arrows.
+
+#### Adding Dependency Relationships.
+
+* A dependency relationship indicates that one element has knowledge of another element. is is illustrated with a dashed arrow.
+* In class diagrams, the dependency relationship is useful to depict non-attribute visibility between classes.
+
+## 20. Implementation model: Mapping design to code
+
+* A reference attribute is an attribute that refers to another complex object, not to a primitive type such as a String, Number and so on.
+* The reference attributes of a class are suggested by the associations and navegability in a class diagram, it is not explicitly declared as an attribute in the attribute section of the class box.
+* Each end of an association is a role. A "role name" is a name that identifies the role and often provides some semantic context as to the nature of the role.
+    * If there is a role name in the DCD, use it as basis for the name of the reference attribute during code generation.
+* Each sequenced message within a method, as shown on the interaction diagram, is mapped to a statement in the implementation model.
+* To maintain visibility to a group of other objects, it is necessary to implement the relationship with the introduction of an intermediate container or collection. The choice of collection class (e.g. ArrayList, HashMap) is influenced by the requirements.
+* Exceptions (error handling) are illustrated as asynchronous messages in interaction diagrams.
+* Classes need to be implemented from least-coupled to most-coupled.
+* Advantages in writting tests first include:
+    1. The unit tests actually get written.
+    2. Tere is some feeling of accomplishment of passing a test.
+    3. Clarification of interface and behavior.
+    4. Provable verification.
+    5. The confidence to change things.
+
+## 21. Iteration 2 and its requirements
