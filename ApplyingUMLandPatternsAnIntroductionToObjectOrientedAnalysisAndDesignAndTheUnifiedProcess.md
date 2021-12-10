@@ -32,6 +32,7 @@
 19. [Design model: Creating design class diagrams (DCD)](#-19-design-model-creating-design-class-diagrams-dcd)
 20. [Implementation model: Mapping design to code](#-20-implementation-model-mapping-design-to-code)
 21. [Iteration 2 and its requirements](#-21-iteration-2-and-its-requirements)
+22. [GRASP: More patterns for assigning responsibilities](#-22-grasp-more-patterns-for-assigning-responsibilities)
 
 ## 0. Foreward
 
@@ -1430,3 +1431,32 @@ GRASP: General Reponsibility Assignment Software Patterns
     5. The confidence to change things.
 
 ## 21. Iteration 2 and its requirements
+
+### 21.3 Iteration 2 requirements
+
+* There are several requirements:
+    1. Support for variations in third-party external services e.g. Different tax calculators must be connectable to the system.
+    2. Complex pricing rules.
+    3. Pluggable business rules.
+    4. A design to refresh a GUI window when the sale total changes.
+* We will revisit the "Process Sale" use case, but we will implement more scenarios, so that the system grows.
+
+### 21.4 Refinement of Analysis-oriented artifacts in this iteration.
+
+* If there are not too many new domain concepts, it is quite reasonable to skip refining the Domain Model, move quickly on the design work, and let the discovery of new domain concepts occur during object design, when the designers are thinking through a solution.
+* Understand when creating an artifact will add significant value. If it is a kind of mechanical "make work" step, it is better to skip it.
+    * There is an overly optimistic belief that the problem can be solved simply by rushing to code.
+
+## 22. GRASP: More patterns for assigning responsibilities
+
+* We explored the first five GRASP patterns: information expert, creator, high cohesion, low coupling, and controller.
+* The final four GRASP patterns are polymorphism, indirection, pure fabrication, protected variations.
+
+### 22.1 Polymorphism
+
+* **Solution**
+    * When related behaviors/alternatives vary by type, assign responsibilities for the behavior (using polymorphic operations) to the types for which the behavior varies.
+        * **Polymorphism:** giving the same name to services in different objects. Different object types implement a common interface.
+
+* **Problem**
+    
