@@ -1459,4 +1459,3 @@ GRASP: General Reponsibility Assignment Software Patterns
         * **Polymorphism:** giving the same name to services in different objects. Different object types implement a common interface.
 
 * **Problem**
-    
