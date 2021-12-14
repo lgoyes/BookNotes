@@ -55,7 +55,8 @@
 #### Improving Design
 
 * When we want to alter software's structure to make it more maintainable, generally we want to keep its behaviour intact also. When we drop hebaior in that process, we often call that a bug.
-* We can write tests to make sure that existing behavior doesn't change and take small steps to verify that all along the process.
+* The act of improving design without changing its behavior is called _refactoring_. The idea behind refactoring is that we can write tests to make sure that existing behavior doesn't change and take small steps to verify that all along the process.
+* Instead of making general cleanup (low-risk things), we are making a series of small structural modifications.
 
 #### Optimization
 
@@ -71,7 +72,7 @@
 ## 2. Working with Feedback
 
 * Ways to make changes in a system: **edit and pray** and **cover and modify**.
-    1. **Edit and pray:** You carefully plan the change you are going to make, you make sure that you understand the code you are going to modify, then you make the changes. When you are done, you run the system to see if the change was enabled, and then you poke around further to make sure that youo odidn't break anything.
+    1. **Edit and pray:** You carefully plan the change you are going to make, you make sure that you understand the code you are going to modify, then you make the changes. When you are done, you run the system to see if the change was enabled, and then you poke around further to make sure that you didn't break anything.
     2. **Cover and modify:** When we have a good set of tests around a piece of code, we can make changes and find out very quickly whether the effects were good or bad.
 * Testing done after development is really "testing to attempt to show correctness".
 * Testing to detect change is called regression testing. Periodically running tests that check for known good behavior to find out whether our software still works the way it did in the past.

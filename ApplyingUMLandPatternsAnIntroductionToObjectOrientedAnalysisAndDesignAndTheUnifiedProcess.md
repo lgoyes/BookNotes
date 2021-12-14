@@ -1459,3 +1459,58 @@ GRASP: General Reponsibility Assignment Software Patterns
         * **Polymorphism:** giving the same name to services in different objects. Different object types implement a common interface.
 
 * **Problem**
+    * If a program is designed using `if-then-else` or case statement condition logic, then if a new variation arises, it requires modification of the case logic.
+    * How can you replace one server component with another, without affecting the client?
+
+* **Example:**
+    * Since the behavior of tax calculator adoption varies by the type of calculator, by Polymorphism we should assign the responsibility for adaptation to different calculator objects themselves, implemented with a polymorphic `getTaxes` operation.
+
+* A UML stereotype is used to indicate an interface; a stereotype is a mechanism to categorize an element in some way.
+* Returning a collection can be represented as a "List of X".
+* Interface implementation is illustrated with a dashed line an a large unfilled arrow pointing to the interface from the implementing class.
+* A design based on assigning responsibilities by Polymorphism can be easily exteded to handle new variations.
+* If the variation point is definetly motivated by an immediate or very probable variability, then the effort of adding the flexibility through polymorphism is rational.
+
+### 22.2 Pure Fabrication
+
+* **Solution:**
+    * Assign a highly cohesive set of responsibilities to an artificial or convenience class that does not represent a problem domain concept.
+    * Something made up, to support high cohesion, low coupling and reuse.
+
+* **Problem:**
+    * There are many situations in which assigning responsibilities only to domain layer software classes leads to problems in terms of poor cohesion or coupling, or low reuse potential.
+
+* **Example**
+    * Saving `Sale` instances in a relational database requires a relatively large number of supporting database-oriented operations, none related to the concept of sale-ness, so the Sale becomes incohesive.
+    * The Sale class has to be coupled to the relational database interface, so its coupling goes up.
+    * Even though `Sale`is a logical candidate by virtue of "Information Expert" to save itself in a database, it leads to a design with low cohesion, high coupling and low reuse potential.
+    * The Pure Fabrication of `PersistentStorage` solves the folowing design problems:
+        1. `Sale` remains well-designed, with high cohesion and low coupling.
+        2. `PersistentStorage` is relatively cohesive, being responsible of storing objects in a persistent storage medium.
+        3. `PersistentStorage`is a very generic and reusable object.
+
+* **Representational decomposition:** The software class is related to or represents a thing in a domain.
+* **Behavioral decomposition:** A convenience software class conceived to group together some related behavior or algorithm.
+* A Pure Fabrication is usually partitioned based on related functionality, and so is a kind of function centric or behavioral object.
+* If overused, PureFabrication could lead to too many behavior objects that have responsibilities not co-located with the information required for their fulfillment, which can adversely affect coupling. The usual symptom is that most of the data inside the objects is being passed to other objects to reason with it.
+
+### 22.3 Indirection
+
+* **Solution**
+    * Assign the responsibility to an intermediate object to mediate between other components or services so that they are not directly coupled.
+
+* **Problem:**
+    * Where to assign a responsibility, to avoid direct coupling between two (or more things)?
+
+* **Example (TaxCalculatorAdapter)**
+    * By adding a level of indirection and adding polymorphism, the adapter objects protect the inner design against variations in the external interfaces.
+
+### 22.4 Protected Variations.
+
+* **Solution:**
+    * Identify points of predicted variation or instability; assign responsibilities to create a stable interface around them.
+
+* **Problem:**
+    * How to design systems so that the variations do not have an undesirable impact on other elements?
+
+
