@@ -1513,4 +1513,33 @@ GRASP: General Reponsibility Assignment Software Patterns
 * **Problem:**
     * How to design systems so that the variations do not have an undesirable impact on other elements?
 
+* Mechanism Motivated by Protected Variations (PV)
+    * Core Protected Variations Mechanisms
+        * Data encapsulation, interfaces, polymorphism, indirection, and standards.
+    * Data-Driven Designs.
+        * Reading codes, values, class file paths, class names, and so forth, from an external source in order to change the behavior of, or ¨parameterize¨a system in some way at runtime.
+        * The system is protected from the impact of data by externalizing the variant.
+    * Interpreter-Driven Designs.
+        * Rule interpreters that execute rules read from an external source.
+        * Script or language interpreters that read and run programs.
+        * Changing and parameterizing the behavior of a system via external logic expressions.
+    * Uniform Access.
+        * Some languages such as C# support a syntactic construct so that both a method and field acccess are expressed the same way. We can change from public-fields to access methods, without changing the client code.
+    * The Liskov Substitution Principle (LSP)
+        * Software that refers to a type T (some interface or abstract superclass) should work properly or as expected, with any subtituted implementation or subclass of T -call it S.
+    * Structure-Hiding Designs
+        * Law of Demeter (Don't talk to strangers): Avoid creating designs that traverse long object structure paths to distant, indirect objects. Such designs are fragile with respect to changes in the object structures.
+        * Within a method, messages should only be sent to the following objects:
+            1. The _this_ object.
+            2. A parameter of the method.
+            3. An attribute of _this_.
+            4. An element of a collection which is an attribute of this.
+            5. An object created within a method.
+        * The farther along a path the program traverses, the more fragile it is.
+        * It is not always necessary to protect against PV; it depends on the instability of the object structure.
+        * Strictly obeying this law requires adding new public operations to the "familiars" of an object; these operations provide the ultimately desired information, and hide how it was obtained.
 
+* **Contraindications**
+    * The cost of engineering protection at "evolution points" (speculative points of variation that may arise in the future, but which are not present), can be higher than reworking a simple design.
+
+* **Information Hiding**
