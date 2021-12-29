@@ -33,6 +33,7 @@
 20. [Implementation model: Mapping design to code](#-20-implementation-model-mapping-design-to-code)
 21. [Iteration 2 and its requirements](#-21-iteration-2-and-its-requirements)
 22. [GRASP: More patterns for assigning responsibilities](#-22-grasp-more-patterns-for-assigning-responsibilities)
+23. [Designing Use-Case realizations with GoF design Patterns.](#-23-designing-use-case-realizations-with-gof-design-patterns)
 
 ## 0. Foreward
 
@@ -1543,3 +1544,36 @@ GRASP: General Reponsibility Assignment Software Patterns
     * The cost of engineering protection at "evolution points" (speculative points of variation that may arise in the future, but which are not present), can be higher than reworking a simple design.
 
 * **Information Hiding**
+    * List all of the difficult design decisions, or design decisions that are likely to change. Each module is then designed to hide such a decision from the others.
+    * Information hiding is the same PV, and not siimply data encapsulation.
+
+* **Open-Closed principle**
+    * Modules should be both open (for extension, adaptable) and closed (the module is closed to modification in ways that affect clients).
+
+## 23. Designing Use-Case realizations with GoF design Patterns.
+
+### 23.1 Adapter (GoF)
+
+* **Context/Problem:** How to resolve incompatible interfaces, or provide a stable interface to similar components with different interfaces?
+* **Solution:** Convert the original interface of a component into another interface through an intermediate adapter object.
+
+### 23.3 Factory (GoF)
+
+* **Context/Problem:** Who should be responsible for creating objects when there are special considerations, such as complex creation logic, a desire to separate the creation responsibilities for better cohesion, and so forth?
+* **Solution:** Create a Pure Fabrication object called a `Factory` to handle the creation.
+
+* Design to maintain a separation of concerns: Modularize or separate distinct concerns into different areas so that each has a cohesive purpose.
+* "Choosing a domain object (such as a `Register`) to create the adapters does not support the goal of separation of concerns, and lowers its cohesion".
+* Factory objects have several advantages:
+    1. Separate the responsibility of complex creation into cohesive helper objects.
+    2. Hide potential complex creation logic.
+    3. Allow the introduction of performance-enhancing memory management strategies, such as object caching or recycling.
+
+### 23.4 Singleton (GoF)
+
+* **Context/Problem:** Exactly one instance of a class is allowed - it is a "singleton". Objects need a global and single point of access.
+* **Solution:** Define a static method of the class that returns the singleton.
+
+* The key idea is that class `X` defines a static method `getInstance` that itself provides a single instance of `X`.
+
+#### Implementation and Design Issues
