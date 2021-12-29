@@ -28,12 +28,12 @@
 15. [Interaction diagram notation](#15-interaction-diagram-notation)
 16. [GRASP: Designing objects with responsibilities](#16-grasp-designing-objects-with-responsibilities)
 17. [Design model: use-case realization with GRASP patterns](#17-design-model-use-case-realization-with-grasp-patterns)
-18. [Design model: determining visibility](#-18-design-model-determining-visibility)
-19. [Design model: Creating design class diagrams (DCD)](#-19-design-model-creating-design-class-diagrams-dcd)
-20. [Implementation model: Mapping design to code](#-20-implementation-model-mapping-design-to-code)
-21. [Iteration 2 and its requirements](#-21-iteration-2-and-its-requirements)
-22. [GRASP: More patterns for assigning responsibilities](#-22-grasp-more-patterns-for-assigning-responsibilities)
-23. [Designing Use-Case realizations with GoF design Patterns.](#-23-designing-use-case-realizations-with-gof-design-patterns)
+18. [Design model: determining visibility](#18-design-model-determining-visibility)
+19. [Design model: Creating design class diagrams (DCD)](#19-design-model-creating-design-class-diagrams-dcd)
+20. [Implementation model: Mapping design to code](#20-implementation-model-mapping-design-to-code)
+21. [Iteration 2 and its requirements](#21-iteration-2-and-its-requirements)
+22. [GRASP: More patterns for assigning responsibilities](#22-grasp-more-patterns-for-assigning-responsibilities)
+23. [Designing Use-Case realizations with GoF design Patterns.](#23-designing-use-case-realizations-with-gof-design-patterns)
 
 ## 0. Foreward
 
