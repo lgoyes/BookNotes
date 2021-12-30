@@ -1577,3 +1577,42 @@ GRASP: General Reponsibility Assignment Software Patterns
 * The key idea is that class `X` defines a static method `getInstance` that itself provides a single instance of `X`.
 
 #### Implementation and Design Issues
+
+* In multi-threaded applications, the creation step of the lazy initialization logic is a critical section requiring thread concurrency control. Thus, assuming the instance is lazy initialized, it is common to wrap the method with concurrency control.
+
+* On the subject of lazy initialization, why not prefer eager initialization (initializing an static variable without needing a method call, but in the class´s variable declaration/definition).
+
+* The first approach is preffered for these reasons:
+    1. Creation work ("expensive" resources) is avoided, if the instance is never actually accessed.
+    2. The `getInstance` lazy initialization often contains complex and conditional creation logic.
+
+* An instance and instance-side methods are usually preferred over static methods for these reasons:
+    1. Instance side methods permit subclassing and refinement of the singleton class into subclasses.
+    2. It is not uncommon to start off a design thinking the object will be a singleton, and then discovering a need for multiple instances in the same process.
+
+### 23.6 Strategy (GoF)
+
+* **Context/Problem:**  How to design for varying, but related, algorithms or policies? How to design for the ability to change these algorithms or policies?
+* **Solution:** Define each algorithm/policy/strategy in a separate class, with a common interface.
+
+* Provide more complex pricing logic, such as a store-wide discount for the day, senior citizen discount, and so forth.
+* A strategy object is attached to a context object - the object to which it applies the algorithm.
+* It is common (usually required) that the context object pass a reference to itself (this) on to the strategy object, so that the strategy has parameter visibility to the context object, for further collaboration.
+
+#### Creating a Strategy with a Factory
+
+* A `PricingStrategyFactory` can be responsible for creating all strategies (all the pluggable or changing algorithms or policies) needed by the application. It can read the name of the implementation class of the pricing strategy from a system property, and then make an instance of it.
+
+* Each factory is cohesively focused on creating a related family of objects.
+
+* Because of the frequently changing pricing policy, it is not desirable to cache the created strategy instance in a field of the factory, but rather to re-create one each time, by reading the external property for its class name, and then instantiating the strategy.
+
+#### Reading and Initializing the Percertange value
+
+* How to find the different numbers for the percentage or absolute discount? These numbers will be stored in some external data store, such as a relational database, so they can be easily changed. What object will read them and ensure they are assigned to the strategy? The Strategy-Factory itself could do the job, or it could collaborate with other objects that add levels of indirection to hide the particular location data query language, or type of data source.
+
+### 23.7 Composite (GoF) and other design principles
+
+* How do we handle the case of multiple, conflicting pricing policies?
+* Part of the answer to this problem requires defining the store's conflict resolution strategy.
+
