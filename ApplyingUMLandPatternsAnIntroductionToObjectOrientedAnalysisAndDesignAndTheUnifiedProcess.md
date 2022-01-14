@@ -1614,5 +1614,19 @@ GRASP: General Reponsibility Assignment Software Patterns
 ### 23.7 Composite (GoF) and other design principles
 
 * How do we handle the case of multiple, conflicting pricing policies?
-* Part of the answer to this problem requires defining the store's conflict resolution strategy.
+* Part of the answer to this problem requires defining the store's conflict resolution strategy. Usually, a store applies the "best for the customer" conflict resolution strategy.
+* The customer type must be known by the `StrategyFactory`at the time of creation of a pricing strategy for the customer.
+* A pricing strategy can be related to the type of product being bought. `ProductSpecification` must be known by the `StrategyFactory`.
+* **Context/Problem:** How to treat a group or composition structure of object the same way (polimorphically) as a non-composite (atomic) object?
+* **Solution:** Define classes for composite and atomic objects so that they implement the same interface.
+* Signature feature of a composite object: The outer composite object contains a list of inner objects, and both the outer and inner objects implement the same interface.
+
+#### Creating multiple sale pricing strategies
+
+* When do we create all of the strategies passed to the `Sale` object?
+* Start by creating a composite that contains the present moment´s store discount policy (which could be set to 0% if non is active).
+* Then, if at a later step in the scenario, another pricing strategy is discovered to also apply, it will be easy to add it to the composite.
+#### IDs to objects.
+* Transforming the keys and IDs into true objects, often takes places shortly after an ID or key enters the domain layer of the Design Model from the UI layer.
+* Having a true Customer object that encapsulates a set of information about the customer, and which can have behavior, frequently becomes beneficial and flexible as the design grows, even if the designer does not originally perceive a need for a true object and thought instead that a plain number or ID would be sufficient.
 
